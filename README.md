@@ -24,8 +24,24 @@ pnpm install
 pnpm dev
 ```
 
+Contrôles avant livraison :
+
+```bash
+pnpm lint
+pnpm build
+```
+
 ## Données et intelligence artificielle
 
 Les contenus initiaux servent de couverture fonctionnelle et ne sont pas tous certifiés. Toute valeur technique importante doit conserver sa provenance, son niveau de confiance, son marché et sa plage d'application. Les champs inconnus restent inconnus.
 
 L'assistant inclus fonctionne immédiatement en mode sûr à partir des règles et du contexte local. La connexion ultérieure à l'API OpenAI doit rester côté serveur et utiliser une clé stockée comme secret d'hébergement.
+
+## Architecture
+
+- Next.js, TypeScript et Vinext ;
+- hébergement Cloudflare Workers via ChatGPT Sites ;
+- authentification Sign in with ChatGPT ;
+- architecture prête pour D1/PostgreSQL et migrations Drizzle.
+
+Le code, les données structurées et les actifs doivent rester dans une source de vérité unique. Les médias protégés ne doivent pas être ajoutés sans licence ou autorisation.
