@@ -2,54 +2,1125 @@
 
 import Image from "next/image";
 import { useMemo, useState } from "react";
-import { ArrowRight, BadgeCheck, BookOpen, Box, ChevronRight, CircleUserRound, Database, FileText, Gauge, Heart, Home, Layers3, Menu, MessageSquareText, PackageSearch, Rotate3D, Search, ShieldCheck, Sparkles, Users, Wrench, X, ZoomIn, ZoomOut } from "lucide-react";
+import {
+  ArrowRight,
+  BadgeCheck,
+  BookOpen,
+  Box,
+  ChevronRight,
+  CircleUserRound,
+  Database,
+  FileText,
+  Gauge,
+  Heart,
+  Home,
+  Layers3,
+  Menu,
+  MessageSquareText,
+  PackageSearch,
+  Rotate3D,
+  Search,
+  ShieldCheck,
+  Sparkles,
+  Users,
+  Wrench,
+  X,
+  ZoomIn,
+  ZoomOut,
+} from "lucide-react";
 
-type View = "home"|"catalog"|"exploded"|"specs"|"community";
-type Vehicle = {id:string;brand:string;model:string;years:string;family:string;engine:string;displacement:string;power:string;cooling:string;induction:string;ignition:string;gearbox:string;oil:string};
-type Part = {ref:string;name:string;category:string;engine:string;type:string;status:string;source:string};
+type View = "home" | "catalog" | "exploded" | "specs" | "community";
+type Vehicle = {
+  id: string;
+  brand: string;
+  model: string;
+  years: string;
+  family: string;
+  engine: string;
+  displacement: string;
+  power: string;
+  cooling: string;
+  induction: string;
+  ignition: string;
+  gearbox: string;
+  oil: string;
+};
+type Part = {
+  ref: string;
+  name: string;
+  category: string;
+  engine: string;
+  type: string;
+  status: string;
+  source: string;
+};
 
-const vehicles:Vehicle[] = [
- {id:"yam-yz125",brand:"Yamaha",model:"YZ125",years:"2022–2026",family:"Motocross",engine:"Monocylindre 2T",displacement:"125 cm³",power:"Non publiée par le constructeur",cooling:"Liquide",induction:"Carburateur Keihin PWK 38",ignition:"CDI",gearbox:"6 rapports",oil:"Prémélange"},
- {id:"ktm-exc300",brand:"KTM",model:"300 EXC",years:"2024–2026",family:"Enduro",engine:"Monocylindre 2T à injection",displacement:"293,2 cm³",power:"Non publiée par le constructeur",cooling:"Liquide",induction:"Injection électronique",ignition:"EMS",gearbox:"6 rapports",oil:"Graissage séparé"},
- {id:"beta-rr300",brand:"Beta",model:"RR 300 2T",years:"2025–2026",family:"Enduro",engine:"Monocylindre 2T",displacement:"292,6 cm³",power:"Non publiée par le constructeur",cooling:"Liquide",induction:"Carburateur Keihin PWK 36",ignition:"AC-CDI",gearbox:"6 rapports",oil:"Graissage séparé"},
- {id:"rieju-mrt50",brand:"Rieju",model:"MRT 50",years:"2009–2026",family:"Enduro 50",engine:"Minarelli AM6",displacement:"49,7 cm³",power:"Selon homologation",cooling:"Liquide",induction:"Carburateur",ignition:"CDI",gearbox:"6 rapports",oil:"Graissage séparé"},
- {id:"yam-aerox",brand:"Yamaha",model:"Aerox 50 2T",years:"1997–2016",family:"Scooter",engine:"Minarelli horizontal",displacement:"49 cm³",power:"Selon homologation",cooling:"Liquide",induction:"Carburateur",ignition:"CDI",gearbox:"Variateur CVT",oil:"Graissage séparé"},
- {id:"apr-rs125",brand:"Aprilia",model:"RS 125",years:"1992–2012",family:"Route",engine:"Rotax 122 / 123",displacement:"124,8 cm³",power:"Selon version et marché",cooling:"Liquide",induction:"Carburateur",ignition:"CDI",gearbox:"6 rapports",oil:"Graissage séparé"},
- {id:"hon-cr250",brand:"Honda",model:"CR250R",years:"2002–2007",family:"Motocross",engine:"Monocylindre 2T",displacement:"249 cm³",power:"À sourcer",cooling:"Liquide",induction:"Carburateur",ignition:"CDI",gearbox:"5 rapports",oil:"Prémélange"},
- {id:"yam-rd350",brand:"Yamaha",model:"RD350 LC",years:"1980–1995",family:"Route historique",engine:"Bicylindre parallèle 2T",displacement:"347 cm³",power:"Selon version et marché",cooling:"Liquide",induction:"Double carburateur",ignition:"CDI",gearbox:"6 rapports",oil:"Graissage séparé"}
+const vehicles: Vehicle[] = [
+  {
+    id: "yam-yz125",
+    brand: "Yamaha",
+    model: "YZ125",
+    years: "2022–2026",
+    family: "Motocross",
+    engine: "Monocylindre 2T",
+    displacement: "125 cm³",
+    power: "Non publiée par le constructeur",
+    cooling: "Liquide",
+    induction: "Carburateur Keihin PWK 38",
+    ignition: "CDI",
+    gearbox: "6 rapports",
+    oil: "Prémélange",
+  },
+  {
+    id: "ktm-exc300",
+    brand: "KTM",
+    model: "300 EXC",
+    years: "2024–2026",
+    family: "Enduro",
+    engine: "Monocylindre 2T à injection",
+    displacement: "293,2 cm³",
+    power: "Non publiée par le constructeur",
+    cooling: "Liquide",
+    induction: "Injection électronique",
+    ignition: "EMS",
+    gearbox: "6 rapports",
+    oil: "Graissage séparé",
+  },
+  {
+    id: "beta-rr300",
+    brand: "Beta",
+    model: "RR 300 2T",
+    years: "2025–2026",
+    family: "Enduro",
+    engine: "Monocylindre 2T",
+    displacement: "292,6 cm³",
+    power: "Non publiée par le constructeur",
+    cooling: "Liquide",
+    induction: "Carburateur Keihin PWK 36",
+    ignition: "AC-CDI",
+    gearbox: "6 rapports",
+    oil: "Graissage séparé",
+  },
+  {
+    id: "rieju-mrt50",
+    brand: "Rieju",
+    model: "MRT 50",
+    years: "2009–2026",
+    family: "Enduro 50",
+    engine: "Minarelli AM6",
+    displacement: "49,7 cm³",
+    power: "Selon homologation",
+    cooling: "Liquide",
+    induction: "Carburateur",
+    ignition: "CDI",
+    gearbox: "6 rapports",
+    oil: "Graissage séparé",
+  },
+  {
+    id: "yam-aerox",
+    brand: "Yamaha",
+    model: "Aerox 50 2T",
+    years: "1997–2016",
+    family: "Scooter",
+    engine: "Minarelli horizontal",
+    displacement: "49 cm³",
+    power: "Selon homologation",
+    cooling: "Liquide",
+    induction: "Carburateur",
+    ignition: "CDI",
+    gearbox: "Variateur CVT",
+    oil: "Graissage séparé",
+  },
+  {
+    id: "apr-rs125",
+    brand: "Aprilia",
+    model: "RS 125",
+    years: "1992–2012",
+    family: "Route",
+    engine: "Rotax 122 / 123",
+    displacement: "124,8 cm³",
+    power: "Selon version et marché",
+    cooling: "Liquide",
+    induction: "Carburateur",
+    ignition: "CDI",
+    gearbox: "6 rapports",
+    oil: "Graissage séparé",
+  },
+  {
+    id: "hon-cr250",
+    brand: "Honda",
+    model: "CR250R",
+    years: "2002–2007",
+    family: "Motocross",
+    engine: "Monocylindre 2T",
+    displacement: "249 cm³",
+    power: "À sourcer",
+    cooling: "Liquide",
+    induction: "Carburateur",
+    ignition: "CDI",
+    gearbox: "5 rapports",
+    oil: "Prémélange",
+  },
+  {
+    id: "yam-rd350",
+    brand: "Yamaha",
+    model: "RD350 LC",
+    years: "1980–1995",
+    family: "Route historique",
+    engine: "Bicylindre parallèle 2T",
+    displacement: "347 cm³",
+    power: "Selon version et marché",
+    cooling: "Liquide",
+    induction: "Double carburateur",
+    ignition: "CDI",
+    gearbox: "6 rapports",
+    oil: "Graissage séparé",
+  },
 ];
-const parts:Part[] = [
- {ref:"OEM-AM6-PISTON",name:"Piston standard",category:"Haut moteur",engine:"Minarelli AM6",type:"Origine",status:"Référence exacte à confirmer",source:"Catalogue constructeur"},
- {ref:"AM6-GASKET-TOP",name:"Pochette de joints haut moteur",category:"Haut moteur",engine:"Minarelli AM6",type:"Compatible",status:"Selon année et cylindre",source:"Équipementier"},
- {ref:"YZ125-AIR-22",name:"Filtre à air",category:"Admission",engine:"Yamaha YZ125 2022–2026",type:"Compatible",status:"Compatibilité documentée",source:"Équipementier"},
- {ref:"YZ125-SPARK",name:"Bougie compétition",category:"Allumage",engine:"Yamaha YZ125",type:"Compatible",status:"Indice selon usage",source:"Fabricant"},
- {ref:"EXC300-PISTON-24",name:"Kit piston",category:"Haut moteur",engine:"KTM 300 2024–2026",type:"Origine",status:"Cote à contrôler",source:"Microfiche constructeur"},
- {ref:"PWK-36-KIT",name:"Kit entretien carburateur PWK 36",category:"Carburation",engine:"Beta RR 250/300 2T",type:"Compatible",status:"Millésime à confirmer",source:"Équipementier"},
- {ref:"ROTAX122-CLUTCH",name:"Disques d’embrayage",category:"Transmission",engine:"Rotax 122",type:"Compatible",status:"Empilage à vérifier",source:"Documentation atelier"},
- {ref:"MIN-H-CVT-BELT",name:"Courroie de variateur",category:"Transmission",engine:"Minarelli horizontal",type:"Compatible",status:"Dimensions selon modèle",source:"Équipementier"},
- {ref:"2T-JASO-FD",name:"Huile moteur 2T JASO FD",category:"Lubrification",engine:"Multi-applications",type:"Consommable",status:"Respecter la préconisation",source:"Norme produit"}
+const parts: Part[] = [
+  {
+    ref: "OEM-AM6-PISTON",
+    name: "Piston standard",
+    category: "Haut moteur",
+    engine: "Minarelli AM6",
+    type: "Origine",
+    status: "Référence exacte à confirmer",
+    source: "Catalogue constructeur",
+  },
+  {
+    ref: "AM6-GASKET-TOP",
+    name: "Pochette de joints haut moteur",
+    category: "Haut moteur",
+    engine: "Minarelli AM6",
+    type: "Compatible",
+    status: "Selon année et cylindre",
+    source: "Équipementier",
+  },
+  {
+    ref: "YZ125-AIR-22",
+    name: "Filtre à air",
+    category: "Admission",
+    engine: "Yamaha YZ125 2022–2026",
+    type: "Compatible",
+    status: "Compatibilité documentée",
+    source: "Équipementier",
+  },
+  {
+    ref: "YZ125-SPARK",
+    name: "Bougie compétition",
+    category: "Allumage",
+    engine: "Yamaha YZ125",
+    type: "Compatible",
+    status: "Indice selon usage",
+    source: "Fabricant",
+  },
+  {
+    ref: "EXC300-PISTON-24",
+    name: "Kit piston",
+    category: "Haut moteur",
+    engine: "KTM 300 2024–2026",
+    type: "Origine",
+    status: "Cote à contrôler",
+    source: "Microfiche constructeur",
+  },
+  {
+    ref: "PWK-36-KIT",
+    name: "Kit entretien carburateur PWK 36",
+    category: "Carburation",
+    engine: "Beta RR 250/300 2T",
+    type: "Compatible",
+    status: "Millésime à confirmer",
+    source: "Équipementier",
+  },
+  {
+    ref: "ROTAX122-CLUTCH",
+    name: "Disques d’embrayage",
+    category: "Transmission",
+    engine: "Rotax 122",
+    type: "Compatible",
+    status: "Empilage à vérifier",
+    source: "Documentation atelier",
+  },
+  {
+    ref: "MIN-H-CVT-BELT",
+    name: "Courroie de variateur",
+    category: "Transmission",
+    engine: "Minarelli horizontal",
+    type: "Compatible",
+    status: "Dimensions selon modèle",
+    source: "Équipementier",
+  },
+  {
+    ref: "2T-JASO-FD",
+    name: "Huile moteur 2T JASO FD",
+    category: "Lubrification",
+    engine: "Multi-applications",
+    type: "Consommable",
+    status: "Respecter la préconisation",
+    source: "Norme produit",
+  },
 ];
-const nav=[{id:"home" as View,label:"Accueil",icon:Home},{id:"catalog" as View,label:"Catalogue pièces",icon:PackageSearch},{id:"exploded" as View,label:"Éclatés 2D / 3D",icon:Layers3},{id:"specs" as View,label:"Fiches techniques",icon:FileText},{id:"community" as View,label:"Communauté",icon:Users}];
+const nav = [
+  { id: "home" as View, label: "Accueil", icon: Home },
+  { id: "catalog" as View, label: "Catalogue pièces", icon: PackageSearch },
+  { id: "exploded" as View, label: "Éclatés 2D / 3D", icon: Layers3 },
+  { id: "specs" as View, label: "Fiches techniques", icon: FileText },
+  { id: "community" as View, label: "Communauté", icon: Users },
+];
 
-export default function HomePage(){
- const [view,setView]=useState<View>("home"),[menu,setMenu]=useState(false),[query,setQuery]=useState(""),[selected,setSelected]=useState(vehicles[0]);
- const [mode,setMode]=useState<"2d"|"3d">("2d"),[rotation,setRotation]=useState(18),[zoom,setZoom]=useState(1),[partIndex,setPartIndex]=useState(1),[joinOpen,setJoinOpen]=useState(false),[joined,setJoined]=useState(false);
- const matchingParts=useMemo(()=>{const q=query.toLowerCase().trim();return q?parts.filter(p=>Object.values(p).join(" ").toLowerCase().includes(q)):parts},[query]);
- const go=(v:View)=>{setView(v);setMenu(false);window.scrollTo({top:0,behavior:"smooth"})};
- return <div className="site-shell"><header className="site-header"><button className="mobile-toggle" onClick={()=>setMenu(!menu)}>{menu?<X/>:<Menu/>}</button><button className="logo" onClick={()=>go("home")}><span>2T</span><b>EXPERT</b><small>LA BASE TECHNIQUE DEUX TEMPS</small></button><nav className={menu?"nav open":"nav"}>{nav.map(n=><button key={n.id} className={view===n.id?"active":""} onClick={()=>go(n.id)}><n.icon/>{n.label}</button>)}</nav><button className="account" onClick={()=>setJoinOpen(true)}><CircleUserRound/><span>Mon espace</span></button></header>
- <main>{view==="home"&&<HomeView query={query} setQuery={setQuery} go={go} select={v=>{setSelected(v);go("specs")}}/>}{view==="catalog"&&<Catalog query={query} setQuery={setQuery} data={matchingParts} selected={selected}/>} {view==="exploded"&&<Exploded selected={selected} setSelected={setSelected} mode={mode} setMode={setMode} rotation={rotation} setRotation={setRotation} zoom={zoom} setZoom={setZoom} partIndex={partIndex} setPartIndex={setPartIndex}/>} {view==="specs"&&<Specs selected={selected} setSelected={setSelected} go={go}/>} {view==="community"&&<Community joined={joined} onJoin={()=>setJoinOpen(true)}/>}</main>
- <footer><div><span>2T</span> EXPERT</div><p>Données avec provenance et niveau de confiance. Vérifiez toujours la référence constructeur avant commande ou intervention.</p><nav><button onClick={()=>go("catalog")}>Catalogue</button><button onClick={()=>go("exploded")}>Éclatés</button><button onClick={()=>go("community")}>Communauté</button></nav></footer>
- {joinOpen&&<div className="modal-backdrop" onMouseDown={()=>setJoinOpen(false)}><section className="join-modal" onMouseDown={e=>e.stopPropagation()}><button className="modal-close" onClick={()=>setJoinOpen(false)}><X/></button>{joined?<><BadgeCheck className="success"/><h2>Bienvenue dans la communauté</h2><p>Votre espace gratuit est prêt sur cet appareil.</p><button className="primary" onClick={()=>{setJoinOpen(false);go("community")}}>Accéder à la communauté</button></>:<><Users className="modal-mark"/><span className="eyebrow">INSCRIPTION GRATUITE</span><h2>Rejoindre 2T Expert</h2><p>Échangez des solutions et suivez vos références favorites.</p><form onSubmit={e=>{e.preventDefault();setJoined(true)}}><label>Pseudonyme<input required placeholder="Votre nom dans la communauté"/></label><label>Adresse e-mail<input required type="email" placeholder="vous@exemple.fr"/></label><label>Mot de passe<input required type="password" minLength={8} placeholder="8 caractères minimum"/></label><label className="consent"><input required type="checkbox"/> J’accepte la charte.</label><button className="primary" type="submit">Créer mon compte gratuit <ArrowRight/></button></form><small>Aucun paiement demandé.</small></>}</section></div>}</div>
+export default function HomePage() {
+  const [view, setView] = useState<View>("home"),
+    [menu, setMenu] = useState(false),
+    [query, setQuery] = useState(""),
+    [selected, setSelected] = useState(vehicles[0]);
+  const [mode, setMode] = useState<"2d" | "3d">("2d"),
+    [rotation, setRotation] = useState(18),
+    [zoom, setZoom] = useState(1),
+    [partIndex, setPartIndex] = useState(1),
+    [joinOpen, setJoinOpen] = useState(false),
+    [joined, setJoined] = useState(false);
+  const matchingParts = useMemo(() => {
+    const q = query.toLowerCase().trim();
+    return q
+      ? parts.filter((p) =>
+          Object.values(p).join(" ").toLowerCase().includes(q),
+        )
+      : parts;
+  }, [query]);
+  const go = (v: View) => {
+    setView(v);
+    setMenu(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  return (
+    <div className="site-shell">
+      <header className="site-header">
+        <button className="mobile-toggle" onClick={() => setMenu(!menu)}>
+          {menu ? <X /> : <Menu />}
+        </button>
+        <button
+          className="logo"
+          onClick={() => go("home")}
+          aria-label="Retour à l’accueil 2T Expert"
+        >
+          <BrandLogo />
+        </button>
+        <nav className={menu ? "nav open" : "nav"}>
+          {nav.map((n) => (
+            <button
+              key={n.id}
+              className={view === n.id ? "active" : ""}
+              onClick={() => go(n.id)}
+            >
+              <n.icon />
+              {n.label}
+            </button>
+          ))}
+        </nav>
+        <button className="account" onClick={() => setJoinOpen(true)}>
+          <CircleUserRound />
+          <span>Mon espace</span>
+        </button>
+      </header>
+      <main>
+        {view === "home" && (
+          <HomeView
+            query={query}
+            setQuery={setQuery}
+            go={go}
+            select={(v) => {
+              setSelected(v);
+              go("specs");
+            }}
+          />
+        )}
+        {view === "catalog" && (
+          <Catalog
+            query={query}
+            setQuery={setQuery}
+            data={matchingParts}
+            selected={selected}
+          />
+        )}{" "}
+        {view === "exploded" && (
+          <Exploded
+            selected={selected}
+            setSelected={setSelected}
+            mode={mode}
+            setMode={setMode}
+            rotation={rotation}
+            setRotation={setRotation}
+            zoom={zoom}
+            setZoom={setZoom}
+            partIndex={partIndex}
+            setPartIndex={setPartIndex}
+          />
+        )}{" "}
+        {view === "specs" && (
+          <Specs selected={selected} setSelected={setSelected} go={go} />
+        )}{" "}
+        {view === "community" && (
+          <Community joined={joined} onJoin={() => setJoinOpen(true)} />
+        )}
+      </main>
+      <footer>
+        <div className="footer-brand">
+          <BrandLogo />
+        </div>
+        <p>
+          Données avec provenance et niveau de confiance. Vérifiez toujours la
+          référence constructeur avant commande ou intervention.
+        </p>
+        <nav>
+          <button onClick={() => go("catalog")}>Catalogue</button>
+          <button onClick={() => go("exploded")}>Éclatés</button>
+          <button onClick={() => go("community")}>Communauté</button>
+        </nav>
+      </footer>
+      {joinOpen && (
+        <div className="modal-backdrop" onMouseDown={() => setJoinOpen(false)}>
+          <section
+            className="join-modal"
+            onMouseDown={(e) => e.stopPropagation()}
+          >
+            <button className="modal-close" onClick={() => setJoinOpen(false)}>
+              <X />
+            </button>
+            {joined ? (
+              <>
+                <BadgeCheck className="success" />
+                <h2>Bienvenue dans la communauté</h2>
+                <p>Votre espace gratuit est prêt sur cet appareil.</p>
+                <button
+                  className="primary"
+                  onClick={() => {
+                    setJoinOpen(false);
+                    go("community");
+                  }}
+                >
+                  Accéder à la communauté
+                </button>
+              </>
+            ) : (
+              <>
+                <Users className="modal-mark" />
+                <span className="eyebrow">INSCRIPTION GRATUITE</span>
+                <h2>Rejoindre 2T Expert</h2>
+                <p>
+                  Échangez des solutions et suivez vos références favorites.
+                </p>
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    setJoined(true);
+                  }}
+                >
+                  <label>
+                    Pseudonyme
+                    <input
+                      required
+                      placeholder="Votre nom dans la communauté"
+                    />
+                  </label>
+                  <label>
+                    Adresse e-mail
+                    <input
+                      required
+                      type="email"
+                      placeholder="vous@exemple.fr"
+                    />
+                  </label>
+                  <label>
+                    Mot de passe
+                    <input
+                      required
+                      type="password"
+                      minLength={8}
+                      placeholder="8 caractères minimum"
+                    />
+                  </label>
+                  <label className="consent">
+                    <input required type="checkbox" /> J’accepte la charte.
+                  </label>
+                  <button className="primary" type="submit">
+                    Créer mon compte gratuit <ArrowRight />
+                  </button>
+                </form>
+                <small>Aucun paiement demandé.</small>
+              </>
+            )}
+          </section>
+        </div>
+      )}
+    </div>
+  );
 }
 
-function HomeView({query,setQuery,go,select}:{query:string;setQuery:(s:string)=>void;go:(v:View)=>void;select:(v:Vehicle)=>void}){return <><section className="hero"><div className="hero-copy"><span className="eyebrow">LA MÉCANIQUE 2T, ENFIN RASSEMBLÉE</span><h1>Trouvez la bonne information.<em>Montez la bonne pièce.</em></h1><p>Machines, fiches techniques, pièces compatibles et vues éclatées dans un espace clair.</p><div className="hero-search"><Search/><input value={query} onChange={e=>setQuery(e.target.value)} onKeyDown={e=>e.key==="Enter"&&go("catalog")} placeholder="Marque, modèle, moteur ou pièce"/><button onClick={()=>go("catalog")}>Rechercher</button></div><div className="hero-proof"><ShieldCheck/>Références sourcées <BadgeCheck/>Compatibilités qualifiées <Database/>Base évolutive</div></div><div className="hero-visual"><Image src="/assets/two-stroke-supermoto.png" alt="Moto deux temps" fill priority sizes="50vw"/><div className="machine-card"><span>Machine à la une</span><b>Yamaha YZ125</b><small>Fiche · Pièces · Éclatés</small><button onClick={()=>select(vehicles[0])}><ArrowRight/></button></div></div></section><section className="entry-grid">{[["catalog","Une pièce","Recherche par machine, moteur ou référence",PackageSearch],["exploded","Un éclaté","Planches 2D et modèles 3D orientables",Rotate3D],["specs","Une machine","Caractéristiques et documentation",Gauge],["community","La communauté","Entraide gratuite entre passionnés",MessageSquareText]].map(([id,title,text,Icon])=><button key={String(id)} onClick={()=>go(id as View)}><span><Icon/></span><div><small>ACCÉDER</small><h2>{String(title)}</h2><p>{String(text)}</p></div><ArrowRight/></button>)}</section><section className="section-wrap"><div className="section-heading"><div><span className="eyebrow">ACCÈS DIRECT</span><h2>Machines populaires</h2></div></div><div className="vehicle-strip">{vehicles.slice(0,4).map((v,i)=><button key={v.id} onClick={()=>select(v)}><strong>0{i+1}</strong><div><span>{v.family}</span><h3>{v.brand} {v.model}</h3><p>{v.engine} · {v.displacement}</p></div><ChevronRight/></button>)}</div></section><section className="confidence"><Sparkles/><div><b>Une base ambitieuse, sans fausse certitude.</b><p>Chaque donnée indique sa provenance. Une référence ou un modèle 3D manquant est signalé, jamais inventé.</p></div></section></>}
+function HomeView({
+  query,
+  setQuery,
+  go,
+  select,
+}: {
+  query: string;
+  setQuery: (s: string) => void;
+  go: (v: View) => void;
+  select: (v: Vehicle) => void;
+}) {
+  return (
+    <>
+      <section className="hero">
+        <div className="hero-copy">
+          <div className="hero-brand">
+            <Image
+              src="/assets/brand/logo-main.png"
+              alt="2T Expert — Motos 2 temps, passion, solutions"
+              width={428}
+              height={476}
+              priority
+            />
+          </div>
+          <span className="eyebrow">LA MÉCANIQUE 2T, ENFIN RASSEMBLÉE</span>
+          <h1>
+            Trouvez la bonne information.<em>Montez la bonne pièce.</em>
+          </h1>
+          <p>
+            Machines, fiches techniques, pièces compatibles et vues éclatées
+            dans un espace clair.
+          </p>
+          <div className="hero-search">
+            <Search />
+            <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && go("catalog")}
+              placeholder="Marque, modèle, moteur ou pièce"
+            />
+            <button onClick={() => go("catalog")}>Rechercher</button>
+          </div>
+          <div className="hero-proof">
+            <ShieldCheck />
+            Références sourcées <BadgeCheck />
+            Compatibilités qualifiées <Database />
+            Base évolutive
+          </div>
+        </div>
+        <div className="hero-visual">
+          <Image
+            src="/assets/two-stroke-supermoto.png"
+            alt="Moto deux temps"
+            fill
+            priority
+            sizes="50vw"
+          />
+          <div className="machine-card">
+            <span>Machine à la une</span>
+            <b>Yamaha YZ125</b>
+            <small>Fiche · Pièces · Éclatés</small>
+            <button onClick={() => select(vehicles[0])}>
+              <ArrowRight />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section className="entry-grid">
+        {[
+          [
+            "catalog",
+            "Une pièce",
+            "Recherche par machine, moteur ou référence",
+            PackageSearch,
+          ],
+          [
+            "exploded",
+            "Un éclaté",
+            "Planches 2D et modèles 3D orientables",
+            Rotate3D,
+          ],
+          ["specs", "Une machine", "Caractéristiques et documentation", Gauge],
+          [
+            "community",
+            "La communauté",
+            "Entraide gratuite entre passionnés",
+            MessageSquareText,
+          ],
+        ].map(([id, title, text, Icon]) => (
+          <button key={String(id)} onClick={() => go(id as View)}>
+            <span>
+              <Icon />
+            </span>
+            <div>
+              <small>ACCÉDER</small>
+              <h2>{String(title)}</h2>
+              <p>{String(text)}</p>
+            </div>
+            <ArrowRight />
+          </button>
+        ))}
+      </section>
+      <section className="section-wrap">
+        <div className="section-heading">
+          <div>
+            <span className="eyebrow">ACCÈS DIRECT</span>
+            <h2>Machines populaires</h2>
+          </div>
+        </div>
+        <div className="vehicle-strip">
+          {vehicles.slice(0, 4).map((v, i) => (
+            <button key={v.id} onClick={() => select(v)}>
+              <strong>0{i + 1}</strong>
+              <div>
+                <span>{v.family}</span>
+                <h3>
+                  {v.brand} {v.model}
+                </h3>
+                <p>
+                  {v.engine} · {v.displacement}
+                </p>
+              </div>
+              <ChevronRight />
+            </button>
+          ))}
+        </div>
+      </section>
+      <section className="confidence">
+        <Sparkles />
+        <div>
+          <b>Une base ambitieuse, sans fausse certitude.</b>
+          <p>
+            Chaque donnée indique sa provenance. Une référence ou un modèle 3D
+            manquant est signalé, jamais inventé.
+          </p>
+        </div>
+      </section>
+    </>
+  );
+}
 
-function Catalog({query,setQuery,data,selected}:{query:string;setQuery:(s:string)=>void;data:Part[];selected:Vehicle}){return <div className="page-wrap"><Title eyebrow="CATALOGUE TECHNIQUE" title="Retrouver une pièce" text="Recherchez une référence ou filtrez par motorisation. La compatibilité reste liée au millésime et au numéro moteur."/><div className="catalog-tools"><div><Search/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Référence, pièce, moteur…"/></div><button><small>MACHINE SÉLECTIONNÉE</small><b>{selected.brand} {selected.model}</b><ChevronRight/></button></div><div className="catalog-layout"><aside><span>FAMILLES</span>{["Toutes les pièces","Haut moteur","Bas moteur","Carburation","Admission","Allumage","Échappement","Transmission","Partie-cycle","Lubrification"].map((x,i)=><button className={i===0?"selected":""} key={x}>{x}<ChevronRight/></button>)}<div className="catalog-note"><ShieldCheck/><p><b>Avant de commander</b>Comparez référence, millésime, numéro moteur et dimensions.</p></div></aside><section className="parts-results"><div className="results-head"><b>{data.length} résultats vérifiés ou à confirmer</b></div>{data.map((p,i)=><article className="part-row" key={p.ref}><div className="part-thumb"><Wrench/></div><div className="part-main"><span>{p.category}</span><h3>{p.name}</h3><code>{p.ref}</code></div><div><small>APPLICATION</small><b>{p.engine}</b><span>{p.status}</span></div><div><small>PROVENANCE</small><b>{p.source}</b><mark className={i%3===0?"warning":""}>{i%3===0?"À confirmer":"Documenté"}</mark></div><ChevronRight/></article>)}</section></div></div>}
+function Catalog({
+  query,
+  setQuery,
+  data,
+  selected,
+}: {
+  query: string;
+  setQuery: (s: string) => void;
+  data: Part[];
+  selected: Vehicle;
+}) {
+  return (
+    <div className="page-wrap">
+      <Title
+        eyebrow="CATALOGUE TECHNIQUE"
+        title="Retrouver une pièce"
+        text="Recherchez une référence ou filtrez par motorisation. La compatibilité reste liée au millésime et au numéro moteur."
+      />
+      <div className="catalog-tools">
+        <div>
+          <Search />
+          <input
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Référence, pièce, moteur…"
+          />
+        </div>
+        <button>
+          <small>MACHINE SÉLECTIONNÉE</small>
+          <b>
+            {selected.brand} {selected.model}
+          </b>
+          <ChevronRight />
+        </button>
+      </div>
+      <div className="catalog-layout">
+        <aside>
+          <span>FAMILLES</span>
+          {[
+            "Toutes les pièces",
+            "Haut moteur",
+            "Bas moteur",
+            "Carburation",
+            "Admission",
+            "Allumage",
+            "Échappement",
+            "Transmission",
+            "Partie-cycle",
+            "Lubrification",
+          ].map((x, i) => (
+            <button className={i === 0 ? "selected" : ""} key={x}>
+              {x}
+              <ChevronRight />
+            </button>
+          ))}
+          <div className="catalog-note">
+            <ShieldCheck />
+            <p>
+              <b>Avant de commander</b>Comparez référence, millésime, numéro
+              moteur et dimensions.
+            </p>
+          </div>
+        </aside>
+        <section className="parts-results">
+          <div className="results-head">
+            <b>{data.length} résultats vérifiés ou à confirmer</b>
+          </div>
+          {data.map((p, i) => (
+            <article className="part-row" key={p.ref}>
+              <div className="part-thumb">
+                <Wrench />
+              </div>
+              <div className="part-main">
+                <span>{p.category}</span>
+                <h3>{p.name}</h3>
+                <code>{p.ref}</code>
+              </div>
+              <div>
+                <small>APPLICATION</small>
+                <b>{p.engine}</b>
+                <span>{p.status}</span>
+              </div>
+              <div>
+                <small>PROVENANCE</small>
+                <b>{p.source}</b>
+                <mark className={i % 3 === 0 ? "warning" : ""}>
+                  {i % 3 === 0 ? "À confirmer" : "Documenté"}
+                </mark>
+              </div>
+              <ChevronRight />
+            </article>
+          ))}
+        </section>
+      </div>
+    </div>
+  );
+}
 
-function Exploded({selected,setSelected,mode,setMode,rotation,setRotation,zoom,setZoom,partIndex,setPartIndex}:{selected:Vehicle;setSelected:(v:Vehicle)=>void;mode:"2d"|"3d";setMode:(v:"2d"|"3d")=>void;rotation:number;setRotation:(n:number)=>void;zoom:number;setZoom:(n:number)=>void;partIndex:number;setPartIndex:(n:number)=>void}){const markers=[{n:1,x:49,y:35,name:"Culasse"},{n:2,x:46,y:51,name:"Cylindre"},{n:3,x:63,y:59,name:"Embrayage"},{n:4,x:28,y:65,name:"Vilebrequin"}],active=markers.find(m=>m.n===partIndex)||markers[0];return <div className="page-wrap"><Title eyebrow="DOCUMENTATION VISUELLE" title="Éclatés 2D / 3D" text="Repérez un composant, puis retrouvez les références disponibles."/><div className="exploded-toolbar"><label><small>MACHINE</small><select value={selected.id} onChange={e=>setSelected(vehicles.find(v=>v.id===e.target.value)||vehicles[0])}>{vehicles.map(v=><option key={v.id} value={v.id}>{v.brand} {v.model} · {v.years}</option>)}</select></label><div className="mode-switch"><button className={mode==="2d"?"on":""} onClick={()=>setMode("2d")}><BookOpen/> Planche 2D</button><button className={mode==="3d"?"on":""} onClick={()=>setMode("3d")}><Box/> Vue 3D</button></div><div className="doc-status"><BadgeCheck/><span><b>STATUT</b>{mode==="2d"?"Planche indexée":"Aperçu à valider"}</span></div></div><div className="exploded-layout"><section className="exploded-canvas"><div className="canvas-top"><span>MOTEUR COMPLET · CÔTÉ EMBRAYAGE</span><small>{mode==="2d"?"2D":"3D ORIENTABLE"}</small></div><div className={mode==="3d"?"drawing three-d":"drawing"} style={{"--rotation":`${rotation}deg`,"--zoom":zoom} as React.CSSProperties}><Image src="/assets/two-stroke-exploded.png" alt="Vue éclatée d’un moteur deux temps" fill sizes="70vw"/>{markers.map(m=><button style={{left:`${m.x}%`,top:`${m.y}%`}} className={m.n===partIndex?"marker active":"marker"} onClick={()=>setPartIndex(m.n)} key={m.n}>{m.n}</button>)}</div><div className="canvas-controls"><button onClick={()=>setZoom(Math.max(.75,zoom-.1))}><ZoomOut/></button><button onClick={()=>setZoom(Math.min(1.35,zoom+.1))}><ZoomIn/></button>{mode==="3d"&&<label><Rotate3D/><input type="range" min="-45" max="45" value={rotation} onChange={e=>setRotation(+e.target.value)}/></label>}<span>{Math.round(zoom*100)} %</span></div></section><aside className="part-panel"><div className="part-no">0{active.n}</div><span className="eyebrow">COMPOSANT</span><h2>{active.name}</h2><p>Groupe moteur · {selected.engine}</p><dl><div><dt>Machine</dt><dd>{selected.brand} {selected.model}</dd></div><div><dt>Millésime</dt><dd>{selected.years}</dd></div><div><dt>Référence</dt><dd>À confirmer</dd></div></dl><button className="primary">Voir les pièces <ArrowRight/></button><div className="truth-box"><ShieldCheck/><p><b>Conformité visuelle</b>{mode==="3d"?"Le contrôle d’orientation est actif. La mention conforme exige un fichier CAO constructeur ou un scan validé.":"La planche aide au repérage ; la microfiche du millésime reste prioritaire."}</p></div></aside></div></div>}
+function Exploded({
+  selected,
+  setSelected,
+  mode,
+  setMode,
+  rotation,
+  setRotation,
+  zoom,
+  setZoom,
+  partIndex,
+  setPartIndex,
+}: {
+  selected: Vehicle;
+  setSelected: (v: Vehicle) => void;
+  mode: "2d" | "3d";
+  setMode: (v: "2d" | "3d") => void;
+  rotation: number;
+  setRotation: (n: number) => void;
+  zoom: number;
+  setZoom: (n: number) => void;
+  partIndex: number;
+  setPartIndex: (n: number) => void;
+}) {
+  const markers = [
+      { n: 1, x: 49, y: 35, name: "Culasse" },
+      { n: 2, x: 46, y: 51, name: "Cylindre" },
+      { n: 3, x: 63, y: 59, name: "Embrayage" },
+      { n: 4, x: 28, y: 65, name: "Vilebrequin" },
+    ],
+    active = markers.find((m) => m.n === partIndex) || markers[0];
+  return (
+    <div className="page-wrap">
+      <Title
+        eyebrow="DOCUMENTATION VISUELLE"
+        title="Éclatés 2D / 3D"
+        text="Repérez un composant, puis retrouvez les références disponibles."
+      />
+      <div className="exploded-toolbar">
+        <label>
+          <small>MACHINE</small>
+          <select
+            value={selected.id}
+            onChange={(e) =>
+              setSelected(
+                vehicles.find((v) => v.id === e.target.value) || vehicles[0],
+              )
+            }
+          >
+            {vehicles.map((v) => (
+              <option key={v.id} value={v.id}>
+                {v.brand} {v.model} · {v.years}
+              </option>
+            ))}
+          </select>
+        </label>
+        <div className="mode-switch">
+          <button
+            className={mode === "2d" ? "on" : ""}
+            onClick={() => setMode("2d")}
+          >
+            <BookOpen /> Planche 2D
+          </button>
+          <button
+            className={mode === "3d" ? "on" : ""}
+            onClick={() => setMode("3d")}
+          >
+            <Box /> Vue 3D
+          </button>
+        </div>
+        <div className="doc-status">
+          <BadgeCheck />
+          <span>
+            <b>STATUT</b>
+            {mode === "2d" ? "Planche indexée" : "Aperçu à valider"}
+          </span>
+        </div>
+      </div>
+      <div className="exploded-layout">
+        <section className="exploded-canvas">
+          <div className="canvas-top">
+            <span>MOTEUR COMPLET · CÔTÉ EMBRAYAGE</span>
+            <small>{mode === "2d" ? "2D" : "3D ORIENTABLE"}</small>
+          </div>
+          <div
+            className={mode === "3d" ? "drawing three-d" : "drawing"}
+            style={
+              {
+                "--rotation": `${rotation}deg`,
+                "--zoom": zoom,
+              } as React.CSSProperties
+            }
+          >
+            <Image
+              src="/assets/two-stroke-exploded.png"
+              alt="Vue éclatée d’un moteur deux temps"
+              fill
+              sizes="70vw"
+            />
+            {markers.map((m) => (
+              <button
+                style={{ left: `${m.x}%`, top: `${m.y}%` }}
+                className={m.n === partIndex ? "marker active" : "marker"}
+                onClick={() => setPartIndex(m.n)}
+                key={m.n}
+              >
+                {m.n}
+              </button>
+            ))}
+          </div>
+          <div className="canvas-controls">
+            <button onClick={() => setZoom(Math.max(0.75, zoom - 0.1))}>
+              <ZoomOut />
+            </button>
+            <button onClick={() => setZoom(Math.min(1.35, zoom + 0.1))}>
+              <ZoomIn />
+            </button>
+            {mode === "3d" && (
+              <label>
+                <Rotate3D />
+                <input
+                  type="range"
+                  min="-45"
+                  max="45"
+                  value={rotation}
+                  onChange={(e) => setRotation(+e.target.value)}
+                />
+              </label>
+            )}
+            <span>{Math.round(zoom * 100)} %</span>
+          </div>
+        </section>
+        <aside className="part-panel">
+          <div className="part-no">0{active.n}</div>
+          <span className="eyebrow">COMPOSANT</span>
+          <h2>{active.name}</h2>
+          <p>Groupe moteur · {selected.engine}</p>
+          <dl>
+            <div>
+              <dt>Machine</dt>
+              <dd>
+                {selected.brand} {selected.model}
+              </dd>
+            </div>
+            <div>
+              <dt>Millésime</dt>
+              <dd>{selected.years}</dd>
+            </div>
+            <div>
+              <dt>Référence</dt>
+              <dd>À confirmer</dd>
+            </div>
+          </dl>
+          <button className="primary">
+            Voir les pièces <ArrowRight />
+          </button>
+          <div className="truth-box">
+            <ShieldCheck />
+            <p>
+              <b>Conformité visuelle</b>
+              {mode === "3d"
+                ? "Le contrôle d’orientation est actif. La mention conforme exige un fichier CAO constructeur ou un scan validé."
+                : "La planche aide au repérage ; la microfiche du millésime reste prioritaire."}
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  );
+}
 
-function Specs({selected,setSelected,go}:{selected:Vehicle;setSelected:(v:Vehicle)=>void;go:(v:View)=>void}){const specs=[["Architecture",selected.engine],["Cylindrée",selected.displacement],["Puissance",selected.power],["Refroidissement",selected.cooling],["Alimentation",selected.induction],["Allumage",selected.ignition],["Transmission",selected.gearbox],["Lubrification",selected.oil]];return <div className="page-wrap"><Title eyebrow="BIBLIOTHÈQUE MACHINES" title="Fiche technique" text="Données regroupées par modèle, période et motorisation."/><div className="spec-selector">{vehicles.map(v=><button className={v.id===selected.id?"on":""} onClick={()=>setSelected(v)} key={v.id}>{v.brand}<b>{v.model}</b></button>)}</div><section className="spec-hero"><div><span>{selected.family} · {selected.years}</span><h2>{selected.brand}<b>{selected.model}</b></h2><p>{selected.engine} · {selected.displacement}</p><div><button className="primary" onClick={()=>go("catalog")}>Voir les pièces <ArrowRight/></button><button className="secondary" onClick={()=>go("exploded")}>Ouvrir l’éclaté</button></div></div><Image src="/assets/two-stroke-supermoto.png" alt="Illustration de catégorie" fill sizes="50vw"/></section><div className="spec-grid"><section><div className="block-title"><Gauge/><div><span>CARACTÉRISTIQUES</span><b>Motorisation et transmission</b></div></div><div className="spec-table">{specs.map(([k,v])=><div key={k}><span>{k}</span><b>{v}</b><small>Source à consolider par millésime</small></div>)}</div></section><aside><div className="block-title"><FileText/><div><span>DOCUMENTATION</span><b>Documents</b></div></div>{["Manuel utilisateur","Manuel d’atelier","Tableau des couples","Schéma électrique","Microfiches pièces"].map((x,i)=><button className="document" key={x}><FileText/><span><b>{x}</b><small>{i<2?"Référence indexée":"Recherche en cours"}</small></span><ChevronRight/></button>)}</aside></div></div>}
+function Specs({
+  selected,
+  setSelected,
+  go,
+}: {
+  selected: Vehicle;
+  setSelected: (v: Vehicle) => void;
+  go: (v: View) => void;
+}) {
+  const specs = [
+    ["Architecture", selected.engine],
+    ["Cylindrée", selected.displacement],
+    ["Puissance", selected.power],
+    ["Refroidissement", selected.cooling],
+    ["Alimentation", selected.induction],
+    ["Allumage", selected.ignition],
+    ["Transmission", selected.gearbox],
+    ["Lubrification", selected.oil],
+  ];
+  return (
+    <div className="page-wrap">
+      <Title
+        eyebrow="BIBLIOTHÈQUE MACHINES"
+        title="Fiche technique"
+        text="Données regroupées par modèle, période et motorisation."
+      />
+      <div className="spec-selector">
+        {vehicles.map((v) => (
+          <button
+            className={v.id === selected.id ? "on" : ""}
+            onClick={() => setSelected(v)}
+            key={v.id}
+          >
+            {v.brand}
+            <b>{v.model}</b>
+          </button>
+        ))}
+      </div>
+      <section className="spec-hero">
+        <div>
+          <span>
+            {selected.family} · {selected.years}
+          </span>
+          <h2>
+            {selected.brand}
+            <b>{selected.model}</b>
+          </h2>
+          <p>
+            {selected.engine} · {selected.displacement}
+          </p>
+          <div>
+            <button className="primary" onClick={() => go("catalog")}>
+              Voir les pièces <ArrowRight />
+            </button>
+            <button className="secondary" onClick={() => go("exploded")}>
+              Ouvrir l’éclaté
+            </button>
+          </div>
+        </div>
+        <Image
+          src="/assets/two-stroke-supermoto.png"
+          alt="Illustration de catégorie"
+          fill
+          sizes="50vw"
+        />
+      </section>
+      <div className="spec-grid">
+        <section>
+          <div className="block-title">
+            <Gauge />
+            <div>
+              <span>CARACTÉRISTIQUES</span>
+              <b>Motorisation et transmission</b>
+            </div>
+          </div>
+          <div className="spec-table">
+            {specs.map(([k, v]) => (
+              <div key={k}>
+                <span>{k}</span>
+                <b>{v}</b>
+                <small>Source à consolider par millésime</small>
+              </div>
+            ))}
+          </div>
+        </section>
+        <aside>
+          <div className="block-title">
+            <FileText />
+            <div>
+              <span>DOCUMENTATION</span>
+              <b>Documents</b>
+            </div>
+          </div>
+          {[
+            "Manuel utilisateur",
+            "Manuel d’atelier",
+            "Tableau des couples",
+            "Schéma électrique",
+            "Microfiches pièces",
+          ].map((x, i) => (
+            <button className="document" key={x}>
+              <FileText />
+              <span>
+                <b>{x}</b>
+                <small>
+                  {i < 2 ? "Référence indexée" : "Recherche en cours"}
+                </small>
+              </span>
+              <ChevronRight />
+            </button>
+          ))}
+        </aside>
+      </div>
+    </div>
+  );
+}
 
-function Community({joined,onJoin}:{joined:boolean;onJoin:()=>void}){return <div className="page-wrap"><section className="community-hero"><div><span className="eyebrow">COMMUNAUTÉ 2T EXPERT</span><h1>La connaissance progresse<em>quand elle se partage.</em></h1><p>Posez une question, documentez une restauration et partagez vos retours.</p>{joined?<div className="member-chip"><BadgeCheck/> Membre connecté</div>:<button className="primary light" onClick={onJoin}>Créer mon compte gratuit <ArrowRight/></button>}</div><div className="community-stats"><div><b>100 %</b><span>gratuit</span></div><div><b>8</b><span>familles de machines</span></div><div><b>24/7</b><span>base consultable</span></div></div></section><div className="community-grid"><section><div className="section-heading"><div><span className="eyebrow">DISCUSSIONS RÉCENTES</span><h2>Dans l’atelier</h2></div></div>{[["Carburation","Réglage de base après réfection d’un AM6","Meca50"],["Restauration","Remise en route d’une Yamaha RD350 LC","TwinSmoke"],["Enduro","Entretien préventif avant une sortie longue","EnduroLéa"]].map((d,i)=><article className="discussion" key={d[1]}><div className="avatar">{d[2][0]}</div><div><span>{d[0]}</span><h3>{d[1]}</h3><p>Par {d[2]} · il y a {i+1} h</p></div><MessageSquareText/></article>)}</section><aside className="community-side"><div className="rules-card"><ShieldCheck/><h3>Une communauté utile</h3><p>Informations sourcées, dialogue respectueux et sécurité mécanique.</p><button>Lire la charte</button></div>{["50 à boîte","Enduro 250–300","Route historique","Scooters 2T"].map((x,i)=><button className="club" key={x}><span><Heart/></span><div><b>{x}</b><small>{42+i*37} membres</small></div><ChevronRight/></button>)}</aside></div></div>}
+function Community({
+  joined,
+  onJoin,
+}: {
+  joined: boolean;
+  onJoin: () => void;
+}) {
+  return (
+    <div className="page-wrap">
+      <section className="community-hero">
+        <div>
+          <span className="eyebrow">COMMUNAUTÉ 2T EXPERT</span>
+          <h1>
+            La connaissance progresse<em>quand elle se partage.</em>
+          </h1>
+          <p>
+            Posez une question, documentez une restauration et partagez vos
+            retours.
+          </p>
+          {joined ? (
+            <div className="member-chip">
+              <BadgeCheck /> Membre connecté
+            </div>
+          ) : (
+            <button className="primary light" onClick={onJoin}>
+              Créer mon compte gratuit <ArrowRight />
+            </button>
+          )}
+        </div>
+        <div className="community-stats">
+          <div>
+            <b>100 %</b>
+            <span>gratuit</span>
+          </div>
+          <div>
+            <b>8</b>
+            <span>familles de machines</span>
+          </div>
+          <div>
+            <b>24/7</b>
+            <span>base consultable</span>
+          </div>
+        </div>
+      </section>
+      <div className="community-grid">
+        <section>
+          <div className="section-heading">
+            <div>
+              <span className="eyebrow">DISCUSSIONS RÉCENTES</span>
+              <h2>Dans l’atelier</h2>
+            </div>
+          </div>
+          {[
+            [
+              "Carburation",
+              "Réglage de base après réfection d’un AM6",
+              "Meca50",
+            ],
+            [
+              "Restauration",
+              "Remise en route d’une Yamaha RD350 LC",
+              "TwinSmoke",
+            ],
+            [
+              "Enduro",
+              "Entretien préventif avant une sortie longue",
+              "EnduroLéa",
+            ],
+          ].map((d, i) => (
+            <article className="discussion" key={d[1]}>
+              <div className="avatar">{d[2][0]}</div>
+              <div>
+                <span>{d[0]}</span>
+                <h3>{d[1]}</h3>
+                <p>
+                  Par {d[2]} · il y a {i + 1} h
+                </p>
+              </div>
+              <MessageSquareText />
+            </article>
+          ))}
+        </section>
+        <aside className="community-side">
+          <div className="rules-card">
+            <ShieldCheck />
+            <h3>Une communauté utile</h3>
+            <p>
+              Informations sourcées, dialogue respectueux et sécurité mécanique.
+            </p>
+            <button>Lire la charte</button>
+          </div>
+          {[
+            "50 à boîte",
+            "Enduro 250–300",
+            "Route historique",
+            "Scooters 2T",
+          ].map((x, i) => (
+            <button className="club" key={x}>
+              <span>
+                <Heart />
+              </span>
+              <div>
+                <b>{x}</b>
+                <small>{42 + i * 37} membres</small>
+              </div>
+              <ChevronRight />
+            </button>
+          ))}
+        </aside>
+      </div>
+    </div>
+  );
+}
 
-function Title({eyebrow,title,text}:{eyebrow:string;title:string;text:string}){return <div className="page-title"><span className="eyebrow">{eyebrow}</span><h1>{title}</h1><p>{text}</p></div>}
+function Title({
+  eyebrow,
+  title,
+  text,
+}: {
+  eyebrow: string;
+  title: string;
+  text: string;
+}) {
+  return (
+    <div className="page-title">
+      <span className="eyebrow">{eyebrow}</span>
+      <h1>{title}</h1>
+      <p>{text}</p>
+    </div>
+  );
+}
+
+function BrandLogo() {
+  return (
+    <Image
+      src="/assets/brand/logo-horizontal.png"
+      alt="2T Expert — Motos 2 temps, passion, solutions"
+      width={364}
+      height={116}
+    />
+  );
+}
