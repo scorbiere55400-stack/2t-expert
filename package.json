@@ -61,7 +61,14 @@
   },
   "type": "module",
   "overrides": {
-    "miniflare>sharp": "0.35.4"
+    "miniflare": {
+      "sharp": "0.35.4"
+    }
   },
-  "packageManager": "pnpm@11.25.0"
+  "packageManager": "pnpm@11.25.0",
+  "pnpm": {
+    "overrides": {
+      "miniflare>sharp": "0.35.4"
+    }
+  }
 }
