@@ -371,6 +371,9 @@ export default function AtelierWorkspace() {
       ? selectedParts[selectedParts.length - 1].category
       : null);
 
+  const selectedPartId =
+    selectedParts.length > 0 ? selectedParts[selectedParts.length - 1].id : null;
+
   const gaugeModel = useMemo(() => {
     const ratioImpact = Math.min(35, Math.abs(geometry.speedDelta));
     const selectedCount = selectedParts.length;
@@ -537,7 +540,11 @@ export default function AtelierWorkspace() {
             </div>
           </article>
 
-          <Atelier3DViewer selectedCategory={selectedCategory} />
+          <Atelier3DViewer
+            selectedCategory={selectedCategory}
+            selectedPartId={selectedPartId}
+            onCategoryFocus={setFocusedCategory}
+          />
 
           <article className={styles.setupCard}>
             <div className={styles.cardHeading}>
