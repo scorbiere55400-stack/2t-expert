@@ -338,12 +338,20 @@ export default function AtelierWorkspace() {
           },
         }),
       });
-      const payload = await response.json();
-      if (!response.ok) throw new Error(payload?.error || "Diagnostic indisponible");
+      const payload = (await response.json()) as {
+        error?: string;
+        data?: {
+          selectedParts?: unknown[];
+          compatibility?: { valid?: boolean };
+        };
+      };
+      if (!response.ok) throw new Error(payload.error || "Diagnostic indisponible");
 
+      const selectedCount = payload.data?.selectedParts?.length ?? 0;
+      const compatibilityValid = payload.data?.compatibility?.valid === true;
       setDiagnosticStatus("ready");
       setDiagnosticMessage(
-        `Contexte prêt : ${payload.data.selectedParts.length} pièce(s), compatibilité ${payload.data.compatibility.valid ? "validée" : "à contrôler"}.`,
+        `Contexte prêt : ${selectedCount} pièce(s), compatibilité ${compatibilityValid ? "validée" : "à contrôler"}.`,
       );
     } catch (error) {
       setDiagnosticStatus("error");
