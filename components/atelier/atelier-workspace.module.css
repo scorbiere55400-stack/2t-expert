@@ -19,7 +19,7 @@
   border-radius: 22px;
   background:
     linear-gradient(90deg, rgba(5, 9, 12, 0.98), rgba(10, 15, 19, 0.72)),
-    url("/assets/two-stroke-supermoto.png") right 22% center / 48% auto no-repeat;
+    url("https://raw.githubusercontent.com/scorbiere55400-stack/2t-expert/main/public/assets/two-stroke-supermoto.png") right 22% center / 48% auto no-repeat;
   box-shadow: 0 22px 60px rgba(0, 0, 0, 0.3);
 }
 
