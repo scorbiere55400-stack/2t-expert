@@ -28,6 +28,7 @@ import {
 import { atelierVehicles } from "../../lib/atelier/knowledge-registry";
 import { evaluateCompatibility } from "../../lib/atelier/compatibility-engine";
 import { runYz125Simulation } from "../../lib/atelier/simulation-engine";
+import Atelier3DViewer from "./atelier-3d-viewer";
 import styles from "./atelier-workspace.module.css";
 
 type SnapshotName = "Origine" | "Actuelle" | "Projet A" | "Projet B";
@@ -124,143 +125,6 @@ function GaugeCard({
   );
 }
 
-
-function InteractiveMachineVisual({
-  selectedCategory,
-}: {
-  selectedCategory: PilotPart["category"] | null;
-}) {
-  const [bikeRotation, setBikeRotation] = useState(0);
-  const [engineZoom, setEngineZoom] = useState(1);
-  const [engineRotation, setEngineRotation] = useState(0);
-  const active = (category: PilotPart["category"]) =>
-    selectedCategory === category ? styles.visualActive : "";
-
-  return (
-    <div className={styles.visualStage}>
-      <div className={styles.machineVisualPanel}>
-        <div className={styles.visualHeader}>
-          <span>
-            <small>YAMAHA YZ125 2026 · VUE INTERACTIVE</small>
-            <b>Zones de configuration</b>
-          </span>
-          <em>Rotation 360°</em>
-        </div>
-        <div className={styles.bikeViewport}>
-          <img
-            src="/assets/two-stroke-supermoto.png"
-            alt="Moto deux temps générique de référence"
-            style={{
-              transform: `perspective(900px) rotateY(${bikeRotation}deg) scale(.96)`,
-            }}
-          />
-          <svg viewBox="0 0 760 420" className={styles.bikeOverlay} aria-hidden="true">
-            <g className={active("Échappement")}>
-              <ellipse cx="505" cy="250" rx="98" ry="38" />
-              <path d="M400 248 C450 225, 540 220, 615 244" />
-            </g>
-            <g className={active("Admission")}>
-              <ellipse cx="364" cy="214" rx="53" ry="42" />
-            </g>
-            <g className={active("Filtration")}>
-              <ellipse cx="307" cy="181" rx="58" ry="42" />
-            </g>
-            <g className={active("Haut moteur")}>
-              <rect x="355" y="195" width="72" height="74" rx="18" />
-            </g>
-            <g className={active("Transmission")}>
-              <ellipse cx="390" cy="297" rx="72" ry="43" />
-            </g>
-            <g className={active("Refroidissement")}>
-              <rect x="432" y="154" width="50" height="104" rx="10" />
-            </g>
-          </svg>
-          <div className={styles.visualControl}>
-            <label>
-              Rotation
-              <input
-                type="range"
-                min={-180}
-                max={180}
-                value={bikeRotation}
-                onChange={(event) => setBikeRotation(Number(event.target.value))}
-              />
-            </label>
-          </div>
-          <div className={styles.visualLegend}>
-            <span><i /> zone active</span>
-            <span>La sélection de pièce met en évidence la zone concernée.</span>
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.engineVisualPanel}>
-        <div className={styles.visualHeader}>
-          <span>
-            <small>YZ125 2026 · MOTEUR ÉCLATÉ INTERACTIF</small>
-            <b>Surveillance par sous-ensemble</b>
-          </span>
-          <em>Vue éclatée</em>
-        </div>
-        <div className={styles.engineViewport}>
-          <img
-            src="/assets/two-stroke-exploded.png"
-            alt="Moteur deux temps générique en vue éclatée"
-            style={{ transform: `perspective(900px) rotateY(${engineRotation}deg) scale(${engineZoom})` }}
-          />
-          <svg viewBox="0 0 620 420" className={styles.engineOverlay} aria-hidden="true">
-            <g className={active("Haut moteur")}>
-              <circle cx="302" cy="92" r="62" />
-            </g>
-            <g className={active("Admission")}>
-              <ellipse cx="205" cy="173" rx="74" ry="48" />
-            </g>
-            <g className={active("Carburation")}>
-              <ellipse cx="126" cy="171" rx="56" ry="40" />
-            </g>
-            <g className={active("Transmission")}>
-              <ellipse cx="375" cy="290" rx="118" ry="78" />
-            </g>
-            <g className={active("Refroidissement")}>
-              <rect x="465" y="108" width="70" height="158" rx="16" />
-            </g>
-            <g className={active("Échappement")}>
-              <path d="M344 160 C470 150, 530 176, 580 232" />
-            </g>
-          </svg>
-          <div className={styles.engineControl}>
-            <label>
-              Rotation 360°
-              <input
-                type="range"
-                min={-180}
-                max={180}
-                value={engineRotation}
-                onChange={(event) => setEngineRotation(Number(event.target.value))}
-              />
-            </label>
-            <label>
-              Zoom éclaté
-              <input
-                type="range"
-                min={0.82}
-                max={1.18}
-                step={0.02}
-                value={engineZoom}
-                onChange={(event) => setEngineZoom(Number(event.target.value))}
-              />
-            </label>
-          </div>
-          <div className={styles.focusLabel}>
-            {selectedCategory
-              ? `Surveillance active : ${selectedCategory}`
-              : "Sélectionnez une pièce pour activer la surveillance visuelle"}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 
 export default function AtelierWorkspace() {
@@ -665,7 +529,7 @@ export default function AtelierWorkspace() {
             </div>
           </article>
 
-          <InteractiveMachineVisual selectedCategory={selectedCategory} />
+          <Atelier3DViewer selectedCategory={selectedCategory} />
 
           <article className={styles.setupCard}>
             <div className={styles.cardHeading}>
