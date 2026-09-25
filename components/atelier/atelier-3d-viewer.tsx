@@ -70,10 +70,15 @@ export default function Atelier3DViewer({
   selectedCategory,
   selectedPartId,
   onCategoryFocus,
+  onMeshSelect,
 }: {
   selectedCategory: PilotPart["category"] | null;
   selectedPartId?: string | null;
   onCategoryFocus?: (category: PilotPart["category"]) => void;
+  onMeshSelect?: (selection: {
+    meshName: string;
+    category: PilotPart["category"];
+  }) => void;
 }) {
   const [bikeAutoRotate, setBikeAutoRotate] = useState(false);
   const [engineAutoRotate, setEngineAutoRotate] = useState(false);
@@ -205,6 +210,7 @@ export default function Atelier3DViewer({
               explodeAmount={explodeAmount}
               selectedCategory={selectedCategory}
               onCategoryFocus={onCategoryFocus}
+              onMeshSelect={onMeshSelect}
             />
           ) : (
             <ModelViewer
