@@ -1,9 +1,10 @@
 "use client";
 
-import { createElement, useEffect, useRef, useState, type RefObject } from "react";
-import { Box, Pause, Play, RotateCcw, ScanSearch, ZoomIn } from "lucide-react";
+import { createElement, useEffect, useRef, useState, type ChangeEvent, type RefObject } from "react";
+import { Box, FileUp, Pause, Play, RotateCcw, ScanSearch, ZoomIn } from "lucide-react";
 import type { PilotPart } from "../../lib/atelier/pilot-data";
 import { findThreeDComponent, yz125ThreeDComponents } from "../../lib/atelier/three-d-registry";
+import { inspectGlb, matchAliases, type GlbInspection } from "../../lib/atelier/glb-inspector";
 import styles from "./atelier-workspace.module.css";
 
 const MODEL_VIEWER_SRC =
@@ -77,12 +78,18 @@ export default function Atelier3DViewer({
   const [engineAutoRotate, setEngineAutoRotate] = useState(false);
   const [explodedFocus, setExplodedFocus] = useState(42);
   const [explodeAmount, setExplodeAmount] = useState(0);
+  const [customEngineUrl, setCustomEngineUrl] = useState<string | null>(null);
+  const [customEngineName, setCustomEngineName] = useState<string | null>(null);
+  const [inspection, setInspection] = useState<GlbInspection | null>(null);
   const bikeRef = useRef<ViewerElement | null>(null);
   const engineRef = useRef<ViewerElement | null>(null);
 
   useEffect(() => {
     ensureModelViewer();
-  }, []);
+    return () => {
+      if (customEngineUrl) URL.revokeObjectURL(customEngineUrl);
+    };
+  }, [customEngineUrl]);
 
   const resetBike = () => {
     const viewer = bikeRef.current;
@@ -115,6 +122,32 @@ export default function Atelier3DViewer({
   };
 
   const activeComponent = findThreeDComponent(selectedCategory);
+
+  const meshNames = inspection ? [...inspection.nodes, ...inspection.meshes] : [];
+  const componentCoverage = yz125ThreeDComponents.map((component) => ({
+    component,
+    matches: inspection ? matchAliases(meshNames, component.meshAliases) : [],
+  }));
+  const coveredCount = componentCoverage.filter((item) => item.matches.length > 0).length;
+
+  const loadCustomEngine = async (event: ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    const buffer = await file.arrayBuffer();
+    const result = inspectGlb(buffer);
+    setInspection(result);
+    setCustomEngineName(file.name);
+    if (!result.valid) return;
+    if (customEngineUrl) URL.revokeObjectURL(customEngineUrl);
+    setCustomEngineUrl(URL.createObjectURL(new Blob([buffer], { type: "model/gltf-binary" })));
+  };
+
+  const resetCustomEngine = () => {
+    if (customEngineUrl) URL.revokeObjectURL(customEngineUrl);
+    setCustomEngineUrl(null);
+    setCustomEngineName(null);
+    setInspection(null);
+  };
 
   return (
     <div className={styles.visualStage}>
@@ -166,7 +199,7 @@ export default function Atelier3DViewer({
         </div>
         <div className={styles.real3dViewport}>
           <ModelViewer
-            model={ENGINE_MODEL}
+            model={customEngineUrl || ENGINE_MODEL}
             alt="Assemblage mécanique 3D interactif utilisé comme prototype de vue moteur éclatée"
             autoRotate={engineAutoRotate}
             viewerRef={engineRef}
@@ -196,6 +229,27 @@ export default function Atelier3DViewer({
               className={selectedCategory ? styles.scanPulse : ""}
               style={{ inset: `${Math.max(12, 38 - explodedFocus / 4)}% ${Math.max(10, 34 - explodedFocus / 5)}%` }}
             />
+          </div>
+          <div className={styles.modelImportPanel}>
+            <label>
+              <FileUp />
+              <span>
+                <b>Importer un GLB moteur</b>
+                <small>Analyse automatique des noms de meshes pour préparer la vraie vue éclatée.</small>
+              </span>
+              <input type="file" accept=".glb,model/gltf-binary" onChange={loadCustomEngine} />
+            </label>
+            {customEngineName && (
+              <div className={styles.modelImportStatus}>
+                <span>{customEngineName}</span>
+                <b className={inspection?.valid ? styles.modelValid : styles.modelInvalid}>
+                  {inspection?.valid
+                    ? `${coveredCount}/${yz125ThreeDComponents.length} zones reconnues`
+                    : inspection?.error || "GLB invalide"}
+                </b>
+                <button type="button" onClick={resetCustomEngine}>Retirer</button>
+              </div>
+            )}
           </div>
           <div className={styles.real3dToolbar}>
             <button type="button" onClick={() => setEngineAutoRotate((value) => !value)}>
@@ -251,6 +305,19 @@ export default function Atelier3DViewer({
               );
             })}
           </div>
+          {inspection?.valid && (
+            <div className={styles.meshCoveragePanel}>
+              <b>Correspondance des sous-meshes</b>
+              {componentCoverage.map(({ component, matches }) => (
+                <div key={component.id}>
+                  <span>{component.shortLabel}</span>
+                  <em className={matches.length ? styles.meshMatched : styles.meshMissing}>
+                    {matches.length ? matches.slice(0, 2).join(", ") : "nom de mesh non reconnu"}
+                  </em>
+                </div>
+              ))}
+            </div>
+          )}
           <div className={styles.focusLabel}>
             {activeComponent
               ? `${activeComponent.label} · ${selectedPartId ? `pièce ${selectedPartId}` : "zone catalogue"} · surveillance 3D active`
