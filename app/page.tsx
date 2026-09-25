@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { useMemo, useState } from "react";
+import AtelierWorkspace from "../components/atelier/atelier-workspace";
+
 import {
   ArrowRight,
   BadgeCheck,
@@ -29,7 +31,7 @@ import {
   ZoomOut,
 } from "lucide-react";
 
-type View = "home" | "catalog" | "exploded" | "specs" | "community";
+type View = "home" | "atelier" | "catalog" | "exploded" | "specs" | "community";
 type Vehicle = {
   id: string;
   brand: string;
@@ -262,6 +264,7 @@ const parts: Part[] = [
 ];
 const nav = [
   { id: "home" as View, label: "Accueil", icon: Home },
+  { id: "atelier" as View, label: "Atelier configuration", icon: Wrench },
   { id: "catalog" as View, label: "Catalogue pièces", icon: PackageSearch },
   { id: "exploded" as View, label: "Éclatés 2D / 3D", icon: Layers3 },
   { id: "specs" as View, label: "Fiches techniques", icon: FileText },
@@ -334,6 +337,7 @@ export default function HomePage() {
             }}
           />
         )}
+        {view === "atelier" && <AtelierWorkspace />}
         {view === "catalog" && (
           <Catalog
             query={query}
@@ -372,6 +376,7 @@ export default function HomePage() {
           référence constructeur avant commande ou intervention.
         </p>
         <nav>
+          <button onClick={() => go("atelier")}>Atelier configuration</button>
           <button onClick={() => go("catalog")}>Catalogue</button>
           <button onClick={() => go("exploded")}>Éclatés</button>
           <button onClick={() => go("community")}>Communauté</button>
