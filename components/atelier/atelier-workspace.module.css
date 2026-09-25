@@ -436,3 +436,122 @@
   .partRow { align-items: stretch; }
   .addPart, .lockedPart { justify-content: space-between; }
 }
+
+
+.machineSelectorBar {
+  margin: 18px 0;
+  display: flex;
+  gap: 14px;
+  align-items: end;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border: 1px solid #27343d;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #111820, #0b1014);
+}
+.machineSelectorBar label {
+  min-width: min(620px, 100%);
+  display: grid;
+  gap: 6px;
+}
+.machineSelectorBar label > span {
+  color: #7f8b94;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-weight: 800;
+}
+.machineSelectorBar select {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid #31424f;
+  border-radius: 10px;
+  background: #080d10;
+  color: #fff;
+  font-weight: 700;
+}
+.coveragePill {
+  border: 1px solid #266a86;
+  background: rgba(34, 141, 189, .12);
+  color: #6fd1ff;
+  border-radius: 999px;
+  padding: 8px 11px;
+  white-space: nowrap;
+  font-size: .72rem;
+  font-weight: 800;
+}
+.unavailableMachine {
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: clamp(26px, 5vw, 60px);
+  border: 1px solid #28343d;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(30, 155, 214, .12), transparent 24rem),
+    linear-gradient(180deg, #11181e, #0a0f13);
+}
+.unavailableMachine h2 {
+  margin: 8px 0;
+  max-width: 780px;
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+}
+.unavailableMachine p {
+  max-width: 780px;
+  color: #9ba6ad;
+  line-height: 1.6;
+}
+.unavailableMachine button,
+.diagnosticCard button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #249fd8;
+  background: linear-gradient(180deg, #16425a, #103145);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 13px;
+  font-weight: 800;
+}
+.diagnosticCard {
+  margin: 0 14px 14px;
+  padding: 15px;
+  border: 1px solid #234052;
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(55, 187, 255, .12), transparent 12rem),
+    #0b1115;
+}
+.diagnosticCard p {
+  color: #87949d;
+  font-size: .75rem;
+  line-height: 1.45;
+}
+.diagnosticCard button {
+  width: 100%;
+  justify-content: space-between;
+}
+.diagnosticCard button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+.diagnosticCard > small {
+  display: block;
+  margin-top: 9px;
+  font-size: .68rem;
+  line-height: 1.4;
+}
+.diagnosticReady { color: #60e491; }
+.diagnosticError { color: #ff9f57; }
+
+@media (max-width: 900px) {
+  .machineSelectorBar,
+  .unavailableMachine {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .coveragePill { align-self: flex-start; white-space: normal; }
+}
