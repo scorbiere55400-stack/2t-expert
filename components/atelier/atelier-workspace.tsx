@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   AlertTriangle,
   BadgeCheck,
@@ -55,6 +55,16 @@ const initialBuild = {
 };
 
 type BuildState = typeof initialBuild;
+type BuildSnapshots = Record<SnapshotName, BuildState>;
+
+const initialSnapshots: BuildSnapshots = {
+  Origine: { ...initialBuild },
+  Actuelle: { ...initialBuild },
+  "Projet A": { ...initialBuild },
+  "Projet B": { ...initialBuild },
+};
+
+const STORAGE_KEY = "2t-expert:atelier:yamaha-yz125-2026:v1";
 
 function statusLabel(part: PilotPart) {
   if (part.compatibility === "direct_fit_validated") return "Montage direct validé";
@@ -110,12 +120,43 @@ function GaugeCard({
 
 export default function AtelierWorkspace() {
   const [snapshot, setSnapshot] = useState<SnapshotName>("Projet A");
-  const [build, setBuild] = useState<BuildState>(initialBuild);
-  const [history, setHistory] = useState<BuildState[]>([initialBuild]);
+  const [builds, setBuilds] = useState<BuildSnapshots>(initialSnapshots);
+  const build = builds[snapshot];
+  const [history, setHistory] = useState<BuildState[]>([initialSnapshots["Projet A"]]);
   const [historyIndex, setHistoryIndex] = useState(0);
+  const [savedAt, setSavedAt] = useState<string | null>(null);
   const [category, setCategory] = useState<(typeof partCategories)[number]>("Toutes");
   const [query, setQuery] = useState("");
   const [showWhy, setShowWhy] = useState<string | null>(null);
+
+  useEffect(() => {
+    try {
+      const raw = window.localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
+      const parsed = JSON.parse(raw) as {
+        builds?: Partial<BuildSnapshots>;
+        snapshot?: SnapshotName;
+        savedAt?: string;
+      };
+      const restored: BuildSnapshots = {
+        Origine: { ...initialBuild },
+        Actuelle: { ...initialBuild, ...(parsed.builds?.Actuelle || {}) },
+        "Projet A": { ...initialBuild, ...(parsed.builds?.["Projet A"] || {}) },
+        "Projet B": { ...initialBuild, ...(parsed.builds?.["Projet B"] || {}) },
+      };
+      const restoredSnapshot =
+        parsed.snapshot && parsed.snapshot in restored
+          ? parsed.snapshot
+          : "Projet A";
+      setBuilds(restored);
+      setSnapshot(restoredSnapshot);
+      setHistory([restored[restoredSnapshot]]);
+      setHistoryIndex(0);
+      setSavedAt(parsed.savedAt || null);
+    } catch {
+      window.localStorage.removeItem(STORAGE_KEY);
+    }
+  }, []);
 
   const verifiedParts = useMemo(
     () =>
@@ -165,25 +206,63 @@ export default function AtelierWorkspace() {
   }, [build]);
 
   const setBuildWithHistory = (patch: Partial<BuildState>) => {
+    if (snapshot === "Origine") return;
     const next = { ...build, ...patch };
     const trimmed = history.slice(0, historyIndex + 1);
-    setBuild(next);
+    setBuilds((current) => ({ ...current, [snapshot]: next }));
     setHistory([...trimmed, next]);
     setHistoryIndex(trimmed.length);
+  };
+
+  const switchSnapshot = (name: SnapshotName) => {
+    setSnapshot(name);
+    setHistory([builds[name]]);
+    setHistoryIndex(0);
+  };
+
+  const saveWorkspace = () => {
+    const at = new Date().toISOString();
+    const payload = {
+      version: 1,
+      vehicleId: yz125Pilot.id,
+      snapshot,
+      builds,
+      savedAt: at,
+    };
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+    setSavedAt(at);
+  };
+
+  const duplicateProject = () => {
+    if (snapshot !== "Projet A" && snapshot !== "Projet B") return;
+    const target: SnapshotName = snapshot === "Projet A" ? "Projet B" : "Projet A";
+    const clone = { ...build };
+    setBuilds((current) => ({ ...current, [target]: clone }));
+    setSnapshot(target);
+    setHistory([clone]);
+    setHistoryIndex(0);
+  };
+
+  const resetSnapshot = () => {
+    if (snapshot === "Origine") return;
+    const reset = { ...initialBuild };
+    setBuilds((current) => ({ ...current, [snapshot]: reset }));
+    setHistory([reset]);
+    setHistoryIndex(0);
   };
 
   const undo = () => {
     if (historyIndex <= 0) return;
     const nextIndex = historyIndex - 1;
     setHistoryIndex(nextIndex);
-    setBuild(history[nextIndex]);
+    setBuilds((current) => ({ ...current, [snapshot]: history[nextIndex] }));
   };
 
   const redo = () => {
     if (historyIndex >= history.length - 1) return;
     const nextIndex = historyIndex + 1;
     setHistoryIndex(nextIndex);
-    setBuild(history[nextIndex]);
+    setBuilds((current) => ({ ...current, [snapshot]: history[nextIndex] }));
   };
 
   const exportProject = () => {
@@ -250,7 +329,7 @@ export default function AtelierWorkspace() {
             (name) => (
               <button
                 key={name}
-                onClick={() => setSnapshot(name)}
+                onClick={() => switchSnapshot(name)}
                 className={snapshot === name ? styles.activeSnapshot : ""}
               >
                 {name}
@@ -270,27 +349,33 @@ export default function AtelierWorkspace() {
             <Redo2 />
           </button>
           <button
-            onClick={() => {
-              setBuild(initialBuild);
-              setHistory([initialBuild]);
-              setHistoryIndex(0);
-            }}
-            title="Réinitialiser"
+            onClick={resetSnapshot}
+            disabled={snapshot === "Origine"}
+            title="Réinitialiser cet état"
           >
             <RotateCcw />
           </button>
           <button
-            onClick={() => setSnapshot(snapshot === "Projet A" ? "Projet B" : "Projet A")}
-            title="Dupliquer le projet"
+            onClick={duplicateProject}
+            disabled={snapshot !== "Projet A" && snapshot !== "Projet B"}
+            title="Dupliquer vers l’autre projet"
           >
             <Copy />
           </button>
           <button onClick={exportProject} title="Télécharger le projet">
             <Download />
           </button>
-          <button className={styles.saveButton}>
+          <button className={styles.saveButton} onClick={saveWorkspace}>
             <Save /> Enregistrer
           </button>
+          {savedAt && (
+            <span className={styles.savedState}>
+              Enregistré {new Date(savedAt).toLocaleTimeString("fr-FR", {
+                hour: "2-digit",
+                minute: "2-digit",
+              })}
+            </span>
+          )}
         </div>
       </section>
 
@@ -337,6 +422,7 @@ export default function AtelierWorkspace() {
                   min={11}
                   max={16}
                   value={build.frontTeeth}
+                  disabled={snapshot === "Origine"}
                   onChange={(e) =>
                     setBuildWithHistory({ frontTeeth: Number(e.target.value) })
                   }
@@ -350,6 +436,7 @@ export default function AtelierWorkspace() {
                   min={45}
                   max={55}
                   value={build.rearTeeth}
+                  disabled={snapshot === "Origine"}
                   onChange={(e) =>
                     setBuildWithHistory({ rearTeeth: Number(e.target.value) })
                   }
@@ -364,6 +451,7 @@ export default function AtelierWorkspace() {
                   max={14000}
                   step={100}
                   value={build.engineRpm}
+                  disabled={snapshot === "Origine"}
                   onChange={(e) =>
                     setBuildWithHistory({ engineRpm: Number(e.target.value) })
                   }
@@ -378,6 +466,7 @@ export default function AtelierWorkspace() {
                   max={2.3}
                   step={0.01}
                   value={build.rollingCircumferenceM}
+                  disabled={snapshot === "Origine"}
                   onChange={(e) =>
                     setBuildWithHistory({
                       rollingCircumferenceM: Number(e.target.value),
@@ -456,6 +545,7 @@ export default function AtelierWorkspace() {
                     <button
                       className={part.selectable ? styles.addPart : styles.lockedPart}
                       onClick={() => selectPart(part)}
+                      disabled={snapshot === "Origine"}
                     >
                       {selected ? "Sélectionnée" : part.selectable ? "Ajouter" : "À vérifier"}
                       <ChevronRight />
