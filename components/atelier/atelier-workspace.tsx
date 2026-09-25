@@ -85,6 +85,7 @@ function GaugeCard({
   tone,
   note,
   proof,
+  progress,
 }: {
   label: string;
   value: string;
@@ -92,6 +93,7 @@ function GaugeCard({
   tone: "red" | "orange" | "green" | "blue";
   note: string;
   proof: string;
+  progress: number;
 }) {
   return (
     <article className={styles.gaugeCard}>
@@ -104,7 +106,14 @@ function GaugeCard({
       </div>
       <div className={styles.segmentBar}>
         {Array.from({ length: 8 }).map((_, index) => (
-          <i key={index} className={index < 5 ? styles.segmentOn : ""} />
+          <i
+            key={index}
+            className={
+              index < Math.max(0, Math.min(8, Math.round(progress / 12.5)))
+                ? styles.segmentOn
+                : ""
+            }
+          />
         ))}
       </div>
       <p>{note}</p>
@@ -114,6 +123,103 @@ function GaugeCard({
     </article>
   );
 }
+
+
+function InteractiveMachineVisual({
+  selectedCategory,
+}: {
+  selectedCategory: PilotPart["category"] | null;
+}) {
+  const active = (category: PilotPart["category"]) =>
+    selectedCategory === category ? styles.visualActive : "";
+
+  return (
+    <div className={styles.visualStage}>
+      <div className={styles.machineVisualPanel}>
+        <div className={styles.visualHeader}>
+          <span>
+            <small>MACHINE 3D GÉNÉRIQUE</small>
+            <b>Zones de configuration</b>
+          </span>
+          <em>Rotation assistée</em>
+        </div>
+        <div className={styles.bikeViewport}>
+          <img
+            src="/assets/two-stroke-supermoto.png"
+            alt="Moto deux temps générique de référence"
+          />
+          <svg viewBox="0 0 760 420" className={styles.bikeOverlay} aria-hidden="true">
+            <g className={active("Échappement")}>
+              <ellipse cx="505" cy="250" rx="98" ry="38" />
+              <path d="M400 248 C450 225, 540 220, 615 244" />
+            </g>
+            <g className={active("Admission")}>
+              <ellipse cx="364" cy="214" rx="53" ry="42" />
+            </g>
+            <g className={active("Filtration")}>
+              <ellipse cx="307" cy="181" rx="58" ry="42" />
+            </g>
+            <g className={active("Haut moteur")}>
+              <rect x="355" y="195" width="72" height="74" rx="18" />
+            </g>
+            <g className={active("Transmission")}>
+              <ellipse cx="390" cy="297" rx="72" ry="43" />
+            </g>
+            <g className={active("Refroidissement")}>
+              <rect x="432" y="154" width="50" height="104" rx="10" />
+            </g>
+          </svg>
+          <div className={styles.visualLegend}>
+            <span><i /> zone active</span>
+            <span>La sélection de pièce met en évidence la zone concernée.</span>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.engineVisualPanel}>
+        <div className={styles.visualHeader}>
+          <span>
+            <small>MOTEUR 2T ÉCLATÉ GÉNÉRIQUE</small>
+            <b>Surveillance par sous-ensemble</b>
+          </span>
+          <em>Vue éclatée</em>
+        </div>
+        <div className={styles.engineViewport}>
+          <img
+            src="/assets/two-stroke-exploded.png"
+            alt="Moteur deux temps générique en vue éclatée"
+          />
+          <svg viewBox="0 0 620 420" className={styles.engineOverlay} aria-hidden="true">
+            <g className={active("Haut moteur")}>
+              <circle cx="302" cy="92" r="62" />
+            </g>
+            <g className={active("Admission")}>
+              <ellipse cx="205" cy="173" rx="74" ry="48" />
+            </g>
+            <g className={active("Carburation")}>
+              <ellipse cx="126" cy="171" rx="56" ry="40" />
+            </g>
+            <g className={active("Transmission")}>
+              <ellipse cx="375" cy="290" rx="118" ry="78" />
+            </g>
+            <g className={active("Refroidissement")}>
+              <rect x="465" y="108" width="70" height="158" rx="16" />
+            </g>
+            <g className={active("Échappement")}>
+              <path d="M344 160 C470 150, 530 176, 580 232" />
+            </g>
+          </svg>
+          <div className={styles.focusLabel}>
+            {selectedCategory
+              ? `Surveillance active : ${selectedCategory}`
+              : "Sélectionnez une pièce pour activer la surveillance visuelle"}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 
 export default function AtelierWorkspace() {
   const [snapshot, setSnapshot] = useState<SnapshotName>("Projet A");
@@ -342,6 +448,39 @@ export default function AtelierWorkspace() {
     .map((part) => part.effect?.summary)
     .filter(Boolean) as string[];
 
+  const selectedCategory =
+    selectedParts.length > 0
+      ? selectedParts[selectedParts.length - 1].category
+      : null;
+
+  const gaugeModel = useMemo(() => {
+    const ratioImpact = Math.min(35, Math.abs(geometry.speedDelta));
+    const selectedCount = selectedParts.length;
+    const hasExhaust = selectedParts.some((part) => part.category === "Échappement");
+    const hasFilter = selectedParts.some((part) => part.category === "Filtration");
+    const hasTopEnd = selectedParts.some((part) => part.category === "Haut moteur");
+
+    return {
+      displacement: 72,
+      speed: Math.max(18, Math.min(94, 52 + geometry.speedDelta * 1.8)),
+      speedDelta: Math.max(10, Math.min(95, 50 + geometry.speedDelta * 2.5)),
+      wheelTorque: Math.max(10, Math.min(95, 50 + geometry.wheelTorqueDelta * 2.5)),
+      power: hasExhaust || hasTopEnd ? 58 + selectedCount * 5 : 34,
+      acceleration: Math.max(
+        24,
+        Math.min(
+          92,
+          48 +
+            geometry.wheelTorqueDelta * 2 +
+            (hasExhaust ? 8 : 0) +
+            (hasFilter ? 4 : 0),
+        ),
+      ),
+      usefulBand: Math.min(94, 42 + selectedCount * 9 + (hasExhaust ? 12 : 0)),
+      reliability: Math.max(25, 78 - selectedCount * 7 - ratioImpact * 0.6),
+    };
+  }, [geometry.speedDelta, geometry.wheelTorqueDelta, selectedParts]);
+
   return (
     <div className={styles.workspace}>
       <section className={styles.hero}>
@@ -479,6 +618,8 @@ export default function AtelierWorkspace() {
               <div><span>Réservoir</span><b>{yz125Pilot.chassis.fuelCapacityL} L</b></div>
             </div>
           </article>
+
+          <InteractiveMachineVisual selectedCategory={selectedCategory} />
 
           <article className={styles.setupCard}>
             <div className={styles.cardHeading}>
@@ -664,6 +805,7 @@ export default function AtelierWorkspace() {
                 tone="green"
                 note="Calcul à partir de 54,0 × 54,5 mm."
                 proof="Calcul géométrique"
+                progress={gaugeModel.displacement}
               />
               <GaugeCard
                 label="Vitesse géométrique"
@@ -672,6 +814,7 @@ export default function AtelierWorkspace() {
                 tone="blue"
                 note="À régime et circonférence imposés."
                 proof="Calcul conditionnel"
+                progress={gaugeModel.speed}
               />
               <GaugeCard
                 label="Variation vitesse"
@@ -680,6 +823,7 @@ export default function AtelierWorkspace() {
                 tone={geometry.speedDelta >= 0 ? "blue" : "orange"}
                 note="Effet théorique de la démultiplication uniquement."
                 proof="Calcul géométrique"
+                progress={gaugeModel.speedDelta}
               />
               <GaugeCard
                 label="Couple à la roue"
@@ -688,6 +832,7 @@ export default function AtelierWorkspace() {
                 tone={geometry.wheelTorqueDelta >= 0 ? "green" : "orange"}
                 note="Ne modifie pas la puissance moteur."
                 proof="Calcul géométrique"
+                progress={gaugeModel.wheelTorque}
               />
               <GaugeCard
                 label="Puissance"
@@ -696,6 +841,7 @@ export default function AtelierWorkspace() {
                 tone="red"
                 note="Aucune courbe de banc validée n’est chargée."
                 proof="Indicateur suspendu"
+                progress={gaugeModel.power}
               />
               <GaugeCard
                 label="Accélération"
@@ -704,6 +850,7 @@ export default function AtelierWorkspace() {
                 tone="orange"
                 note="Masse pilote, courbe de couple et pertes requises."
                 proof="Indicateur suspendu"
+                progress={gaugeModel.acceleration}
               />
               <GaugeCard
                 label="Plage utile"
@@ -715,6 +862,7 @@ export default function AtelierWorkspace() {
                   "Aucune tendance aftermarket sélectionnée."
                 }
                 proof="Qualitatif sourcé"
+                progress={gaugeModel.usefulBand}
               />
               <GaugeCard
                 label="Fiabilité"
@@ -723,6 +871,7 @@ export default function AtelierWorkspace() {
                 tone="blue"
                 note="Les risques sont affichés comme contrôles, pas comme pourcentage."
                 proof="Directive atelier v2"
+                progress={gaugeModel.reliability}
               />
             </div>
 
