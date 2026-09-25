@@ -132,6 +132,7 @@ function InteractiveMachineVisual({
 }) {
   const [bikeRotation, setBikeRotation] = useState(0);
   const [engineZoom, setEngineZoom] = useState(1);
+  const [engineRotation, setEngineRotation] = useState(0);
   const active = (category: PilotPart["category"]) =>
     selectedCategory === category ? styles.visualActive : "";
 
@@ -140,10 +141,10 @@ function InteractiveMachineVisual({
       <div className={styles.machineVisualPanel}>
         <div className={styles.visualHeader}>
           <span>
-            <small>MACHINE 3D GÉNÉRIQUE</small>
+            <small>YAMAHA YZ125 2026 · VUE INTERACTIVE</small>
             <b>Zones de configuration</b>
           </span>
-          <em>Rotation assistée</em>
+          <em>Rotation 360°</em>
         </div>
         <div className={styles.bikeViewport}>
           <img
@@ -179,8 +180,8 @@ function InteractiveMachineVisual({
               Rotation
               <input
                 type="range"
-                min={-16}
-                max={16}
+                min={-180}
+                max={180}
                 value={bikeRotation}
                 onChange={(event) => setBikeRotation(Number(event.target.value))}
               />
@@ -196,7 +197,7 @@ function InteractiveMachineVisual({
       <div className={styles.engineVisualPanel}>
         <div className={styles.visualHeader}>
           <span>
-            <small>MOTEUR 2T ÉCLATÉ GÉNÉRIQUE</small>
+            <small>YZ125 2026 · MOTEUR ÉCLATÉ INTERACTIF</small>
             <b>Surveillance par sous-ensemble</b>
           </span>
           <em>Vue éclatée</em>
@@ -205,7 +206,7 @@ function InteractiveMachineVisual({
           <img
             src="/assets/two-stroke-exploded.png"
             alt="Moteur deux temps générique en vue éclatée"
-            style={{ transform: `scale(${engineZoom})` }}
+            style={{ transform: `perspective(900px) rotateY(${engineRotation}deg) scale(${engineZoom})` }}
           />
           <svg viewBox="0 0 620 420" className={styles.engineOverlay} aria-hidden="true">
             <g className={active("Haut moteur")}>
@@ -228,6 +229,16 @@ function InteractiveMachineVisual({
             </g>
           </svg>
           <div className={styles.engineControl}>
+            <label>
+              Rotation 360°
+              <input
+                type="range"
+                min={-180}
+                max={180}
+                value={engineRotation}
+                onChange={(event) => setEngineRotation(Number(event.target.value))}
+              />
+            </label>
             <label>
               Zoom éclaté
               <input
