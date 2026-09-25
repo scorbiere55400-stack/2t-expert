@@ -28,6 +28,7 @@ import {
 import { atelierVehicles } from "../../lib/atelier/knowledge-registry";
 import { evaluateCompatibility } from "../../lib/atelier/compatibility-engine";
 import { runYz125Simulation } from "../../lib/atelier/simulation-engine";
+import { getMeshPartLink, type MeshPartSelection } from "../../lib/atelier/mesh-part-registry";
 import Atelier3DViewer from "./atelier-3d-viewer";
 import styles from "./atelier-workspace.module.css";
 
@@ -146,6 +147,7 @@ export default function AtelierWorkspace() {
   const [showWhy, setShowWhy] = useState<string | null>(null);
   const [focusedCategory, setFocusedCategory] =
     useState<PilotPart["category"] | null>(null);
+  const [selectedMesh, setSelectedMesh] = useState<MeshPartSelection | null>(null);
 
   useEffect(() => {
     try {
@@ -327,6 +329,13 @@ export default function AtelierWorkspace() {
     setCategory(nextCategory);
   };
 
+  const focusMeshFrom3D = (selection: MeshPartSelection) => {
+    setSelectedMesh(selection);
+    setFocusedCategory(selection.category);
+    setCategory(selection.category);
+    setQuery("");
+  };
+
   const sendToDiagnostic = async () => {
     if (snapshot !== "Actuelle") {
       setDiagnosticStatus("error");
@@ -393,6 +402,15 @@ export default function AtelierWorkspace() {
       ? selectedParts.find((part) => part.category === selectedCategory)?.id
       : null) ??
     (selectedParts.length > 0 ? selectedParts[selectedParts.length - 1].id : null);
+
+  const selectedMeshLink = selectedMesh
+    ? getMeshPartLink(selectedMesh.category)
+    : null;
+  const linkedMeshParts = selectedMeshLink
+    ? selectedMeshLink.preferredPartIds
+        .map((id) => pilotParts.find((part) => part.id === id))
+        .filter((part): part is PilotPart => Boolean(part))
+    : [];
 
   const gaugeModel = useMemo(() => {
     const ratioImpact = Math.min(35, Math.abs(geometry.speedDelta));
@@ -573,7 +591,71 @@ export default function AtelierWorkspace() {
             selectedCategory={selectedCategory}
             selectedPartId={selectedPartId}
             onCategoryFocus={focusCategoryFrom3D}
+            onMeshSelect={focusMeshFrom3D}
           />
+
+          {selectedMesh && (
+            <article className={styles.meshPartCard}>
+              <div className={styles.cardHeading}>
+                <div>
+                  <BadgeCheck />
+                  <span>
+                    <small>LIEN 3D → PIÈCES</small>
+                    <b>{selectedMesh.category} · mesh {selectedMesh.meshName}</b>
+                  </span>
+                </div>
+                <span className={styles.catalogCount}>
+                  {linkedMeshParts.length} référence(s)
+                </span>
+              </div>
+              <p className={styles.meshPartNote}>
+                {selectedMeshLink?.note ||
+                  "Ce sous-ensemble est reconnu en 3D mais aucune référence pièce n’est encore qualifiée."}
+              </p>
+              {linkedMeshParts.length ? (
+                <div className={styles.meshPartLinks}>
+                  {linkedMeshParts.map((part) => {
+                    const isSelected = selectedIds.includes(part.id);
+                    return (
+                      <div key={part.id} className={styles.meshPartLinkRow}>
+                        <div>
+                          <small>{part.manufacturer}</small>
+                          <b>{part.name}</b>
+                          <code>{part.reference}</code>
+                        </div>
+                        <span>{statusLabel(part)}</span>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setShowWhy(part.id);
+                            setFocusedCategory(part.category);
+                          }}
+                        >
+                          Fiche technique
+                        </button>
+                        <button
+                          type="button"
+                          className={part.selectable ? styles.addPart : styles.lockedPart}
+                          disabled={snapshot === "Origine"}
+                          onClick={() => selectPart(part)}
+                        >
+                          {isSelected
+                            ? "Sélectionnée"
+                            : part.selectable
+                              ? "Ajouter au projet"
+                              : "À vérifier"}
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <div className={styles.emptyState}>
+                  Aucune pièce liée n’est encore suffisamment documentée pour cette zone.
+                </div>
+              )}
+            </article>
+          )}
 
           <article className={styles.setupCard}>
             <div className={styles.cardHeading}>
