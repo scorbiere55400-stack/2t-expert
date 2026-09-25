@@ -91,6 +91,18 @@
 .actions svg { width: 17px; }
 .actions button:disabled { opacity: 0.35; cursor: not-allowed; }
 .actions .saveButton { background: #e63222; border-color: #ff4e3b; color: white; font-weight: 800; }
+.savedState {
+  align-self: center;
+  color: #71dba3;
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+.inputGrid input:disabled,
+.addPart:disabled,
+.lockedPart:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 
 .mainGrid {
   display: grid;
