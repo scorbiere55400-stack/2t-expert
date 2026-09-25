@@ -43,6 +43,10 @@ Les médias reviennent à des chemins locaux `/public/assets` afin que le projet
 - Le clic direct sur un sous-mesh déclenche la sélection de sa catégorie dans l'Atelier.
 - La catégorie active reste opaque tandis que les autres sous-meshes sont atténués pour faciliter l'inspection.
 - Le runtime Three.js est chargé comme module navigateur séparé, sans eval et sans alourdir le bundle principal.
+- Le clic sur un vrai sous-mesh remonte maintenant son nom et sa catégorie jusqu'au configurateur.
+- Un registre mesh -> références pièces relie les groupes 3D aux pièces sourcées du pilote.
+- L'Atelier affiche immédiatement une carte dédiée avec référence, fabricant, compatibilité, fiche technique/source et action d'ajout au projet.
+- Les catégories sans référence suffisamment qualifiée restent visibles mais n'inventent aucune pièce.
 - Calcul géométrique de transmission séparé des estimations non vérifiées.
 - Références de pièces avec niveaux de preuve.
 - Protection contre l'invention de valeurs de puissance ou vitesse réelle.
@@ -54,8 +58,9 @@ Les médias reviennent à des chemins locaux `/public/assets` afin que le projet
 3. Acquérir ou produire un modèle YZ125 dont la licence autorise l'usage web et qui conserve des sous-meshes suffisamment séparés.
 4. Utiliser l'inspecteur GLB intégré pour renommer/qualifier les sous-meshes puis relier les alias du registre 3D aux noms réels.
 5. Valider les noms de sous-meshes du futur GLB YZ125 réel et affiner les vecteurs d'éclatement composant par composant.
-6. Ajouter le lien unitaire mesh -> référence pièce -> fiche technique -> compatibilité.
-7. Remplacer progressivement les repères du prototype par les interactions natives sur les vrais meshes lorsque la couverture du modèle est suffisante.
+6. Affiner le lien unitaire jusqu'au niveau sous-mesh exact (piston, cylindre, culasse, embrayage, etc.) dès qu'un GLB YZ125 réel est disponible.
+7. Ajouter des références OEM manquantes pour carburation et transmission avant de rendre ces zones configurables.
+8. Remplacer progressivement les repères du prototype par les interactions natives sur les vrais meshes lorsque la couverture du modèle est suffisante.
 5. Étendre la base véhicules et pièces au-delà du pilote YZ125.
 6. Vérifier la chaîne Diagnostic et IA en condition réelle.
 7. Tester responsive, performances et erreurs navigateur.
