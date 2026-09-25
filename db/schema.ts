@@ -273,3 +273,107 @@ export const fitmentFeedback = sqliteTable("fitment_feedback", {
   createdAt: text("created_at").notNull().default("CURRENT_TIMESTAMP"),
   reviewedAt: text("reviewed_at"),
 });
+
+
+export const userGarages = sqliteTable("user_garages", {
+  id: text("id").primaryKey(),
+  userId: text("user_id").notNull(),
+  name: text("name").notNull().default("Mon garage"),
+  ...timestamps,
+}, (t) => [
+  index("user_garages_user_idx").on(t.userId),
+]);
+
+export const garageVehicles = sqliteTable("garage_vehicles", {
+  id: text("id").primaryKey(),
+  garageId: text("garage_id").notNull().references(() => userGarages.id),
+  vehicleVariantId: text("vehicle_variant_id").references(() => vehicleVariants.id),
+  externalVehicleKey: text("external_vehicle_key"),
+  displayName: text("display_name").notNull(),
+  currentSnapshotId: text("current_snapshot_id"),
+  ...timestamps,
+}, (t) => [
+  index("garage_vehicles_garage_idx").on(t.garageId),
+  index("garage_vehicles_variant_idx").on(t.vehicleVariantId),
+]);
+
+export const vehicleConfigurations = sqliteTable("vehicle_configurations", {
+  id: text("id").primaryKey(),
+  garageVehicleId: text("garage_vehicle_id").notNull().references(() => garageVehicles.id),
+  kind: text("kind").notNull(),
+  label: text("label").notNull(),
+  stateJson: text("state_json", { mode: "json" }).notNull(),
+  confirmedInstalled: integer("confirmed_installed", { mode: "boolean" }).notNull().default(false),
+  version: integer("version").notNull().default(1),
+  ...timestamps,
+}, (t) => [
+  index("vehicle_configurations_vehicle_idx").on(t.garageVehicleId),
+  index("vehicle_configurations_kind_idx").on(t.kind),
+]);
+
+export const configurationHistory = sqliteTable("configuration_history", {
+  id: text("id").primaryKey(),
+  configurationId: text("configuration_id").notNull().references(() => vehicleConfigurations.id),
+  version: integer("version").notNull(),
+  stateJson: text("state_json", { mode: "json" }).notNull(),
+  changeReason: text("change_reason"),
+  actorId: text("actor_id"),
+  createdAt: text("created_at").notNull().default("CURRENT_TIMESTAMP"),
+}, (t) => [
+  uniqueIndex("configuration_history_version_uq").on(t.configurationId, t.version),
+]);
+
+export const buildItems = sqliteTable("build_items", {
+  id: text("id").primaryKey(),
+  configurationId: text("configuration_id").notNull().references(() => vehicleConfigurations.id),
+  partId: text("part_id").references(() => parts.id),
+  externalPartKey: text("external_part_key"),
+  category: text("category").notNull(),
+  status: text("status").notNull(),
+  settingsJson: text("settings_json", { mode: "json" }),
+  ...timestamps,
+}, (t) => [
+  index("build_items_configuration_idx").on(t.configurationId),
+  index("build_items_part_idx").on(t.partId),
+]);
+
+export const simulationModels = sqliteTable("simulation_models", {
+  id: text("id").primaryKey(),
+  name: text("name").notNull(),
+  version: integer("version").notNull(),
+  domain: text("domain").notNull(),
+  evidenceLevel: text("evidence_level").notNull(),
+  requiredInputsJson: text("required_inputs_json", { mode: "json" }).notNull(),
+  assumptionsJson: text("assumptions_json", { mode: "json" }).notNull(),
+  active: integer("active", { mode: "boolean" }).notNull().default(true),
+  ...timestamps,
+}, (t) => [
+  uniqueIndex("simulation_models_version_uq").on(t.name, t.version),
+]);
+
+export const simulationResults = sqliteTable("simulation_results", {
+  id: text("id").primaryKey(),
+  configurationId: text("configuration_id").references(() => vehicleConfigurations.id),
+  modelId: text("model_id").notNull().references(() => simulationModels.id),
+  modelVersion: integer("model_version").notNull(),
+  inputsJson: text("inputs_json", { mode: "json" }).notNull(),
+  outputsJson: text("outputs_json", { mode: "json" }).notNull(),
+  limitationsJson: text("limitations_json", { mode: "json" }),
+  createdAt: text("created_at").notNull().default("CURRENT_TIMESTAMP"),
+}, (t) => [
+  index("simulation_results_configuration_idx").on(t.configurationId),
+  index("simulation_results_model_idx").on(t.modelId),
+]);
+
+export const diagnosticSnapshots = sqliteTable("diagnostic_snapshots", {
+  id: text("id").primaryKey(),
+  garageVehicleId: text("garage_vehicle_id").references(() => garageVehicles.id),
+  configurationId: text("configuration_id").references(() => vehicleConfigurations.id),
+  sourceKind: text("source_kind").notNull(),
+  snapshotJson: text("snapshot_json", { mode: "json" }).notNull(),
+  compatibilityJson: text("compatibility_json", { mode: "json" }),
+  createdAt: text("created_at").notNull().default("CURRENT_TIMESTAMP"),
+}, (t) => [
+  index("diagnostic_snapshots_vehicle_idx").on(t.garageVehicleId),
+  index("diagnostic_snapshots_configuration_idx").on(t.configurationId),
+]);
