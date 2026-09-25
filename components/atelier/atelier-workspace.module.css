@@ -1,0 +1,426 @@
+.workspace {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 78% 10%, rgba(0, 157, 255, 0.12), transparent 28rem),
+    radial-gradient(circle at 28% 18%, rgba(255, 40, 25, 0.10), transparent 25rem),
+    linear-gradient(180deg, #070b0e, #0b1014 45%, #080c0f);
+  color: #f5f7f8;
+  padding: 34px clamp(18px, 3vw, 46px) 64px;
+}
+
+.hero {
+  min-height: 190px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 36px;
+  border: 1px solid #26313a;
+  border-radius: 22px;
+  background:
+    linear-gradient(90deg, rgba(5, 9, 12, 0.98), rgba(10, 15, 19, 0.72)),
+    url("/assets/two-stroke-supermoto.png") right 22% center / 48% auto no-repeat;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.3);
+}
+
+.eyebrow {
+  color: #59c8ff;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  font-weight: 800;
+}
+
+.hero h1 {
+  margin: 8px 0 6px;
+  font-size: clamp(2.3rem, 5vw, 4.9rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.hero h1 b { color: #9aa3aa; }
+.hero p { margin: 0; color: #c1c8ce; font-size: 1.08rem; }
+
+.heroMachine {
+  min-width: 280px;
+  padding: 18px 20px;
+  border-radius: 15px;
+  background: rgba(8, 13, 17, 0.86);
+  border: 1px solid #2d3a44;
+  backdrop-filter: blur(10px);
+}
+.heroMachine span, .heroMachine small { display: block; color: #8d99a2; }
+.heroMachine strong { display: block; margin: 5px 0; font-size: 1.1rem; }
+
+.topbar {
+  margin: 18px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.snapshots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.snapshots > span {
+  color: #8c98a1;
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin-right: 4px;
+}
+.snapshots button, .actions button {
+  border: 1px solid #293640;
+  background: #11181e;
+  color: #c8d0d6;
+  border-radius: 10px;
+  min-height: 40px;
+  padding: 0 14px;
+}
+.snapshots button:hover, .actions button:hover { border-color: #3ea6de; color: #fff; }
+.snapshots .activeSnapshot {
+  background: linear-gradient(180deg, #143751, #10283a);
+  border-color: #28b7ff;
+  color: #fff;
+  box-shadow: inset 0 -2px 0 #24c2ff;
+}
+.actions { display: flex; gap: 8px; }
+.actions button { display: inline-flex; align-items: center; gap: 7px; }
+.actions svg { width: 17px; }
+.actions button:disabled { opacity: 0.35; cursor: not-allowed; }
+.actions .saveButton { background: #e63222; border-color: #ff4e3b; color: white; font-weight: 800; }
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.48fr) minmax(420px, 0.92fr);
+  gap: 18px;
+}
+.editorColumn { display: grid; gap: 18px; }
+
+.machineCard, .setupCard, .partsCard, .stickyGaugePanel {
+  background: linear-gradient(180deg, rgba(17, 24, 30, 0.98), rgba(10, 15, 19, 0.98));
+  border: 1px solid #26333d;
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+}
+.machineCard, .setupCard, .partsCard { padding: 20px; }
+
+.cardTitle, .cardHeading, .panelHeader, .summaryTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.cardTitle > div, .cardHeading > div, .panelHeader > div, .summaryTitle {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.cardTitle svg, .cardHeading svg, .panelHeader svg, .summaryTitle svg {
+  width: 22px;
+  color: #4dc3ff;
+}
+.cardTitle span, .cardHeading span, .panelHeader span, .summaryTitle span { display: grid; }
+.cardTitle small, .cardHeading small, .panelHeader small, .summaryTitle small {
+  color: #7f8b94;
+  letter-spacing: 0.12em;
+  font-size: 0.67rem;
+}
+.cardTitle b, .cardHeading b, .panelHeader b, .summaryTitle b { font-size: 1.05rem; }
+
+.verifiedBadge, .livePill, .catalogCount {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #1d7e57;
+  background: rgba(15, 100, 68, 0.14);
+  color: #69efad;
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-size: 0.74rem;
+  white-space: nowrap;
+}
+.verifiedBadge svg { width: 15px; }
+
+.machineSpecs {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #233039;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #233039;
+}
+.machineSpecs div {
+  background: #0c1216;
+  min-height: 72px;
+  padding: 13px;
+}
+.machineSpecs span { display: block; color: #76838c; font-size: 0.72rem; }
+.machineSpecs b { display: block; margin-top: 4px; font-size: 0.88rem; }
+
+.inputGrid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.inputGrid label {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5px 8px;
+  color: #9ea9b0;
+  font-size: 0.77rem;
+}
+.inputGrid input {
+  grid-column: 1 / 3;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #2b3944;
+  background: #080d10;
+  color: white;
+  padding: 11px 12px;
+  font-size: 1rem;
+}
+.inputGrid small { grid-column: 1 / 3; color: #66737c; }
+
+.truthNote, .coverageNotice {
+  margin-top: 14px;
+  padding: 13px 14px;
+  display: flex;
+  gap: 10px;
+  border-radius: 12px;
+  background: #0a1318;
+  border: 1px solid #213340;
+}
+.truthNote svg { color: #45c5ff; min-width: 20px; }
+.coverageNotice svg { color: #ffb23e; min-width: 20px; }
+.truthNote p, .coverageNotice p { margin: 0; color: #aab4bb; font-size: 0.82rem; line-height: 1.5; }
+.truthNote b, .coverageNotice b { display: block; color: #fff; margin-bottom: 2px; }
+
+.filters {
+  margin: 16px 0;
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 10px;
+}
+.searchBox { position: relative; }
+.searchBox svg { position: absolute; left: 12px; top: 11px; width: 18px; color: #687680; }
+.searchBox input, .filters select {
+  width: 100%;
+  height: 42px;
+  border: 1px solid #2a3740;
+  border-radius: 10px;
+  background: #090e12;
+  color: white;
+}
+.searchBox input { padding: 0 12px 0 40px; }
+.filters select { padding: 0 10px; }
+
+.partList { display: grid; gap: 8px; }
+.partRow {
+  display: grid;
+  grid-template-columns: minmax(210px, 1.4fr) minmax(160px, 1fr) minmax(150px, 0.9fr) auto;
+  gap: 14px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #1f2b33;
+  border-radius: 12px;
+  background: #0b1115;
+}
+.partSelected { border-color: #24b7ff; box-shadow: inset 3px 0 0 #24b7ff; }
+.partRow > div:first-child { display: grid; gap: 2px; }
+.partRow small { color: #71808a; font-size: 0.7rem; }
+.partRow code { color: #7bcfff; font-size: 0.72rem; }
+.partMeta, .partEvidence { display: grid; gap: 4px; }
+.partMeta span { color: #84e9b6; font-size: 0.78rem; font-weight: 800; }
+.partEvidence span { color: #c2cad0; font-size: 0.78rem; }
+.partEvidence button {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  background: none;
+  border: 0;
+  color: #50c4ff;
+  font-size: 0.72rem;
+}
+.partEvidence svg { width: 14px; }
+.addPart, .lockedPart {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 9px;
+  padding: 9px 10px;
+  font-size: 0.76rem;
+}
+.addPart { background: #12374c; border: 1px solid #239edc; color: white; }
+.lockedPart { background: #2a2011; border: 1px solid #805d22; color: #ffc76c; }
+.addPart svg, .lockedPart svg { width: 15px; }
+
+.gaugeColumn { min-width: 0; }
+.stickyGaugePanel {
+  position: sticky;
+  top: 16px;
+  overflow: hidden;
+}
+.panelHeader {
+  padding: 18px 20px;
+  border-bottom: 1px solid #24313a;
+  background: linear-gradient(180deg, #182129, #12191e);
+}
+.gaugeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 14px;
+  gap: 10px;
+}
+.gaugeCard {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #223039;
+  background: radial-gradient(circle at 50% 38%, #131c22, #090e11 70%);
+  border-radius: 14px;
+  text-align: center;
+}
+.gaugeLabel { color: #e6e9eb; font-size: 0.78rem; font-weight: 800; min-height: 34px; }
+.gaugeArc {
+  --tone: #24c4ff;
+  position: relative;
+  width: 116px;
+  height: 72px;
+  margin: 4px auto 2px;
+  overflow: hidden;
+}
+.gaugeArc::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 116px 116px 0 0;
+  border: 15px solid #202a31;
+  border-bottom: 0;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.03);
+}
+.gaugeArc::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  border: 15px solid var(--tone);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotate(18deg);
+  filter: drop-shadow(0 0 7px color-mix(in srgb, var(--tone) 38%, transparent));
+}
+.red { --tone: #ff4a39; }
+.orange { --tone: #ff9c32; }
+.green { --tone: #54e36d; }
+.blue { --tone: #36b9ff; }
+.gaugeInner {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 31px;
+  transform: translateX(-50%);
+  display: grid;
+  min-width: 98px;
+}
+.gaugeInner strong { font-size: 1.32rem; }
+.gaugeInner span { color: #7f8b93; font-size: 0.66rem; }
+.segmentBar { display: grid; grid-template-columns: repeat(8, 1fr); gap: 3px; margin: 2px 6px 8px; }
+.segmentBar i { height: 5px; border-radius: 2px; background: #26323a; }
+.segmentBar .segmentOn { background: linear-gradient(90deg, #38c8ff, #5ce571); }
+.gaugeCard p { min-height: 38px; margin: 0; color: #9ba6ad; font-size: 0.69rem; line-height: 1.35; }
+.gaugeCard small {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  color: #6dbedf;
+  font-size: 0.64rem;
+}
+.gaugeCard small svg { width: 13px; }
+
+.summaryCard, .limitCard {
+  margin: 0 14px 14px;
+  padding: 15px;
+  border: 1px solid #233139;
+  border-radius: 14px;
+  background: #0b1115;
+}
+.summaryCard ul, .limitCard ul { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.summaryCard li { display: flex; gap: 8px; align-items: center; }
+.summaryCard li svg { width: 17px; color: #58e782; }
+.summaryCard li span { display: grid; }
+.summaryCard li small, .limitCard li { color: #7f8b93; font-size: 0.72rem; }
+.limitCard li::before { content: "•"; color: #ffac3e; margin-right: 8px; }
+.emptyState { color: #78858e; font-size: 0.78rem; }
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(8px);
+}
+.whyModal {
+  position: relative;
+  width: min(620px, 100%);
+  padding: 28px;
+  border-radius: 18px;
+  border: 1px solid #34444f;
+  background: #0c1216;
+  box-shadow: 0 25px 90px rgba(0,0,0,.55);
+}
+.whyModal h2 { margin: 8px 0 12px; }
+.whyModal p { color: #aab4bb; line-height: 1.6; }
+.whyModal dl { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.whyModal dl div { padding: 10px; background: #11191f; border-radius: 9px; }
+.whyModal dt { color: #6f7d86; font-size: .7rem; }
+.whyModal dd { margin: 3px 0 0; font-size: .82rem; }
+.whyModal a { margin-top: 18px; display: inline-flex; align-items: center; gap: 6px; color: #5bc9ff; }
+.whyModal a svg { width: 16px; }
+.modalClose {
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  border: 0;
+  background: none;
+  color: white;
+  font-size: 1.7rem;
+}
+
+@media (max-width: 1200px) {
+  .mainGrid { grid-template-columns: 1fr; }
+  .stickyGaugePanel { position: static; }
+  .gaugeGrid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 900px) {
+  .hero { min-height: 250px; align-items: flex-end; background-size: 75% auto; }
+  .heroMachine { display: none; }
+  .topbar { align-items: flex-start; flex-direction: column; }
+  .machineSpecs { grid-template-columns: repeat(2, 1fr); }
+  .inputGrid { grid-template-columns: repeat(2, 1fr); }
+  .partRow { grid-template-columns: 1fr 1fr; }
+  .gaugeGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  .workspace { padding: 16px 12px 40px; }
+  .hero { padding: 22px; min-height: 220px; }
+  .hero h1 { font-size: 2.35rem; }
+  .actions { width: 100%; overflow-x: auto; }
+  .actions button { flex: 0 0 auto; }
+  .machineSpecs, .inputGrid, .filters, .partRow, .gaugeGrid, .whyModal dl { grid-template-columns: 1fr; }
+  .partRow { align-items: stretch; }
+  .addPart, .lockedPart { justify-content: space-between; }
+}
