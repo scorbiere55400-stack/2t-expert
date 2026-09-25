@@ -1,6 +1,6 @@
 "use client";
 
-import { createElement, useEffect, useRef, useState } from "react";
+import { createElement, useEffect, useRef, useState, type RefObject } from "react";
 import { Box, Pause, Play, RotateCcw, ScanSearch, ZoomIn } from "lucide-react";
 import type { PilotPart } from "../../lib/atelier/pilot-data";
 import styles from "./atelier-workspace.module.css";
@@ -22,7 +22,7 @@ function ensureModelViewer() {
   const script = document.createElement("script");
   script.type = "module";
   script.src = MODEL_VIEWER_SRC;
-  script.dataset["2tModelViewer"] = "true";
+  script.setAttribute("data-2t-model-viewer", "true");
   document.head.appendChild(script);
 }
 
@@ -36,7 +36,7 @@ function ModelViewer({
   model: string;
   alt: string;
   autoRotate: boolean;
-  viewerRef: React.RefObject<ViewerElement | null>;
+  viewerRef: RefObject<ViewerElement | null>;
   cameraOrbit?: string;
 }) {
   return createElement("model-viewer", {
