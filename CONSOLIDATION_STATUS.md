@@ -34,6 +34,10 @@ Les médias reviennent à des chemins locaux `/public/assets` afin que le projet
 - Mode éclaté pilotable avec rail de sous-ensembles et focalisation.
 - Synchronisation bidirectionnelle de la catégorie 3D avec le catalogue Atelier.
 - Les emplacements configurables Admission et Refroidissement sont maintenant reliés au montage virtuel.
+- Import local d'un fichier moteur GLB depuis l'Atelier, sans l'envoyer au serveur.
+- Analyse du conteneur GLB dans le navigateur : version, nœuds, meshes, matériaux et animations.
+- Contrôle automatique de couverture des sous-ensembles via les alias du registre 3D.
+- Le viewer bascule instantanément sur le GLB importé lorsqu'il est valide, ce qui permet de qualifier un futur modèle YZ125 avant intégration définitive.
 - Calcul géométrique de transmission séparé des estimations non vérifiées.
 - Références de pièces avec niveaux de preuve.
 - Protection contre l'invention de valeurs de puissance ou vitesse réelle.
@@ -42,8 +46,9 @@ Les médias reviennent à des chemins locaux `/public/assets` afin que le projet
 
 1. Comparer visuellement chaque section avec le site ChatGPT officiel.
 2. Remplacer les modèles 3D génériques par des modèles fidèles aux machines ciblées.
-3. Remplacer les repères/rail du prototype par de vrais sous-meshes séparables du modèle moteur.
-4. Relier les alias de meshes du registre 3D aux noms réels du futur GLB YZ125 et à chaque référence pièce.
+3. Acquérir ou produire un modèle YZ125 dont la licence autorise l'usage web et qui conserve des sous-meshes suffisamment séparés.
+4. Utiliser l'inspecteur GLB intégré pour renommer/qualifier les sous-meshes puis relier les alias du registre 3D aux noms réels.
+5. Remplacer ensuite les repères/rail du prototype par le déplacement réel de ces sous-meshes dans la scène 3D.
 5. Étendre la base véhicules et pièces au-delà du pilote YZ125.
 6. Vérifier la chaîne Diagnostic et IA en condition réelle.
 7. Tester responsive, performances et erreurs navigateur.
