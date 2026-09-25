@@ -53,6 +53,21 @@ export default function InteractiveEngineCanvas({
   onCategoryFocus,
 }: Props) {
   const hostRef = useRef<HTMLDivElement | null>(null);
+  const explodeRef = useRef(explodeAmount);
+  const selectedRef = useRef(selectedCategory);
+  const focusRef = useRef(onCategoryFocus);
+
+  useEffect(() => {
+    explodeRef.current = explodeAmount;
+  }, [explodeAmount]);
+
+  useEffect(() => {
+    selectedRef.current = selectedCategory;
+  }, [selectedCategory]);
+
+  useEffect(() => {
+    focusRef.current = onCategoryFocus;
+  }, [onCategoryFocus]);
 
   useEffect(() => {
     const host = hostRef.current;
@@ -168,7 +183,7 @@ export default function InteractiveEngineCanvas({
         const hit = hits[0]?.object;
         if (!hit) return;
         const binding = bindings.find((item) => item.object === hit);
-        if (binding) onCategoryFocus?.(binding.category);
+        if (binding) focusRef.current?.(binding.category);
       };
 
       renderer.domElement.addEventListener("pointerdown", onPointerDown);
@@ -176,9 +191,9 @@ export default function InteractiveEngineCanvas({
       resize();
 
       const render = () => {
-        const distance = (explodeAmount / 100) * 0.65;
+        const distance = (explodeRef.current / 100) * 0.65;
         for (const binding of bindings) {
-          const active = !selectedCategory || selectedCategory === binding.category;
+          const active = !selectedRef.current || selectedRef.current === binding.category;
           const emphasis = active ? 1 : 0.55;
           binding.object.position.set(
             binding.base.x + binding.direction.x * distance,
@@ -235,7 +250,7 @@ export default function InteractiveEngineCanvas({
       cancelAnimationFrame(animationFrame);
       cleanup();
     };
-  }, [src, explodeAmount, selectedCategory, onCategoryFocus]);
+  }, [src]);
 
   return (
     <div className={styles.advancedEngineCanvas}>
