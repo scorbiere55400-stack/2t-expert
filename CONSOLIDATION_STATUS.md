@@ -38,6 +38,11 @@ Les médias reviennent à des chemins locaux `/public/assets` afin que le projet
 - Analyse du conteneur GLB dans le navigateur : version, nœuds, meshes, matériaux et animations.
 - Contrôle automatique de couverture des sous-ensembles via les alias du registre 3D.
 - Le viewer bascule instantanément sur le GLB importé lorsqu'il est valide, ce qui permet de qualifier un futur modèle YZ125 avant intégration définitive.
+- Un renderer Three.js dédié prend maintenant en charge les GLB importés qualifiés.
+- Les sous-meshes reconnus sont réellement déplacés dans l'espace par le curseur de vue éclatée.
+- Le clic direct sur un sous-mesh déclenche la sélection de sa catégorie dans l'Atelier.
+- La catégorie active reste opaque tandis que les autres sous-meshes sont atténués pour faciliter l'inspection.
+- Le runtime Three.js est chargé comme module navigateur séparé, sans eval et sans alourdir le bundle principal.
 - Calcul géométrique de transmission séparé des estimations non vérifiées.
 - Références de pièces avec niveaux de preuve.
 - Protection contre l'invention de valeurs de puissance ou vitesse réelle.
@@ -48,7 +53,9 @@ Les médias reviennent à des chemins locaux `/public/assets` afin que le projet
 2. Remplacer les modèles 3D génériques par des modèles fidèles aux machines ciblées.
 3. Acquérir ou produire un modèle YZ125 dont la licence autorise l'usage web et qui conserve des sous-meshes suffisamment séparés.
 4. Utiliser l'inspecteur GLB intégré pour renommer/qualifier les sous-meshes puis relier les alias du registre 3D aux noms réels.
-5. Remplacer ensuite les repères/rail du prototype par le déplacement réel de ces sous-meshes dans la scène 3D.
+5. Valider les noms de sous-meshes du futur GLB YZ125 réel et affiner les vecteurs d'éclatement composant par composant.
+6. Ajouter le lien unitaire mesh -> référence pièce -> fiche technique -> compatibilité.
+7. Remplacer progressivement les repères du prototype par les interactions natives sur les vrais meshes lorsque la couverture du modèle est suffisante.
 5. Étendre la base véhicules et pièces au-delà du pilote YZ125.
 6. Vérifier la chaîne Diagnostic et IA en condition réelle.
 7. Tester responsive, performances et erreurs navigateur.
