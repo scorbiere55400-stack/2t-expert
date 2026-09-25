@@ -389,7 +389,10 @@ export default function AtelierWorkspace() {
       : null);
 
   const selectedPartId =
-    selectedParts.length > 0 ? selectedParts[selectedParts.length - 1].id : null;
+    (selectedCategory
+      ? selectedParts.find((part) => part.category === selectedCategory)?.id
+      : null) ??
+    (selectedParts.length > 0 ? selectedParts[selectedParts.length - 1].id : null);
 
   const gaugeModel = useMemo(() => {
     const ratioImpact = Math.min(35, Math.abs(geometry.speedDelta));
@@ -397,6 +400,8 @@ export default function AtelierWorkspace() {
     const hasExhaust = selectedParts.some((part) => part.category === "Échappement");
     const hasFilter = selectedParts.some((part) => part.category === "Filtration");
     const hasTopEnd = selectedParts.some((part) => part.category === "Haut moteur");
+    const hasIntake = selectedParts.some((part) => part.category === "Admission");
+    const hasCooling = selectedParts.some((part) => part.category === "Refroidissement");
 
     return {
       displacement: 72,
@@ -411,11 +416,18 @@ export default function AtelierWorkspace() {
           48 +
             geometry.wheelTorqueDelta * 2 +
             (hasExhaust ? 8 : 0) +
-            (hasFilter ? 4 : 0),
+            (hasFilter ? 4 : 0) +
+            (hasIntake ? 5 : 0),
         ),
       ),
-      usefulBand: Math.min(94, 42 + selectedCount * 9 + (hasExhaust ? 12 : 0)),
-      reliability: Math.max(25, 78 - selectedCount * 7 - ratioImpact * 0.6),
+      usefulBand: Math.min(
+        94,
+        42 + selectedCount * 8 + (hasExhaust ? 12 : 0) + (hasIntake ? 6 : 0),
+      ),
+      reliability: Math.max(
+        25,
+        78 - selectedCount * 7 - ratioImpact * 0.6 + (hasCooling ? 6 : 0),
+      ),
     };
   }, [geometry.speedDelta, geometry.wheelTorqueDelta, selectedParts]);
 
