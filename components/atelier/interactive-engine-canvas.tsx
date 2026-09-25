@@ -19,8 +19,47 @@ type MeshBinding = {
   category: PilotPart["category"];
 };
 
-const runtimeImport = (url: string) =>
-  Function("u", "return import(u)")(url) as Promise<any>;
+type EngineRuntime = {
+  THREE: any;
+  GLTFLoader: any;
+  OrbitControls: any;
+};
+
+function getRuntime() {
+  return (window as typeof window & { __TWO_T_ENGINE_3D__?: EngineRuntime })
+    .__TWO_T_ENGINE_3D__;
+}
+
+function ensureEngineRuntime() {
+  const existing = getRuntime();
+  if (existing) return Promise.resolve(existing);
+
+  return new Promise<EngineRuntime>((resolve, reject) => {
+    const ready = () => {
+      const runtime = getRuntime();
+      if (!runtime) return;
+      window.removeEventListener("2t-engine-3d-ready", ready);
+      resolve(runtime);
+    };
+
+    window.addEventListener("2t-engine-3d-ready", ready);
+
+    const current = document.querySelector<HTMLScriptElement>(
+      'script[data-2t-engine-runtime="true"]',
+    );
+    if (current) return;
+
+    const script = document.createElement("script");
+    script.type = "module";
+    script.src = "/3d-engine-runtime.js";
+    script.dataset["2tEngineRuntime"] = "true";
+    script.onerror = () => {
+      window.removeEventListener("2t-engine-3d-ready", ready);
+      reject(new Error("Chargement du moteur 3D avancé impossible."));
+    };
+    document.head.appendChild(script);
+  });
+}
 
 function componentForName(name: string) {
   const normalized = name.toLowerCase();
@@ -78,13 +117,7 @@ export default function InteractiveEngineCanvas({
     let cleanup = () => {};
 
     (async () => {
-      const THREE = await runtimeImport("https://esm.sh/three@0.180.0");
-      const { GLTFLoader } = await runtimeImport(
-        "https://esm.sh/three@0.180.0/examples/jsm/loaders/GLTFLoader.js",
-      );
-      const { OrbitControls } = await runtimeImport(
-        "https://esm.sh/three@0.180.0/examples/jsm/controls/OrbitControls.js",
-      );
+      const { THREE, GLTFLoader, OrbitControls } = await ensureEngineRuntime();
 
       if (disposed || !hostRef.current) return;
 
