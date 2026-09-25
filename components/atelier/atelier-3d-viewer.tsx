@@ -5,6 +5,7 @@ import { Box, FileUp, Pause, Play, RotateCcw, ScanSearch, ZoomIn } from "lucide-
 import type { PilotPart } from "../../lib/atelier/pilot-data";
 import { findThreeDComponent, yz125ThreeDComponents } from "../../lib/atelier/three-d-registry";
 import { inspectGlb, matchAliases, type GlbInspection } from "../../lib/atelier/glb-inspector";
+import InteractiveEngineCanvas from "./interactive-engine-canvas";
 import styles from "./atelier-workspace.module.css";
 
 const MODEL_VIEWER_SRC =
@@ -198,13 +199,22 @@ export default function Atelier3DViewer({
           <em>{selectedCategory ? `Zone : ${selectedCategory}` : "Vue libre"}</em>
         </div>
         <div className={styles.real3dViewport}>
-          <ModelViewer
-            model={customEngineUrl || ENGINE_MODEL}
-            alt="Assemblage mécanique 3D interactif utilisé comme prototype de vue moteur éclatée"
-            autoRotate={engineAutoRotate}
-            viewerRef={engineRef}
-            cameraOrbit="30deg 66deg 115%"
-          />
+          {customEngineUrl && inspection?.valid ? (
+            <InteractiveEngineCanvas
+              src={customEngineUrl}
+              explodeAmount={explodeAmount}
+              selectedCategory={selectedCategory}
+              onCategoryFocus={onCategoryFocus}
+            />
+          ) : (
+            <ModelViewer
+              model={ENGINE_MODEL}
+              alt="Assemblage mécanique 3D interactif utilisé comme prototype de vue moteur éclatée"
+              autoRotate={engineAutoRotate}
+              viewerRef={engineRef}
+              cameraOrbit="30deg 66deg 115%"
+            />
+          )}
           <div className={styles.componentHotspots} aria-label="Composants 3D sélectionnables">
             {yz125ThreeDComponents.map((component) => (
               <button
@@ -252,16 +262,22 @@ export default function Atelier3DViewer({
             )}
           </div>
           <div className={styles.real3dToolbar}>
-            <button type="button" onClick={() => setEngineAutoRotate((value) => !value)}>
-              {engineAutoRotate ? <Pause /> : <Play />}
-              {engineAutoRotate ? "Stop rotation" : "Rotation auto"}
-            </button>
-            <button type="button" onClick={() => focusEngine()} disabled={!selectedCategory}>
-              <ScanSearch /> Surveiller la pièce
-            </button>
-            <button type="button" onClick={resetEngine}>
-              <RotateCcw /> Réinitialiser
-            </button>
+            {!customEngineUrl && (
+              <button type="button" onClick={() => setEngineAutoRotate((value) => !value)}>
+                {engineAutoRotate ? <Pause /> : <Play />}
+                {engineAutoRotate ? "Stop rotation" : "Rotation auto"}
+              </button>
+            )}
+            {!customEngineUrl && (
+              <>
+                <button type="button" onClick={() => focusEngine()} disabled={!selectedCategory}>
+                  <ScanSearch /> Surveiller la pièce
+                </button>
+                <button type="button" onClick={resetEngine}>
+                  <RotateCcw /> Réinitialiser
+                </button>
+              </>
+            )}
           </div>
           <div className={styles.explodeControl}>
             <label>
