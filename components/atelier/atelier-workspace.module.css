@@ -909,3 +909,136 @@
     bottom: 50px;
   }
 }
+
+
+.componentHotspots {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.componentHotspot,
+.componentHotspotActive {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  border: 0;
+  background: transparent;
+  color: #aebbc3;
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  padding: 4px;
+}
+
+.componentHotspot span,
+.componentHotspotActive span {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 2px solid #7b8c96;
+  background: rgba(6, 10, 13, .92);
+  box-shadow: 0 0 0 5px rgba(6, 10, 13, .45);
+  transition: .2s ease;
+}
+
+.componentHotspot b,
+.componentHotspotActive b {
+  opacity: 0;
+  transform: translateY(-2px);
+  padding: 4px 6px;
+  border-radius: 6px;
+  background: rgba(4, 8, 10, .86);
+  border: 1px solid #2b3a43;
+  font-size: .58rem;
+  white-space: nowrap;
+  transition: .2s ease;
+}
+
+.componentHotspot:hover span,
+.componentHotspotActive span {
+  border-color: #ff6a2a;
+  background: #ff6a2a;
+  box-shadow:
+    0 0 0 6px rgba(255, 106, 42, .14),
+    0 0 22px rgba(255, 106, 42, .6);
+}
+
+.componentHotspot:hover b,
+.componentHotspotActive b {
+  opacity: 1;
+  transform: translateY(0);
+  color: #fff;
+}
+
+.explodedComponentRail {
+  position: absolute;
+  z-index: 5;
+  left: 12px;
+  bottom: 54px;
+  display: grid;
+  gap: 5px;
+  width: min(220px, 42%);
+  pointer-events: none;
+}
+
+.explodedComponentRail button {
+  pointer-events: auto;
+  min-height: 28px;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 8px;
+  border: 1px solid #2b3942;
+  border-radius: 7px;
+  background: rgba(7, 12, 15, .86);
+  color: #aab6bd;
+  text-align: left;
+  backdrop-filter: blur(7px);
+  transition: transform .18s ease, border-color .18s ease, color .18s ease;
+}
+
+.explodedComponentRail button span {
+  color: #60727e;
+  font-size: .58rem;
+  font-family: monospace;
+}
+
+.explodedComponentRail button b {
+  font-size: .62rem;
+}
+
+.explodedComponentRail button:hover,
+.explodedComponentRail .explodedComponentActive {
+  border-color: #ff6a2a;
+  color: #fff;
+  box-shadow: inset 3px 0 0 #ff6a2a;
+}
+
+.explodeControl {
+  display: grid;
+  gap: 9px;
+}
+
+.explodeControl label + label {
+  padding-top: 7px;
+  border-top: 1px solid #26333b;
+}
+
+@media (max-width: 760px) {
+  .componentHotspot b,
+  .componentHotspotActive b {
+    display: none;
+  }
+
+  .explodedComponentRail {
+    width: 46%;
+    bottom: 126px;
+  }
+
+  .explodedComponentRail button b {
+    font-size: .56rem;
+  }
+}
