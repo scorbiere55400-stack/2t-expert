@@ -10,6 +10,7 @@ type Props = {
   explodeAmount: number;
   selectedCategory: PilotPart["category"] | null;
   onCategoryFocus?: (category: PilotPart["category"]) => void;
+  onMeshSelect?: (selection: { meshName: string; category: PilotPart["category"] }) => void;
 };
 
 type MeshBinding = {
@@ -90,11 +91,13 @@ export default function InteractiveEngineCanvas({
   explodeAmount,
   selectedCategory,
   onCategoryFocus,
+  onMeshSelect,
 }: Props) {
   const hostRef = useRef<HTMLDivElement | null>(null);
   const explodeRef = useRef(explodeAmount);
   const selectedRef = useRef(selectedCategory);
   const focusRef = useRef(onCategoryFocus);
+  const meshSelectRef = useRef(onMeshSelect);
 
   useEffect(() => {
     explodeRef.current = explodeAmount;
@@ -107,6 +110,10 @@ export default function InteractiveEngineCanvas({
   useEffect(() => {
     focusRef.current = onCategoryFocus;
   }, [onCategoryFocus]);
+
+  useEffect(() => {
+    meshSelectRef.current = onMeshSelect;
+  }, [onMeshSelect]);
 
   useEffect(() => {
     const host = hostRef.current;
@@ -216,7 +223,13 @@ export default function InteractiveEngineCanvas({
         const hit = hits[0]?.object;
         if (!hit) return;
         const binding = bindings.find((item) => item.object === hit);
-        if (binding) focusRef.current?.(binding.category);
+        if (binding) {
+          focusRef.current?.(binding.category);
+          meshSelectRef.current?.({
+            meshName: hit.name || hit.parent?.name || "mesh-sans-nom",
+            category: binding.category,
+          });
+        }
       };
 
       renderer.domElement.addEventListener("pointerdown", onPointerDown);
