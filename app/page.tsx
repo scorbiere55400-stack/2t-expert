@@ -478,7 +478,7 @@ function HomeView({
         <div className="hero-copy">
           <div className="hero-brand">
             <Image
-              src="/assets/brand/logo-main.png"
+              src="https://raw.githubusercontent.com/scorbiere55400-stack/2t-expert/main/public/assets/brand/logo-main.png"
               alt="2T Expert — Motos 2 temps, passion, solutions"
               width={428}
               height={476}
@@ -512,7 +512,7 @@ function HomeView({
         </div>
         <div className="hero-visual">
           <Image
-            src="/assets/two-stroke-supermoto.png"
+            src="https://raw.githubusercontent.com/scorbiere55400-stack/2t-expert/main/public/assets/two-stroke-supermoto.png"
             alt="Moto deux temps"
             fill
             priority
@@ -793,7 +793,7 @@ function Exploded({
             }
           >
             <Image
-              src="/assets/two-stroke-exploded.png"
+              src="https://raw.githubusercontent.com/scorbiere55400-stack/2t-expert/main/public/assets/two-stroke-exploded.png"
               alt="Vue éclatée d’un moteur deux temps"
               fill
               sizes="70vw"
@@ -930,7 +930,7 @@ function Specs({
           </div>
         </div>
         <Image
-          src="/assets/two-stroke-supermoto.png"
+          src="https://raw.githubusercontent.com/scorbiere55400-stack/2t-expert/main/public/assets/two-stroke-supermoto.png"
           alt="Illustration de catégorie"
           fill
           sizes="50vw"
@@ -1122,7 +1122,7 @@ function Title({
 function BrandLogo() {
   return (
     <Image
-      src="/assets/brand/logo-horizontal.png"
+      src="https://raw.githubusercontent.com/scorbiere55400-stack/2t-expert/main/public/assets/brand/logo-horizontal.png"
       alt="2T Expert — Motos 2 temps, passion, solutions"
       width={364}
       height={116}
