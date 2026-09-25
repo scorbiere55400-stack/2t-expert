@@ -46,6 +46,8 @@ const initialBuild = {
   exhaust: "",
   filtration: "",
   topEnd: "",
+  intake: "",
+  cooling: "",
   frontTeeth: baseline.frontTeeth,
   rearTeeth: baseline.rearTeeth,
   engineRpm: baseline.engineRpm,
@@ -190,7 +192,13 @@ export default function AtelierWorkspace() {
     [category, query],
   );
 
-  const selectedIds = [build.exhaust, build.filtration, build.topEnd].filter(Boolean);
+  const selectedIds = [
+    build.exhaust,
+    build.filtration,
+    build.topEnd,
+    build.intake,
+    build.cooling,
+  ].filter(Boolean);
   const selectedParts = pilotParts.filter((part) => selectedIds.includes(part.id));
 
   const simulation = useMemo(
@@ -307,7 +315,16 @@ export default function AtelierWorkspace() {
       setBuildWithHistory({ filtration: part.id });
     } else if (part.category === "Haut moteur") {
       setBuildWithHistory({ topEnd: part.id });
+    } else if (part.category === "Admission") {
+      setBuildWithHistory({ intake: part.id });
+    } else if (part.category === "Refroidissement") {
+      setBuildWithHistory({ cooling: part.id });
     }
+  };
+
+  const focusCategoryFrom3D = (nextCategory: PilotPart["category"]) => {
+    setFocusedCategory(nextCategory);
+    setCategory(nextCategory);
   };
 
   const sendToDiagnostic = async () => {
@@ -543,7 +560,7 @@ export default function AtelierWorkspace() {
           <Atelier3DViewer
             selectedCategory={selectedCategory}
             selectedPartId={selectedPartId}
-            onCategoryFocus={setFocusedCategory}
+            onCategoryFocus={focusCategoryFrom3D}
           />
 
           <article className={styles.setupCard}>
