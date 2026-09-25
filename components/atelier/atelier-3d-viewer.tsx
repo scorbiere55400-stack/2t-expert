@@ -3,6 +3,7 @@
 import { createElement, useEffect, useRef, useState, type RefObject } from "react";
 import { Box, Pause, Play, RotateCcw, ScanSearch, ZoomIn } from "lucide-react";
 import type { PilotPart } from "../../lib/atelier/pilot-data";
+import { findThreeDComponent, yz125ThreeDComponents } from "../../lib/atelier/three-d-registry";
 import styles from "./atelier-workspace.module.css";
 
 const MODEL_VIEWER_SRC =
@@ -65,12 +66,17 @@ function ModelViewer({
 
 export default function Atelier3DViewer({
   selectedCategory,
+  selectedPartId,
+  onCategoryFocus,
 }: {
   selectedCategory: PilotPart["category"] | null;
+  selectedPartId?: string | null;
+  onCategoryFocus?: (category: PilotPart["category"]) => void;
 }) {
   const [bikeAutoRotate, setBikeAutoRotate] = useState(false);
   const [engineAutoRotate, setEngineAutoRotate] = useState(false);
   const [explodedFocus, setExplodedFocus] = useState(42);
+  const [explodeAmount, setExplodeAmount] = useState(0);
   const bikeRef = useRef<ViewerElement | null>(null);
   const engineRef = useRef<ViewerElement | null>(null);
 
@@ -94,24 +100,21 @@ export default function Atelier3DViewer({
     viewer.jumpCameraToGoal?.();
   };
 
-  const focusEngine = () => {
+  const focusEngine = (category = selectedCategory) => {
     const viewer = engineRef.current;
     if (!viewer) return;
-    const orbitByCategory: Partial<Record<PilotPart["category"], string>> = {
-      "Haut moteur": "20deg 55deg 72%",
-      Admission: "-35deg 62deg 82%",
-      Carburation: "-52deg 66deg 78%",
-      Échappement: "52deg 70deg 86%",
-      Transmission: "115deg 68deg 82%",
-      Refroidissement: "155deg 63deg 90%",
-      Filtration: "-80deg 72deg 95%",
-    };
-    viewer.cameraOrbit =
-      (selectedCategory && orbitByCategory[selectedCategory]) ||
-      "30deg 66deg 115%";
-    viewer.fieldOfView = "26deg";
+    const component = findThreeDComponent(category);
+    viewer.cameraOrbit = component?.cameraOrbit || "30deg 66deg 115%";
+    viewer.fieldOfView = component ? "26deg" : "32deg";
     viewer.jumpCameraToGoal?.();
   };
+
+  const selectComponent = (category: PilotPart["category"]) => {
+    onCategoryFocus?.(category);
+    focusEngine(category);
+  };
+
+  const activeComponent = findThreeDComponent(selectedCategory);
 
   return (
     <div className={styles.visualStage}>
@@ -169,6 +172,25 @@ export default function Atelier3DViewer({
             viewerRef={engineRef}
             cameraOrbit="30deg 66deg 115%"
           />
+          <div className={styles.componentHotspots} aria-label="Composants 3D sélectionnables">
+            {yz125ThreeDComponents.map((component) => (
+              <button
+                key={component.id}
+                type="button"
+                className={
+                  selectedCategory === component.category
+                    ? styles.componentHotspotActive
+                    : styles.componentHotspot
+                }
+                style={{ left: `${component.screen.x}%`, top: `${component.screen.y}%` }}
+                onClick={() => selectComponent(component.category)}
+                title={component.label}
+              >
+                <span />
+                <b>{component.shortLabel}</b>
+              </button>
+            ))}
+          </div>
           <div className={styles.scanOverlay} aria-hidden="true">
             <span
               className={selectedCategory ? styles.scanPulse : ""}
@@ -180,7 +202,7 @@ export default function Atelier3DViewer({
               {engineAutoRotate ? <Pause /> : <Play />}
               {engineAutoRotate ? "Stop rotation" : "Rotation auto"}
             </button>
-            <button type="button" onClick={focusEngine} disabled={!selectedCategory}>
+            <button type="button" onClick={() => focusEngine()} disabled={!selectedCategory}>
               <ScanSearch /> Surveiller la pièce
             </button>
             <button type="button" onClick={resetEngine}>
@@ -199,11 +221,40 @@ export default function Atelier3DViewer({
                 onChange={(event) => setExplodedFocus(Number(event.target.value))}
               />
             </label>
+            <label>
+              <Box />
+              Vue éclatée
+              <input
+                type="range"
+                min={0}
+                max={100}
+                value={explodeAmount}
+                onChange={(event) => setExplodeAmount(Number(event.target.value))}
+              />
+            </label>
+          </div>
+          <div className={styles.explodedComponentRail} aria-label="Sous-ensembles moteur">
+            {yz125ThreeDComponents.map((component, index) => {
+              const direction = index % 2 === 0 ? -1 : 1;
+              const offset = direction * explodeAmount * (0.22 + index * 0.025);
+              return (
+                <button
+                  key={component.id}
+                  type="button"
+                  className={selectedCategory === component.category ? styles.explodedComponentActive : ""}
+                  style={{ transform: `translateX(${offset}px)` }}
+                  onClick={() => selectComponent(component.category)}
+                >
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <b>{component.shortLabel}</b>
+                </button>
+              );
+            })}
           </div>
           <div className={styles.focusLabel}>
-            {selectedCategory
-              ? `Surveillance 3D active : ${selectedCategory} — caméra et scanner synchronisés`
-              : "Sélectionnez une pièce du catalogue pour activer la surveillance 3D"}
+            {activeComponent
+              ? `${activeComponent.label} · ${selectedPartId ? `pièce ${selectedPartId}` : "zone catalogue"} · surveillance 3D active`
+              : "Cliquez un repère 3D ou sélectionnez une pièce du catalogue"}
           </div>
         </div>
       </section>
