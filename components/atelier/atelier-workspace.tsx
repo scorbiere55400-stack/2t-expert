@@ -130,6 +130,8 @@ function InteractiveMachineVisual({
 }: {
   selectedCategory: PilotPart["category"] | null;
 }) {
+  const [bikeRotation, setBikeRotation] = useState(0);
+  const [engineZoom, setEngineZoom] = useState(1);
   const active = (category: PilotPart["category"]) =>
     selectedCategory === category ? styles.visualActive : "";
 
@@ -147,6 +149,9 @@ function InteractiveMachineVisual({
           <img
             src="/assets/two-stroke-supermoto.png"
             alt="Moto deux temps générique de référence"
+            style={{
+              transform: `perspective(900px) rotateY(${bikeRotation}deg) scale(.96)`,
+            }}
           />
           <svg viewBox="0 0 760 420" className={styles.bikeOverlay} aria-hidden="true">
             <g className={active("Échappement")}>
@@ -169,6 +174,18 @@ function InteractiveMachineVisual({
               <rect x="432" y="154" width="50" height="104" rx="10" />
             </g>
           </svg>
+          <div className={styles.visualControl}>
+            <label>
+              Rotation
+              <input
+                type="range"
+                min={-16}
+                max={16}
+                value={bikeRotation}
+                onChange={(event) => setBikeRotation(Number(event.target.value))}
+              />
+            </label>
+          </div>
           <div className={styles.visualLegend}>
             <span><i /> zone active</span>
             <span>La sélection de pièce met en évidence la zone concernée.</span>
@@ -188,6 +205,7 @@ function InteractiveMachineVisual({
           <img
             src="/assets/two-stroke-exploded.png"
             alt="Moteur deux temps générique en vue éclatée"
+            style={{ transform: `scale(${engineZoom})` }}
           />
           <svg viewBox="0 0 620 420" className={styles.engineOverlay} aria-hidden="true">
             <g className={active("Haut moteur")}>
@@ -209,6 +227,19 @@ function InteractiveMachineVisual({
               <path d="M344 160 C470 150, 530 176, 580 232" />
             </g>
           </svg>
+          <div className={styles.engineControl}>
+            <label>
+              Zoom éclaté
+              <input
+                type="range"
+                min={0.82}
+                max={1.18}
+                step={0.02}
+                value={engineZoom}
+                onChange={(event) => setEngineZoom(Number(event.target.value))}
+              />
+            </label>
+          </div>
           <div className={styles.focusLabel}>
             {selectedCategory
               ? `Surveillance active : ${selectedCategory}`
@@ -236,6 +267,8 @@ export default function AtelierWorkspace() {
   const [category, setCategory] = useState<(typeof partCategories)[number]>("Toutes");
   const [query, setQuery] = useState("");
   const [showWhy, setShowWhy] = useState<string | null>(null);
+  const [focusedCategory, setFocusedCategory] =
+    useState<PilotPart["category"] | null>(null);
 
   useEffect(() => {
     try {
@@ -387,6 +420,7 @@ export default function AtelierWorkspace() {
   };
 
   const selectPart = (part: PilotPart) => {
+    setFocusedCategory(part.category);
     const decision = evaluateCompatibility(yz125Pilot.id, part.id);
     if (!decision.allowed || !part.selectable) {
       setShowWhy(part.id);
@@ -449,9 +483,10 @@ export default function AtelierWorkspace() {
     .filter(Boolean) as string[];
 
   const selectedCategory =
-    selectedParts.length > 0
+    focusedCategory ??
+    (selectedParts.length > 0
       ? selectedParts[selectedParts.length - 1].category
-      : null;
+      : null);
 
   const gaugeModel = useMemo(() => {
     const ratioImpact = Math.min(35, Math.abs(geometry.speedDelta));
@@ -755,7 +790,12 @@ export default function AtelierWorkspace() {
                     </div>
                     <div className={styles.partEvidence}>
                       <span>{evidenceLabel(part)}</span>
-                      <button onClick={() => setShowWhy(part.id)}>
+                      <button
+                        onClick={() => {
+                          setFocusedCategory(part.category);
+                          setShowWhy(part.id);
+                        }}
+                      >
                         Pourquoi ? <CircleHelp />
                       </button>
                     </div>
@@ -835,21 +875,21 @@ export default function AtelierWorkspace() {
                 progress={gaugeModel.wheelTorque}
               />
               <GaugeCard
-                label="Puissance"
-                value="N/D"
-                detail="donnée manquante"
+                label="Potentiel puissance"
+                value={selectedParts.length ? "Tendance" : "Référence"}
+                detail="qualitatif uniquement"
                 tone="red"
-                note="Aucune courbe de banc validée n’est chargée."
-                proof="Indicateur suspendu"
+                note="Position visuelle issue des pièces sélectionnées, sans valeur de puissance inventée."
+                proof="Tendance non mesurée"
                 progress={gaugeModel.power}
               />
               <GaugeCard
-                label="Accélération"
-                value="N/D"
-                detail="sous charge"
+                label="Réactivité estimée"
+                value={selectedParts.length ? "Tendance" : "Référence"}
+                detail="qualitatif uniquement"
                 tone="orange"
-                note="Masse pilote, courbe de couple et pertes requises."
-                proof="Indicateur suspendu"
+                note="Croise démultiplication et pièces sélectionnées ; pas une mesure d’accélération."
+                proof="Tendance explicable"
                 progress={gaugeModel.acceleration}
               />
               <GaugeCard
