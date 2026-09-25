@@ -25,12 +25,9 @@ import {
   yz125Pilot,
   type PilotPart,
 } from "../../lib/atelier/pilot-data";
-import {
-  geometricDisplacementCc,
-  geometricSpeedKmh,
-  theoreticalSpeedDeltaPercent,
-  theoreticalWheelTorqueDeltaPercent,
-} from "../../lib/atelier/simulation";
+import { atelierVehicles } from "../../lib/atelier/knowledge-registry";
+import { evaluateCompatibility } from "../../lib/atelier/compatibility-engine";
+import { runYz125Simulation } from "../../lib/atelier/simulation-engine";
 import styles from "./atelier-workspace.module.css";
 
 type SnapshotName = "Origine" | "Actuelle" | "Projet A" | "Projet B";
@@ -120,6 +117,11 @@ function GaugeCard({
 
 export default function AtelierWorkspace() {
   const [snapshot, setSnapshot] = useState<SnapshotName>("Projet A");
+  const [selectedVehicleId, setSelectedVehicleId] = useState(yz125Pilot.id);
+  const [diagnosticStatus, setDiagnosticStatus] = useState<
+    "idle" | "loading" | "ready" | "error"
+  >("idle");
+  const [diagnosticMessage, setDiagnosticMessage] = useState("");
   const [builds, setBuilds] = useState<BuildSnapshots>(initialSnapshots);
   const build = builds[snapshot];
   const [history, setHistory] = useState<BuildState[]>([initialSnapshots["Projet A"]]);
@@ -177,33 +179,24 @@ export default function AtelierWorkspace() {
   const selectedIds = [build.exhaust, build.filtration, build.topEnd].filter(Boolean);
   const selectedParts = pilotParts.filter((part) => selectedIds.includes(part.id));
 
-  const geometry = useMemo(() => {
-    const displacement = geometricDisplacementCc(
-      yz125Pilot.engine.boreMm,
-      yz125Pilot.engine.strokeMm,
-    );
-    const speed = geometricSpeedKmh({
-      frontTeeth: build.frontTeeth,
-      rearTeeth: build.rearTeeth,
-      engineRpm: build.engineRpm,
-      rollingCircumferenceM: build.rollingCircumferenceM,
-      primaryRatio: baseline.primaryRatio,
-      sixthGearRatio: baseline.sixthGearRatio,
-    });
-    const speedDelta = theoreticalSpeedDeltaPercent(
-      baseline.frontTeeth,
-      baseline.rearTeeth,
-      build.frontTeeth,
-      build.rearTeeth,
-    );
-    const wheelTorqueDelta = theoreticalWheelTorqueDeltaPercent(
-      baseline.frontTeeth,
-      baseline.rearTeeth,
-      build.frontTeeth,
-      build.rearTeeth,
-    );
-    return { displacement, speed, speedDelta, wheelTorqueDelta };
-  }, [build]);
+  const simulation = useMemo(
+    () =>
+      runYz125Simulation({
+        frontTeeth: build.frontTeeth,
+        rearTeeth: build.rearTeeth,
+        engineRpm: build.engineRpm,
+        rollingCircumferenceM: build.rollingCircumferenceM,
+      }),
+    [build],
+  );
+
+  const geometry = {
+    displacement: simulation.outputs.displacementCc,
+    speed: simulation.outputs.geometricSpeedKmh,
+    speedDelta: simulation.outputs.geometricSpeedDeltaPercent,
+    wheelTorqueDelta:
+      simulation.outputs.wheelTorqueDeltaPercentAtEqualEngineTorque,
+  };
 
   const setBuildWithHistory = (patch: Partial<BuildState>) => {
     if (snapshot === "Origine") return;
@@ -288,7 +281,8 @@ export default function AtelierWorkspace() {
   };
 
   const selectPart = (part: PilotPart) => {
-    if (!part.selectable) {
+    const decision = evaluateCompatibility(yz125Pilot.id, part.id);
+    if (!decision.allowed || !part.selectable) {
       setShowWhy(part.id);
       return;
     }
@@ -298,6 +292,49 @@ export default function AtelierWorkspace() {
       setBuildWithHistory({ filtration: part.id });
     } else if (part.category === "Haut moteur") {
       setBuildWithHistory({ topEnd: part.id });
+    }
+  };
+
+  const sendToDiagnostic = async () => {
+    if (snapshot !== "Actuelle") {
+      setDiagnosticStatus("error");
+      setDiagnosticMessage(
+        "Le diagnostic utilise uniquement la Machine actuelle confirmée, jamais un projet virtuel.",
+      );
+      return;
+    }
+
+    setDiagnosticStatus("loading");
+    setDiagnosticMessage("Préparation du contexte Diagnostic…");
+
+    try {
+      const response = await fetch("/api/diagnostic/from-atelier", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          vehicleId: yz125Pilot.id,
+          snapshot,
+          partIds: selectedIds,
+          settings: {
+            frontTeeth: build.frontTeeth,
+            rearTeeth: build.rearTeeth,
+            engineRpm: build.engineRpm,
+            rollingCircumferenceM: build.rollingCircumferenceM,
+          },
+        }),
+      });
+      const payload = await response.json();
+      if (!response.ok) throw new Error(payload?.error || "Diagnostic indisponible");
+
+      setDiagnosticStatus("ready");
+      setDiagnosticMessage(
+        `Contexte prêt : ${payload.data.selectedParts.length} pièce(s), compatibilité ${payload.data.compatibility.valid ? "validée" : "à contrôler"}.`,
+      );
+    } catch (error) {
+      setDiagnosticStatus("error");
+      setDiagnosticMessage(
+        error instanceof Error ? error.message : "Diagnostic indisponible",
+      );
     }
   };
 
@@ -322,6 +359,45 @@ export default function AtelierWorkspace() {
         </div>
       </section>
 
+      <section className={styles.machineSelectorBar}>
+        <label>
+          <span>Machine de l’atelier</span>
+          <select
+            value={selectedVehicleId}
+            onChange={(event) => setSelectedVehicleId(event.target.value)}
+          >
+            {atelierVehicles.map((vehicle) => (
+              <option key={vehicle.id} value={vehicle.id}>
+                {vehicle.brand} {vehicle.model} · {vehicle.yearLabel}
+                {vehicle.coverage === "full_pilot" ? " · pilote complet" : " · indexée"}
+              </option>
+            ))}
+          </select>
+        </label>
+        <div className={styles.coveragePill}>
+          {selectedVehicleId === yz125Pilot.id
+            ? "Données + pièces + simulation"
+            : "Référentiel indexé · configuration à consolider"}
+        </div>
+      </section>
+
+      {selectedVehicleId !== yz125Pilot.id ? (
+        <section className={styles.unavailableMachine}>
+          <div>
+            <span className={styles.eyebrow}>COUVERTURE EN COURS</span>
+            <h2>Cette machine est déjà connue du référentiel 2T Expert.</h2>
+            <p>
+              La sélection globale fonctionne, mais son modèle de simulation et ses
+              compatibilités détaillées ne sont pas encore suffisamment consolidés
+              pour afficher des gains ou autoriser un montage virtuel fiable.
+            </p>
+          </div>
+          <button onClick={() => setSelectedVehicleId(yz125Pilot.id)}>
+            Revenir au pilote YZ125
+          </button>
+        </section>
+      ) : (
+      <>
       <section className={styles.topbar}>
         <div className={styles.snapshots}>
           <span>Ma machine</span>
@@ -678,6 +754,42 @@ export default function AtelierWorkspace() {
               )}
             </section>
 
+            <section className={styles.diagnosticCard}>
+              <div className={styles.summaryTitle}>
+                <Wrench />
+                <span>
+                  <small>DIAGNOSTIC IA</small>
+                  <b>Utiliser la machine réellement montée</b>
+                </span>
+              </div>
+              <p>
+                Le diagnostic reçoit uniquement l’état « Actuelle » et conserve
+                les projets A/B comme hypothèses séparées.
+              </p>
+              <button
+                onClick={sendToDiagnostic}
+                disabled={snapshot !== "Actuelle" || diagnosticStatus === "loading"}
+              >
+                {diagnosticStatus === "loading"
+                  ? "Préparation…"
+                  : "Diagnostiquer la machine actuelle"}
+                <ChevronRight />
+              </button>
+              {diagnosticStatus !== "idle" && (
+                <small
+                  className={
+                    diagnosticStatus === "ready"
+                      ? styles.diagnosticReady
+                      : diagnosticStatus === "error"
+                        ? styles.diagnosticError
+                        : ""
+                  }
+                >
+                  {diagnosticMessage}
+                </small>
+              )}
+            </section>
+
             <section className={styles.limitCard}>
               <div className={styles.summaryTitle}>
                 <AlertTriangle />
@@ -696,6 +808,8 @@ export default function AtelierWorkspace() {
           </div>
         </aside>
       </div>
+
+      </> )}
 
       {showWhy && (
         <div className={styles.modalBackdrop} onMouseDown={() => setShowWhy(null)}>
