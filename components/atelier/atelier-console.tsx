@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, type CSSProperties } from "react";
 import {
   Box, BrainCircuit, Car, ChevronRight, CircleGauge, Database, Gauge, Home,
   Layers3, Search, Settings2, ShieldCheck, ShoppingCart, SlidersHorizontal,
@@ -60,7 +60,7 @@ function score(value: number) { return Math.max(0, Math.min(10, Math.round(value
 function RingGauge({ label, value, detail, percent }: { label: string; value: string; detail: string; percent: number }) {
   return (
     <div className={styles.ringGauge}>
-      <div className={styles.ring} style={{ "--p": String(percent * 3.6) + "deg" } as React.CSSProperties}>
+      <div className={styles.ring} style={{ "--p": String(percent * 3.6) + "deg" } as CSSProperties}>
         <div><b>{value}</b><small>{detail}</small></div>
       </div>
       <span>{label}</span>
