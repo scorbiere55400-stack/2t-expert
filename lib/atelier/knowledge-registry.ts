@@ -1,4 +1,5 @@
 import { pilotParts, yz125Pilot } from "./pilot-data";
+import { dt50x2011, workshopParts } from "./dt50-am6-data";
 
 export type AtelierVehicleCoverage = "full_pilot" | "catalog_only";
 
@@ -15,6 +16,17 @@ export type AtelierVehicle = {
 };
 
 export const atelierVehicles: AtelierVehicle[] = [
+  {
+    id: dt50x2011.id,
+    brand: dt50x2011.brand,
+    model: dt50x2011.model,
+    yearLabel: String(dt50x2011.year),
+    family: dt50x2011.family,
+    engineLabel: dt50x2011.engine,
+    displacementLabel: `${dt50x2011.stock.displacementCc} cm³`,
+    coverage: "full_pilot",
+    note: "Pilote AM6 complet pour le nouvel Atelier visuel, pièces sourcées et jauges réactives.",
+  },
   {
     id: yz125Pilot.id,
     brand: yz125Pilot.brand,
@@ -80,9 +92,22 @@ export function getVehicleParts(id: string) {
   return id === yz125Pilot.id ? pilotParts : [];
 }
 
+export function getWorkshopVehicleParts(id: string) {
+  return id === dt50x2011.id ? workshopParts : [];
+}
+
 export function getFullVehiclePayload(id: string) {
   const vehicle = getAtelierVehicle(id);
   if (!vehicle) return null;
+
+  if (id === dt50x2011.id) {
+    return {
+      vehicle,
+      technical: dt50x2011,
+      parts: workshopParts,
+      simulationModel: "dt50-am6-workshop-v1",
+    };
+  }
 
   if (id === yz125Pilot.id) {
     return {

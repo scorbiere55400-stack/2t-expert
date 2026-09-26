@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useMemo, useState } from "react";
-import AtelierWorkspace from "../components/atelier/atelier-workspace";
+import AtelierConsole from "../components/atelier/atelier-console";
 
 import {
   ArrowRight,
@@ -297,7 +297,7 @@ export default function HomePage() {
   };
   return (
     <div className="site-shell">
-      <header className="site-header">
+      {view !== "atelier" && <header className="site-header">
         <button className="mobile-toggle" onClick={() => setMenu(!menu)}>
           {menu ? <X /> : <Menu />}
         </button>
@@ -324,7 +324,7 @@ export default function HomePage() {
           <CircleUserRound />
           <span>Mon espace</span>
         </button>
-      </header>
+      </header>}
       <main>
         {view === "home" && (
           <HomeView
@@ -337,7 +337,7 @@ export default function HomePage() {
             }}
           />
         )}
-        {view === "atelier" && <AtelierWorkspace />}
+        {view === "atelier" && <AtelierConsole onNavigate={(target) => go(target as View)} />}
         {view === "catalog" && (
           <Catalog
             query={query}
@@ -367,7 +367,7 @@ export default function HomePage() {
           <Community joined={joined} onJoin={() => setJoinOpen(true)} />
         )}
       </main>
-      <footer>
+      {view !== "atelier" && <footer>
         <div className="footer-brand">
           <BrandLogo />
         </div>
@@ -381,7 +381,7 @@ export default function HomePage() {
           <button onClick={() => go("exploded")}>Éclatés</button>
           <button onClick={() => go("community")}>Communauté</button>
         </nav>
-      </footer>
+      </footer>}
       {joinOpen && (
         <div className="modal-backdrop" onMouseDown={() => setJoinOpen(false)}>
           <section
@@ -478,7 +478,7 @@ function HomeView({
         <div className="hero-copy">
           <div className="hero-brand">
             <Image
-              src="https://raw.githubusercontent.com/scorbiere55400-stack/2t-expert/main/public/assets/brand/logo-main.png"
+              src="/assets/brand/logo-main.png"
               alt="2T Expert — Motos 2 temps, passion, solutions"
               width={428}
               height={476}
@@ -512,7 +512,7 @@ function HomeView({
         </div>
         <div className="hero-visual">
           <Image
-            src="https://raw.githubusercontent.com/scorbiere55400-stack/2t-expert/main/public/assets/two-stroke-supermoto.png"
+            src="/assets/two-stroke-supermoto.png"
             alt="Moto deux temps"
             fill
             priority
@@ -793,7 +793,7 @@ function Exploded({
             }
           >
             <Image
-              src="https://raw.githubusercontent.com/scorbiere55400-stack/2t-expert/main/public/assets/two-stroke-exploded.png"
+              src="/assets/two-stroke-exploded.png"
               alt="Vue éclatée d’un moteur deux temps"
               fill
               sizes="70vw"
@@ -930,7 +930,7 @@ function Specs({
           </div>
         </div>
         <Image
-          src="https://raw.githubusercontent.com/scorbiere55400-stack/2t-expert/main/public/assets/two-stroke-supermoto.png"
+          src="/assets/two-stroke-supermoto.png"
           alt="Illustration de catégorie"
           fill
           sizes="50vw"
@@ -1122,7 +1122,7 @@ function Title({
 function BrandLogo() {
   return (
     <Image
-      src="https://raw.githubusercontent.com/scorbiere55400-stack/2t-expert/main/public/assets/brand/logo-horizontal.png"
+      src="/assets/brand/logo-horizontal.png"
       alt="2T Expert — Motos 2 temps, passion, solutions"
       width={364}
       height={116}

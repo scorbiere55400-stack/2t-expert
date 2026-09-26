@@ -28,6 +28,7 @@ import {
 import { atelierVehicles } from "../../lib/atelier/knowledge-registry";
 import { evaluateCompatibility } from "../../lib/atelier/compatibility-engine";
 import { runYz125Simulation } from "../../lib/atelier/simulation-engine";
+import { getMeshPartLink, type MeshPartSelection } from "../../lib/atelier/mesh-part-registry";
 import Atelier3DViewer from "./atelier-3d-viewer";
 import styles from "./atelier-workspace.module.css";
 
@@ -46,6 +47,8 @@ const initialBuild = {
   exhaust: "",
   filtration: "",
   topEnd: "",
+  intake: "",
+  cooling: "",
   frontTeeth: baseline.frontTeeth,
   rearTeeth: baseline.rearTeeth,
   engineRpm: baseline.engineRpm,
@@ -144,6 +147,7 @@ export default function AtelierWorkspace() {
   const [showWhy, setShowWhy] = useState<string | null>(null);
   const [focusedCategory, setFocusedCategory] =
     useState<PilotPart["category"] | null>(null);
+  const [selectedMesh, setSelectedMesh] = useState<MeshPartSelection | null>(null);
 
   useEffect(() => {
     try {
@@ -190,7 +194,13 @@ export default function AtelierWorkspace() {
     [category, query],
   );
 
-  const selectedIds = [build.exhaust, build.filtration, build.topEnd].filter(Boolean);
+  const selectedIds = [
+    build.exhaust,
+    build.filtration,
+    build.topEnd,
+    build.intake,
+    build.cooling,
+  ].filter(Boolean);
   const selectedParts = pilotParts.filter((part) => selectedIds.includes(part.id));
 
   const simulation = useMemo(
@@ -307,7 +317,23 @@ export default function AtelierWorkspace() {
       setBuildWithHistory({ filtration: part.id });
     } else if (part.category === "Haut moteur") {
       setBuildWithHistory({ topEnd: part.id });
+    } else if (part.category === "Admission") {
+      setBuildWithHistory({ intake: part.id });
+    } else if (part.category === "Refroidissement") {
+      setBuildWithHistory({ cooling: part.id });
     }
+  };
+
+  const focusCategoryFrom3D = (nextCategory: PilotPart["category"]) => {
+    setFocusedCategory(nextCategory);
+    setCategory(nextCategory);
+  };
+
+  const focusMeshFrom3D = (selection: MeshPartSelection) => {
+    setSelectedMesh(selection);
+    setFocusedCategory(selection.category);
+    setCategory(selection.category);
+    setQuery("");
   };
 
   const sendToDiagnostic = async () => {
@@ -371,12 +397,29 @@ export default function AtelierWorkspace() {
       ? selectedParts[selectedParts.length - 1].category
       : null);
 
+  const selectedPartId =
+    (selectedCategory
+      ? selectedParts.find((part) => part.category === selectedCategory)?.id
+      : null) ??
+    (selectedParts.length > 0 ? selectedParts[selectedParts.length - 1].id : null);
+
+  const selectedMeshLink = selectedMesh
+    ? getMeshPartLink(selectedMesh.category)
+    : null;
+  const linkedMeshParts = selectedMeshLink
+    ? selectedMeshLink.preferredPartIds
+        .map((id) => pilotParts.find((part) => part.id === id))
+        .filter((part): part is PilotPart => Boolean(part))
+    : [];
+
   const gaugeModel = useMemo(() => {
     const ratioImpact = Math.min(35, Math.abs(geometry.speedDelta));
     const selectedCount = selectedParts.length;
     const hasExhaust = selectedParts.some((part) => part.category === "Échappement");
     const hasFilter = selectedParts.some((part) => part.category === "Filtration");
     const hasTopEnd = selectedParts.some((part) => part.category === "Haut moteur");
+    const hasIntake = selectedParts.some((part) => part.category === "Admission");
+    const hasCooling = selectedParts.some((part) => part.category === "Refroidissement");
 
     return {
       displacement: 72,
@@ -391,11 +434,18 @@ export default function AtelierWorkspace() {
           48 +
             geometry.wheelTorqueDelta * 2 +
             (hasExhaust ? 8 : 0) +
-            (hasFilter ? 4 : 0),
+            (hasFilter ? 4 : 0) +
+            (hasIntake ? 5 : 0),
         ),
       ),
-      usefulBand: Math.min(94, 42 + selectedCount * 9 + (hasExhaust ? 12 : 0)),
-      reliability: Math.max(25, 78 - selectedCount * 7 - ratioImpact * 0.6),
+      usefulBand: Math.min(
+        94,
+        42 + selectedCount * 8 + (hasExhaust ? 12 : 0) + (hasIntake ? 6 : 0),
+      ),
+      reliability: Math.max(
+        25,
+        78 - selectedCount * 7 - ratioImpact * 0.6 + (hasCooling ? 6 : 0),
+      ),
     };
   }, [geometry.speedDelta, geometry.wheelTorqueDelta, selectedParts]);
 
@@ -537,7 +587,75 @@ export default function AtelierWorkspace() {
             </div>
           </article>
 
-          <Atelier3DViewer selectedCategory={selectedCategory} />
+          <Atelier3DViewer
+            selectedCategory={selectedCategory}
+            selectedPartId={selectedPartId}
+            onCategoryFocus={focusCategoryFrom3D}
+            onMeshSelect={focusMeshFrom3D}
+          />
+
+          {selectedMesh && (
+            <article className={styles.meshPartCard}>
+              <div className={styles.cardHeading}>
+                <div>
+                  <BadgeCheck />
+                  <span>
+                    <small>LIEN 3D → PIÈCES</small>
+                    <b>{selectedMesh.category} · mesh {selectedMesh.meshName}</b>
+                  </span>
+                </div>
+                <span className={styles.catalogCount}>
+                  {linkedMeshParts.length} référence(s)
+                </span>
+              </div>
+              <p className={styles.meshPartNote}>
+                {selectedMeshLink?.note ||
+                  "Ce sous-ensemble est reconnu en 3D mais aucune référence pièce n’est encore qualifiée."}
+              </p>
+              {linkedMeshParts.length ? (
+                <div className={styles.meshPartLinks}>
+                  {linkedMeshParts.map((part) => {
+                    const isSelected = selectedIds.includes(part.id);
+                    return (
+                      <div key={part.id} className={styles.meshPartLinkRow}>
+                        <div>
+                          <small>{part.manufacturer}</small>
+                          <b>{part.name}</b>
+                          <code>{part.reference}</code>
+                        </div>
+                        <span>{statusLabel(part)}</span>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setShowWhy(part.id);
+                            setFocusedCategory(part.category);
+                          }}
+                        >
+                          Fiche technique
+                        </button>
+                        <button
+                          type="button"
+                          className={part.selectable ? styles.addPart : styles.lockedPart}
+                          disabled={snapshot === "Origine"}
+                          onClick={() => selectPart(part)}
+                        >
+                          {isSelected
+                            ? "Sélectionnée"
+                            : part.selectable
+                              ? "Ajouter au projet"
+                              : "À vérifier"}
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <div className={styles.emptyState}>
+                  Aucune pièce liée n’est encore suffisamment documentée pour cette zone.
+                </div>
+              )}
+            </article>
+          )}
 
           <article className={styles.setupCard}>
             <div className={styles.cardHeading}>

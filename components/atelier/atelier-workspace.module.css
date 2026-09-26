@@ -19,7 +19,7 @@
   border-radius: 22px;
   background:
     linear-gradient(90deg, rgba(5, 9, 12, 0.98), rgba(10, 15, 19, 0.72)),
-    url("https://raw.githubusercontent.com/scorbiere55400-stack/2t-expert/main/public/assets/two-stroke-supermoto.png") right 22% center / 48% auto no-repeat;
+    url("/assets/two-stroke-supermoto.png") right 22% center / 48% auto no-repeat;
   box-shadow: 0 22px 60px rgba(0, 0, 0, 0.3);
 }
 
@@ -907,5 +907,610 @@
   }
   .explodeControl {
     bottom: 50px;
+  }
+}
+
+
+.componentHotspots {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.componentHotspot,
+.componentHotspotActive {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  border: 0;
+  background: transparent;
+  color: #aebbc3;
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  padding: 4px;
+}
+
+.componentHotspot span,
+.componentHotspotActive span {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 2px solid #7b8c96;
+  background: rgba(6, 10, 13, .92);
+  box-shadow: 0 0 0 5px rgba(6, 10, 13, .45);
+  transition: .2s ease;
+}
+
+.componentHotspot b,
+.componentHotspotActive b {
+  opacity: 0;
+  transform: translateY(-2px);
+  padding: 4px 6px;
+  border-radius: 6px;
+  background: rgba(4, 8, 10, .86);
+  border: 1px solid #2b3a43;
+  font-size: .58rem;
+  white-space: nowrap;
+  transition: .2s ease;
+}
+
+.componentHotspot:hover span,
+.componentHotspotActive span {
+  border-color: #ff6a2a;
+  background: #ff6a2a;
+  box-shadow:
+    0 0 0 6px rgba(255, 106, 42, .14),
+    0 0 22px rgba(255, 106, 42, .6);
+}
+
+.componentHotspot:hover b,
+.componentHotspotActive b {
+  opacity: 1;
+  transform: translateY(0);
+  color: #fff;
+}
+
+.explodedComponentRail {
+  position: absolute;
+  z-index: 5;
+  left: 12px;
+  bottom: 54px;
+  display: grid;
+  gap: 5px;
+  width: min(220px, 42%);
+  pointer-events: none;
+}
+
+.explodedComponentRail button {
+  pointer-events: auto;
+  min-height: 28px;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 8px;
+  border: 1px solid #2b3942;
+  border-radius: 7px;
+  background: rgba(7, 12, 15, .86);
+  color: #aab6bd;
+  text-align: left;
+  backdrop-filter: blur(7px);
+  transition: transform .18s ease, border-color .18s ease, color .18s ease;
+}
+
+.explodedComponentRail button span {
+  color: #60727e;
+  font-size: .58rem;
+  font-family: monospace;
+}
+
+.explodedComponentRail button b {
+  font-size: .62rem;
+}
+
+.explodedComponentRail button:hover,
+.explodedComponentRail .explodedComponentActive {
+  border-color: #ff6a2a;
+  color: #fff;
+  box-shadow: inset 3px 0 0 #ff6a2a;
+}
+
+.explodeControl {
+  display: grid;
+  gap: 9px;
+}
+
+.explodeControl label + label {
+  padding-top: 7px;
+  border-top: 1px solid #26333b;
+}
+
+@media (max-width: 760px) {
+  .componentHotspot b,
+  .componentHotspotActive b {
+    display: none;
+  }
+
+  .explodedComponentRail {
+    width: 46%;
+    bottom: 126px;
+  }
+
+  .explodedComponentRail button b {
+    font-size: .56rem;
+  }
+}
+
+
+.modelImportPanel {
+  position: absolute;
+  z-index: 6;
+  left: 12px;
+  top: 58px;
+  width: min(330px, calc(100% - 24px));
+  display: grid;
+  gap: 7px;
+}
+
+.modelImportPanel > label {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 8px;
+  align-items: center;
+  padding: 9px 10px;
+  border: 1px solid #30404a;
+  border-radius: 10px;
+  background: rgba(5, 10, 13, .88);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+}
+
+.modelImportPanel > label svg {
+  width: 17px;
+  color: #ff7a32;
+}
+
+.modelImportPanel > label span {
+  display: grid;
+  gap: 2px;
+}
+
+.modelImportPanel > label b {
+  font-size: .68rem;
+}
+
+.modelImportPanel > label small {
+  color: #7f8d96;
+  font-size: .57rem;
+  line-height: 1.3;
+}
+
+.modelImportPanel input[type="file"] {
+  display: none;
+}
+
+.modelImportStatus {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 7px;
+  align-items: center;
+  padding: 7px 9px;
+  border-radius: 9px;
+  border: 1px solid #293740;
+  background: rgba(8, 14, 17, .9);
+  font-size: .6rem;
+}
+
+.modelImportStatus span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.modelImportStatus button {
+  border: 0;
+  background: transparent;
+  color: #8ea0aa;
+  font-size: .58rem;
+}
+
+.modelValid { color: #63e59f; }
+.modelInvalid { color: #ff7668; }
+
+.meshCoveragePanel {
+  position: absolute;
+  z-index: 5;
+  left: 12px;
+  bottom: 52px;
+  width: min(315px, 48%);
+  max-height: 180px;
+  overflow: auto;
+  padding: 10px;
+  border: 1px solid #293841;
+  border-radius: 10px;
+  background: rgba(5, 10, 13, .9);
+  backdrop-filter: blur(8px);
+}
+
+.meshCoveragePanel > b {
+  display: block;
+  margin-bottom: 7px;
+  color: #dfe5e8;
+  font-size: .64rem;
+}
+
+.meshCoveragePanel > div {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 7px;
+  padding: 4px 0;
+  border-top: 1px solid rgba(255,255,255,.05);
+  font-size: .58rem;
+}
+
+.meshCoveragePanel span {
+  color: #92a0a9;
+}
+
+.meshCoveragePanel em {
+  font-style: normal;
+  text-align: right;
+}
+
+.meshMatched { color: #5ee39a; }
+.meshMissing { color: #d99a59; }
+
+@media (max-width: 760px) {
+  .modelImportPanel {
+    top: 50px;
+    width: calc(100% - 24px);
+  }
+
+  .meshCoveragePanel {
+    width: calc(100% - 24px);
+    bottom: 174px;
+    max-height: 130px;
+  }
+}
+
+
+.advancedEngineCanvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(55, 112, 145, .18), transparent 20rem),
+    linear-gradient(180deg, #0b1115, #06090b);
+}
+
+.advancedEngineHost {
+  width: 100%;
+  height: 100%;
+  min-height: 390px;
+}
+
+.advancedEngineHost canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+
+.advancedEngineHost canvas:active {
+  cursor: grabbing;
+}
+
+.advancedEngineLegend {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 10px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 10px;
+  border: 1px solid #263640;
+  border-radius: 9px;
+  background: rgba(4, 9, 12, .82);
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+}
+
+.advancedEngineLegend b {
+  color: #ff7b34;
+  font-size: .64rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.advancedEngineLegend span {
+  color: #8e9aa2;
+  font-size: .58rem;
+}
+
+@media (max-width: 760px) {
+  .advancedEngineHost {
+    min-height: 320px;
+  }
+
+  .advancedEngineLegend {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+  }
+}
+
+
+.meshPartCard {
+  padding: 18px 20px;
+  border: 1px solid #30414b;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(255, 105, 42, .10), transparent 18rem),
+    linear-gradient(180deg, #11191f, #0a1014);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, .18);
+}
+
+.meshPartNote {
+  margin: 12px 0 14px;
+  color: #9aa7af;
+  font-size: .78rem;
+  line-height: 1.55;
+}
+
+.meshPartLinks {
+  display: grid;
+  gap: 8px;
+}
+
+.meshPartLinkRow {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.4fr) minmax(150px, .8fr) auto auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 11px;
+  border: 1px solid #25343d;
+  border-radius: 10px;
+  background: #0a0f13;
+}
+
+.meshPartLinkRow > div {
+  display: grid;
+  gap: 2px;
+}
+
+.meshPartLinkRow small {
+  color: #71808a;
+  font-size: .64rem;
+}
+
+.meshPartLinkRow code {
+  color: #69cfff;
+  font-size: .67rem;
+}
+
+.meshPartLinkRow > span {
+  color: #8fe1b5;
+  font-size: .69rem;
+  font-weight: 800;
+}
+
+.meshPartLinkRow > button {
+  min-height: 34px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #33434c;
+  background: #11191e;
+  color: #d7dde1;
+  font-size: .67rem;
+  font-weight: 800;
+}
+
+.meshPartLinkRow > button:hover:not(:disabled) {
+  border-color: #ff6a2a;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .meshPartLinkRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .meshPartLinkRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.visualStageConsole {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 6px;
+  background: #071116;
+}
+
+.machineVisualPanelConsole,
+.engineVisualPanelConsole {
+  border: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #071116;
+}
+
+.real3dViewportConsole,
+.real3dViewportConsole .real3dModel {
+  min-height: 405px;
+  height: 405px;
+}
+
+.consoleVisualLabel,
+.consoleEngineTitle,
+.consoleBreadcrumb {
+  position: absolute;
+  z-index: 6;
+  left: 12px;
+  pointer-events: none;
+}
+
+.consoleVisualLabel {
+  top: 10px;
+  color: #9baab1;
+  font-size: .58rem;
+  font-weight: 900;
+  letter-spacing: .11em;
+}
+
+.consoleBreadcrumb {
+  top: 9px;
+  color: #8f9da4;
+  font-size: .56rem;
+}
+
+.consoleEngineTitle {
+  top: 28px;
+  color: #f0f4f6;
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .05em;
+}
+
+.real3dToolbarConsole {
+  top: auto;
+  left: 12px;
+  right: auto;
+  bottom: 46px;
+  max-width: calc(100% - 24px);
+}
+
+.real3dToolbarConsole button {
+  min-height: 30px;
+  padding: 0 8px;
+  font-size: .58rem;
+  border-color: #2a3a42;
+  background: rgba(7, 13, 16, .88);
+}
+
+.visualLegendConsole {
+  min-height: 34px;
+  padding: 0 10px;
+  font-size: .55rem;
+  background: rgba(4, 9, 11, .78);
+}
+
+.consoleToolRail {
+  position: absolute;
+  z-index: 7;
+  top: 8px;
+  right: 8px;
+  width: 76px;
+  display: grid;
+  border: 1px solid #2d424c;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(6, 12, 15, .9);
+  backdrop-filter: blur(7px);
+}
+
+.consoleToolRail button {
+  min-height: 48px;
+  border: 0;
+  border-bottom: 1px solid #22343d;
+  background: transparent;
+  color: #b7c2c7;
+  display: grid;
+  place-items: center;
+  gap: 2px;
+  padding: 4px;
+  font-size: .52rem;
+}
+
+.consoleToolRail button:last-child {
+  border-bottom: 0;
+}
+
+.consoleToolRail button:hover,
+.consoleToolRail .consoleToolActive {
+  color: #ff9a50;
+  background: linear-gradient(90deg, rgba(255, 107, 38, .17), rgba(255, 107, 38, .03));
+  box-shadow: inset 2px 0 0 #ff7126;
+}
+
+.consoleToolRail svg {
+  width: 17px;
+  height: 17px;
+}
+
+.explodeControlConsole {
+  right: 92px;
+  bottom: 48px;
+  width: min(235px, calc(100% - 118px));
+  padding: 7px 8px;
+  opacity: .9;
+}
+
+.explodeControlConsole label {
+  font-size: .56rem;
+}
+
+.explodedComponentRailConsole {
+  left: 10px;
+  bottom: 44px;
+  width: 185px;
+  gap: 3px;
+}
+
+.explodedComponentRailConsole button {
+  min-height: 24px;
+  grid-template-columns: 24px 1fr;
+  padding: 3px 6px;
+  background: rgba(5, 10, 13, .82);
+}
+
+.explodedComponentRailConsole button b {
+  font-size: .55rem;
+}
+
+.focusLabelConsole {
+  left: 10px;
+  right: 92px;
+  bottom: 8px;
+  min-height: 26px;
+  padding: 6px 8px;
+  font-size: .54rem;
+  background: rgba(4, 9, 11, .82);
+}
+
+@media (max-width: 1100px) {
+  .visualStageConsole {
+    grid-template-columns: 1fr;
+  }
+
+  .real3dViewportConsole,
+  .real3dViewportConsole .real3dModel {
+    min-height: 360px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 760px) {
+  .consoleToolRail {
+    width: 64px;
+  }
+
+  .consoleToolRail button {
+    min-height: 42px;
+  }
+
+  .explodeControlConsole {
+    right: 78px;
+  }
+
+  .focusLabelConsole {
+    right: 76px;
   }
 }
