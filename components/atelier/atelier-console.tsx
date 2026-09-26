@@ -162,6 +162,7 @@ export default function AtelierConsole({ onNavigate }: Props) {
             <Atelier3DViewer
               selectedCategory={categoryToPilot[activeCategory]}
               selectedPartId={activePartId}
+              variant="console"
               onCategoryFocus={(category) => {
                 const mapped = pilotToCategory[category];
                 if (mapped) setActiveCategory(mapped);
