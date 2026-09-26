@@ -1326,3 +1326,191 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+.visualStageConsole {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 6px;
+  background: #071116;
+}
+
+.machineVisualPanelConsole,
+.engineVisualPanelConsole {
+  border: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #071116;
+}
+
+.real3dViewportConsole,
+.real3dViewportConsole .real3dModel {
+  min-height: 405px;
+  height: 405px;
+}
+
+.consoleVisualLabel,
+.consoleEngineTitle,
+.consoleBreadcrumb {
+  position: absolute;
+  z-index: 6;
+  left: 12px;
+  pointer-events: none;
+}
+
+.consoleVisualLabel {
+  top: 10px;
+  color: #9baab1;
+  font-size: .58rem;
+  font-weight: 900;
+  letter-spacing: .11em;
+}
+
+.consoleBreadcrumb {
+  top: 9px;
+  color: #8f9da4;
+  font-size: .56rem;
+}
+
+.consoleEngineTitle {
+  top: 28px;
+  color: #f0f4f6;
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .05em;
+}
+
+.real3dToolbarConsole {
+  top: auto;
+  left: 12px;
+  right: auto;
+  bottom: 46px;
+  max-width: calc(100% - 24px);
+}
+
+.real3dToolbarConsole button {
+  min-height: 30px;
+  padding: 0 8px;
+  font-size: .58rem;
+  border-color: #2a3a42;
+  background: rgba(7, 13, 16, .88);
+}
+
+.visualLegendConsole {
+  min-height: 34px;
+  padding: 0 10px;
+  font-size: .55rem;
+  background: rgba(4, 9, 11, .78);
+}
+
+.consoleToolRail {
+  position: absolute;
+  z-index: 7;
+  top: 8px;
+  right: 8px;
+  width: 76px;
+  display: grid;
+  border: 1px solid #2d424c;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(6, 12, 15, .9);
+  backdrop-filter: blur(7px);
+}
+
+.consoleToolRail button {
+  min-height: 48px;
+  border: 0;
+  border-bottom: 1px solid #22343d;
+  background: transparent;
+  color: #b7c2c7;
+  display: grid;
+  place-items: center;
+  gap: 2px;
+  padding: 4px;
+  font-size: .52rem;
+}
+
+.consoleToolRail button:last-child {
+  border-bottom: 0;
+}
+
+.consoleToolRail button:hover,
+.consoleToolRail .consoleToolActive {
+  color: #ff9a50;
+  background: linear-gradient(90deg, rgba(255, 107, 38, .17), rgba(255, 107, 38, .03));
+  box-shadow: inset 2px 0 0 #ff7126;
+}
+
+.consoleToolRail svg {
+  width: 17px;
+  height: 17px;
+}
+
+.explodeControlConsole {
+  right: 92px;
+  bottom: 48px;
+  width: min(235px, calc(100% - 118px));
+  padding: 7px 8px;
+  opacity: .9;
+}
+
+.explodeControlConsole label {
+  font-size: .56rem;
+}
+
+.explodedComponentRailConsole {
+  left: 10px;
+  bottom: 44px;
+  width: 185px;
+  gap: 3px;
+}
+
+.explodedComponentRailConsole button {
+  min-height: 24px;
+  grid-template-columns: 24px 1fr;
+  padding: 3px 6px;
+  background: rgba(5, 10, 13, .82);
+}
+
+.explodedComponentRailConsole button b {
+  font-size: .55rem;
+}
+
+.focusLabelConsole {
+  left: 10px;
+  right: 92px;
+  bottom: 8px;
+  min-height: 26px;
+  padding: 6px 8px;
+  font-size: .54rem;
+  background: rgba(4, 9, 11, .82);
+}
+
+@media (max-width: 1100px) {
+  .visualStageConsole {
+    grid-template-columns: 1fr;
+  }
+
+  .real3dViewportConsole,
+  .real3dViewportConsole .real3dModel {
+    min-height: 360px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 760px) {
+  .consoleToolRail {
+    width: 64px;
+  }
+
+  .consoleToolRail button {
+    min-height: 42px;
+  }
+
+  .explodeControlConsole {
+    right: 78px;
+  }
+
+  .focusLabelConsole {
+    right: 76px;
+  }
+}
