@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useMemo, useState } from "react";
-import AtelierWorkspace from "../components/atelier/atelier-workspace";
+import AtelierConsole from "../components/atelier/atelier-console";
 
 import {
   ArrowRight,
@@ -297,7 +297,7 @@ export default function HomePage() {
   };
   return (
     <div className="site-shell">
-      <header className="site-header">
+      {view !== "atelier" && <header className="site-header">
         <button className="mobile-toggle" onClick={() => setMenu(!menu)}>
           {menu ? <X /> : <Menu />}
         </button>
@@ -324,7 +324,7 @@ export default function HomePage() {
           <CircleUserRound />
           <span>Mon espace</span>
         </button>
-      </header>
+      </header>}
       <main>
         {view === "home" && (
           <HomeView
@@ -337,7 +337,7 @@ export default function HomePage() {
             }}
           />
         )}
-        {view === "atelier" && <AtelierWorkspace />}
+        {view === "atelier" && <AtelierConsole onNavigate={(target) => go(target as View)} />}
         {view === "catalog" && (
           <Catalog
             query={query}
@@ -367,7 +367,7 @@ export default function HomePage() {
           <Community joined={joined} onJoin={() => setJoinOpen(true)} />
         )}
       </main>
-      <footer>
+      {view !== "atelier" && <footer>
         <div className="footer-brand">
           <BrandLogo />
         </div>
@@ -381,7 +381,7 @@ export default function HomePage() {
           <button onClick={() => go("exploded")}>Éclatés</button>
           <button onClick={() => go("community")}>Communauté</button>
         </nav>
-      </footer>
+      </footer>}
       {joinOpen && (
         <div className="modal-backdrop" onMouseDown={() => setJoinOpen(false)}>
           <section
