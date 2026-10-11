@@ -1,0 +1,14 @@
+import {mecabotProvider} from '@/lib/mecabot-provider';
+import {adminUser} from '@/lib/admin-access';import {getRawDb} from '@/db';import {searchLibrary,libraryCount,faultCount,sourceCount} from '@/lib/mecabot-library';
+export const dynamic='force-dynamic';
+const tools=[{name:'mecabot_search_documentation',description:'Recherche les 106 fiches documentaires MécaBot, dont 80 fiches de pannes. Respecter applications, avertissements et validation ; aucune fiche ne prouve une panne.',inputSchema:{type:'object',properties:{query:{type:'string',maxLength:2000}},required:['query'],additionalProperties:false}},{name:'mecabot_lab_status',description:'État du laboratoire privé et nombre d’exemples relus, sans données personnelles.',inputSchema:{type:'object',properties:{},additionalProperties:false}}];
+export async function POST(request:Request){let b:{jsonrpc:string;id?:string|number;method:string;params?:{name?:string;arguments?:{query?:string}}};try{const raw=await request.text();if(raw.length>10000)throw Error();b=JSON.parse(raw);if(b.jsonrpc!=='2.0'||typeof b.method!=='string')throw Error();}catch{return Response.json({error:'Requête invalide.'},{status:400});}
+ const reply=(result:unknown)=>Response.json({jsonrpc:'2.0',id:b.id,result},{headers:{'Cache-Control':'no-store'}});
+ if(b.method==='initialize')return reply({protocolVersion:'2025-03-26',capabilities:{tools:{}},serverInfo:{name:'2T Expert MécaBot',version:'1.0.0'}});
+ if(b.method==='notifications/initialized')return new Response(null,{status:202});
+ if(b.method==='tools/list')return reply({tools});
+ if(b.method==='tools/call'){if(!await adminUser())return Response.json({error:'Accès administrateur requis.'},{status:403});let result:unknown;
+ if(b.params?.name==='mecabot_search_documentation'){const q=b.params.arguments?.query;if(typeof q!=='string'||q.length>2000)return reply({isError:true,content:[{type:'text',text:'Question invalide.'}]});result={cards:searchLibrary(q),scope:'documentary_lookup',faultCount,sourceCount,warning:'Les applications spécifiques doivent être confirmées. Ces fiches ne sont pas validées en atelier.'};}
+ else if(b.params?.name==='mecabot_lab_status'){try{const counts=await getRawDb().prepare('SELECT status,count(*) AS count FROM mecabot_examples GROUP BY status').all();result={examples:counts.results,libraryCount,faultCount,sourceCount,gpuConfigured:!!process.env.MECABOT_INFERENCE_URL&&!!process.env.MECABOT_INFERENCE_TOKEN,provider:mecabotProvider(),prototype:'Qwen3-4B, démonstration de 8 étapes, expertise non validée'};}catch{return reply({isError:true,content:[{type:'text',text:'Base indisponible.'}]});}}
+ else return Response.json({jsonrpc:'2.0',id:b.id,error:{code:-32601,message:'Outil inconnu'}});return reply({content:[{type:'text',text:JSON.stringify(result)}]});}
+ return Response.json({jsonrpc:'2.0',id:b.id,error:{code:-32601,message:'Méthode inconnue'}});}

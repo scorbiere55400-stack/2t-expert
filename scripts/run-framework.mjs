@@ -2,6 +2,9 @@ import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { readExecutionProfile } from "./execution-profile.mjs";
 
+// Limit native bundler concurrency for reproducible builds in an 8 GB workspace.
+process.env.RAYON_NUM_THREADS ??= "2";
+
 const [command, ...args] = process.argv.slice(2);
 if (!["dev", "build"].includes(command)) throw new Error("Expected dev or build.");
 const managedLinux = readExecutionProfile() === "managed-linux";

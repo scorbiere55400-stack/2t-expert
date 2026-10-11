@@ -1,0 +1,14 @@
+{
+  "archive": "MecaBot_Bibliotheque_Pannes_2T_v1(1).zip",
+  "sha256": "f25acaa35b56a4208cb161767dc31f7265ccdaacc76fae5190d87ef4e5ba272a",
+  "date": "2026-10-10",
+  "fiches": 80,
+  "sources": 28,
+  "evaluations": 24,
+  "excluded_automatic_ids": [
+    "2T-040",
+    "2T-041"
+  ],
+  "mode": "documentation, pas entraînement",
+  "validation": "non validé en atelier"
+}

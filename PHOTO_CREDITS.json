@@ -1,0 +1,240 @@
+{
+  "yam-yz125-free": {
+    "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YZ125_Motorcycle.jpg",
+    "author": "Goygoo",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "changes": "Aucune modification du fichier. Affichage adapté.",
+    "year": "Photographié en 2011, différent de la variante 2022–2026"
+  },
+  "previous_carousel_sources": [
+    {
+      "category": "scooter",
+      "subject": "MBK Booster · première génération",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Booster_prima_serie.jpg",
+      "direct_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Booster_prima_serie.jpg?width=1600",
+      "author": "Stefano Tezzon",
+      "license_name": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "engine": "two-stroke",
+      "changes": "Cadrage d’affichage CSS, sans modification du fichier source.",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Booster_prima_serie.jpg?width=1600"
+    },
+    {
+      "category": "scooter",
+      "subject": "Yamaha Aerox 50 · 2011",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Yamaha_Aerox_2011_.jpg",
+      "direct_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yamaha_Aerox_2011_.jpg",
+      "author": "Thomas Wiersma",
+      "license_name": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "engine": "two-stroke",
+      "changes": "Wikimedia 1280px scaled preview ; cadrage d’affichage CSS.",
+      "src": "/assets/models/yam-aerox.jpg"
+    },
+    {
+      "category": "moped",
+      "subject": "Peugeot 103 SPX-LC · 1988",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Peugeot_103_SPX-LC_1988_s%C3%A9rie_1_d%E2%80%99origine.jpg",
+      "direct_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Peugeot_103_SPX-LC_1988_s%C3%A9rie_1_d%E2%80%99origine.jpg?width=1600",
+      "author": "Jean-Noël Marchi",
+      "license_name": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "engine": "two-stroke",
+      "changes": "Cadrage d’affichage CSS, sans modification du fichier source.",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Peugeot_103_SPX-LC_1988_s%C3%A9rie_1_d%E2%80%99origine.jpg?width=1600"
+    },
+    {
+      "category": "50cc",
+      "subject": "Yamaha DT50X",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:2017-09-21_(174)_Yamaha_DT_50_X_at_Bahnhof_Waidhofen_an_der_Ybbs.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/2017-09-21_%28174%29_Yamaha_DT_50_X_at_Bahnhof_Waidhofen_an_der_Ybbs.jpg",
+      "author": "GT1976",
+      "license_name": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "engine": "two-stroke",
+      "changes": "Redimensionnement et compression JPEG ; cadrage adapté à l’affichage.",
+      "src": "/assets/real/50cc.jpg"
+    },
+    {
+      "category": "enduro125",
+      "subject": "KTM 125 EXC",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:KTM_125_EXC.jpg",
+      "direct_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/KTM_125_EXC.jpg",
+      "author": "Alex.calugaru09",
+      "license_name": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "engine": "two-stroke",
+      "changes": "Cadrage d’affichage CSS, sans modification du fichier source.",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/KTM_125_EXC.jpg"
+    },
+    {
+      "category": "enduro250",
+      "subject": "KTM 250 EXC · 2015",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:KTM_EXC_250_2015.JPG",
+      "direct_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/KTM_EXC_250_2015.JPG?width=1600",
+      "author": "Peprovira",
+      "license_name": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "engine": "two-stroke",
+      "changes": "Cadrage d’affichage CSS, sans modification du fichier source.",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/KTM_EXC_250_2015.JPG?width=1600"
+    },
+    {
+      "category": "enduro300",
+      "subject": "2017 KTM 300 XC-W Six Days",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:2017_KTM_300_XC-W_Six_Days.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/2017_KTM_300_XC-W_Six_Days.jpg",
+      "author": "Cdw1952",
+      "license_name": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "engine": "two-stroke",
+      "changes": "Redimensionnement et compression JPEG ; cadrage adapté à l’affichage.",
+      "src": "/assets/real/enduro.jpg"
+    },
+    {
+      "category": "trial",
+      "subject": "GasGas TXT Pro 250",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:GASGAS_TXT_PRO_250.JPG",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/GASGAS_TXT_PRO_250.JPG",
+      "author": "Y Sekiai",
+      "license_name": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "engine": "two-stroke",
+      "changes": "Redimensionnement et compression JPEG ; cadrage adapté à l’affichage.",
+      "src": "/assets/real/trial.jpg"
+    },
+    {
+      "category": "motocross",
+      "subject": "2008 Yamaha YZ250",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:YZ250.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/YZ250.jpg",
+      "author": "Coadster68",
+      "license_name": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "engine": "two-stroke",
+      "changes": "Redimensionnement et compression JPEG ; cadrage adapté à l’affichage.",
+      "src": "/assets/real/motocross.jpg"
+    },
+    {
+      "category": "vintage-road",
+      "subject": "Yamaha RD350 (source description; RD-series two-stroke road motorcycle)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Yamaha_RD_350_2011-01-29.jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Yamaha_RD_350_2011-01-29.jpg",
+      "author": "Bergfalke2",
+      "license_name": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "engine": "two-stroke",
+      "changes": "Redimensionnement et compression JPEG ; cadrage adapté à l’affichage.",
+      "src": "/assets/real/vintage-road.jpg"
+    },
+    {
+      "category": "scooter",
+      "subject": "Vespa PX125E Elestart",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Vespa_PX_125_E,_red_(2).jpg",
+      "direct_image_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Vespa_PX_125_E%2C_red_%282%29.jpg",
+      "author": "Cjp24",
+      "license_name": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "engine": "two-stroke",
+      "changes": "Redimensionnement et compression JPEG ; cadrage adapté à l’affichage.",
+      "src": "/assets/real/scooter.jpg"
+    }
+  ],
+  "carousel": [
+    {
+      "category": "scooter",
+      "subject": "MBK Booster jaune",
+      "src": "/assets/carousel-sketch/mbk-booster.webp",
+      "alt": "Esquisse illustrée de MBK Booster jaune dans un décor évoquant le monde du deux temps",
+      "credit": "Esquisse créée pour 2T Expert · référence : Cjp24 · CC BY-SA 4.0",
+      "vehiclePhotograph": false,
+      "setting": "Illustration originale inspirée de la photographie du véhicule indiqué ; les détails dessinés peuvent différer du modèle photographié.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:MBK_Booster,_yellow.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "category": "scooter",
+      "subject": "MBK Booster Rocket · jaune et noir",
+      "src": "/assets/carousel-sketch/mbk-booster-rocket.webp",
+      "alt": "Esquisse illustrée de MBK Booster Rocket · jaune et noir dans un décor évoquant le monde du deux temps",
+      "credit": "Esquisse créée pour 2T Expert · d’après votre photo du Rocket",
+      "vehiclePhotograph": false,
+      "setting": "Illustration originale inspirée de la photographie du véhicule indiqué ; les détails dessinés peuvent différer du modèle photographié."
+    },
+    {
+      "category": "moped",
+      "subject": "Peugeot 103 SPX-LC · 1988",
+      "src": "/assets/carousel-sketch/peugeot-103-spx-lc.webp",
+      "alt": "Esquisse illustrée de Peugeot 103 SPX-LC · 1988 dans un décor évoquant le monde du deux temps",
+      "credit": "Esquisse créée pour 2T Expert · référence : Jean-Noël Marchi · CC0 1.0",
+      "vehiclePhotograph": false,
+      "setting": "Illustration originale inspirée de la photographie du véhicule indiqué ; les détails dessinés peuvent différer du modèle photographié.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Peugeot_103_SPX-LC_1988_s%C3%A9rie_1_d%E2%80%99origine.jpg",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license": "CC0 1.0"
+    },
+    {
+      "category": "50cc",
+      "subject": "Yamaha DT50X · 50 cm³",
+      "src": "/assets/carousel-sketch/yamaha-dt50x.webp",
+      "alt": "Esquisse illustrée de Yamaha DT50X · 50 cm³ dans un décor évoquant le monde du deux temps",
+      "credit": "Esquisse créée pour 2T Expert · référence : GT1976 · CC BY-SA 4.0",
+      "vehiclePhotograph": false,
+      "setting": "Illustration originale inspirée de la photographie du véhicule indiqué ; les détails dessinés peuvent différer du modèle photographié.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2017-09-21_(174)_Yamaha_DT_50_X_at_Bahnhof_Waidhofen_an_der_Ybbs.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "category": "enduro125",
+      "subject": "KTM 125 EXC",
+      "src": "/assets/carousel-sketch/ktm-125-exc.webp",
+      "alt": "Esquisse illustrée de KTM 125 EXC dans un décor évoquant le monde du deux temps",
+      "credit": "Esquisse créée pour 2T Expert · référence : Alex.calugaru09 · CC BY-SA 4.0",
+      "vehiclePhotograph": false,
+      "setting": "Illustration originale inspirée de la photographie du véhicule indiqué ; les détails dessinés peuvent différer du modèle photographié.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:KTM_125_EXC.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "category": "enduro250",
+      "subject": "KTM 250 EXC · 2015",
+      "src": "/assets/carousel-sketch/ktm-250-exc.webp",
+      "alt": "Esquisse illustrée de KTM 250 EXC · 2015 dans un décor évoquant le monde du deux temps",
+      "credit": "Esquisse créée pour 2T Expert · référence : Peprovira · CC BY-SA 4.0",
+      "vehiclePhotograph": false,
+      "setting": "Illustration originale inspirée de la photographie du véhicule indiqué ; les détails dessinés peuvent différer du modèle photographié.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:KTM_EXC_250_2015.JPG",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "category": "enduro300",
+      "subject": "KTM 300 XC-W Six Days · 2017",
+      "src": "/assets/carousel-sketch/ktm-300-xcw.webp",
+      "alt": "Esquisse illustrée de KTM 300 XC-W Six Days · 2017 dans un décor évoquant le monde du deux temps",
+      "credit": "Esquisse créée pour 2T Expert · référence : Cdw1952 · CC BY-SA 4.0",
+      "vehiclePhotograph": false,
+      "setting": "Illustration originale inspirée de la photographie du véhicule indiqué ; les détails dessinés peuvent différer du modèle photographié.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2017_KTM_300_XC-W_Six_Days.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "category": "trial",
+      "subject": "GasGas TXT Pro 250",
+      "src": "/assets/carousel-sketch/gasgas-txt-pro.webp",
+      "alt": "Esquisse illustrée de GasGas TXT Pro 250 dans un décor évoquant le monde du deux temps",
+      "credit": "Esquisse créée pour 2T Expert · référence : Y Sekiai · CC BY-SA 3.0",
+      "vehiclePhotograph": false,
+      "setting": "Illustration originale inspirée de la photographie du véhicule indiqué ; les détails dessinés peuvent différer du modèle photographié.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:GASGAS_TXT_PRO_250.JPG",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
+  "note": "Les diapositives sont des illustrations générées à partir de photos de véritables véhicules identifiés, et non des photographies ou des documents techniques. Elles peuvent différer dans les détails des modèles d’origine. Les crédits et les licences des photographies de référence figurent sur chaque diapositive ; le Rocket utilise la photo du propriétaire. Le modèle Peugeot représenté est un 103 SPX-LC de 1988, pas un RCX."
+}

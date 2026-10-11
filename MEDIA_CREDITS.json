@@ -1,0 +1,75 @@
+{
+  "selected": [
+    {
+      "vehicleId": "apr-rs125",
+      "photographedModel": "Aprilia RS 125",
+      "modelYear": 2001,
+      "photoDate": "2017-03-04",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aprilia_RS_125_2001.jpg",
+      "author": "Spieltrieb2",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "path": "/workspace/scratch/9548c44d65fc/model-photos/apr-rs125.jpg",
+      "yearEvidence": "Commons file title",
+      "changes": "Unmodified original"
+    },
+    {
+      "vehicleId": "rieju-mrt50",
+      "photographedModel": "Rieju MRT 50 SM Trophy",
+      "modelYear": 2017,
+      "photoDate": "2017-05-23",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rieju_MRT_50_SM_Trophy_50cc_2017.jpg",
+      "author": "Peprovira",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "path": "/workspace/scratch/9548c44d65fc/model-photos/rieju-mrt50.jpg",
+      "yearEvidence": "Commons file title and description",
+      "changes": "Unmodified original"
+    },
+    {
+      "vehicleId": "yam-aerox",
+      "photographedModel": "Yamaha Aerox 50",
+      "modelYear": 2011,
+      "photoDate": "2016-01-04",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Yamaha_Aerox_2011_.jpg",
+      "author": "Thomas Wiersma",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "path": "/workspace/scratch/9548c44d65fc/model-photos/yam-aerox.jpg",
+      "yearEvidence": "Commons file title and description",
+      "changes": "Wikimedia 1280px scaled preview"
+    },
+    {
+      "vehicleId": "yam-yz125",
+      "photographedModel": "Yamaha YZ125 Team Yamaha Blue",
+      "modelYear": 2026,
+      "sourcePage": "https://yamahamotorsports.com/models/26-yz125",
+      "author": "Yamaha Motor Corporation, U.S.A.",
+      "license": "Manufacturer copyright; no open license claimed",
+      "copyright": "Yamaha Motor Corporation, U.S.A. All rights reserved.",
+      "path": "/workspace/scratch/9548c44d65fc/model-photos/yam-yz125.webp",
+      "yearEvidence": "Official 2026 model page and image filename",
+      "changes": "Unmodified manufacturer website image"
+    },
+    {
+      "vehicleId": "yam-rd350",
+      "photographedModel": "Yamaha RD350LC",
+      "modelYear": null,
+      "photoDate": "2007-04-15",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Yamaha_RD350LC_01.jpg",
+      "author": "Reg Mckenna",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "path": "/workspace/scratch/9548c44d65fc/model-photos/yam-rd350.jpg",
+      "yearEvidence": "Model verified; actual model year unknown. Model illustration, not fitment evidence.",
+      "changes": "Unmodified original"
+    }
+  ],
+  "missing": {
+    "sherco-sm50-2024": "No exact 2024 model-year photo found",
+    "sherco-end50-2024": "No exact 2024 model-year photo found",
+    "ktm-exc300": "No exact 2024–2026 photo found",
+    "beta-rr300": "Beta RR 2025 photo available but displacement not established; not selected",
+    "hon-cr250": "No exact 2002–2007 photo found"
+  }
+}

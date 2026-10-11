@@ -1,0 +1,8 @@
+{$MECABOT_DOMAIN} {
+  encode zstd gzip
+  @chat path /v1/chat/completions
+  handle @chat {
+    reverse_proxy inference:8000
+  }
+  respond "Not found" 404
+}

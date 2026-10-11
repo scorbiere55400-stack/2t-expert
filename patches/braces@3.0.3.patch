@@ -1,0 +1,101 @@
+diff --git a/lib/compile.js b/lib/compile.js
+index dce69beb90ece5c3b0ca234a949418f9f34eedbc..0390d1cff09819664540161bb94186ddc9a57a75 100644
+--- a/lib/compile.js
++++ b/lib/compile.js
+@@ -1,9 +1,12 @@
+ 'use strict';
+ 
++const validateDepth = require('./validate-depth');
++
+ const fill = require('fill-range');
+ const utils = require('./utils');
+ 
+ const compile = (ast, options = {}) => {
++  validateDepth(ast);
+   const walk = (node, parent = {}) => {
+     const invalidBlock = utils.isInvalidBrace(parent);
+     const invalidNode = node.invalid === true && options.escapeInvalid === true;
+diff --git a/lib/expand.js b/lib/expand.js
+index 35b2c41d6afdb8f0197959e26079f266e48370d3..18077a0e177e4d7a5b5b166039d388391251482c 100644
+--- a/lib/expand.js
++++ b/lib/expand.js
+@@ -1,5 +1,7 @@
+ 'use strict';
+ 
++const validateDepth = require('./validate-depth');
++
+ const fill = require('fill-range');
+ const stringify = require('./stringify');
+ const utils = require('./utils');
+@@ -31,6 +33,7 @@ const append = (queue = '', stash = '', enclose = false) => {
+ };
+ 
+ const expand = (ast, options = {}) => {
++  validateDepth(ast);
+   const rangeLimit = options.rangeLimit === undefined ? 1000 : options.rangeLimit;
+ 
+   const walk = (node, parent = {}) => {
+diff --git a/lib/parse.js b/lib/parse.js
+index 3a6988e629f52aee6609dc5ec290a5e9ff47cecb..0cf6225440043272de61e7f3536b61846607241f 100644
+--- a/lib/parse.js
++++ b/lib/parse.js
+@@ -144,6 +144,7 @@ const parse = (input, options = {}) => {
+ 
+     if (value === CHAR_LEFT_PARENTHESES) {
+       block = push({ type: 'paren', nodes: [] });
++      if (stack.length >= 128) throw new SyntaxError('Brace pattern nesting exceeds 128');
+       stack.push(block);
+       push({ type: 'text', value });
+       continue;
+@@ -210,6 +211,7 @@ const parse = (input, options = {}) => {
+       };
+ 
+       block = push(brace);
++      if (stack.length >= 128) throw new SyntaxError('Brace pattern nesting exceeds 128');
+       stack.push(block);
+       push({ type: 'open', value });
+       continue;
+diff --git a/lib/stringify.js b/lib/stringify.js
+index 8bcf872c31894f81a8c64d9202fd607e4fd7ea2b..d5b35f2a3386c5cd88e394dbc3a2a7abc7389c32 100644
+--- a/lib/stringify.js
++++ b/lib/stringify.js
+@@ -1,8 +1,11 @@
+ 'use strict';
+ 
++const validateDepth = require('./validate-depth');
++
+ const utils = require('./utils');
+ 
+ module.exports = (ast, options = {}) => {
++  validateDepth(ast);
+   const stringify = (node, parent = {}) => {
+     const invalidBlock = options.escapeInvalid && utils.isInvalidBrace(parent);
+     const invalidNode = node.invalid === true && options.escapeInvalid === true;
+diff --git a/lib/validate-depth.js b/lib/validate-depth.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..3b23ee1bbf7d39ab8b45b11aa6c845996dcf0ff5
+--- /dev/null
++++ b/lib/validate-depth.js
+@@ -0,0 +1,22 @@
++'use strict';
++// Bound recursive AST walkers, including callers supplying an AST directly.
++module.exports = ast => {
++  const pending = [[ast, 0, false]];
++  const active = new Set();
++  let visited = 0;
++  while (pending.length) {
++    const [node, depth, leaving] = pending.pop();
++    if (!node || typeof node !== 'object') continue;
++    if (leaving) { active.delete(node); continue; }
++    if (depth > 128) throw new SyntaxError('Brace pattern nesting exceeds 128');
++    if (active.has(node)) throw new SyntaxError('Cyclic brace AST');
++    if (++visited > 100000) throw new SyntaxError('Brace AST exceeds node limit');
++    active.add(node);
++    pending.push([node, depth, true]);
++    if (Array.isArray(node.nodes)) {
++      for (let i = node.nodes.length - 1; i >= 0; i--) {
++        pending.push([node.nodes[i], depth + 1, false]);
++      }
++    }
++  }
++};

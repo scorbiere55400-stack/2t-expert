@@ -1,0 +1,50 @@
+[
+  {
+    "domaine": "injection 2T moto TPI/TBI",
+    "contenu": "Pression carburant, injecteurs, capteurs, logiciel, défauts ECU et pompe à huile",
+    "condition_publication": "Manuels d’atelier propres au millésime et variantes; aucune table DTC générique.",
+    "indexable": false
+  },
+  {
+    "domaine": "injection directe marine / scooter",
+    "contenu": "E-TEC, Optimax, HPDI, DiTech: air/carburant, injecteurs et protections",
+    "condition_publication": "Documenter chaque technologie séparément; procédures et pressions non interchangeables.",
+    "indexable": false
+  },
+  {
+    "domaine": "graissage séparé",
+    "contenu": "Pompe, purge, débit, commande électrique/mécanique et clapets",
+    "condition_publication": "Obtenir le manuel exact; ne pas inventer une procédure de purge ou de conversion au prémélange.",
+    "indexable": false
+  },
+  {
+    "domaine": "CVT scooter et embrayages moto",
+    "contenu": "Courroie, variateur, embrayage, boîte et sélection",
+    "condition_publication": "Créer un module de transmission avec sources fabricant, séparé des pannes moteur.",
+    "indexable": false
+  },
+  {
+    "domaine": "allumage spécifique",
+    "contenu": "CDI AC/DC, stator, capteur, antiparasite, avance, panne à chaud",
+    "condition_publication": "Ajouter schémas et méthodes par modèle; pas de résistances ou couleurs de fils universelles.",
+    "indexable": false
+  },
+  {
+    "domaine": "dépannage aéronautique 2T",
+    "contenu": "Paramoteur et aviation légère",
+    "condition_publication": "Hors périmètre opérationnel de cette version; exiger documentation et compétence propres à ces usages.",
+    "indexable": false
+  },
+  {
+    "domaine": "diesel 2T industriel",
+    "contenu": "Balayage soufflé, injection diesel et grands moteurs",
+    "condition_publication": "Hors périmètre: bibliothèque consacrée aux petits 2T essence.",
+    "indexable": false
+  },
+  {
+    "domaine": "cas rares et historique réel",
+    "contenu": "Fissures internes, erreurs d’usinage, corrosion, eau dans carburant, pannes intermittentes",
+    "condition_publication": "Enrichir avec dossiers observés, preuves, mesures et validation technique indépendante.",
+    "indexable": false
+  }
+]

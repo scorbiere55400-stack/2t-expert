@@ -1,0 +1,3 @@
+import Link from 'next/link';import {requireChatGPTUser} from '@/app/chatgpt-auth';import {isAdminEmail} from '@/lib/admin-access';import Console from './console';
+export const dynamic='force-dynamic';export const metadata={title:'Administration privée | 2T Expert',robots:{index:false,follow:false}};
+export default async function Admin(){const user=await requireChatGPTUser('/admin');if(!isAdminEmail(user.email))return <main className="page-wrap"><h1>Accès réservé</h1><Link href="/">Retour au site</Link></main>;return <main className="page-wrap"><Link href="/">← 2T Expert</Link><h1>Votre atelier privé</h1><p>Bienvenue {user.displayName}. Testez le site, corrigez MécaBot et préparez ses prochains apprentissages.</p><Console/></main>;}
