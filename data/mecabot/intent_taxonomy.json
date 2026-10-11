@@ -1,0 +1,82 @@
+[
+  {
+    "intent": "no_start",
+    "label": "Démarrage impossible",
+    "priority_editorial": 1,
+    "priority_basis": "triage utile et risque; pas un classement mondial de volume",
+    "observed_threads": 3,
+    "denominator": 13
+  },
+  {
+    "intent": "stall",
+    "label": "Calage et ralenti",
+    "priority_editorial": 1,
+    "priority_basis": "triage utile et risque; pas un classement mondial de volume",
+    "observed_threads": 1,
+    "denominator": 13
+  },
+  {
+    "intent": "power",
+    "label": "Perte de puissance",
+    "priority_editorial": 1,
+    "priority_basis": "triage utile et risque; pas un classement mondial de volume",
+    "observed_threads": 1,
+    "denominator": 13
+  },
+  {
+    "intent": "carb",
+    "label": "Carburation et réglage",
+    "priority_editorial": 2,
+    "priority_basis": "triage utile et risque; pas un classement mondial de volume",
+    "observed_threads": 3,
+    "denominator": 13
+  },
+  {
+    "intent": "oil",
+    "label": "Huile et lubrification",
+    "priority_editorial": 2,
+    "priority_basis": "triage utile et risque; pas un classement mondial de volume",
+    "observed_threads": 2,
+    "denominator": 13
+  },
+  {
+    "intent": "wear",
+    "label": "Compression et réfection",
+    "priority_editorial": 3,
+    "priority_basis": "triage utile et risque; pas un classement mondial de volume",
+    "observed_threads": 2,
+    "denominator": 13
+  },
+  {
+    "intent": "ignition",
+    "label": "Allumage",
+    "priority_editorial": 3,
+    "priority_basis": "triage utile et risque; pas un classement mondial de volume",
+    "observed_threads": 0,
+    "denominator": 13
+  },
+  {
+    "intent": "air_leak",
+    "label": "Étanchéité et admission",
+    "priority_editorial": 3,
+    "priority_basis": "triage utile et risque; pas un classement mondial de volume",
+    "observed_threads": 0,
+    "denominator": 13
+  },
+  {
+    "intent": "overheat",
+    "label": "Surchauffe et serrage",
+    "priority_editorial": 1,
+    "priority_basis": "triage utile et risque; pas un classement mondial de volume",
+    "observed_threads": 0,
+    "denominator": 13
+  },
+  {
+    "intent": "docs",
+    "label": "Manuels et identification",
+    "priority_editorial": 3,
+    "priority_basis": "triage utile et risque; pas un classement mondial de volume",
+    "observed_threads": 1,
+    "denominator": 13
+  }
+]

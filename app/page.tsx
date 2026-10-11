@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useMemo, useState } from "react";
 import AtelierConsole from "../components/atelier/atelier-console";
+import MecaBotPanel from "../components/mecabot/mecabot-panel";
 
 import {
   ArrowRight,
@@ -31,7 +32,7 @@ import {
   ZoomOut,
 } from "lucide-react";
 
-type View = "home" | "atelier" | "catalog" | "exploded" | "specs" | "community";
+type View = "home" | "atelier" | "catalog" | "exploded" | "specs" | "community" | "diagnostic";
 type Vehicle = {
   id: string;
   brand: string;
@@ -265,6 +266,7 @@ const parts: Part[] = [
 const nav = [
   { id: "home" as View, label: "Accueil", icon: Home },
   { id: "atelier" as View, label: "Atelier configuration", icon: Wrench },
+  { id: "diagnostic" as View, label: "MécaBot diagnostic", icon: MessageSquareText },
   { id: "catalog" as View, label: "Catalogue pièces", icon: PackageSearch },
   { id: "exploded" as View, label: "Éclatés 2D / 3D", icon: Layers3 },
   { id: "specs" as View, label: "Fiches techniques", icon: FileText },
@@ -338,6 +340,7 @@ export default function HomePage() {
           />
         )}
         {view === "atelier" && <AtelierConsole onNavigate={(target) => go(target as View)} />}
+        {view === "diagnostic" && <MecaBotPanel />}
         {view === "catalog" && (
           <Catalog
             query={query}

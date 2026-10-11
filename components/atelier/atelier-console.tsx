@@ -128,7 +128,7 @@ export default function AtelierConsole({ onNavigate }: Props) {
           <button onClick={() => onNavigate?.("home")}><Home />Accueil</button>
           <button><Car />Mon Garage</button>
           <button className={styles.activeNav}><Settings2 />Configurer</button>
-          <button><BrainCircuit />Diagnostic</button>
+          <button onClick={() => onNavigate?.("diagnostic")}><BrainCircuit />Diagnostic</button>
           <button onClick={() => onNavigate?.("specs")}><Database />Base technique</button>
           <button onClick={() => onNavigate?.("catalog")}><Wrench />Pièces</button>
           <button onClick={() => onNavigate?.("community")}><Users />Communauté</button>

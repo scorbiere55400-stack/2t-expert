@@ -1,0 +1,3150 @@
+[
+  {
+    "id": "2T-001",
+    "titre": "Moteur noyé après usage répété du starter",
+    "sous_systeme": "démarrage",
+    "applications": [
+      "carburateur",
+      "outils"
+    ],
+    "symptomes": [
+      "Démarrage impossible, bougie humide."
+    ],
+    "causes_possibles": [
+      "Excès de carburant après tentatives au starter."
+    ],
+    "controles": [
+      "Vérifier la séquence de démarrage et la présence de carburant."
+    ],
+    "resolution_conditionnelle": "Si noyade confirmée, suivre la procédure de dénoyage propre à la machine; corriger le geste de démarrage.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S15"
+    ],
+    "localisation_source": "Démarrage, calage plein gaz, carburant",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-002",
+    "titre": "Carburant ancien après stockage",
+    "sous_systeme": "carburant",
+    "applications": [
+      "carburateur",
+      "outils"
+    ],
+    "symptomes": [
+      "Démarre puis cale après immobilisation."
+    ],
+    "causes_possibles": [
+      "Carburant altéré ou dépôts dans l’alimentation."
+    ],
+    "controles": [
+      "Vérifier l’historique du carburant et l’état du circuit."
+    ],
+    "resolution_conditionnelle": "Remplacer le carburant inadapté; nettoyer ou réparer les éléments contaminés selon le manuel.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S16"
+    ],
+    "localisation_source": "Carburant, filtres et démarrage",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-003",
+    "titre": "Pare-étincelles obstrué",
+    "sous_systeme": "échappement",
+    "applications": [
+      "outils",
+      "carburateur"
+    ],
+    "symptomes": [
+      "Ralenti possible, puissance absente."
+    ],
+    "causes_possibles": [
+      "Grille d’échappement colmatée."
+    ],
+    "controles": [
+      "Inspecter la grille moteur froid."
+    ],
+    "resolution_conditionnelle": "Nettoyer ou remplacer selon la notice, puis vérifier le fonctionnement; rechercher aussi la cause de l’encrassement.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S15"
+    ],
+    "localisation_source": "Démarrage, calage plein gaz, carburant",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-004",
+    "titre": "Filtre à air colmaté",
+    "sous_systeme": "admission",
+    "applications": [
+      "outils",
+      "carburateur"
+    ],
+    "symptomes": [
+      "Calage ou fonctionnement irrégulier."
+    ],
+    "causes_possibles": [
+      "Restriction d’air par filtre sale."
+    ],
+    "controles": [
+      "Identifier le type de filtre et inspecter sa saturation."
+    ],
+    "resolution_conditionnelle": "Nettoyer selon sa conception ou remplacer; ne pas appliquer une méthode de lavage identique à tous les filtres.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S16"
+    ],
+    "localisation_source": "Carburant, filtres et démarrage",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-005",
+    "titre": "Filtre à carburant obstrué",
+    "sous_systeme": "carburant",
+    "applications": [
+      "outils",
+      "carburateur"
+    ],
+    "symptomes": [
+      "Calage lorsque le débit demandé augmente."
+    ],
+    "causes_possibles": [
+      "Filtre limitant l’alimentation."
+    ],
+    "controles": [
+      "Contrôler le filtre et le carburant du réservoir."
+    ],
+    "resolution_conditionnelle": "Remplacer l’élément obstrué selon la référence et éliminer la contamination.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S15"
+    ],
+    "localisation_source": "Démarrage, calage plein gaz, carburant",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-006",
+    "titre": "Mise à l’air du réservoir défaillante",
+    "sous_systeme": "carburant",
+    "applications": [
+      "membranes"
+    ],
+    "symptomes": [
+      "Alimentation irrégulière, calages."
+    ],
+    "causes_possibles": [
+      "Évent de réservoir restreint ou défectueux."
+    ],
+    "controles": [
+      "Contrôler l’évent selon la notice."
+    ],
+    "resolution_conditionnelle": "Réparer la ventilation confirmée défaillante; ne pas rouler avec le bouchon desserré.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S13"
+    ],
+    "localisation_source": "Pages PDF 1–2, tableaux moteur et carburateur",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-007",
+    "titre": "Durite de carburant fuyarde",
+    "sous_systeme": "carburant",
+    "applications": [
+      "membranes"
+    ],
+    "symptomes": [
+      "Débit instable, traces de carburant."
+    ],
+    "causes_possibles": [
+      "Durite fissurée ou raccord non étanche."
+    ],
+    "controles": [
+      "Inspecter les conduites et raccords."
+    ],
+    "resolution_conditionnelle": "Remplacer les éléments défectueux; vérifier l’étanchéité avant redémarrage.",
+    "urgence": "arrêt immédiat",
+    "source_ids": [
+      "S13"
+    ],
+    "localisation_source": "Pages PDF 1–2, tableaux moteur et carburateur",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-008",
+    "titre": "Passage d’impulsion obstrué",
+    "sous_systeme": "carburant",
+    "applications": [
+      "membranes"
+    ],
+    "symptomes": [
+      "Alimentation faible malgré du carburant."
+    ],
+    "causes_possibles": [
+      "Impulsion de carter empêchée."
+    ],
+    "controles": [
+      "Inspecter le passage et les joints correspondants."
+    ],
+    "resolution_conditionnelle": "Dégager ou remettre en conformité le circuit d’impulsion identifié.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S13"
+    ],
+    "localisation_source": "Pages PDF 1–2, tableaux moteur et carburateur",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-009",
+    "titre": "Joint masquant le port d’impulsion",
+    "sous_systeme": "carburant",
+    "applications": [
+      "membranes"
+    ],
+    "symptomes": [
+      "Panne apparue après remontage."
+    ],
+    "causes_possibles": [
+      "Joint mal positionné bloquant la commande de pompe."
+    ],
+    "controles": [
+      "Comparer montage et perçages à la documentation."
+    ],
+    "resolution_conditionnelle": "Reposer le joint correct dans son orientation prescrite.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S09"
+    ],
+    "localisation_source": "Bulletin août 2023, pages PDF 1–2",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-010",
+    "titre": "Poire de purge déportée raccordée à l’envers",
+    "sous_systeme": "carburant",
+    "applications": [
+      "membranes",
+      "purge ZAMA"
+    ],
+    "symptomes": [
+      "Purge inefficace ou poire difficile à actionner."
+    ],
+    "causes_possibles": [
+      "Entrée et sortie inversées."
+    ],
+    "controles": [
+      "Identifier les raccords avec le schéma exact."
+    ],
+    "resolution_conditionnelle": "Rétablir le circuit: aspiration par le carburateur puis retour au réservoir; distinguer purge et amorçage marin.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S10"
+    ],
+    "localisation_source": "Bulletin avril 2024, page PDF 1",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-011",
+    "titre": "Poire de purge prise pour une pompe de marche",
+    "sous_systeme": "carburant",
+    "applications": [
+      "membranes",
+      "purge ZAMA"
+    ],
+    "symptomes": [
+      "Panne attribuée à la poire pendant le fonctionnement."
+    ],
+    "causes_possibles": [
+      "Confusion sur le rôle du dispositif."
+    ],
+    "controles": [
+      "Identifier s’il s’agit d’une purge ou d’un autre système."
+    ],
+    "resolution_conditionnelle": "Diagnostiquer la pompe réelle: la purge déportée décrite ne fournit pas le moteur en marche.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S10"
+    ],
+    "localisation_source": "Bulletin avril 2024, page PDF 1",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-012",
+    "titre": "Membranes vieillies ou rigides",
+    "sous_systeme": "carburateur membranes",
+    "applications": [
+      "membranes"
+    ],
+    "symptomes": [
+      "Ralenti et reprise dégradés."
+    ],
+    "causes_possibles": [
+      "Membrane ne suivant plus correctement les variations."
+    ],
+    "controles": [
+      "Inspecter souplesse et état avec la méthode du fabricant."
+    ],
+    "resolution_conditionnelle": "Poser le kit exact; rechercher ensuite le réglage prescrit, après correction du défaut.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S11"
+    ],
+    "localisation_source": "Bulletin février 2023, pages PDF 1–2",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-013",
+    "titre": "Ordre joint et membrane incorrect",
+    "sous_systeme": "carburateur membranes",
+    "applications": [
+      "membranes"
+    ],
+    "symptomes": [
+      "Panne après remplacement du kit."
+    ],
+    "causes_possibles": [
+      "Empilement incompatible avec la face du carburateur."
+    ],
+    "controles": [
+      "Comparer chaque face à la vue de montage."
+    ],
+    "resolution_conditionnelle": "Reposer joints et membranes dans l’ordre exact; côté pompe et côté doseur peuvent différer.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S11"
+    ],
+    "localisation_source": "Bulletin février 2023, pages PDF 1–2",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-014",
+    "titre": "Tamis interne colmaté",
+    "sous_systeme": "carburateur membranes",
+    "applications": [
+      "membranes"
+    ],
+    "symptomes": [
+      "Débit insuffisant malgré filtre externe correct."
+    ],
+    "causes_possibles": [
+      "Particules sur le tamis interne."
+    ],
+    "controles": [
+      "Inspecter le tamis après démontage documenté."
+    ],
+    "resolution_conditionnelle": "Nettoyer ou remplacer conformément au kit; supprimer la contamination en amont.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S11"
+    ],
+    "localisation_source": "Bulletin février 2023, pages PDF 1–2",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-015",
+    "titre": "Clapets internes endommagés par nettoyage",
+    "sous_systeme": "carburateur membranes",
+    "applications": [
+      "membranes ZAMA"
+    ],
+    "symptomes": [
+      "Panne apparue après nettoyage agressif."
+    ],
+    "causes_possibles": [
+      "Clapets détériorés par pression."
+    ],
+    "controles": [
+      "Rechercher l’usage d’air comprimé ou produit pressurisé dans les passages."
+    ],
+    "resolution_conditionnelle": "Suivre la méthode ZAMA; réparer ou remplacer le composant endommagé, sans soufflage indiscriminé.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S11"
+    ],
+    "localisation_source": "Bulletin février 2023, pages PDF 1–2",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-016",
+    "titre": "Levier doseur trop haut",
+    "sous_systeme": "carburateur membranes",
+    "applications": [
+      "membranes"
+    ],
+    "symptomes": [
+      "Alimentation excessive."
+    ],
+    "causes_possibles": [
+      "Réglage de levier trop haut."
+    ],
+    "controles": [
+      "Mesurer avec le calibre adapté au carburateur."
+    ],
+    "resolution_conditionnelle": "Corriger seulement à la cote de la référence; contrôler ensuite le dosage.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S14"
+    ],
+    "localisation_source": "Article technique",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-017",
+    "titre": "Levier doseur trop bas",
+    "sous_systeme": "carburateur membranes",
+    "applications": [
+      "membranes"
+    ],
+    "symptomes": [
+      "Manque de carburant et reprise faible."
+    ],
+    "causes_possibles": [
+      "Réglage de levier trop bas."
+    ],
+    "controles": [
+      "Contrôler la hauteur prescrite et le mouvement."
+    ],
+    "resolution_conditionnelle": "Régler avec le calibre adapté, puis vérifier la reprise.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S14"
+    ],
+    "localisation_source": "Article technique",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-018",
+    "titre": "Pointeau d’admission non étanche",
+    "sous_systeme": "carburateur membranes",
+    "applications": [
+      "membranes"
+    ],
+    "symptomes": [
+      "Noyade ou richesse excessive."
+    ],
+    "causes_possibles": [
+      "Pointeau ou siège contaminé/usé."
+    ],
+    "controles": [
+      "Tester selon la procédure du carburateur."
+    ],
+    "resolution_conditionnelle": "Nettoyer ou remplacer la paire prévue; vérifier l’étanchéité.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S09"
+    ],
+    "localisation_source": "Bulletin août 2023: inlet needle leakage",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-019",
+    "titre": "Évent du couvercle doseur bouché",
+    "sous_systeme": "carburateur membranes",
+    "applications": [
+      "membranes"
+    ],
+    "symptomes": [
+      "Dosage perturbé."
+    ],
+    "causes_possibles": [
+      "Référence atmosphérique obstruée."
+    ],
+    "controles": [
+      "Inspecter l’évent du couvercle."
+    ],
+    "resolution_conditionnelle": "Rétablir son passage sans modifier sa géométrie.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S13"
+    ],
+    "localisation_source": "Pages PDF 1–2, tableaux moteur et carburateur",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-020",
+    "titre": "Pastille Welch fuyarde",
+    "sous_systeme": "carburateur membranes",
+    "applications": [
+      "membranes"
+    ],
+    "symptomes": [
+      "Dosage irrégulier malgré contrôles de base."
+    ],
+    "causes_possibles": [
+      "Étanchéité de pastille défaillante."
+    ],
+    "controles": [
+      "Appliquer la procédure de contrôle du modèle."
+    ],
+    "resolution_conditionnelle": "Réparer selon instructions ou remplacer le carburateur si réparation non prévue.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S13"
+    ],
+    "localisation_source": "Pages PDF 1–2, tableaux moteur et carburateur",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-021",
+    "titre": "Circuit bas régime encrassé",
+    "sous_systeme": "carburateur membranes",
+    "applications": [
+      "membranes"
+    ],
+    "symptomes": [
+      "Ralenti ou décélération défectueux."
+    ],
+    "causes_possibles": [
+      "Passage de carburant restreint."
+    ],
+    "controles": [
+      "Contrôler les passages après exclusion des causes moteur."
+    ],
+    "resolution_conditionnelle": "Nettoyer conformément au fabricant puis régler selon la machine.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S09"
+    ],
+    "localisation_source": "Bulletin août 2023: transition ports",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-022",
+    "titre": "Commande de gaz limitée ou grippée",
+    "sous_systeme": "admission",
+    "applications": [
+      "carburateur",
+      "outils"
+    ],
+    "symptomes": [
+      "Ouverture demandée non atteinte."
+    ],
+    "causes_possibles": [
+      "Câble ou tringlerie contraint."
+    ],
+    "controles": [
+      "Vérifier course et retour moteur arrêté."
+    ],
+    "resolution_conditionnelle": "Corriger montage ou remplacer la commande défectueuse avant essai.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S09"
+    ],
+    "localisation_source": "Bulletin août 2023, pages PDF 1–2",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-023",
+    "titre": "Redémarrage à chaud perturbé par vaporisation",
+    "sous_systeme": "carburant",
+    "applications": [
+      "membranes"
+    ],
+    "symptomes": [
+      "Panne à chaud, amélioration après refroidissement."
+    ],
+    "causes_possibles": [
+      "Vaporisation possible du carburant."
+    ],
+    "controles": [
+      "Comparer conditions thermiques et alimentation; ne pas exclure l’allumage."
+    ],
+    "resolution_conditionnelle": "Corriger le défaut thermique ou d’alimentation confirmé selon la machine.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S09"
+    ],
+    "localisation_source": "Bulletin août 2023, pages PDF 1–2",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-024",
+    "titre": "Dosage instable selon orientation",
+    "sous_systeme": "carburateur membranes",
+    "applications": [
+      "membranes",
+      "outils"
+    ],
+    "symptomes": [
+      "Calage lors du changement de position."
+    ],
+    "causes_possibles": [
+      "Dosage ou alimentation sensible au basculement."
+    ],
+    "controles": [
+      "Contrôler montage, membranes et fonctionnement prévu dans ces positions."
+    ],
+    "resolution_conditionnelle": "Réparer la cause identifiée plutôt que compenser par une vis de richesse.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S09"
+    ],
+    "localisation_source": "Bulletin août 2023, pages PDF 1–2",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-025",
+    "titre": "Vis H/L utilisées pour masquer une membrane défectueuse",
+    "sous_systeme": "carburateur membranes",
+    "applications": [
+      "membranes réglables"
+    ],
+    "symptomes": [
+      "Réglages répétés sans résultat durable."
+    ],
+    "causes_possibles": [
+      "Défaut interne pris pour un simple déréglage."
+    ],
+    "controles": [
+      "Contrôler membranes et circuit avant réglage."
+    ],
+    "resolution_conditionnelle": "Réparer d’abord; appliquer ensuite les valeurs de la machine, sans tours de vis universels.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S12"
+    ],
+    "localisation_source": "Bulletin octobre 2022, pages PDF 1–2",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-026",
+    "titre": "Outil entraîné au ralenti",
+    "sous_systeme": "transmission périphérique",
+    "applications": [
+      "outils avec embrayage"
+    ],
+    "symptomes": [
+      "Chaîne ou tête tourne au ralenti."
+    ],
+    "causes_possibles": [
+      "Ralenti trop élevé ou défaut d’embrayage à distinguer."
+    ],
+    "controles": [
+      "Comparer régime prescrit et désengagement."
+    ],
+    "resolution_conditionnelle": "Régler selon notice; si l’entraînement persiste, contrôler l’embrayage.",
+    "urgence": "arrêt avant réglage",
+    "source_ids": [
+      "S12"
+    ],
+    "localisation_source": "Bulletin octobre 2022, pages PDF 1–2",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-027",
+    "titre": "Niveau de cuve trop haut",
+    "sous_systeme": "carburateur cuve",
+    "applications": [
+      "cuve",
+      "Mikuni VM"
+    ],
+    "symptomes": [
+      "Fonctionnement trop riche."
+    ],
+    "causes_possibles": [
+      "Niveau de carburant excessif."
+    ],
+    "controles": [
+      "Mesurer le niveau selon la référence; inspecter flotteur et fermeture."
+    ],
+    "resolution_conditionnelle": "Restaurer niveau et pièces prescrits, sans réglage arbitraire.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S25"
+    ],
+    "localisation_source": "Pages PDF 8–11 / pages imprimées 4–7",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-028",
+    "titre": "Niveau de cuve trop bas",
+    "sous_systeme": "carburateur cuve",
+    "applications": [
+      "cuve",
+      "Mikuni VM"
+    ],
+    "symptomes": [
+      "Mélange pauvre, manque de carburant."
+    ],
+    "causes_possibles": [
+      "Niveau insuffisant."
+    ],
+    "controles": [
+      "Contrôler alimentation et réglage du flotteur."
+    ],
+    "resolution_conditionnelle": "Corriger la cause et remettre le niveau constructeur; suspendre l’essai en cas de surchauffe.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S25"
+    ],
+    "localisation_source": "Pages PDF 8–11 / pages imprimées 4–7",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-029",
+    "titre": "Aiguille ou puits inadaptés à ouverture partielle",
+    "sous_systeme": "carburateur cuve",
+    "applications": [
+      "cuve",
+      "Mikuni VM"
+    ],
+    "symptomes": [
+      "Ratés surtout à ouverture intermédiaire."
+    ],
+    "causes_possibles": [
+      "Dosage aiguille/puits incompatible."
+    ],
+    "controles": [
+      "Identifier références et configuration moteur."
+    ],
+    "resolution_conditionnelle": "Revenir au montage documenté; les circuits se recouvrent, le symptôme seul ne désigne pas une pièce.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S25"
+    ],
+    "localisation_source": "Pages PDF 8–11 / pages imprimées 4–7",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-030",
+    "titre": "Gicleur principal ou configuration inadaptés",
+    "sous_systeme": "carburateur cuve",
+    "applications": [
+      "cuve",
+      "Mikuni VM"
+    ],
+    "symptomes": [
+      "Mauvais fonctionnement à grande ouverture."
+    ],
+    "causes_possibles": [
+      "Dosage principal incompatible avec les conditions."
+    ],
+    "controles": [
+      "Comparer configuration et conditions atmosphériques à la documentation."
+    ],
+    "resolution_conditionnelle": "Valider le calibrage par une méthode adaptée; ne pas rechercher le maximum à vide.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S25"
+    ],
+    "localisation_source": "Pages PDF 8–11 / pages imprimées 4–7",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-031",
+    "titre": "Bougie encrassée à sec",
+    "sous_systeme": "allumage",
+    "applications": [
+      "allumage par bougie"
+    ],
+    "symptomes": [
+      "Ratés avec dépôt sombre."
+    ],
+    "causes_possibles": [
+      "Richesse, température de bougie ou combustion insuffisante possibles."
+    ],
+    "controles": [
+      "Contrôler bougie, alimentation et conditions d’usage."
+    ],
+    "resolution_conditionnelle": "Remplacer si nécessaire et corriger la cause confirmée, sans conclure sur la couleur seule.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S01"
+    ],
+    "localisation_source": "Fouling; Overheating; Pre-ignition; Detonation",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-032",
+    "titre": "Bougie humide: carburant ou autre liquide",
+    "sous_systeme": "allumage",
+    "applications": [
+      "allumage par bougie"
+    ],
+    "symptomes": [
+      "Démarrage impossible avec électrodes mouillées."
+    ],
+    "causes_possibles": [
+      "Noyade, défaut d’allumage ou contamination possibles."
+    ],
+    "controles": [
+      "Identifier le liquide et le contexte."
+    ],
+    "resolution_conditionnelle": "Traiter la cause documentée; une bougie mouillée ne prouve pas un carburateur défectueux.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S02"
+    ],
+    "localisation_source": "Normal; fouling; overheating",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-033",
+    "titre": "Écartement de bougie incorrect",
+    "sous_systeme": "allumage",
+    "applications": [
+      "allumage par bougie"
+    ],
+    "symptomes": [
+      "Ratés, puissance faible ou encrassement."
+    ],
+    "causes_possibles": [
+      "Écartement incompatible avec le moteur."
+    ],
+    "controles": [
+      "Mesurer et comparer au manuel exact."
+    ],
+    "resolution_conditionnelle": "Ajuster si la référence l’autorise ou remplacer; le préréglage de la bougie n’est pas universel.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S03"
+    ],
+    "localisation_source": "Article technique",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-034",
+    "titre": "Indice thermique trop chaud",
+    "sous_systeme": "allumage",
+    "applications": [
+      "allumage par bougie"
+    ],
+    "symptomes": [
+      "Électrode surchauffée, combustion anormale possible."
+    ],
+    "causes_possibles": [
+      "Dissipation de chaleur inadaptée."
+    ],
+    "controles": [
+      "Vérifier référence prescrite et modifications moteur."
+    ],
+    "resolution_conditionnelle": "Revenir à la référence adaptée; contrôler la cause de surchauffe.",
+    "urgence": "arrêt si surchauffe",
+    "source_ids": [
+      "S04"
+    ],
+    "localisation_source": "Article, paragraphes sur dissipation et encrassement",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-035",
+    "titre": "Indice thermique trop froid ou usage encrassant",
+    "sous_systeme": "allumage",
+    "applications": [
+      "allumage par bougie"
+    ],
+    "symptomes": [
+      "Encrassement répété."
+    ],
+    "causes_possibles": [
+      "Autonettoyage insuffisant ou autre défaut moteur."
+    ],
+    "controles": [
+      "Comparer bougie et usage aux prescriptions."
+    ],
+    "resolution_conditionnelle": "Corriger réglage ou défaut mécanique confirmé; éviter une bougie plus chaude comme compensation automatique.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S04"
+    ],
+    "localisation_source": "Article, paragraphes sur dissipation et encrassement",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-036",
+    "titre": "Préallumage",
+    "sous_systeme": "combustion",
+    "applications": [
+      "allumage par bougie"
+    ],
+    "symptomes": [
+      "Surchauffe ou dommage au piston."
+    ],
+    "causes_possibles": [
+      "Point chaud déclenchant la combustion avant l’étincelle."
+    ],
+    "controles": [
+      "Contrôler bougie, refroidissement, dépôts et réglage."
+    ],
+    "resolution_conditionnelle": "Corriger la cause et inspecter les dommages avant remise en marche.",
+    "urgence": "arrêt immédiat",
+    "source_ids": [
+      "S01"
+    ],
+    "localisation_source": "Fouling; Overheating; Pre-ignition; Detonation",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-037",
+    "titre": "Détonation",
+    "sous_systeme": "combustion",
+    "applications": [
+      "moteur essence 2T"
+    ],
+    "symptomes": [
+      "Cliquetis ou chambre/piston endommagés."
+    ],
+    "causes_possibles": [
+      "Auto-inflammation anormale du mélange restant."
+    ],
+    "controles": [
+      "Contrôler carburant, avance et charge thermique."
+    ],
+    "resolution_conditionnelle": "Rétablir les prescriptions et examiner le moteur; distinguer détonation et préallumage.",
+    "urgence": "arrêt immédiat",
+    "source_ids": [
+      "S01"
+    ],
+    "localisation_source": "Fouling; Overheating; Pre-ignition; Detonation",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-038",
+    "titre": "Bougie surchauffée par fonctionnement trop pauvre",
+    "sous_systeme": "combustion",
+    "applications": [
+      "moteur essence 2T"
+    ],
+    "symptomes": [
+      "Perte de puissance et température excessive."
+    ],
+    "causes_possibles": [
+      "Dosage pauvre possible parmi plusieurs causes."
+    ],
+    "controles": [
+      "Contrôler débit carburant, étanchéité, allumage et refroidissement."
+    ],
+    "resolution_conditionnelle": "Corriger le défaut confirmé puis vérifier les dommages.",
+    "urgence": "arrêt si surchauffe",
+    "source_ids": [
+      "S01"
+    ],
+    "localisation_source": "Fouling; Overheating; Pre-ignition; Detonation",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-039",
+    "titre": "Dépôts: lecture insuffisante pour régler",
+    "sous_systeme": "allumage",
+    "applications": [
+      "allumage par bougie"
+    ],
+    "symptomes": [
+      "Diagnostic fondé uniquement sur une photo de bougie."
+    ],
+    "causes_possibles": [
+      "Plusieurs causes donnent des aspects voisins."
+    ],
+    "controles": [
+      "Croiser historique, référence et mesures moteur."
+    ],
+    "resolution_conditionnelle": "Ne pas modifier automatiquement le gicleur; obtenir des contrôles supplémentaires.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S02"
+    ],
+    "localisation_source": "Normal; fouling; overheating",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-040",
+    "titre": "Absence d’étincelle: circuit d’arrêt suspect",
+    "sous_systeme": "allumage",
+    "applications": [
+      "hors-bord Yamaha 2T documenté"
+    ],
+    "symptomes": [
+      "Aucun cylindre n’allume."
+    ],
+    "causes_possibles": [
+      "Circuit d’arrêt, masse ou alimentation d’allumage possibles."
+    ],
+    "controles": [
+      "Consulter le schéma exact et tester les circuits selon manuel."
+    ],
+    "resolution_conditionnelle": "Réparer le défaut établi; ne pas condamner directement le CDI ni neutraliser durablement l’arrêt.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S28"
+    ],
+    "localisation_source": "Extrait indexé, page imprimée 115, Yamaha C30 / 30 HP",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-041",
+    "titre": "Absence d’étincelle sur un cylindre",
+    "sous_systeme": "allumage",
+    "applications": [
+      "hors-bord Yamaha 2T documenté"
+    ],
+    "symptomes": [
+      "Un cylindre ne contribue pas."
+    ],
+    "causes_possibles": [
+      "Bougie, bobine, commande ou câblage possibles."
+    ],
+    "controles": [
+      "Comparer les voies avec les tests prescrits, dont DVA si requis."
+    ],
+    "resolution_conditionnelle": "Remplacer l’élément confirmé; résistances et tensions restent propres au modèle.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S28"
+    ],
+    "localisation_source": "Extrait indexé, page imprimée 115, Yamaha C30 / 30 HP",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-042",
+    "titre": "Batterie insuffisante sur Rotax MAX evo",
+    "sous_systeme": "allumage",
+    "applications": [
+      "Rotax MAX evo documenté"
+    ],
+    "symptomes": [
+      "Démarreur tourne mais démarrage impossible."
+    ],
+    "causes_possibles": [
+      "Batterie incapable d’alimenter l’allumage sous charge."
+    ],
+    "controles": [
+      "Contrôler alimentation pendant démarrage selon le manuel."
+    ],
+    "resolution_conditionnelle": "Charger/tester batterie et raccords; une étincelle bougie déposée peut être trompeuse.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S27"
+    ],
+    "localisation_source": "Chapitre 2 carburant/batterie; chapitre 4 E-RAVE et entretien",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-043",
+    "titre": "Lanceur: cliquets bloqués",
+    "sous_systeme": "démarrage",
+    "applications": [
+      "Husqvarna 564XP",
+      "Husqvarna 564XPG"
+    ],
+    "symptomes": [
+      "Le lanceur n’entraîne pas correctement."
+    ],
+    "causes_possibles": [
+      "Cliquets de lanceur bloqués."
+    ],
+    "controles": [
+      "Inspecter selon la notice, après mise en sécurité."
+    ],
+    "resolution_conditionnelle": "Nettoyer, régler ou remplacer conformément au manuel; atelier si nécessaire.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S17"
+    ],
+    "localisation_source": "Pages PDF 31–34: refroidissement, dépannage, calibration, données",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-044",
+    "titre": "Circuit d’air de refroidissement obstrué",
+    "sous_systeme": "refroidissement",
+    "applications": [
+      "Husqvarna 564XP",
+      "Husqvarna 564XPG"
+    ],
+    "symptomes": [
+      "Moteur trop chaud."
+    ],
+    "causes_possibles": [
+      "Entrées, ailettes ou canal d’air obstrués."
+    ],
+    "controles": [
+      "Inspecter l’ensemble du circuit moteur froid."
+    ],
+    "resolution_conditionnelle": "Nettoyer selon la notice et vérifier les éléments de guidage d’air.",
+    "urgence": "arrêt si surchauffe",
+    "source_ids": [
+      "S17"
+    ],
+    "localisation_source": "Pages PDF 31–34: refroidissement, dépannage, calibration, données",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-045",
+    "titre": "Huile de chaîne versée dans le réservoir carburant",
+    "sous_systeme": "carburant",
+    "applications": [
+      "Husqvarna 564XP",
+      "Husqvarna 564XPG"
+    ],
+    "symptomes": [
+      "Erreur de remplissage."
+    ],
+    "causes_possibles": [
+      "Lubrifiant de chaîne à la place du carburant."
+    ],
+    "controles": [
+      "Déterminer si un démarrage a déjà été tenté."
+    ],
+    "resolution_conditionnelle": "Sans tentative: vidanger selon notice; avec tentative: consulter le réparateur avant remise en marche.",
+    "urgence": "arrêt immédiat",
+    "source_ids": [
+      "S17"
+    ],
+    "localisation_source": "Pages PDF 31–34: refroidissement, dépannage, calibration, données",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-046",
+    "titre": "Fonctionnement incorrect et calibration automatique",
+    "sous_systeme": "injection / calibration",
+    "applications": [
+      "Husqvarna 564XP",
+      "Husqvarna 564XPG"
+    ],
+    "symptomes": [
+      "Démarre mais fonctionne mal."
+    ],
+    "causes_possibles": [
+      "Calibration ou alimentation à contrôler."
+    ],
+    "controles": [
+      "Vérifier carburant et filtres avant toute calibration."
+    ],
+    "resolution_conditionnelle": "Appliquer uniquement la procédure 564XP/XPG documentée; défaut persistant: réparateur. Aucune vis H/L universelle.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S17"
+    ],
+    "localisation_source": "Pages PDF 31–34: refroidissement, dépannage, calibration, données",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-047",
+    "titre": "Clapets d’admission endommagés",
+    "sous_systeme": "admission",
+    "applications": [
+      "moteur 2T à clapets"
+    ],
+    "symptomes": [
+      "Démarrage ou remplissage dégradés."
+    ],
+    "causes_possibles": [
+      "Lamelles abîmées ou défaut de fermeture."
+    ],
+    "controles": [
+      "Inspecter lamelles, cage et montage."
+    ],
+    "resolution_conditionnelle": "Remplacer les pièces non conformes et remonter selon manuel; vérifier les débris éventuels.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S18"
+    ],
+    "localisation_source": "Inspect; measure; reassemble",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-048",
+    "titre": "Pipe d’admission fissurée",
+    "sous_systeme": "admission",
+    "applications": [
+      "moteur 2T avec pipe souple"
+    ],
+    "symptomes": [
+      "Fonctionnement irrégulier ou pauvre."
+    ],
+    "causes_possibles": [
+      "Fissure ou joint d’admission défaillant."
+    ],
+    "controles": [
+      "Inspecter puis confirmer l’étanchéité selon la méthode prévue."
+    ],
+    "resolution_conditionnelle": "Remplacer la pièce ou le joint défectueux; vérifier après remontage.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S18"
+    ],
+    "localisation_source": "Inspect; measure; reassemble",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-049",
+    "titre": "Prise d’air du carter: localisation nécessaire",
+    "sous_systeme": "étanchéité",
+    "applications": [
+      "moteur 2T à précompression carter"
+    ],
+    "symptomes": [
+      "Ralenti ou dosage instables."
+    ],
+    "causes_possibles": [
+      "Joint de vilebrequin, embase ou autre étanchéité possible."
+    ],
+    "controles": [
+      "Effectuer un test de carter régulé selon manuel."
+    ],
+    "resolution_conditionnelle": "Réparer la fuite puis retester; utiliser le dispositif régulé prescrit.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S19"
+    ],
+    "localisation_source": "Coolant; gearbox oil; cylinder et crankcase leak-down",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-050",
+    "titre": "Consommation d’huile de boîte par joint de vilebrequin",
+    "sous_systeme": "étanchéité",
+    "applications": [
+      "moto 2T avec boîte séparée"
+    ],
+    "symptomes": [
+      "Huile de boîte baisse, fumée excessive."
+    ],
+    "causes_possibles": [
+      "Passage possible vers le carter moteur."
+    ],
+    "controles": [
+      "Mesurer la consommation et confirmer l’étanchéité."
+    ],
+    "resolution_conditionnelle": "Remplacer le joint confirmé défaillant; côté et montage dépendent de l’architecture.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S19"
+    ],
+    "localisation_source": "Coolant; gearbox oil; cylinder et crankcase leak-down",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-051",
+    "titre": "Fuite de joint ou joints toriques de culasse",
+    "sous_systeme": "refroidissement",
+    "applications": [
+      "moto 2T liquide"
+    ],
+    "symptomes": [
+      "Liquide contaminé ou perte de liquide."
+    ],
+    "causes_possibles": [
+      "Communication possible avec la chambre."
+    ],
+    "controles": [
+      "Contrôler étanchéité de culasse et circuit à froid."
+    ],
+    "resolution_conditionnelle": "Réparer la liaison défectueuse et vérifier les surfaces; ne pas diagnostiquer sur la fumée seule.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S19"
+    ],
+    "localisation_source": "Coolant; gearbox oil; cylinder et crankcase leak-down",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-052",
+    "titre": "Huile de boîte laiteuse",
+    "sous_systeme": "refroidissement",
+    "applications": [
+      "moto 2T liquide avec boîte séparée"
+    ],
+    "symptomes": [
+      "Émulsion dans la boîte."
+    ],
+    "causes_possibles": [
+      "Eau présente; joint de pompe possible."
+    ],
+    "controles": [
+      "Rechercher le trajet de contamination."
+    ],
+    "resolution_conditionnelle": "Réparer la fuite confirmée puis renouveler l’huile; une vidange seule ne corrige pas la cause.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S19"
+    ],
+    "localisation_source": "Coolant; gearbox oil; cylinder et crankcase leak-down",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-053",
+    "titre": "Compression faible: confirmer la mesure",
+    "sous_systeme": "diagnostic mécanique",
+    "applications": [
+      "moteur 2T"
+    ],
+    "symptomes": [
+      "Démarrage faible et compression mesurée basse."
+    ],
+    "causes_possibles": [
+      "Étanchéité haut moteur possible ou mesure incorrecte."
+    ],
+    "controles": [
+      "Comparer méthode et résultat aux prescriptions."
+    ],
+    "resolution_conditionnelle": "Réparer le défaut localisé; distinguer compression du cylindre et étanchéité du carter.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S19"
+    ],
+    "localisation_source": "Coolant; gearbox oil; cylinder et crankcase leak-down",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-054",
+    "titre": "Segment: jeu à la coupe incompatible",
+    "sous_systeme": "haut moteur",
+    "applications": [
+      "moteur 2T à segments"
+    ],
+    "symptomes": [
+      "Défaut après reconstruction ou usure suspectée."
+    ],
+    "causes_possibles": [
+      "Jeu à la coupe hors prescription."
+    ],
+    "controles": [
+      "Mesurer dans le cylindre selon kit et manuel."
+    ],
+    "resolution_conditionnelle": "Utiliser les pièces et le jeu exigés; aucune formule universelle de jeu.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S22"
+    ],
+    "localisation_source": "Inspection; measurements; assembly",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-055",
+    "titre": "Jeu segment dans gorge hors tolérance",
+    "sous_systeme": "haut moteur",
+    "applications": [
+      "moteur 2T à segments"
+    ],
+    "symptomes": [
+      "Étanchéité dégradée ou usure."
+    ],
+    "causes_possibles": [
+      "Gorge/segment non conforme."
+    ],
+    "controles": [
+      "Mesurer selon les instructions du piston."
+    ],
+    "resolution_conditionnelle": "Remplacer les éléments hors limite; ne pas remplacer seulement un segment si la gorge est usée.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S22"
+    ],
+    "localisation_source": "Inspection; measurements; assembly",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-056",
+    "titre": "Pied de bielle ou cage d’axe endommagés",
+    "sous_systeme": "haut moteur",
+    "applications": [
+      "moto 2T"
+    ],
+    "symptomes": [
+      "Bruit ou défaut constaté au démontage."
+    ],
+    "causes_possibles": [
+      "Surfaces ou roulement d’axe détériorés."
+    ],
+    "controles": [
+      "Inspecter les surfaces selon manuel."
+    ],
+    "resolution_conditionnelle": "Remplacer les éléments non conformes et rechercher la cause du dommage.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S18"
+    ],
+    "localisation_source": "Two-Stroke Top End Inspection: Rod Small End",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-057",
+    "titre": "Jeu piston-cylindre hors prescription",
+    "sous_systeme": "haut moteur",
+    "applications": [
+      "moteur 2T"
+    ],
+    "symptomes": [
+      "Bruit ou risque de frottement après remontage."
+    ],
+    "causes_possibles": [
+      "Association de diamètres incorrecte."
+    ],
+    "controles": [
+      "Mesurer aux points prescrits du piston et du cylindre."
+    ],
+    "resolution_conditionnelle": "Choisir la réparation et le piston adaptés; la mesure dépend du kit et du cylindre.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S22"
+    ],
+    "localisation_source": "Inspection; measurements; assembly",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-058",
+    "titre": "Segment mal orienté ou incompatible avec son ergot",
+    "sous_systeme": "haut moteur",
+    "applications": [
+      "piston 2T équipé d’ergots"
+    ],
+    "symptomes": [
+      "Difficulté de montage ou dommage de segment."
+    ],
+    "causes_possibles": [
+      "Extrémités mal positionnées."
+    ],
+    "controles": [
+      "Vérifier ergots, marquages et instructions exactes."
+    ],
+    "resolution_conditionnelle": "Monter le segment prescrit correctement; ne pas répartir librement les coupes comme sur certains 4T.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S22"
+    ],
+    "localisation_source": "Prep Work: Rings; Installation: Cylinder to Piston",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-059",
+    "titre": "Piston monté dans le mauvais sens",
+    "sous_systeme": "haut moteur",
+    "applications": [
+      "moteur 2T"
+    ],
+    "symptomes": [
+      "Défaut après reconstruction."
+    ],
+    "causes_possibles": [
+      "Orientation incompatible avec les lumières et ergots."
+    ],
+    "controles": [
+      "Identifier le repère du fabricant."
+    ],
+    "resolution_conditionnelle": "Reposer selon les instructions du kit; la flèche ne signifie pas systématiquement l’avant du véhicule.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S23"
+    ],
+    "localisation_source": "Orientation; 2-cycle ring end gap; cylinder coating",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-060",
+    "titre": "Segments incompatibles avec le revêtement",
+    "sous_systeme": "haut moteur",
+    "applications": [
+      "cylindre 2T revêtu"
+    ],
+    "symptomes": [
+      "Usure ou frottement anormal."
+    ],
+    "causes_possibles": [
+      "Matériaux de segment et cylindre incompatibles."
+    ],
+    "controles": [
+      "Identifier revêtement et référence du kit."
+    ],
+    "resolution_conditionnelle": "Utiliser la combinaison validée, notamment pour les anciens chromages; ne pas choisir sur l’aspect seul.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S23"
+    ],
+    "localisation_source": "Orientation; 2-cycle ring end gap; cylinder coating",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-061",
+    "titre": "Jupe de piston usée",
+    "sous_systeme": "haut moteur",
+    "applications": [
+      "moto 2T"
+    ],
+    "symptomes": [
+      "Bruit de piston ou jeu accru."
+    ],
+    "causes_possibles": [
+      "Usure de jupe et/ou cylindre."
+    ],
+    "controles": [
+      "Mesurer et inspecter selon manuel."
+    ],
+    "resolution_conditionnelle": "Réparer les éléments hors limite; aucune durée de remplacement identique pour tous les usages.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S24"
+    ],
+    "localisation_source": "Wear; inspection; service intervals",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-062",
+    "titre": "Grade de piston mal choisi",
+    "sous_systeme": "haut moteur",
+    "applications": [
+      "moto 2T avec pistons gradués"
+    ],
+    "symptomes": [
+      "Jeu incorrect malgré une référence proche."
+    ],
+    "causes_possibles": [
+      "Grade incompatible avec le cylindre mesuré."
+    ],
+    "controles": [
+      "Comparer dimensions réelles et tableau du fabricant."
+    ],
+    "resolution_conditionnelle": "Choisir le grade approprié; A/B/C ne représente pas des valeurs universelles.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S21"
+    ],
+    "localisation_source": "Graded pistons",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-063",
+    "titre": "Valve d’échappement encrassée ou mal assemblée",
+    "sous_systeme": "échappement",
+    "applications": [
+      "moto 2T avec valve"
+    ],
+    "symptomes": [
+      "Puissance dégradée ou défaut après remontage."
+    ],
+    "causes_possibles": [
+      "Valve ne se déplaçant pas correctement."
+    ],
+    "controles": [
+      "Inspecter propreté, montage et dégagement du piston."
+    ],
+    "resolution_conditionnelle": "Nettoyer ou réparer selon notice; vérifier qu’aucun élément ne pénètre dans l’alésage.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S18"
+    ],
+    "localisation_source": "Inspect; measure; reassemble",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-064",
+    "titre": "Commande E-RAVE sur Rotax MAX evo",
+    "sous_systeme": "échappement",
+    "applications": [
+      "Rotax 125 MAX evo équipé E-RAVE"
+    ],
+    "symptomes": [
+      "Transition de puissance anormale."
+    ],
+    "causes_possibles": [
+      "Commande électropneumatique ou configuration à vérifier."
+    ],
+    "controles": [
+      "Identifier version, faisceau et circuit pneumatique documentés."
+    ],
+    "resolution_conditionnelle": "Réparer la cause confirmée; ne pas transposer le réglage aux Junior/Mini/Micro non équipés.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S27"
+    ],
+    "localisation_source": "Chapitre 2 carburant/batterie; chapitre 4 E-RAVE et entretien",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-065",
+    "titre": "Roulements de vilebrequin ou bielle suspects",
+    "sous_systeme": "bas moteur",
+    "applications": [
+      "moto 2T"
+    ],
+    "symptomes": [
+      "Bruit, jeu ou rotation irrégulière."
+    ],
+    "causes_possibles": [
+      "Roulement ou assemblage de vilebrequin détérioré."
+    ],
+    "controles": [
+      "Mesurer les jeux et inspecter selon manuel."
+    ],
+    "resolution_conditionnelle": "Remplacer/rénover l’assemblage confirmé et contrôler alignement; ne pas déduire une panne du seul jeu latéral.",
+    "urgence": "arrêt si bruit métallique nouveau",
+    "source_ids": [
+      "S20"
+    ],
+    "localisation_source": "Crankshaft et bearings",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-066",
+    "titre": "Vibrations liées au vilebrequin",
+    "sous_systeme": "bas moteur",
+    "applications": [
+      "moto 2T"
+    ],
+    "symptomes": [
+      "Vibrations anormales après intervention."
+    ],
+    "causes_possibles": [
+      "Faux-rond ou équilibre suspect parmi les causes."
+    ],
+    "controles": [
+      "Contrôler montage et géométrie avec les outils prescrits."
+    ],
+    "resolution_conditionnelle": "Corriger l’assemblage non conforme avant usage; exclure aussi les fixations externes.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S20"
+    ],
+    "localisation_source": "Crankshaft et bearings",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-067",
+    "titre": "Serrage associé à la surchauffe",
+    "sous_systeme": "grippage",
+    "applications": [
+      "moteur 2T"
+    ],
+    "symptomes": [
+      "Arrêt brutal avec traces de frottement."
+    ],
+    "causes_possibles": [
+      "Charge thermique excessive et rupture du film possibles."
+    ],
+    "controles": [
+      "Documenter les traces et contrôler refroidissement/combustion."
+    ],
+    "resolution_conditionnelle": "Réparer les dommages et leur cause; le motif des traces est un indice.",
+    "urgence": "arrêt immédiat",
+    "source_ids": [
+      "S05"
+    ],
+    "localisation_source": "Damage assessment; causes",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-068",
+    "titre": "Serrage associé au manque de lubrification",
+    "sous_systeme": "grippage",
+    "applications": [
+      "moteur 2T"
+    ],
+    "symptomes": [
+      "Surfaces arrachées ou frottement sévère."
+    ],
+    "causes_possibles": [
+      "Film lubrifiant insuffisant possible."
+    ],
+    "controles": [
+      "Vérifier le système réel de lubrification et les traces."
+    ],
+    "resolution_conditionnelle": "Rétablir l’alimentation correcte et réparer les pièces atteintes; ne pas redémarrer après simple refroidissement.",
+    "urgence": "arrêt immédiat",
+    "source_ids": [
+      "S06"
+    ],
+    "localisation_source": "Description et interprétation des traces",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-069",
+    "titre": "Serrage associé à un jeu insuffisant",
+    "sous_systeme": "grippage",
+    "applications": [
+      "moteur 2T"
+    ],
+    "symptomes": [
+      "Grippage après reconstruction."
+    ],
+    "causes_possibles": [
+      "Jeu froid insuffisant possible."
+    ],
+    "controles": [
+      "Mesurer pièces et rechercher aussi la surchauffe."
+    ],
+    "resolution_conditionnelle": "Rétablir les dimensions prescrites et réparer; une photo ne suffit pas à désigner une cause unique.",
+    "urgence": "arrêt immédiat",
+    "source_ids": [
+      "S07"
+    ],
+    "localisation_source": "Description, causes des dommages",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-070",
+    "titre": "Grippage dans les bossages d’axe",
+    "sous_systeme": "grippage",
+    "applications": [
+      "piston 2T à axe flottant"
+    ],
+    "symptomes": [
+      "Dommage de l’axe et des alésages."
+    ],
+    "causes_possibles": [
+      "Lubrification, jeu ou défaut géométrique possibles."
+    ],
+    "controles": [
+      "Inspecter axe, alésages et alignement."
+    ],
+    "resolution_conditionnelle": "Remplacer/réparer les pièces hors limite et respecter la lubrification de montage prescrite.",
+    "urgence": "arrêt immédiat",
+    "source_ids": [
+      "S08"
+    ],
+    "localisation_source": "Floating-fit piston pin; dommage associé à combustion anormale",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-071",
+    "titre": "Dosage huile-carburant incorrect en prémélange",
+    "sous_systeme": "lubrification",
+    "applications": [
+      "Rotax MAX evo documenté"
+    ],
+    "symptomes": [
+      "Fumée/encrassement ou dommage par friction."
+    ],
+    "causes_possibles": [
+      "Teneur d’huile incompatible."
+    ],
+    "controles": [
+      "Vérifier produit et mélange selon le moteur exact."
+    ],
+    "resolution_conditionnelle": "Refaire le mélange conforme et rechercher les dommages éventuels; ne pas appliquer ce dosage à tous les 2T.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S27"
+    ],
+    "localisation_source": "Chapitre 2 carburant/batterie; chapitre 4 E-RAVE et entretien",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-072",
+    "titre": "Débit de refroidissement marin insuffisant",
+    "sous_systeme": "refroidissement marine",
+    "applications": [
+      "Tohatsu M9.9D2",
+      "Tohatsu M15D2",
+      "Tohatsu M18E2"
+    ],
+    "symptomes": [
+      "Surchauffe."
+    ],
+    "causes_possibles": [
+      "Admission bouchée ou pompe défaillante."
+    ],
+    "controles": [
+      "Contrôler le circuit prescrit."
+    ],
+    "resolution_conditionnelle": "Réparer la restriction/pompe confirmée; éviter tout fonctionnement sans alimentation d’eau.",
+    "urgence": "arrêt immédiat",
+    "source_ids": [
+      "S26"
+    ],
+    "localisation_source": "Pages PDF 68–71 / pages imprimées 68–71; refroidissement",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-073",
+    "titre": "Thermostat marin défaillant",
+    "sous_systeme": "refroidissement marine",
+    "applications": [
+      "Tohatsu M9.9D2",
+      "Tohatsu M15D2",
+      "Tohatsu M18E2"
+    ],
+    "symptomes": [
+      "Surchauffe malgré autres contrôles."
+    ],
+    "causes_possibles": [
+      "Thermostat défectueux possible."
+    ],
+    "controles": [
+      "Tester selon notice d’atelier."
+    ],
+    "resolution_conditionnelle": "Remplacer si non conforme; ne pas le supprimer comme réparation.",
+    "urgence": "arrêt si surchauffe",
+    "source_ids": [
+      "S26"
+    ],
+    "localisation_source": "Pages PDF 68–71 / pages imprimées 68–71; refroidissement",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-074",
+    "titre": "Hors-bord submergé",
+    "sous_systeme": "accident marine",
+    "applications": [
+      "Tohatsu M9.9D2",
+      "Tohatsu M15D2",
+      "Tohatsu M18E2"
+    ],
+    "symptomes": [
+      "Moteur récupéré après immersion."
+    ],
+    "causes_possibles": [
+      "Eau interne et corrosion possibles."
+    ],
+    "controles": [
+      "Identifier immersion et délai."
+    ],
+    "resolution_conditionnelle": "Ne pas démarrer immédiatement; prise en charge rapide par le réparateur selon notice.",
+    "urgence": "arrêt immédiat",
+    "source_ids": [
+      "S26"
+    ],
+    "localisation_source": "Pages PDF 68–71 / pages imprimées 68–71; refroidissement",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-075",
+    "titre": "Ventilation ou cavitation d’hélice",
+    "sous_systeme": "transmission périphérique",
+    "applications": [
+      "Tohatsu M9.9D2",
+      "Tohatsu M15D2",
+      "Tohatsu M18E2"
+    ],
+    "symptomes": [
+      "Régime élevé, propulsion faible."
+    ],
+    "causes_possibles": [
+      "Ventilation/cavitation possible."
+    ],
+    "controles": [
+      "Contrôler installation et conditions de marche."
+    ],
+    "resolution_conditionnelle": "Corriger la cause confirmée selon constructeur; distinguer perte de propulsion et perte de puissance moteur.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S26"
+    ],
+    "localisation_source": "Pages PDF 68–71 / pages imprimées 68–71; refroidissement",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-076",
+    "titre": "Coupe-circuit de sécurité non armé",
+    "sous_systeme": "démarrage marine",
+    "applications": [
+      "Tohatsu M9.9D2",
+      "Tohatsu M15D2",
+      "Tohatsu M18E2"
+    ],
+    "symptomes": [
+      "Pas de démarrage."
+    ],
+    "causes_possibles": [
+      "Plaquette du coupe-circuit absente."
+    ],
+    "controles": [
+      "Vérifier l’armement prévu."
+    ],
+    "resolution_conditionnelle": "Remettre le dispositif prescrit; réparer s’il est défectueux sans le neutraliser.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S26"
+    ],
+    "localisation_source": "Pages PDF 68–71 / pages imprimées 68–71; refroidissement",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-077",
+    "titre": "Circuit d’enrichissement de départ mal utilisé",
+    "sous_systeme": "démarrage",
+    "applications": [
+      "cuve",
+      "Mikuni VM"
+    ],
+    "symptomes": [
+      "Démarrage à froid difficile."
+    ],
+    "causes_possibles": [
+      "Commande d’enrichissement ou procédure inadaptée."
+    ],
+    "controles": [
+      "Identifier le système de départ et sa procédure."
+    ],
+    "resolution_conditionnelle": "Employer la séquence prévue: enrichisseur et volet de choke ne fonctionnent pas identiquement.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S25"
+    ],
+    "localisation_source": "Pages PDF 8–11 / pages imprimées 4–7",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-078",
+    "titre": "Segments collés par dépôts",
+    "sous_systeme": "haut moteur",
+    "applications": [
+      "Rotax MAX evo documenté"
+    ],
+    "symptomes": [
+      "Étanchéité ou fonctionnement dégradés."
+    ],
+    "causes_possibles": [
+      "Encrassement des segments possible."
+    ],
+    "controles": [
+      "Vérifier dosage d’huile et état des segments."
+    ],
+    "resolution_conditionnelle": "Corriger le mélange non conforme et réparer les éléments atteints selon manuel.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S27"
+    ],
+    "localisation_source": "Chapitre 2 carburant/batterie; chapitre 4 E-RAVE et entretien",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-079",
+    "titre": "Bride d’échappement usée et fuyarde",
+    "sous_systeme": "échappement",
+    "applications": [
+      "moto 2T"
+    ],
+    "symptomes": [
+      "Fuite à la sortie du cylindre."
+    ],
+    "causes_possibles": [
+      "Bride usée empêchant l’étanchéité."
+    ],
+    "controles": [
+      "Inspecter surfaces et assemblage."
+    ],
+    "resolution_conditionnelle": "Remplacer les éléments non conformes et restaurer l’étanchéité prescrite.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S18"
+    ],
+    "localisation_source": "Inspect; measure; reassemble",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  },
+  {
+    "id": "2T-080",
+    "titre": "Résidus abrasifs après travail du cylindre",
+    "sous_systeme": "haut moteur",
+    "applications": [
+      "moto 2T"
+    ],
+    "symptomes": [
+      "Usure précoce après réfection."
+    ],
+    "causes_possibles": [
+      "Abrasif restant dans l’alésage."
+    ],
+    "controles": [
+      "Contrôler la propreté avant montage."
+    ],
+    "resolution_conditionnelle": "Nettoyer selon la méthode appropriée; inspecter les pièces si le moteur a déjà tourné.",
+    "urgence": "diagnostic",
+    "source_ids": [
+      "S22"
+    ],
+    "localisation_source": "Inspection; measurements; assembly",
+    "nature": "synthèse documentaire; scénario et ordre des contrôles rédigés pour MécaBot",
+    "validation": "non validé en atelier",
+    "parametres_chiffres": [],
+    "necessite_manuel_modele": true,
+    "version": "1.0.0",
+    "date_revision": "2026-10-10",
+    "questions_avant_diagnostic": [
+      "Quelle marque, quel modèle, quelle année et quelle configuration ?",
+      "À froid, à chaud, au ralenti ou sous charge ?",
+      "Quelles mesures, interventions ou modifications ont précédé la panne ?"
+    ],
+    "criteres_confirmation": [
+      "Défaut établi par le contrôle prescrit; symptôme seul insuffisant."
+    ],
+    "controle_apres_reparation": "Vérifier la correction du défaut et le fonctionnement selon le manuel, sans essai si un risque d’aggravation persiste.",
+    "limites": "Fiche de triage; ne remplace pas la procédure d’atelier et ses tolérances."
+  }
+]

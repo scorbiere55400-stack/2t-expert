@@ -1,0 +1,145 @@
+[
+  {
+    "id": "F01",
+    "language": "fr",
+    "primary_intent": "no_start",
+    "site": "Scooter System",
+    "url": "https://www.scooter-system.fr/forum/topic/65359-moteur-ne-d%C3%A9marre-plus-apr%C3%A8s-d%C3%A9montageremontage-carburateur/",
+    "paraphrase": "Démarrage impossible après démontage du carburateur.",
+    "consulted": "2026-10-10",
+    "counting_unit": "un fil; une intention principale",
+    "role": "signal de demande; réponses non utilisées comme preuve technique"
+  },
+  {
+    "id": "F02",
+    "language": "de",
+    "primary_intent": "no_start",
+    "site": "Zweitaktforum",
+    "url": "https://www.zweitaktforum.de/wbb/forum/thread/16034292-gel%C3%B6st-springt-nicht-mehr-an/",
+    "paraphrase": "RS125 : ratés puis arrêt et impossibilité de redémarrer.",
+    "consulted": "2026-10-10",
+    "counting_unit": "un fil; une intention principale",
+    "role": "signal de demande; réponses non utilisées comme preuve technique"
+  },
+  {
+    "id": "F03",
+    "language": "pt",
+    "primary_intent": "no_start",
+    "site": "Bicicletamotor",
+    "url": "https://www.bicicletamotor.com.br/threads/parada-muito-tempo-nao-liga.2490/",
+    "paraphrase": "Bicimoto immobilisée longtemps qui ne démarre plus.",
+    "consulted": "2026-10-10",
+    "counting_unit": "un fil; une intention principale",
+    "role": "signal de demande; réponses non utilisées comme preuve technique"
+  },
+  {
+    "id": "F04",
+    "language": "en",
+    "primary_intent": "power",
+    "site": "iboats",
+    "url": "https://forums.iboats.com/threads/1997-mercury-2-stroke-200-gets-up-to-wot-then-loses-rpms.772665/",
+    "paraphrase": "Hors-bord Mercury : chute du régime sous charge.",
+    "consulted": "2026-10-10",
+    "counting_unit": "un fil; une intention principale",
+    "role": "signal de demande; réponses non utilisées comme preuve technique"
+  },
+  {
+    "id": "F05",
+    "language": "en",
+    "primary_intent": "carb",
+    "site": "KartPulse",
+    "url": "https://forums.kartpulse.com/t/jetting-advice-needed/14665",
+    "paraphrase": "Kart KZ : demande de choix de réglages de carburation.",
+    "consulted": "2026-10-10",
+    "counting_unit": "un fil; une intention principale",
+    "role": "signal de demande; réponses non utilisées comme preuve technique"
+  },
+  {
+    "id": "F06",
+    "language": "it",
+    "primary_intent": "oil",
+    "site": "2tempi",
+    "url": "https://www.2tempi.it/topic/3934-miscelatore-carburazione-grassamagra-come-influisce-sulla-lubrificazione/",
+    "paraphrase": "Lien entre dosage du carburant et graissage séparé.",
+    "consulted": "2026-10-10",
+    "counting_unit": "un fil; une intention principale",
+    "role": "signal de demande; réponses non utilisées comme preuve technique"
+  },
+  {
+    "id": "F07",
+    "language": "es",
+    "primary_intent": "oil",
+    "site": "Forocoches",
+    "url": "https://forocoches.com/foro/showthread.php?t=8997835",
+    "paraphrase": "Choix du pourcentage d’huile dans le prémélange.",
+    "consulted": "2026-10-10",
+    "counting_unit": "un fil; une intention principale",
+    "role": "signal de demande; réponses non utilisées comme preuve technique"
+  },
+  {
+    "id": "F08",
+    "language": "en",
+    "primary_intent": "wear",
+    "site": "SnoWest",
+    "url": "https://www.snowest.com/forum/threads/900-compression-specs.201668/",
+    "paraphrase": "Demande de valeur de compression pour une motoneige 900.",
+    "consulted": "2026-10-10",
+    "counting_unit": "un fil; une intention principale",
+    "role": "signal de demande; réponses non utilisées comme preuve technique"
+  },
+  {
+    "id": "F09",
+    "language": "en",
+    "primary_intent": "docs",
+    "site": "Suzuki2strokes",
+    "url": "https://www.suzuki2strokes.com/viewtopic.php?p=173090&sid=92800901404c20e4e0103dfc58969f3a",
+    "paraphrase": "TS125 : schéma électrique et version du marché.",
+    "consulted": "2026-10-10",
+    "counting_unit": "un fil; une intention principale",
+    "role": "signal de demande; réponses non utilisées comme preuve technique"
+  },
+  {
+    "id": "F10",
+    "language": "fr",
+    "primary_intent": "wear",
+    "site": "Scooter System",
+    "url": "https://www.scooter-system.fr/forum/topic/79284-pr%C3%A9-serrage-changer-le-pistonsegments/",
+    "paraphrase": "Après un pré-serrage : faut-il remplacer piston et segments ?",
+    "consulted": "2026-10-10",
+    "counting_unit": "un fil; une intention principale",
+    "role": "signal de demande; réponses non utilisées comme preuve technique"
+  },
+  {
+    "id": "F11",
+    "language": "it",
+    "primary_intent": "carb",
+    "site": "2tempi",
+    "url": "https://www.2tempi.it/topic/3374-carburazione-e-regolazione-minimo-si24/",
+    "paraphrase": "Vespa : ralenti perturbé après remplacement du carburateur.",
+    "consulted": "2026-10-10",
+    "counting_unit": "un fil; une intention principale",
+    "role": "signal de demande; réponses non utilisées comme preuve technique"
+  },
+  {
+    "id": "F12",
+    "language": "it",
+    "primary_intent": "stall",
+    "site": "Quattroruote",
+    "url": "https://forum.quattroruote.it/threads/motore-2-tempi-non-rimane-in-moto.144948/",
+    "paraphrase": "Moteur 2T qui ne reste pas en marche.",
+    "consulted": "2026-10-10",
+    "counting_unit": "un fil; une intention principale",
+    "role": "signal de demande; réponses non utilisées comme preuve technique"
+  },
+  {
+    "id": "F13",
+    "language": "en",
+    "primary_intent": "carb",
+    "site": "CafeHusky",
+    "url": "https://cafehusky.com/threads/jetting-chat-need-help-post-your-questions-here.19219/page-15",
+    "paraphrase": "WR250 : diagnostic de carburation après réfection.",
+    "consulted": "2026-10-10",
+    "counting_unit": "un fil; une intention principale",
+    "role": "signal de demande; réponses non utilisées comme preuve technique"
+  }
+]
