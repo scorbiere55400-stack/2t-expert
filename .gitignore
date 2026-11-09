@@ -44,3 +44,10 @@ next-env.d.ts
 /.codex/
 /outputs/
 /work/
+
+*.tsbuildinfo
+
+*.tsbuildinfo
+
+# Server configuration names only; actual environment files stay ignored.
+!.env.example

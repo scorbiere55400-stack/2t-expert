@@ -1,0 +1,111 @@
+{
+  "version": "1.0.0",
+  "date": "2026-10-10",
+  "fiches": 80,
+  "sources": 28,
+  "exclusion_empreinte": [
+    "MANIFEST.json"
+  ],
+  "fichiers": [
+    {
+      "nom": "BIBLIOTHEQUE.md",
+      "octets": 53106,
+      "sha256": "f3e99321a703126bad814ec2bb95cebe9815a5ca398a4e66a380890b9459318c"
+    },
+    {
+      "nom": "INTEGRATION_MECABOT.md",
+      "octets": 4643,
+      "sha256": "58359f8f39dfdb5ae7219192bc9eacf86afb1e34347d530fd1ca11ab68ceb68a"
+    },
+    {
+      "nom": "README.md",
+      "octets": 1758,
+      "sha256": "c1198e2b4a5717f3d89567539255eedd7953423aaece9b93ab8c2782746aace9"
+    },
+    {
+      "nom": "RECHERCHE.md",
+      "octets": 3281,
+      "sha256": "305a2bb26591eebe53c033a3f656ccedf7be9d5a6d01e35ce71e33ca6c2c161b"
+    },
+    {
+      "nom": "SYSTEM_PROMPT_MECABOT.txt",
+      "octets": 1090,
+      "sha256": "2a55d199101ba7651a2bb46ea5fc29a255f2545d61eebaaa19f85c5206a1fa3d"
+    },
+    {
+      "nom": "VERIFICATION.md",
+      "octets": 1805,
+      "sha256": "7a0277ffdf229f85fd1d5e5ee1291b5a6490203eb3d0ee9f1a1e721a85eb8a66"
+    },
+    {
+      "nom": "couverture.json",
+      "octets": 721,
+      "sha256": "5b6cd771caa61a163b8f0d863812e0d98b6d909a6e55831c0ced37e3fc68dc3e"
+    },
+    {
+      "nom": "diagnostics.csv",
+      "octets": 32745,
+      "sha256": "97a0e3dc3d0f2212422f5a9acb1827ebce48bf0f7f9058ec454ead3bbda66c79"
+    },
+    {
+      "nom": "evaluation.jsonl",
+      "octets": 6962,
+      "sha256": "3404bfd0e963ff8ac640b6fde9bb4e42254daf4d179799abaafaeee690de6264"
+    },
+    {
+      "nom": "import_sqlite.py",
+      "octets": 2021,
+      "sha256": "ee8e7a7bb8147a16f09259926542432f8b98fd6de305058cc98c46455ec537f7"
+    },
+    {
+      "nom": "index.html",
+      "octets": 131555,
+      "sha256": "53ff75b71ebea1bebf61b3f339195dfd816ea8bdae43e185d06695d161f0aa39"
+    },
+    {
+      "nom": "journal_intervention.template.json",
+      "octets": 700,
+      "sha256": "4d341d47281270f62c1609475569e54a69215213755a777e3cfc0840d0acc49c"
+    },
+    {
+      "nom": "lacunes_a_documenter.json",
+      "octets": 2252,
+      "sha256": "f14858b3e65d956d7d177e5e423048c45725bceda0486801df8e9f364f628066"
+    },
+    {
+      "nom": "mecabot_2t.sqlite",
+      "octets": 335872,
+      "sha256": "fec5397b87ad0652c27a0483cd8625e59d7c853bdcae65b9b973a26b14ddc837"
+    },
+    {
+      "nom": "pannes.json",
+      "octets": 127338,
+      "sha256": "28098cf92226d87c621dcb36905e9a9e7aa8accd9527c65abeb42a5ca9b56c69"
+    },
+    {
+      "nom": "pannes.jsonl",
+      "octets": 112207,
+      "sha256": "7e6dae6044ad75b42bbb4ddbbfc6f484d04f93d6d4b0b5e7c10238c948f5bc63"
+    },
+    {
+      "nom": "rag_chunks.jsonl",
+      "octets": 85975,
+      "sha256": "f47ff12ce2b93cc5d8f66f28b462d9eac8f3ff7d0dbb931217b77601d9ff5710"
+    },
+    {
+      "nom": "schema_fiche.json",
+      "octets": 823,
+      "sha256": "9b6fea6c3df2f0dddc2286f4269a729fcd21d0b1bfa97ea79fb697dd064ce409"
+    },
+    {
+      "nom": "sources.json",
+      "octets": 15580,
+      "sha256": "054897469ee6bc937e52a6f063d646ff4de90e757a0ac7b3821ae32c6e541847"
+    },
+    {
+      "nom": "verifier.py",
+      "octets": 2786,
+      "sha256": "21ed4fc5594bc4bc1748c070f4dc85a47f3380a4395dce6467fd1c72c177a2be"
+    }
+  ]
+}

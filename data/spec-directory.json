@@ -1,0 +1,4769 @@
+{
+  "edition": "23 septembre 2026",
+  "vehicles": [
+    {
+      "id": "v001",
+      "brand": "KTM",
+      "models": "50 SX ; 65 SX ; 85 SX 17/14 et 19/16",
+      "description": "Mini-cross ; éditions spéciales regroupées.",
+      "displacement": "50 / 65 / 85",
+      "status": "C",
+      "refs": [
+        "01"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [
+        {
+          "id": "M063",
+          "appliesTo": "50 SX"
+        },
+        {
+          "id": "M064",
+          "appliesTo": "65 SX"
+        },
+        {
+          "id": "M065",
+          "appliesTo": "85 SX"
+        }
+      ],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v002",
+      "brand": "KTM",
+      "models": "125 SX ; 250 SX ; 300 SX",
+      "description": "Motocross, sans suffixe F.",
+      "displacement": "125 / 250 / 300",
+      "status": "C",
+      "refs": [
+        "01"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v003",
+      "brand": "KTM",
+      "models": "125 XC-W ; 250 XC-W ; 300 EXC",
+      "description": "Noms de la gamme européenne 2026 ; versions 6DAYS regroupées.",
+      "displacement": "125 / 250 / 300",
+      "status": "C",
+      "refs": [
+        "02"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v004",
+      "brand": "KTM",
+      "models": "125 XC ; 250 XC ; 300 XC",
+      "description": "Cross-country ; catalogue selon marché.",
+      "displacement": "125 / 250 / 300",
+      "status": "C",
+      "refs": [
+        "01"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v005",
+      "brand": "Husqvarna",
+      "models": "TC50 ; TC65 ; TC85 ; TC125 ; TC250 ; TC300",
+      "description": "Motocross 2T ; distinguer les anciennes TC 4T.",
+      "displacement": "50 à 300",
+      "status": "C",
+      "refs": [
+        "03"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v006",
+      "brand": "Husqvarna",
+      "models": "TE125 ; TE150 ; TE250 ; TE300 ; TX300",
+      "description": "TE selon pays ; TE300 Pro regroupée.",
+      "displacement": "125 à 300",
+      "status": "C",
+      "refs": [
+        "03",
+        "04"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v007",
+      "brand": "GASGAS",
+      "models": "MC50 ; MC65 ; MC85 ; MC125 ; MC250",
+      "description": "Deux tailles de roues pour la MC85.",
+      "displacement": "50 à 250",
+      "status": "C",
+      "refs": [
+        "05"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v008",
+      "brand": "GASGAS",
+      "models": "EC300 ; EX300",
+      "description": "Enduro et cross-country, gamme 2026 consultée.",
+      "displacement": "300",
+      "status": "C",
+      "refs": [
+        "06"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v009",
+      "brand": "Beta",
+      "models": "RR X-PRO 2T ; RR RACE 2T",
+      "description": "Une famille par finition et cylindrée.",
+      "displacement": "125 / 200 / 250 / 300",
+      "status": "C",
+      "refs": [
+        "07"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v010",
+      "brand": "Beta",
+      "models": "Xtrainer 200 ; Xtrainer 300",
+      "description": "Enduro de loisir.",
+      "displacement": "200 / 300",
+      "status": "C",
+      "refs": [
+        "07"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v011",
+      "brand": "Beta",
+      "models": "RX 2T 250 ; RX 2T 350",
+      "description": "Catalogue MY27 affiché au jour de consultation.",
+      "displacement": "250 / 350",
+      "status": "C",
+      "refs": [
+        "07"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v012",
+      "brand": "Sherco",
+      "models": "SE Factory 125 ; 250 ; 300",
+      "description": "Gamme enduro deux-temps.",
+      "displacement": "125 / 250 / 300",
+      "status": "C",
+      "refs": [
+        "08"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v013",
+      "brand": "Sherco",
+      "models": "SE Racing 300 ; SE XTREM 250 et 300",
+      "description": "Finitions présentes au catalogue consulté.",
+      "displacement": "250 / 300",
+      "status": "C",
+      "refs": [
+        "08"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v014",
+      "brand": "Rieju",
+      "models": "MR300i, finitions Racing / Pro selon catalogue",
+      "description": "Enduro à injection ; anciens MR à carburateur à distinguer.",
+      "displacement": "300",
+      "status": "C",
+      "refs": [
+        "09"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v015",
+      "brand": "Yamaha",
+      "models": "YZ125 ; YZ250",
+      "description": "Motocross ; ne pas confondre avec YZ-F.",
+      "displacement": "125 / 250",
+      "status": "C",
+      "refs": [
+        "12",
+        "13"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [
+        {
+          "src": "/assets/models/yam-yz125-free.jpg",
+          "label": "Yamaha YZ125, photographie de 2011",
+          "author": "Goygoo",
+          "license": "CC BY-SA 3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YZ125_Motorcycle.jpg"
+        }
+      ],
+      "engines": [
+        {
+          "id": "M084",
+          "appliesTo": "YZ125 / YZ125X"
+        },
+        {
+          "id": "M085",
+          "appliesTo": "YZ250 / YZ250X"
+        }
+      ],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v016",
+      "brand": "Yamaha",
+      "models": "YZ125X ; YZ250X",
+      "description": "Cross-country, catalogue américain 2026.",
+      "displacement": "125 / 250",
+      "status": "C",
+      "refs": [
+        "15",
+        "66"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v017",
+      "brand": "Kawasaki",
+      "models": "KX65 ; KX85 ; KX112",
+      "description": "Cross junior ; KX85 grandes roues selon version.",
+      "displacement": "65 / 85 / 112",
+      "status": "C",
+      "refs": [
+        "16",
+        "17"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v018",
+      "brand": "Kawasaki",
+      "models": "KX327 ; KX327X",
+      "description": "Modèles MY27 annoncés en juin 2026 ; livraison locale à vérifier.",
+      "displacement": "327",
+      "status": "A",
+      "refs": [
+        "18"
+      ],
+      "page": 3,
+      "category": "Catalogue récent : cross et enduro",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v019",
+      "brand": "Yamaha",
+      "models": "PW50 ; YZ65 ; YZ85",
+      "description": "Initiation et cross junior, catalogue 2026.",
+      "displacement": "50 / 65 / 85",
+      "status": "C",
+      "refs": [
+        "14"
+      ],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v020",
+      "brand": "Suzuki",
+      "models": "RM85 ; RM85L",
+      "description": "RM85 documentée en 2023 ; variante L dans les archives.",
+      "displacement": "85",
+      "status": "D",
+      "refs": [
+        "39",
+        "59"
+      ],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v021",
+      "brand": "Fantic",
+      "models": "XX125 ; XX250 ; XE125",
+      "description": "Gamme Racing 2T documentée ; millésime exact à préciser.",
+      "displacement": "125 / 250",
+      "status": "D",
+      "refs": [
+        "19"
+      ],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v022",
+      "brand": "Fantic",
+      "models": "XE300",
+      "description": "Enduro, moteur Minarelli MM300 2T.",
+      "displacement": "300",
+      "status": "C",
+      "refs": [
+        "20"
+      ],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v023",
+      "brand": "TM",
+      "models": "EN / MX 125 / 144 / 250 / 300 2T ; MX / SMX Junior 85 / 100 / 112 ; SMR125 / 300 ; SMX300",
+      "description": "Manuels 2026 ; injection, carburateur et démarreur selon version.",
+      "displacement": "85 à 300",
+      "status": "D",
+      "refs": [
+        "11"
+      ],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v024",
+      "brand": "Cobra",
+      "models": "CX50 P3 ; CX50 Junior ; CX50 SR / King / FWE ; CX65",
+      "description": "Cross enfant ; archives de manuels, finitions regroupées.",
+      "displacement": "50 / 65",
+      "status": "D",
+      "refs": [
+        "27"
+      ],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v025",
+      "brand": "Beta",
+      "models": "Sincro 125 ; 250 ; 300 ; 300 SS ; Sincro Factory",
+      "description": "Trial 2T ; Factory disponible en 125, 250 et 300.",
+      "displacement": "125 / 250 / 300",
+      "status": "C",
+      "refs": [
+        "07"
+      ],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v026",
+      "brand": "Beta",
+      "models": "Evo 80 Junior ; Evo 80 Senior",
+      "description": "Trial junior. Les grandes Evo existent aussi en 4T.",
+      "displacement": "80",
+      "status": "C",
+      "refs": [
+        "07"
+      ],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v027",
+      "brand": "Sherco",
+      "models": "ST Factory 125 ; 250 ; 300 ; ST-E 250 / 300",
+      "description": "Trial ; ST-E désigne ici une version thermique à démarreur.",
+      "displacement": "125 / 250 / 300",
+      "status": "C",
+      "refs": [
+        "08"
+      ],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v028",
+      "brand": "Sherco",
+      "models": "ST Access ; ST-F Adam Raga Replica 300",
+      "description": "Trial ; vérifier la version exacte sur sa fiche.",
+      "displacement": "Selon version",
+      "status": "C",
+      "refs": [
+        "08"
+      ],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v029",
+      "brand": "Scorpa",
+      "models": "SC-F Factory 125 ; 250 ; 300 ; SC-E Factory 250 / 300",
+      "description": "Trial 2026 ; le F de SC-F ne signifie pas quatre-temps.",
+      "displacement": "125 / 250 / 300",
+      "status": "C",
+      "refs": [
+        "22"
+      ],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v030",
+      "brand": "TRRS",
+      "models": "ONE ; X-TRACK ONE",
+      "description": "Familles trial / randonnée, millésime 2026 documenté.",
+      "displacement": "Selon version",
+      "status": "C",
+      "refs": [
+        "23"
+      ],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v031",
+      "brand": "Vertigo",
+      "models": "Nitro Works",
+      "description": "Gamme 2025 documentée ; ne vaut pas confirmation du stock 2026.",
+      "displacement": "125 / 200 / 250 / 300",
+      "status": "D",
+      "refs": [
+        "24"
+      ],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v032",
+      "brand": "GASGAS",
+      "models": "TXT Racing ; TXT GP",
+      "description": "Trial 2T, brochure 2025 ; cylindrée / finition à contrôler.",
+      "displacement": "125 / 250 / 280 / 300",
+      "status": "D",
+      "refs": [
+        "67"
+      ],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [
+        {
+          "src": "/assets/real/trial.jpg",
+          "label": "GasGas TXT Pro 250, exemple de la famille TXT",
+          "author": "Y Sekiai",
+          "license": "CC BY-SA 3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:GASGAS_TXT_PRO_250.JPG"
+        }
+      ],
+      "engines": [
+        {
+          "id": "M090",
+          "appliesTo": "TXT Racing / TXT GP, selon version"
+        }
+      ],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v033",
+      "brand": "TRRS",
+      "models": "ONE R ; ONE RR ; Gold ; X-TRACK ; ONE 80",
+      "description": "Compléments de gamme à contrôler par millésime.",
+      "displacement": "Selon version",
+      "status": "R",
+      "refs": [],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v034",
+      "brand": "Scorpa",
+      "models": "SY250 ; Twenty ; anciens SR 2T",
+      "description": "Trial ancien ; exclure SY125 et T-Ride 250F quatre-temps.",
+      "displacement": "250 / 280 / 300",
+      "status": "R",
+      "refs": [],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v035",
+      "brand": "Vertigo",
+      "models": "Combat ; Vertical ; Nitro ; Titanium R ; Dougie Lampkin",
+      "description": "Anciennes séries et éditions ; liste de repérage.",
+      "displacement": "Selon version",
+      "status": "R",
+      "refs": [],
+      "page": 4,
+      "category": "Autres gammes récentes et trial",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v036",
+      "brand": "Beta",
+      "models": "RR50 Enduro ; RR50 Sport ; RR50 Race",
+      "description": "Gamme Young Enduro 2T.",
+      "displacement": "50",
+      "status": "C",
+      "refs": [
+        "07"
+      ],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v037",
+      "brand": "Beta",
+      "models": "RR50 Motard ; Sport / Low Seat ; Track ; X Special Edition",
+      "description": "Gamme Supermoto 2T.",
+      "displacement": "50",
+      "status": "C",
+      "refs": [
+        "07"
+      ],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v038",
+      "brand": "Sherco",
+      "models": "50 SE-R ; SE-RS ; SM-R ; SM-RS",
+      "description": "Factory, Silver, Blackmoon et autres décors regroupés.",
+      "displacement": "50",
+      "status": "C",
+      "refs": [
+        "08"
+      ],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v039",
+      "brand": "Sherco",
+      "models": "125 2T SM Factory",
+      "description": "Ne pas confondre avec les 125 4T SE-RS / SM-RS.",
+      "displacement": "125",
+      "status": "C",
+      "refs": [
+        "08"
+      ],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v040",
+      "brand": "Rieju",
+      "models": "MRT50 ; MRT50 SM ; MRT50 Pro",
+      "description": "Enduro et supermotard ; vérifier la finition locale.",
+      "displacement": "50",
+      "status": "C",
+      "refs": [
+        "09",
+        "10"
+      ],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [
+        {
+          "src": "/assets/models/rieju-mrt50.jpg",
+          "label": "Rieju MRT 50 SM Trophy 2017",
+          "author": "Peprovira",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Rieju_MRT_50_SM_Trophy_50cc_2017.jpg"
+        }
+      ],
+      "engines": [
+        {
+          "id": "M009",
+          "appliesTo": "MRT 50, selon version et code moteur"
+        }
+      ],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v041",
+      "brand": "Fantic",
+      "models": "XM50 Competition ; XM50 Performance",
+      "description": "Supermotard ; versions 2T.",
+      "displacement": "50",
+      "status": "C",
+      "refs": [
+        "21"
+      ],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v042",
+      "brand": "Fantic",
+      "models": "XE50 ; anciens Caballero 50 Regolarità / Motard",
+      "description": "Enduro 50 et familles historiques ; détail à préciser.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "21",
+        "57"
+      ],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v043",
+      "brand": "Vent",
+      "models": "Baja 50 ; Baja RR ; Derapage 50 ; Derapage RR",
+      "description": "Documentation constructeur ; disponibilité locale à vérifier.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "25",
+        "26"
+      ],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v044",
+      "brand": "Vent",
+      "models": "Baja 125 2T Competition ; Derapage 125 2T Competition",
+      "description": "Manuel 2021 ; ne pas inclure les 125 4T.",
+      "displacement": "125",
+      "status": "D",
+      "refs": [
+        "62"
+      ],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v045",
+      "brand": "Scorpa",
+      "models": "50 SE-R Racing ; SM-R Racing ; SM-RS Racing ; Red One",
+      "description": "Variantes 50 du catalogue consulté.",
+      "displacement": "50",
+      "status": "C",
+      "refs": [
+        "22"
+      ],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v046",
+      "brand": "Derbi",
+      "models": "Senda R / SM ; X-Race ; X-Treme ; DRD ; DRD Pro",
+      "description": "Anciennes et récentes générations 2T regroupées.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "34"
+      ],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v047",
+      "brand": "Derbi",
+      "models": "GPR50 Racing ; GPR50 Nude",
+      "description": "Sportives à boîte.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "34"
+      ],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v048",
+      "brand": "Aprilia",
+      "models": "RS50 ; RS4 50 ; RX50 ; SX50 ; MX50",
+      "description": "RS4 50 est 2T ; RS4 125 est 4T.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v049",
+      "brand": "Yamaha / MBK",
+      "models": "TZR50 / X-Power ; DT50R / X-Limit R ; DT50X / X-Limit SM",
+      "description": "Appellations jumelles suivant marque et marché.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [
+        {
+          "src": "/assets/real/50cc.jpg",
+          "label": "Yamaha DT50X, exemple de la famille DT50",
+          "author": "GT1976",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:2017-09-21_(174)_Yamaha_DT_50_X_at_Bahnhof_Waidhofen_an_der_Ybbs.jpg"
+        }
+      ],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v050",
+      "brand": "Rieju",
+      "models": "RR50 ; Spike ; RS1 ; RS2 Matrix ; RS3 ; SMX50 ; MRX50",
+      "description": "Archives et occasion ; ne pas étendre aux 125 4T.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v051",
+      "brand": "HM",
+      "models": "CRE50 Baja / Six Competition ; Derapage 50 / RR / Competition",
+      "description": "Anciennes gammes HM, avant les gammes Vent.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v052",
+      "brand": "Autres marques",
+      "models": "Valenti RME50 / SM50 ; Motorhispania RX50 / RYZ50 / Furia ; CH Racing WXE50 / WSM50",
+      "description": "Compléments d’inventaire, variantes à documenter.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 5,
+      "category": "50 cm³ à boîte et supermotards",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v053",
+      "brand": "Peugeot",
+      "models": "BB ; BB3 SP",
+      "description": "Famille de cyclomoteurs et version à trois vitesses.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "28"
+      ],
+      "page": 6,
+      "category": "Cyclomoteurs français et assimilés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v054",
+      "brand": "Peugeot",
+      "models": "101 ; 102 ; 104",
+      "description": "Ne pas confondre avec les motos P101 / P102 / P104.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "28"
+      ],
+      "page": 6,
+      "category": "Cyclomoteurs français et assimilés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v055",
+      "brand": "Peugeot",
+      "models": "103 ; MVL ; SP ; SPX ; RCX ; Chrono ; Vogue",
+      "description": "Famille thermique historique ; variantes regroupées.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "29",
+        "31"
+      ],
+      "page": 6,
+      "category": "Cyclomoteurs français et assimilés",
+      "photos": [
+        {
+          "src": "/assets/carousel-authentic/peugeot-103-spx-lc.jpg",
+          "label": "Peugeot 103 SPX-LC 1988, exemple photographié",
+          "author": "Jean-Noël Marchi",
+          "license": "CC0 1.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Peugeot_103_SPX-LC_1988_s%C3%A9rie_1_d%E2%80%99origine.jpg"
+        }
+      ],
+      "engines": [
+        {
+          "id": "M003",
+          "appliesTo": "103 SP, MVL, SPX et RCX : variantes à vérifier"
+        }
+      ],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v056",
+      "brand": "Peugeot",
+      "models": "GL10 ; GT10 ; TSA ; TSE ; TLX ; TXR ; XP ; XP6 ; XPS",
+      "description": "Cyclomoteurs et 50 à boîte de plusieurs générations.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 6,
+      "category": "Cyclomoteurs français et assimilés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v057",
+      "brand": "Motobécane / Motoconfort",
+      "models": "51 Super",
+      "description": "Brochure constructeur de 1979.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "30"
+      ],
+      "page": 6,
+      "category": "Cyclomoteurs français et assimilés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v058",
+      "brand": "Motobécane / MBK",
+      "models": "51 ; 51 Super ; 51V ; Club ; Swing ; Rock ; Magnum ; Magnum Racing ; Passion ; Évasion",
+      "description": "Famille à moteur AV10 ; finitions à dater individuellement.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "30",
+        "31"
+      ],
+      "page": 6,
+      "category": "Cyclomoteurs français et assimilés",
+      "photos": [],
+      "engines": [
+        {
+          "id": "M002",
+          "appliesTo": "MBK 51, selon version"
+        }
+      ],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v059",
+      "brand": "Motobécane / Motoconfort",
+      "models": "AV3 ; AV31 ; AV32 ; AV33 ; AV34 ; AV36 ; AV37",
+      "description": "Premières familles Mobylette ; équivalents AU sous Motoconfort.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 6,
+      "category": "Cyclomoteurs français et assimilés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v060",
+      "brand": "Motobécane / Motoconfort",
+      "models": "AV41 ; AV42 ; AV43 ; AV44 ; AV48 ; AV54 ; AV56 ; AV59",
+      "description": "Anciennes Mobylettes ; liste de repérage.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 6,
+      "category": "Cyclomoteurs français et assimilés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v061",
+      "brand": "Motobécane / Motoconfort",
+      "models": "AV65 ; AV68 ; AV75 ; AV76 ; AV78 ; AV79 ; AV85 ; AV88 ; AV89",
+      "description": "Dont la Bleue ; nombreuses sous-versions.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 6,
+      "category": "Cyclomoteurs français et assimilés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v062",
+      "brand": "Motobécane / MBK",
+      "models": "40 ; 41 ; 50 ; 881 ; 92 ; 93 ; 94TT ; 95TT ; 98 ; 99Z",
+      "description": "Désignations de familles ; ne pas déduire la cylindrée du nom.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 6,
+      "category": "Cyclomoteurs français et assimilés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v063",
+      "brand": "Motobécane / MBK",
+      "models": "Cady M1 / M3 ; M7 ; N40 ; N50 ; 50EV ; Dakota ; Kansas ; Phénix",
+      "description": "Cyclomoteurs de route et de loisir.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 6,
+      "category": "Cyclomoteurs français et assimilés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v064",
+      "brand": "VéloSoleX",
+      "models": "45 ; 330 ; 660 ; 1010 ; 1400 ; 1700 ; 2200 ; 3300 ; 3800 ; 5000",
+      "description": "Cyclomoteurs thermiques à galet ; aucune version électrique incluse.",
+      "displacement": "45 / 50",
+      "status": "R",
+      "refs": [],
+      "page": 6,
+      "category": "Cyclomoteurs français et assimilés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v065",
+      "brand": "VéloSoleX",
+      "models": "Micron ; Flash ; 6000 ; Tenor",
+      "description": "Autres architectures ; vérifier le type exact.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 6,
+      "category": "Cyclomoteurs français et assimilés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v066",
+      "brand": "Terrot / Motobécane / Peugeot",
+      "models": "Cyclomoteurs et petites motos d’avant-guerre et d’après-guerre",
+      "description": "Familles insuffisamment détaillées : lacune explicitement conservée.",
+      "displacement": "Variable",
+      "status": "R",
+      "refs": [],
+      "page": 6,
+      "category": "Cyclomoteurs français et assimilés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v067",
+      "brand": "Piaggio",
+      "models": "Ciao",
+      "description": "Cyclomoteur historique, lancement en 1967.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "32"
+      ],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [
+        {
+          "id": "M004",
+          "appliesTo": "Ciao et Si, selon montage"
+        }
+      ],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v068",
+      "brand": "Piaggio",
+      "models": "Si ; Bravo ; Boxer ; Grillo ; Citta",
+      "description": "Familles thermiques ; variantes locales à préciser.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v069",
+      "brand": "Gilera",
+      "models": "CBA ; Eco ; EC1 ; GSM50 ; Zulu50 ; RCR50 ; SMT50",
+      "description": "Cyclomoteurs et motos à boîte 2T ; générations regroupées.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v070",
+      "brand": "Simson",
+      "models": "SR1 ; SR2 ; SR2E ; KR50 ; Schwalbe KR51 / KR51-1 / KR51-2",
+      "description": "Catalogue historique de pièces.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "53"
+      ],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v071",
+      "brand": "Simson",
+      "models": "Spatz SR4-1 ; Star SR4-2 ; Sperber SR4-3 ; Habicht SR4-4",
+      "description": "Série dite des oiseaux.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "53"
+      ],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v072",
+      "brand": "Simson",
+      "models": "S50 ; S51 ; S53 ; S70 ; S83 ; SR50 ; SR80",
+      "description": "Attention : SR80 désigne une motorisation de classe 70 cm³.",
+      "displacement": "50 / 70",
+      "status": "D",
+      "refs": [
+        "53"
+      ],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v073",
+      "brand": "Kreidler",
+      "models": "K50 ; K51 ; Florett ; Florett Super ; RS ; RMC ; Flory 12 / 13 / 23",
+      "description": "Répertoire historique ; noms et variantes selon années.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "54"
+      ],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v074",
+      "brand": "Puch",
+      "models": "Maxi ; MV50 ; MS50 ; VS50 ; VZ50 ; DS50 ; Monza ; Magnum ; X30",
+      "description": "Cyclomoteurs anciens ; pas les vélos modernes.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v075",
+      "brand": "Tomos",
+      "models": "Colibri ; A3 ; A35 ; APN4 ; APN6 ; ATX50 ; BT50 ; Targa ; Flexer ; Revival",
+      "description": "Nombreuses variantes nationales.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v076",
+      "brand": "Zündapp",
+      "models": "Combinette ; C50 ; GTS50 ; KS50 ; KS80 ; K80 ; ZD20 / 30 / 40",
+      "description": "Deux-temps historiques ; sous-types non détaillés.",
+      "displacement": "50 / 80",
+      "status": "R",
+      "refs": [],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v077",
+      "brand": "Hercules / Sachs",
+      "models": "Prima ; M1 / M2 / M3 / M4 / M5 ; K50 ; K80 ; Ultra ; Supra ; MK1 / MK2",
+      "description": "Ne pas inclure le moteur rotatif de la W2000.",
+      "displacement": "50 / 80",
+      "status": "R",
+      "refs": [],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v078",
+      "brand": "Jawa / Babetta",
+      "models": "Pionyr 550 / 555 / 05 / 20 / 21 ; Mustang 23 ; Babetta 207 / 210 / 215 / 225",
+      "description": "Petites cylindrées tchèques et slovaques.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v079",
+      "brand": "Vespa / ACMA",
+      "models": "98 ; 125 ; 150 ; GS150 ; GS160 ; SS180 ; Rally180 / 200 ; P / PX125 / 150 / 200",
+      "description": "Grandes familles historiques à vitesses ; codes de coque non détaillés.",
+      "displacement": "98 à 200",
+      "status": "D",
+      "refs": [
+        "56"
+      ],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [
+        {
+          "src": "/assets/real/scooter.jpg",
+          "label": "Vespa PX125E Elestart, exemple de la famille P/PX",
+          "author": "Cjp24",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Vespa_PX_125_E,_red_(2).jpg"
+        }
+      ],
+      "engines": [
+        {
+          "id": "M032",
+          "appliesTo": "premières Vespa"
+        },
+        {
+          "id": "M034",
+          "appliesTo": "P / PX, selon version"
+        }
+      ],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v080",
+      "brand": "Vespa",
+      "models": "50 N / L / R / Special ; 90 ; 90 SS ; Primavera125 ; ET3 ; PK50 / 80 / 125",
+      "description": "Versions historiques 2T ; exclure les Primavera modernes 4T.",
+      "displacement": "50 à 125",
+      "status": "R",
+      "refs": [],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v081",
+      "brand": "Lambretta",
+      "models": "A ; B ; C ; D ; LD ; Li ; TV ; SX ; DL / GP ; J ; Lui / Vega / Cometa",
+      "description": "Séries classiques Innocenti ; pas les scooters modernes 4T.",
+      "displacement": "50 à 200",
+      "status": "D",
+      "refs": [
+        "55"
+      ],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v082",
+      "brand": "Autres cyclomoteurs",
+      "models": "Garelli Mosquito / VIP ; Flandria Comet / Record ; Itom Astor ; Gitane Testi Champion ; Malaguti Fifty",
+      "description": "Sélection complémentaire ; inventaire de chaque constructeur à poursuivre.",
+      "displacement": "Variable",
+      "status": "R",
+      "refs": [],
+      "page": 7,
+      "category": "Cyclomoteurs européens et scooters classiques",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v083",
+      "brand": "MBK / Yamaha",
+      "models": "Booster / BW’s ; Booster Next Generation / BW’s NG ; Nitro / Aerox",
+      "description": "Correspondances documentées par Yamaha ; versions 2T.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "36"
+      ],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [
+        {
+          "src": "/assets/carousel-authentic/mbk-booster.jpg",
+          "label": "MBK Booster jaune, exemple de la famille Booster/BW’s",
+          "author": "Cjp24",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:MBK_Booster,_yellow.jpg"
+        },
+        {
+          "src": "/assets/models/yam-aerox.jpg",
+          "label": "Yamaha Aerox 2011, exemple de la famille Aerox/Nitro",
+          "author": "Thomas Wiersma",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Yamaha_Aerox_2011_.jpg"
+        }
+      ],
+      "engines": [
+        {
+          "id": "M019",
+          "appliesTo": "Booster / BW’s 2T"
+        },
+        {
+          "id": "M018",
+          "appliesTo": "Aerox / Nitro liquide"
+        }
+      ],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v084",
+      "brand": "MBK / Yamaha",
+      "models": "Ovetto / Neo’s ; Stunt / Slider ; Mach G / Jog R ou RR ; Flipper / Why",
+      "description": "Appellations européennes ; correspondance exacte selon millésime.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v085",
+      "brand": "MBK",
+      "models": "Forte ; Fizz ; Evolis ; Sorriso ; Equalis ; Target",
+      "description": "Anciens scooters 2T.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v086",
+      "brand": "Peugeot",
+      "models": "Speedfight 1 / 2 / 3 / 4, versions 2T",
+      "description": "La disponibilité des cylindrées varie selon génération.",
+      "displacement": "50 / 100",
+      "status": "D",
+      "refs": [
+        "35"
+      ],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v087",
+      "brand": "Peugeot",
+      "models": "Buxy ; Squab ; Trekker / TKR ; Vivacity ; New Vivacity",
+      "description": "100 cm³ seulement dans certaines familles.",
+      "displacement": "50 / 100",
+      "status": "D",
+      "refs": [
+        "35"
+      ],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v088",
+      "brand": "Peugeot",
+      "models": "Ludix ; Ludix Blaster ; Jet Force 50 ; Elyseo 50 ; Elystar 50 ; Kisbee 2T",
+      "description": "Exclure les versions quatre-temps et électriques.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "35"
+      ],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v089",
+      "brand": "Peugeot",
+      "models": "SV50 ; SV80 ; Zenith ; BSV ; Speedake ; Looxor 50",
+      "description": "Anciennes gammes ; contrôle individuel du type moteur.",
+      "displacement": "50 / 80",
+      "status": "R",
+      "refs": [],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v090",
+      "brand": "Piaggio",
+      "models": "Typhoon / TPH50 ; NRG Power DD / DT / PureJet",
+      "description": "Générations 2T ; communication constructeur de 2017.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "37"
+      ],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v091",
+      "brand": "Piaggio",
+      "models": "Zip 2T ; Zip SP ; NRG MC1 / MC2 / MC3 ; NTT ; Quartz",
+      "description": "Archives d’applications Malossi ; ne pas inclure Zip i-get 4T.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "33"
+      ],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v092",
+      "brand": "Piaggio",
+      "models": "Sfera 50 / 80 ; Skipper 125 / 150 2T ; Typhoon 80 / 125 2T ; Hexagon 125 / 150 / 180 2T",
+      "description": "Le suffixe et l’année sont indispensables.",
+      "displacement": "50 à 180",
+      "status": "R",
+      "refs": [],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v093",
+      "brand": "Gilera",
+      "models": "Runner50 / SP / PureJet ; Stalker ; Ice ; DNA50",
+      "description": "Scooters 2T et DNA à présentation de moto.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "33"
+      ],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v094",
+      "brand": "Gilera",
+      "models": "Runner FX125 ; Runner FXR180 ; Typhoon50 / 125 ; Storm50",
+      "description": "Exclure les Runner VX / VXR quatre-temps.",
+      "displacement": "50 / 125 / 180",
+      "status": "R",
+      "refs": [],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v095",
+      "brand": "Aprilia",
+      "models": "SR50 2T ; SR50 DiTech ; SR50 Factory ; Rally50 ; Sonic50",
+      "description": "Applications 2T du catalogue équipementier.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "33"
+      ],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v096",
+      "brand": "Aprilia",
+      "models": "Area51 ; Amico ; Gulliver ; Habana / Mojito50 2T ; Scarabeo50 2T ; SR125 / SR150 2T",
+      "description": "Scarabeo et Mojito existent aussi en 4T.",
+      "displacement": "50 / 125 / 150",
+      "status": "R",
+      "refs": [],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v097",
+      "brand": "Malaguti",
+      "models": "F12 Phantom ; F12 Digit ; F15 Firefox",
+      "description": "Versions 2T refroidies par air ou liquide selon modèle.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "60"
+      ],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v098",
+      "brand": "Italjet",
+      "models": "Dragster180 2T",
+      "description": "Première génération ; aucun lien moteur avec les nouveaux Dragster 4T.",
+      "displacement": "180",
+      "status": "D",
+      "refs": [
+        "61"
+      ],
+      "page": 8,
+      "category": "Scooters : France, Japon et Italie",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v099",
+      "brand": "Honda",
+      "models": "Vision50 2T ; Dio SP50 ; Dio SR50 ; Dio ZX50",
+      "description": "Versions anciennes uniquement.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "38"
+      ],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v100",
+      "brand": "Honda",
+      "models": "Lead50 / 80 / 90 / 100 2T ; SH50 / 75 ; Bali50 / 100 ; SFX50 ; SXR50 ; Sky50 ; X8R-S / X8R-X",
+      "description": "Ne pas inclure SH125 / 150 ni les Lead et Vision 4T.",
+      "displacement": "50 à 100",
+      "status": "R",
+      "refs": [],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v101",
+      "brand": "Honda",
+      "models": "Tact ; Pal ; Eve ; DJ-1 ; Giorno première génération ; Joker50 / 90 ; Beat50",
+      "description": "Marché japonais principalement ; homonymes modernes à exclure.",
+      "displacement": "50 / 90",
+      "status": "R",
+      "refs": [],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v102",
+      "brand": "Yamaha",
+      "models": "Jog ; Jog Z / ZR ; Champ ; Mint ; Passol ; Passola ; Vino 2T ; BW’s100",
+      "description": "Générations 2T ; plusieurs noms ont ensuite été repris en 4T.",
+      "displacement": "50 / 100",
+      "status": "R",
+      "refs": [],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v103",
+      "brand": "Suzuki",
+      "models": "Gemma50 / 80 ; Love ; Ran ; Carna ; Hi ; Hi-R ; Hi-Up ; Hi-Up R",
+      "description": "Archives japonaises ; Gemma125 et Gemma250 exclues.",
+      "displacement": "50 / 80",
+      "status": "D",
+      "refs": [
+        "39"
+      ],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v104",
+      "brand": "Suzuki",
+      "models": "Sepia ; Sepia ZZ ; Address V100 ; Address110 ancien ; Verde ; Let’s II ; ZZ",
+      "description": "Exclure les Address110 modernes 4T et Let’s 4.",
+      "displacement": "50 / 100 / 110",
+      "status": "D",
+      "refs": [
+        "39"
+      ],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v105",
+      "brand": "Suzuki",
+      "models": "Street Magic50 ; Street Magic110 ; Street Magic II",
+      "description": "Deux-roues automatiques de style moto.",
+      "displacement": "50 / 110",
+      "status": "D",
+      "refs": [
+        "39"
+      ],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v106",
+      "brand": "Suzuki",
+      "models": "AP50 scooter ; AE50 ; Katana50 ; Estilete50",
+      "description": "Ne pas confondre l’AP50 scooter avec l’AP50 à boîte.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v107",
+      "brand": "Malaguti",
+      "models": "F10 Jet Line ; F12R Phantom ; Yesterday ; Centro 2T ; Crosser",
+      "description": "Versions deux-temps uniquement.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v108",
+      "brand": "Italjet",
+      "models": "Dragster50 / 125 ; Formula50 / 125 ; Torpedo50 2T ; Velocifero50 ; Pista50",
+      "description": "Générations historiques ; Formula125 bicylindre 2T.",
+      "displacement": "50 / 125",
+      "status": "R",
+      "refs": [],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v109",
+      "brand": "Benelli",
+      "models": "491 ; K2 ; Naked ; Pepe 2T",
+      "description": "Familles scooter ; ne pas généraliser toutes les versions.",
+      "displacement": "50 / 100",
+      "status": "R",
+      "refs": [],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v110",
+      "brand": "Derbi",
+      "models": "Atlantis ; Hunter ; Paddock ; Predator ; GP1 ; GP1 Open / Revolution",
+      "description": "Versions 2T, catalogue d’applications.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "34"
+      ],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v111",
+      "brand": "Beta",
+      "models": "Ark ; Chrono ; Quadra ; Tempo ; Eikon50",
+      "description": "Petits scooters historiques 2T.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v112",
+      "brand": "Kymco",
+      "models": "Super9 ; ZX / Fever ; Dink50 2T ; Top Boy ; Cobra50 ; Agility R16 2T",
+      "description": "Uniquement variantes 2T dans le catalogue d’applications.",
+      "displacement": "50",
+      "status": "D",
+      "refs": [
+        "33"
+      ],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v113",
+      "brand": "Autres scooters",
+      "models": "CPI Oliver / Hussar / Popcorn / Aragon ; Keeway F-Act / Focus / Matrix 2T",
+      "description": "Modèles variables selon importateur ; vérifier le code moteur.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v114",
+      "brand": "Autres scooters",
+      "models": "PGO Big Max / PMX / T-Rex 2T ; TGB 101 / 303 / Bullet 2T ; SYM Jet50 / Jet Euro X 2T",
+      "description": "Exclure les générations récentes 4T de noms proches.",
+      "displacement": "50",
+      "status": "R",
+      "refs": [],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v115",
+      "brand": "Vespa / LML",
+      "models": "ET2 ; LX50 2T ; LXV50 2T ; S50 2T ; LML Star / Stella 2T",
+      "description": "Variantes 4T exclues ; vérifier l’année et la cylindrée exacte.",
+      "displacement": "50 / 125 / 150",
+      "status": "R",
+      "refs": [],
+      "page": 9,
+      "category": "Scooters : autres familles et marchés",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v116",
+      "brand": "Yamaha",
+      "models": "YA-1 ; YD-1 ; YDS-1 ; YM1 ; DS5-E ; R1 de 1967 ; HX90 ; SDR200",
+      "description": "Noms historiques ; la R1 de 1967 n’est pas la YZF-R1.",
+      "displacement": "90 à 350",
+      "status": "D",
+      "refs": [
+        "40"
+      ],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v117",
+      "brand": "Yamaha",
+      "models": "RD250 ; RD350 ; RD400 ; RD250LC ; RD350LC ; RZ250 ; RZ350 ; RD350 YPVS",
+      "description": "Familles sportives ; variantes nationales et alias regroupés.",
+      "displacement": "250 à 400",
+      "status": "D",
+      "refs": [
+        "41"
+      ],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [
+        {
+          "src": "/assets/models/yam-rd350.jpg",
+          "label": "Yamaha RD350 LC, variante de la famille RD",
+          "author": "Reg Mckenna",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Yamaha_RD350LC_01.jpg"
+        }
+      ],
+      "engines": [
+        {
+          "id": "M044",
+          "appliesTo": "RD refroidie par air"
+        },
+        {
+          "id": "M045",
+          "appliesTo": "RD / RZ LC"
+        }
+      ],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v118",
+      "brand": "Yamaha",
+      "models": "RD500LC ; RZ500 ; RZV500R ; TZR250",
+      "description": "Noms d’exportation et versions japonaises.",
+      "displacement": "250 / 500",
+      "status": "D",
+      "refs": [
+        "41"
+      ],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v119",
+      "brand": "Yamaha",
+      "models": "RD50 / 80 / 125 / 200 ; RD125LC ; TZR50 / 80 / 125 / 150 ; TZM150 ; YSR50 / 80",
+      "description": "Petites sportives ; versions et marchés à contrôler.",
+      "displacement": "50 à 200",
+      "status": "R",
+      "refs": [],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v120",
+      "brand": "Yamaha",
+      "models": "R5 ; DS7 ; RD135 ; R1-Z250 ; RX100 / 115 / 125 / 135 ; RX-Z135 ; RX-King",
+      "description": "Routières et modèles régionaux.",
+      "displacement": "100 à 350",
+      "status": "R",
+      "refs": [],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v121",
+      "brand": "Honda",
+      "models": "NSR250R ; NSR250R SP ; NSR250R SE",
+      "description": "Plusieurs générations MC16 / MC18 / MC21 / MC28.",
+      "displacement": "250",
+      "status": "D",
+      "refs": [
+        "44"
+      ],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v122",
+      "brand": "Honda",
+      "models": "NSR50 ; NSR80",
+      "description": "Petites sportives, communiqué constructeur.",
+      "displacement": "50 / 80",
+      "status": "D",
+      "refs": [
+        "45"
+      ],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v123",
+      "brand": "Honda",
+      "models": "NS250R ; NS250F ; NS400R ; NSR125R ; NS125F / R",
+      "description": "Familles NS et NSR historiques.",
+      "displacement": "125 / 250 / 400",
+      "status": "D",
+      "refs": [
+        "42",
+        "64"
+      ],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v124",
+      "brand": "Honda",
+      "models": "MB50 / 80 / 100 ; MBX50 / 80 / 125 ; MT50 / 80 ; MTX50 / 80 / 125 / 200",
+      "description": "Familles routières et trails de l’index historique.",
+      "displacement": "50 à 200",
+      "status": "D",
+      "refs": [
+        "42"
+      ],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v125",
+      "brand": "Suzuki",
+      "models": "T20 / X6 ; T250 ; T350 ; T500 ; GT125 ; GT185 ; GT250 ; GT380 ; GT550 ; GT750",
+      "description": "Routières deux-temps ; principales familles.",
+      "displacement": "125 à 750",
+      "status": "D",
+      "refs": [
+        "39"
+      ],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v126",
+      "brand": "Suzuki",
+      "models": "RG50 ; RG80 ; RG125 ; RG185 ; RG250E ; RG125 Gamma ; RG250 Gamma ; RG400 Gamma ; RG500 Gamma",
+      "description": "Distinguer RG routières et RG de Grand Prix.",
+      "displacement": "50 à 500",
+      "status": "D",
+      "refs": [
+        "39"
+      ],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v127",
+      "brand": "Suzuki",
+      "models": "RGV250 Gamma / SP ; Wolf50 / 125 / 200 / 250 ; RG200 Gamma",
+      "description": "Sportives et dérivés japonais.",
+      "displacement": "50 à 250",
+      "status": "D",
+      "refs": [
+        "39"
+      ],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v128",
+      "brand": "Suzuki",
+      "models": "GP100 / 125 ; A100 ; AX100 ; B120 ; K125 ; GT200 X5 ; GT250 X7 ; GT500",
+      "description": "Compléments export ; pas les GS / GSX quatre-temps.",
+      "displacement": "100 à 500",
+      "status": "R",
+      "refs": [],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v129",
+      "brand": "Kawasaki",
+      "models": "A1 Samurai250 ; A7 Avenger350 ; H1 Mach III500 ; H2 Mach IV750",
+      "description": "Deux-temps historiques ; Ninja H2 moderne exclue.",
+      "displacement": "250 à 750",
+      "status": "D",
+      "refs": [
+        "46"
+      ],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v130",
+      "brand": "Kawasaki",
+      "models": "S1 250 ; S2 350 ; S3 400 ; KH250 / 400 / 500",
+      "description": "Tricylindres historiques et changements d’appellation.",
+      "displacement": "250 à 500",
+      "status": "R",
+      "refs": [],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v131",
+      "brand": "Kawasaki",
+      "models": "AR50 / 80 / 125 ; KR250 ; KR-1 ; KR-1S ; KR-1R ; KR150 / KRR150",
+      "description": "Sportives anciennes ; Ninja150 2T selon marché.",
+      "displacement": "50 à 250",
+      "status": "R",
+      "refs": [],
+      "page": 10,
+      "category": "Motos routières japonaises",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v132",
+      "brand": "Aprilia",
+      "models": "RS125 2T",
+      "description": "Ancienne RS à moteur Rotax ; RS125 actuelle 4T exclue.",
+      "displacement": "125",
+      "status": "D",
+      "refs": [
+        "47"
+      ],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [
+        {
+          "src": "/assets/models/apr-rs125.jpg",
+          "label": "Aprilia RS125 de 2001, exemple de la famille",
+          "author": "Spieltrieb2",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Aprilia_RS_125_2001.jpg"
+        }
+      ],
+      "engines": [
+        {
+          "id": "M036",
+          "appliesTo": "RS125 à moteur Rotax 122"
+        },
+        {
+          "id": "M037",
+          "appliesTo": "premières RS125 : Rotax 123 selon version"
+        }
+      ],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v133",
+      "brand": "Aprilia",
+      "models": "RS250 ; AF1 50 / 125 ; Sintesi ; Futura ; Europa125 ; Tuono50 / 125 2T",
+      "description": "Anciennes générations uniquement.",
+      "displacement": "50 / 125 / 250",
+      "status": "R",
+      "refs": [],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v134",
+      "brand": "Aprilia",
+      "models": "ETX125 ; RX125 2T ; MX125 ; SX125 2T ; Pegaso125 ; Red Rose50 / 125 ; Classic50 / 125",
+      "description": "Plusieurs noms réutilisés en quatre-temps.",
+      "displacement": "50 / 125",
+      "status": "R",
+      "refs": [],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v135",
+      "brand": "Cagiva",
+      "models": "Mito125 ; Mito EV ; Mito SP525 ; Freccia C9 / C10 / C12 ; Prima50 ; Planet125 ; Raptor125",
+      "description": "Sportives et roadsters historiques.",
+      "displacement": "50 / 125",
+      "status": "R",
+      "refs": [],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v136",
+      "brand": "Cagiva",
+      "models": "Aletta Oro125 ; Aletta Rossa125 ; Elefant125 ; Elefantre125 ; Super City125 ; W8 125",
+      "description": "Petites Cagiva 2T ; les grosses Elefant sont exclues.",
+      "displacement": "125",
+      "status": "R",
+      "refs": [],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v137",
+      "brand": "Gilera",
+      "models": "125 TG1 / TG2 ; RV125 / 200 ; KZ125 ; KK125 ; MX-1 / MX-R125 ; SP01 / SP02 ; Crono125 ; GFR125",
+      "description": "Route sportive ; références à dater avant identification.",
+      "displacement": "125 / 200",
+      "status": "R",
+      "refs": [],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v138",
+      "brand": "Gilera",
+      "models": "RX125 / 200 ; Arizona125 / 200 ; Apache125 ; Rally125 ; CX125",
+      "description": "Trails et routière carénée CX.",
+      "displacement": "125 / 200",
+      "status": "R",
+      "refs": [],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v139",
+      "brand": "Derbi",
+      "models": "GPR125 2T ; FDS50 ; FDX50 ; Fénix50 ; Variant ; Antorcha ; Diablo ; Coyote",
+      "description": "GPR125 quatre-temps exclue.",
+      "displacement": "50 / 125",
+      "status": "R",
+      "refs": [],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v140",
+      "brand": "Bimota",
+      "models": "500 Vdue",
+      "description": "Bicylindre 2T ; évolutions injection / carburateurs à distinguer.",
+      "displacement": "500",
+      "status": "D",
+      "refs": [
+        "48"
+      ],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v141",
+      "brand": "Motobécane",
+      "models": "LT125 ; LT1 ; LT2 ; LT3 ; 350 trois-cylindres",
+      "description": "Bicylindres LT et trois-cylindres 350 historiques.",
+      "displacement": "125 / 350",
+      "status": "R",
+      "refs": [],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v142",
+      "brand": "Peugeot",
+      "models": "P103 (175K) ; P101 ; P102",
+      "description": "Motos 2T des années 1920, différentes des cyclomoteurs 101-104.",
+      "displacement": "175",
+      "status": "D",
+      "refs": [
+        "28"
+      ],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v143",
+      "brand": "Jawa",
+      "models": "250 Pérák ; 250 type353 / 559 ; 350 type354 / 360 ; Bizon250 / 350",
+      "description": "Grandes familles de la chronologie constructeur.",
+      "displacement": "250 / 350",
+      "status": "D",
+      "refs": [
+        "50"
+      ],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v144",
+      "brand": "Jawa",
+      "models": "350 type634 ; 638 ; 639 ; 640 ; Style ; Retro ; Military",
+      "description": "Le constructeur distingue fin de série et reconstruction ; ne pas classer neuf courant.",
+      "displacement": "350",
+      "status": "D",
+      "refs": [
+        "50",
+        "51"
+      ],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v145",
+      "brand": "MZ / IFA",
+      "models": "RT125 ; ES125 / 150 / 250 / 300 ; ETS125 / 150 / 250",
+      "description": "Familles historiques documentées par MZA.",
+      "displacement": "125 à 300",
+      "status": "D",
+      "refs": [
+        "52"
+      ],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v146",
+      "brand": "MZ / IFA",
+      "models": "TS125 / 150 / 250 ; ETZ125 / 150 / 250 / 251 / 301 ; BK350",
+      "description": "RT125 moderne quatre-temps exclue ; BK350 bicylindre 2T.",
+      "displacement": "125 à 350",
+      "status": "D",
+      "refs": [
+        "52"
+      ],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v147",
+      "brand": "Montesa",
+      "models": "Brio ; Impala175 ; Impala Sport ; Comando ; Impala250",
+      "description": "Routières historiques espagnoles.",
+      "displacement": "125 à 250",
+      "status": "D",
+      "refs": [
+        "49"
+      ],
+      "page": 11,
+      "category": "Motos européennes : route et collection",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v148",
+      "brand": "Yamaha",
+      "models": "DT-1 / DT250 ; DT50 / 80 / 100 / 125 / 175 / 200 / 230 / 360 / 400",
+      "description": "Famille DT ; LC, MX, R, RE et X à distinguer par millésime.",
+      "displacement": "50 à 400",
+      "status": "D",
+      "refs": [
+        "65"
+      ],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v149",
+      "brand": "Yamaha",
+      "models": "IT125 / 175 / 200 / 250 / 400 / 425 / 465 / 490 ; WR200 / 250 / 500 2T",
+      "description": "Anciennes enduros ; WR-F et WR125 4T exclues.",
+      "displacement": "125 à 500",
+      "status": "R",
+      "refs": [],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v150",
+      "brand": "Yamaha",
+      "models": "YZ50 / 60 / 80 / 100 / 125 / 250 / 360 / 400 / 465 / 490 ; MX125 / 175 / 250 / 360 / 400 ; SC500",
+      "description": "Cross historiques ; modèles actuels traités en début de document.",
+      "displacement": "50 à 500",
+      "status": "R",
+      "refs": [],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v151",
+      "brand": "Yamaha",
+      "models": "TDR50 / 80 / 125 / 240 / 250 ; DT125X ; PW80",
+      "description": "Trail routier, supermotard et initiation ; TDR240 selon marché.",
+      "displacement": "50 à 250",
+      "status": "R",
+      "refs": [],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v152",
+      "brand": "Honda",
+      "models": "CRM50 ; CRM80 ; CRM250R ; CRM250AR",
+      "description": "Archives constructeur japonaises.",
+      "displacement": "50 / 80 / 250",
+      "status": "D",
+      "refs": [
+        "43"
+      ],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v153",
+      "brand": "Honda",
+      "models": "CRM125 ; MT125 / 250 Elsinore ; MR50 / 175 / 250",
+      "description": "Trails et enduros historiques.",
+      "displacement": "50 à 250",
+      "status": "R",
+      "refs": [],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v154",
+      "brand": "Honda",
+      "models": "CR60R ; CR80R ; CR85R ; CR125R ; CR250R ; CR450R ; CR480R ; CR500R",
+      "description": "CR deux-temps ; CRF quatre-temps exclues.",
+      "displacement": "60 à 500",
+      "status": "R",
+      "refs": [],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v155",
+      "brand": "Suzuki",
+      "models": "TS50 / 80 / 90 / 125 / 185 / 200 / 250 / 400 ; TS125R ; TS200R ; RMX250S",
+      "description": "Familles TS / Hustler et RMX ; les suffixes distinguent les générations.",
+      "displacement": "50 à 400",
+      "status": "D",
+      "refs": [
+        "39"
+      ],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v156",
+      "brand": "Suzuki",
+      "models": "RM50 / 60 / 65 / 80 / 100 / 125 / 250 / 370 / 400 / 465 / 500 ; RMX50 / 250",
+      "description": "Cross et enduro ; RM-Z et RMX450Z exclus.",
+      "displacement": "50 à 500",
+      "status": "R",
+      "refs": [],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v157",
+      "brand": "Suzuki",
+      "models": "RV50 ; RV75 ; RV90 ; RV125 anciens ; PE175 / 250 / 400",
+      "description": "VanVan125 moderne 4T exclue.",
+      "displacement": "50 à 400",
+      "status": "R",
+      "refs": [],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v158",
+      "brand": "Kawasaki",
+      "models": "KE50 / 100 / 125 / 175 ; KM90 / 100 ; KD80 / 100 / 125 / 175",
+      "description": "Trails et petites motos de loisirs.",
+      "displacement": "50 à 175",
+      "status": "R",
+      "refs": [],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v159",
+      "brand": "Kawasaki",
+      "models": "KDX50 / 80 / 125 / 175 / 200 / 220 / 250 / 400 / 420 / 450",
+      "description": "Enduros deux-temps ; ne pas confondre avec KLX.",
+      "displacement": "50 à 450",
+      "status": "R",
+      "refs": [],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v160",
+      "brand": "Kawasaki",
+      "models": "KX60 / 80 / 100 / 125 / 250 / 400 / 420 / 500",
+      "description": "Anciennes KX ; KX250 actuelle est quatre-temps.",
+      "displacement": "60 à 500",
+      "status": "R",
+      "refs": [],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v161",
+      "brand": "KTM",
+      "models": "EXC125 / 200 / 250 / 300 / 380 ; SX125 / 144 / 150 / 250 / 300 / 380",
+      "description": "Toutes les associations de cylindrée et finition ne couvrent pas toutes les années.",
+      "displacement": "125 à 380",
+      "status": "R",
+      "refs": [],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v162",
+      "brand": "Husqvarna",
+      "models": "WR125 / 250 / 300 / 360 ; CR125 / 250 / 390 / 430 / 500 ; WRE125 ; SMS125",
+      "description": "Gammes suédoises et italiennes ; anciens TE / TC aussi en 4T.",
+      "displacement": "125 à 500",
+      "status": "R",
+      "refs": [],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v163",
+      "brand": "GASGAS / Rieju",
+      "models": "EC125 / 200 / 250 / 300 ; Pampera125 / 250 / 280 ; MR200 / 250 / 300 ; Ranger200 / 300",
+      "description": "Générations à carburateur ; Pampera400 / 450 4T exclues.",
+      "displacement": "125 à 300",
+      "status": "R",
+      "refs": [],
+      "page": 12,
+      "category": "Trails, cross et enduro anciens",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v164",
+      "brand": "Montesa",
+      "models": "Cota247 ; Cota315R",
+      "description": "Deux générations historiques 2T attestées ; Cota4RT exclue.",
+      "displacement": "250",
+      "status": "D",
+      "refs": [
+        "49"
+      ],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v165",
+      "brand": "Montesa",
+      "models": "Cota25 / 49 / 74 / 123 / 172 / 200 / 242 / 248 / 304 / 307 / 309 / 310 / 311 / 314R / 348 / 349",
+      "description": "Numéros de modèles, pas cylindrées exactes.",
+      "displacement": "Variable",
+      "status": "R",
+      "refs": [],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v166",
+      "brand": "Bultaco",
+      "models": "Tralla ; Metralla ; Sherpa T ; Sherpa S ; Pursang ; Alpina ; Matador ; Frontera ; Lobito ; Chispa ; TSS",
+      "description": "Familles couvertes par le patrimoine Bultaco ; sous-types non recensés.",
+      "displacement": "Variable",
+      "status": "D",
+      "refs": [
+        "58"
+      ],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v167",
+      "brand": "Ossa",
+      "models": "160T ; 175 Sport ; 250 Sport ; MAR ; TR77 ; TR80 ; Explorer ; Enduro ; Super Pioneer ; Desert ; TR280i",
+      "description": "Motos historiques et renaissance moderne 2T.",
+      "displacement": "Variable",
+      "status": "R",
+      "refs": [],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v168",
+      "brand": "Beta",
+      "models": "TR32 ; TR33 ; TR34 ; TR35 ; Zero ; Synt ; Techno ; Rev-3 ; Evo 2T",
+      "description": "Trial historique ; Rev-4 et Evo4T exclues.",
+      "displacement": "125 à 300",
+      "status": "R",
+      "refs": [],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v169",
+      "brand": "Fantic",
+      "models": "Caballero 50 / 80 / 100 / 125 historiques",
+      "description": "Famille d’origine ; Caballero actuelles 4T exclues.",
+      "displacement": "50 à 125",
+      "status": "D",
+      "refs": [
+        "57"
+      ],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v170",
+      "brand": "Fantic",
+      "models": "Trial125 ; Trial200 ; 240 Professional ; 300 ; 301 ; 303 ; 305 ; 307 ; K-Roo ; Section",
+      "description": "Désignations de modèles ; ne pas les lire comme cylindrées.",
+      "displacement": "Variable",
+      "status": "R",
+      "refs": [],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v171",
+      "brand": "Yamaha",
+      "models": "TY50 ; TY80 ; TY125 ; TY175 ; TY250 ; TY350 ; TY250Z",
+      "description": "Trial deux-temps ; modèles TY-S quatre-temps exclus.",
+      "displacement": "50 à 350",
+      "status": "R",
+      "refs": [],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v172",
+      "brand": "Suzuki / Kawasaki",
+      "models": "RL250 / KT250",
+      "description": "Trial historique ; modèles de série.",
+      "displacement": "250",
+      "status": "R",
+      "refs": [],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v173",
+      "brand": "Honda",
+      "models": "TLM50 ; TLM200R ; TLM220R ; TLM260R",
+      "description": "TLM deux-temps ; RTL250S citée comme piège quatre-temps.",
+      "displacement": "50 à 260",
+      "status": "R",
+      "refs": [],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v174",
+      "brand": "Yamaha",
+      "models": "TD1 / TD2 / TD3 ; TR2 / TR3 ; TZ125 / 250 / 350 / 500 / 700 / 750 ; YZR500",
+      "description": "Compétition vitesse ; prototypes d’usine regroupés.",
+      "displacement": "125 à 750",
+      "status": "R",
+      "refs": [],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v175",
+      "brand": "Honda",
+      "models": "RS125R ; RS250R ; RS500 ; NS500 ; NSR500 ; NSR500V",
+      "description": "Compétition 2T, archives NS / NSR et Collection Hall.",
+      "displacement": "125 à 500",
+      "status": "D",
+      "refs": [
+        "42",
+        "64"
+      ],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v176",
+      "brand": "Suzuki",
+      "models": "RG500 de Grand Prix ; RGV500",
+      "description": "À distinguer de la RG500 Gamma routière.",
+      "displacement": "500",
+      "status": "D",
+      "refs": [
+        "63"
+      ],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v177",
+      "brand": "Kawasaki",
+      "models": "H1R ; H2R ; KR750 ; KR250 / KR350 de Grand Prix",
+      "description": "Compétition historique.",
+      "displacement": "250 à 750",
+      "status": "D",
+      "refs": [
+        "46"
+      ],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v178",
+      "brand": "Aprilia / Cagiva",
+      "models": "RSW125 / 250 ; RSA125 / 250 ; RSW500 / Cagiva C589 à C594",
+      "description": "Machines de Grand Prix, pas modèles routiers.",
+      "displacement": "125 à 500",
+      "status": "R",
+      "refs": [],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v179",
+      "brand": "Petites séries",
+      "models": "Suter MMX500 ; Vins Duecinquanta ; Langen Two Stroke ; Ronax500",
+      "description": "Existence historique connue ; production, livraison et homologation à vérifier.",
+      "displacement": "250 à 500",
+      "status": "R",
+      "refs": [],
+      "page": 13,
+      "category": "Trial ancien, compétition et petites séries",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v180",
+      "brand": "DKW",
+      "models": "RT98 ; RT100 ; RT125 ; RT175 ; RT200 ; RT250 ; RT350 ; SB ; NZ",
+      "description": "Familles allemandes 2T ; séries et sous-types à documenter.",
+      "displacement": "98 à 350",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v181",
+      "brand": "Adler / NSU",
+      "models": "Adler M100 / M125 / M150 / M200 / M250 ; NSU Quick / Quickly",
+      "description": "Ne pas inclure les NSU Max quatre-temps.",
+      "displacement": "50 à 250",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v182",
+      "brand": "BSA / Royal Enfield",
+      "models": "Bantam D1 / D3 / D5 / D7 / D10 / D14 / B175 ; Flying Flea ; RE125",
+      "description": "Petites britanniques deux-temps.",
+      "displacement": "125 à 175",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v183",
+      "brand": "Francis-Barnett / James / Greeves",
+      "models": "Falcon ; Plover ; Captain ; Cadet ; Cruiser ; Scottish ; Hawkstone",
+      "description": "Motos souvent équipées de moteurs Villiers.",
+      "displacement": "Variable",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v184",
+      "brand": "Scott / Ariel",
+      "models": "Flying Squirrel ; Super Squirrel / Leader ; Arrow",
+      "description": "Bicylindres britanniques 2T.",
+      "displacement": "250 à 600",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v185",
+      "brand": "ČZ",
+      "models": "125 ; 150 ; 175 ; 250 ; 350 ; types 476 / 477 ; cross250 / 380 / 400",
+      "description": "Familles de route et de compétition ; codes usine à compléter.",
+      "displacement": "125 à 400",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v186",
+      "brand": "Maico",
+      "models": "M125 ; M150 ; M175 ; M250 ; MD125 ; MD250 ; MC / GS ; 490 Mega2",
+      "description": "Motos de route, cross et enduro ; nomenclature variable.",
+      "displacement": "125 à 500",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v187",
+      "brand": "Puch / SWM / Ancillotti",
+      "models": "Puch125 / 175 / 250 ; Frigerio ; SWM RS-GS ; TL ; Ancillotti Scarab",
+      "description": "Anciennes séries 2T ; SWM modernes 4T exclues.",
+      "displacement": "Variable",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v188",
+      "brand": "Benelli / Moto Guzzi",
+      "models": "Benelli 125 2C / 250 2C / 250 2C Electron ; Moto Guzzi 250TS",
+      "description": "Bicylindres 2T historiques.",
+      "displacement": "125 / 250",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v189",
+      "brand": "Aermacchi / Harley-Davidson",
+      "models": "Rapido125 ; TX125 ; SS125 / 175 / 250 ; SX125 / 175 / 250 ; Hummer",
+      "description": "Petites Harley 2T ; Sprint250 / 350 quatre-temps exclues.",
+      "displacement": "125 à 250",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v190",
+      "brand": "Izh / Minsk / Voskhod",
+      "models": "Izh Planeta / Jupiter / Planeta Sport ; Minsk M1A / M103 / M104 / M105 / 125 ; Voskhod1 / 2 / 3",
+      "description": "Familles soviétiques et post-soviétiques.",
+      "displacement": "125 à 350",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v191",
+      "brand": "WSK / SHL / Pannonia",
+      "models": "WSK125 / 175 ; SHL M11 / M17 ; Pannonia T5 / P10 / P20",
+      "description": "Constructeurs polonais et hongrois.",
+      "displacement": "125 à 250",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v192",
+      "brand": "Yezdi / Rajdoot / Escorts",
+      "models": "Yezdi Roadking / Classic / CL II / 350 ; Rajdoot175 ; Rajdoot350",
+      "description": "Versions historiques ; Yezdi modernes quatre-temps exclues.",
+      "displacement": "175 à 350",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v193",
+      "brand": "Yamaha / Suzuki, Asie",
+      "models": "Yamaha RX / RX-Z / Y125Z / Y125ZR / F1ZR ; Suzuki RGR150 / RG Sport / RGV120 / Satria120",
+      "description": "Modèles régionaux asiatiques ; cylindrées selon version.",
+      "displacement": "110 à 150",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v194",
+      "brand": "Honda / Kawasaki, Asie",
+      "models": "Honda NSR150 / NSR150SP / LS125R / Nova Dash / NS-1 ; Kawasaki Victor150 / Serpico150 / Ninja150 2T",
+      "description": "Ne pas confondre les versions 2T et les générations 4T.",
+      "displacement": "50 à 150",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    },
+    {
+      "id": "v195",
+      "brand": "Autres marques et artisans",
+      "models": "Zid ; Voshod ; Romet ; Riga ; Casal ; SIS-Sachs ; Macal ; Zongshen ; fabricants de pocket-bikes",
+      "description": "Marques à investiguer ; aucune exhaustivité des modèles ni preuve de production actuelle.",
+      "displacement": "Variable",
+      "status": "R",
+      "refs": [],
+      "page": 14,
+      "category": "Compléments historiques internationaux",
+      "photos": [],
+      "engines": [],
+      "sourceDocument": "/docs/repertoire_deux_roues_2_temps.pdf"
+    }
+  ],
+  "engines": [
+    {
+      "id": "M001",
+      "name": "Motobécane / Motoconfort AV7",
+      "status": "H",
+      "architecture": "Mono 50 ; air ; carburateur",
+      "examples": "Nombreuses Mobylette, dont AV32",
+      "distinction": "Code moteur AV7 ; variantes et suffixes à relever.",
+      "refs": [
+        "S01"
+      ],
+      "page": 4,
+      "category": "Cyclomoteurs : blocs français et italiens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M002",
+      "name": "Motobécane / MBK AV10",
+      "status": "H",
+      "architecture": "Mono 50 ; air ou liquide selon version",
+      "examples": "Motobécane / MBK 51",
+      "distinction": "Admission par clapets au carter ; distinct de l’AV7.",
+      "refs": [
+        "S02",
+        "S03"
+      ],
+      "page": 4,
+      "category": "Cyclomoteurs : blocs français et italiens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M003",
+      "name": "Peugeot, famille 103",
+      "status": "H",
+      "architecture": "Mono 50 ; air ou liquide ; variateur",
+      "examples": "103 SP, MVL, SPX, RCX",
+      "distinction": "Plusieurs embiellages et transmissions ; « moteur 103 » ne suffit pas pour commander.",
+      "refs": [
+        "S04",
+        "S05"
+      ],
+      "page": 4,
+      "category": "Cyclomoteurs : blocs français et italiens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf",
+      "photo": {
+        "src": "/assets/engine-details/M003.webp",
+        "label": "Détail du bloc visible sur la photographie de Peugeot 103 SPX-LC 1988, exemple photographié ; identifier le code moteur sur votre exemplaire.",
+        "author": "Jean-Noël Marchi",
+        "license": "CC0 1.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Peugeot_103_SPX-LC_1988_s%C3%A9rie_1_d%E2%80%99origine.jpg"
+      }
+    },
+    {
+      "id": "M004",
+      "name": "Piaggio, famille Ciao / Si",
+      "status": "H",
+      "architecture": "Mono 50 ; air ; carburateur",
+      "examples": "Ciao, Si, Bravo",
+      "distinction": "Versions à poulie simple ou variateur ; plusieurs carters et entraînements.",
+      "refs": [
+        "S06",
+        "S05"
+      ],
+      "page": 4,
+      "category": "Cyclomoteurs : blocs français et italiens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M005",
+      "name": "Puch E50",
+      "status": "H",
+      "architecture": "Mono 50 ; air ; automatique 1 rapport",
+      "examples": "Puch Maxi, selon version",
+      "distinction": "E50 est une désignation moteur ; ne pas confondre avec ZA50.",
+      "refs": [
+        "S07"
+      ],
+      "page": 4,
+      "category": "Cyclomoteurs : blocs français et italiens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M006",
+      "name": "Tomos A35",
+      "status": "H",
+      "architecture": "Mono 50 ; air ; automatique 2 rapports",
+      "examples": "Cyclomoteurs Tomos à moteur A35",
+      "distinction": "Clapets ; A3 et A55 sont d’autres générations, non détaillées ici.",
+      "refs": [
+        "S08"
+      ],
+      "page": 4,
+      "category": "Cyclomoteurs : blocs français et italiens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M007",
+      "name": "Simson M500 / M700, fabrication MZA",
+      "status": "C",
+      "architecture": "Mono ; 50 / 60 / 70 selon montage",
+      "examples": "Bases de remplacement pour Simson",
+      "distinction": "Moteurs complets et bas moteurs proposés ; adaptations selon configuration.",
+      "refs": [
+        "S09"
+      ],
+      "page": 4,
+      "category": "Cyclomoteurs : blocs français et italiens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M008",
+      "name": "Simson, générations historiques",
+      "status": "H*",
+      "architecture": "Mono 50 / 70 ; air ; boîte mécanique",
+      "examples": "S50, S51, S70, Schwalbe",
+      "distinction": "M53/M54 et M531/M541 notamment : vérifier le type exact ; index historique.",
+      "refs": [
+        "S10"
+      ],
+      "page": 4,
+      "category": "Cyclomoteurs : blocs français et italiens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M009",
+      "name": "Minarelli AM6",
+      "status": "C",
+      "architecture": "Mono 50 ; liquide ; carburateur ; 6 rapports",
+      "examples": "Rieju MRT, Fantic 50, nombreux Beta / Sherco 50",
+      "distinction": "Code moteur commercial confirmé ; évolutions liées au millésime et à l’homologation.",
+      "refs": [
+        "S11",
+        "S12",
+        "S13"
+      ],
+      "page": 5,
+      "category": "Mécaboîtes 50 : moteurs partagés",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf",
+      "photo": {
+        "src": "/assets/engine-details/M009.webp",
+        "label": "Détail du bloc visible sur la photographie de Rieju MRT 50 SM Trophy 2017 ; identifier le code moteur sur votre exemplaire.",
+        "author": "Peprovira",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rieju_MRT_50_SM_Trophy_50cc_2017.jpg"
+      }
+    },
+    {
+      "id": "M010",
+      "name": "Derbi EBE050 / EBS050",
+      "status": "H",
+      "architecture": "Mono 50 ; liquide ; carburateur ; 6 rapports",
+      "examples": "Anciennes Senda et GPR",
+      "distinction": "Ancienne génération ; code frappé à contrôler. EBE et EBS sont des variantes à distinguer.",
+      "refs": [
+        "S14",
+        "S15"
+      ],
+      "page": 5,
+      "category": "Mécaboîtes 50 : moteurs partagés",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M011",
+      "name": "Derbi D50B0",
+      "status": "H",
+      "architecture": "Mono 50 ; liquide ; carburateur ; 6 rapports",
+      "examples": "Senda, Aprilia RS50 / RX50 / SX50 selon année",
+      "distinction": "Génération différente des EBE/EBS ; le dernier caractère est le chiffre zéro.",
+      "refs": [
+        "S15",
+        "S16"
+      ],
+      "page": 5,
+      "category": "Mécaboîtes 50 : moteurs partagés",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M012",
+      "name": "Minarelli P4 / P6",
+      "status": "H*",
+      "architecture": "Mono, principalement 50 ; boîte 4 / 6 rapports",
+      "examples": "Fantic et autres cyclomoteurs italiens anciens",
+      "distinction": "Familles historiques ; variantes radiales, refroidies par air ou liquide à documenter séparément.",
+      "refs": [
+        "S17"
+      ],
+      "page": 5,
+      "category": "Mécaboîtes 50 : moteurs partagés",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M013",
+      "name": "Minarelli AM3 / AM4 / AM5",
+      "status": "H*",
+      "architecture": "Mono 50 ; boîte 3 / 4 / 5 rapports",
+      "examples": "Anciennes petites Aprilia et autres 50",
+      "distinction": "Prédécesseurs de l’AM6 ; identification détaillée non validée dans cette édition.",
+      "refs": [
+        "S16"
+      ],
+      "page": 5,
+      "category": "Mécaboîtes 50 : moteurs partagés",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M014",
+      "name": "Kreidler, blocs Florett",
+      "status": "H*",
+      "architecture": "Mono 50 ; air ; boîte mécanique",
+      "examples": "Florett, RS et dérivés",
+      "distinction": "Famille de repérage ; le type et le nombre de rapports déterminent la génération.",
+      "refs": [
+        "S18"
+      ],
+      "page": 5,
+      "category": "Mécaboîtes 50 : moteurs partagés",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M015",
+      "name": "Sachs, petits moteurs à boîte",
+      "status": "H*",
+      "architecture": "Mono, principalement 50 ; air",
+      "examples": "Nombreux cyclomoteurs européens",
+      "distinction": "Séries 50/2, 50/3, 50/4, 50S : repères à confirmer par notice spécifique. Sans source précise",
+      "refs": [],
+      "page": 5,
+      "category": "Mécaboîtes 50 : moteurs partagés",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M016",
+      "name": "Franco Morini, petits blocs à boîte",
+      "status": "H*",
+      "architecture": "Mono, principalement 50",
+      "examples": "Cyclomoteurs italiens anciens",
+      "distinction": "Ne pas assimiler aux moteurs scooter Morini ; catalogue de types incomplet ici. Sans source précise",
+      "refs": [],
+      "page": 5,
+      "category": "Mécaboîtes 50 : moteurs partagés",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M017",
+      "name": "Minarelli horizontal AC",
+      "status": "H",
+      "architecture": "Mono 50 ; air ; carburateur ; CVT",
+      "examples": "Yamaha Jog / Neo’s, MBK, selon version",
+      "distinction": "Plusieurs longueurs de carter ; famille du manuel MY/CY/MA.",
+      "refs": [
+        "S19",
+        "S20"
+      ],
+      "page": 6,
+      "category": "Scooters 50 : Minarelli et Piaggio",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M018",
+      "name": "Minarelli horizontal LC",
+      "status": "H",
+      "architecture": "Mono 50 ; liquide ; carburateur ; CVT",
+      "examples": "Yamaha Aerox, MBK Nitro, Malaguti F12 LC",
+      "distinction": "Variante liquide ; distinguer les montages et les millésimes.",
+      "refs": [
+        "S19",
+        "S21"
+      ],
+      "page": 6,
+      "category": "Scooters 50 : Minarelli et Piaggio",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M019",
+      "name": "Minarelli vertical",
+      "status": "H",
+      "architecture": "Mono 50 ; air ; carburateur ; CVT",
+      "examples": "Yamaha BW’s / MBK Booster 2T",
+      "distinction": "Architecture distincte du Minarelli horizontal.",
+      "refs": [
+        "S22",
+        "S20"
+      ],
+      "page": 6,
+      "category": "Scooters 50 : Minarelli et Piaggio",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf",
+      "photo": {
+        "src": "/assets/engine-details/M019.webp",
+        "label": "Détail du bloc visible sur la photographie de MBK Booster jaune, exemple de la famille Booster/BW’s ; identifier le code moteur sur votre exemplaire.",
+        "author": "Cjp24",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:MBK_Booster,_yellow.jpg"
+      }
+    },
+    {
+      "id": "M020",
+      "name": "Piaggio scooter 50 AC",
+      "status": "H",
+      "architecture": "Mono 50 ; air ; carburateur ; CVT",
+      "examples": "Zip 2T, Typhoon 50 2T",
+      "distinction": "Différentes générations de carters ; exclure les Zip 4T.",
+      "refs": [
+        "S23",
+        "S22"
+      ],
+      "page": 6,
+      "category": "Scooters 50 : Minarelli et Piaggio",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M021",
+      "name": "Piaggio scooter 50 LC",
+      "status": "H",
+      "architecture": "Mono 50 ; liquide ; carburateur ; CVT",
+      "examples": "NRG, Gilera Runner 50, Zip SP",
+      "distinction": "Versions anciennes et Hi-Per2 ; pas un code moteur unique.",
+      "refs": [
+        "S23",
+        "S16"
+      ],
+      "page": 6,
+      "category": "Scooters 50 : Minarelli et Piaggio",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M022",
+      "name": "Piaggio PureJet",
+      "status": "H",
+      "architecture": "Mono 50 ; liquide ; injection ; CVT",
+      "examples": "NRG PureJet, Runner PureJet, certaines SR50",
+      "distinction": "Famille d’injection à distinguer du Morini DiTech.",
+      "refs": [
+        "S16"
+      ],
+      "page": 6,
+      "category": "Scooters 50 : Minarelli et Piaggio",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M023",
+      "name": "CPI / Keeway / Generic 2T",
+      "status": "H",
+      "architecture": "Mono 50 ; air ou liquide ; CVT",
+      "examples": "Divers scooters de ces marques",
+      "distinction": "Familles dérivées ; un aspect proche du Minarelli ne prouve pas l’interchangeabilité.",
+      "refs": [
+        "S22"
+      ],
+      "page": 6,
+      "category": "Scooters 50 : Minarelli et Piaggio",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M024",
+      "name": "Peugeot vertical AC",
+      "status": "H",
+      "architecture": "Mono 50 ; air ; carburateur ; CVT",
+      "examples": "Trekker / TKR, Speedfight AC anciens",
+      "distinction": "Version air du bloc vertical Peugeot.",
+      "refs": [
+        "S22",
+        "S24"
+      ],
+      "page": 7,
+      "category": "Scooters : autres bases et grosses cylindrées",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M025",
+      "name": "Peugeot vertical LC",
+      "status": "H",
+      "architecture": "Mono 50 ; liquide ; carburateur ; CVT",
+      "examples": "Speedfight LC anciens",
+      "distinction": "Version liquide ; distincte des moteurs horizontaux récents.",
+      "refs": [
+        "S22",
+        "S24"
+      ],
+      "page": 7,
+      "category": "Scooters : autres bases et grosses cylindrées",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M026",
+      "name": "Peugeot horizontal 2T",
+      "status": "H",
+      "architecture": "Mono 50 ; air ou liquide ; CVT",
+      "examples": "Ludix, Jet Force à carburateur selon version",
+      "distinction": "Famille descriptive ; variantes AC / LC à identifier.",
+      "refs": [
+        "S24",
+        "S16"
+      ],
+      "page": 7,
+      "category": "Scooters : autres bases et grosses cylindrées",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M027",
+      "name": "Peugeot TSDI",
+      "status": "H",
+      "architecture": "Mono 50 ; injection ; CVT",
+      "examples": "Jet Force TSDI et applications dédiées",
+      "distinction": "L’alimentation et l’électronique distinguent cette version des carburateurs.",
+      "refs": [
+        "S16"
+      ],
+      "page": 7,
+      "category": "Scooters : autres bases et grosses cylindrées",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M028",
+      "name": "Morini scooter à carburateur",
+      "status": "H",
+      "architecture": "Mono 50 ; air ou liquide ; CVT",
+      "examples": "Certaines Aprilia et Suzuki anciennes",
+      "distinction": "« Morini » ne désigne pas un seul carter ; identification par application.",
+      "refs": [
+        "S22",
+        "S16"
+      ],
+      "page": 7,
+      "category": "Scooters : autres bases et grosses cylindrées",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M029",
+      "name": "Morini DiTech",
+      "status": "H",
+      "architecture": "Mono 50 ; liquide ; injection ; CVT",
+      "examples": "Certaines Aprilia SR50 DiTech",
+      "distinction": "DiTech est une appellation technique/commerciale, pas une preuve de moteur Piaggio.",
+      "refs": [
+        "S16"
+      ],
+      "page": 7,
+      "category": "Scooters : autres bases et grosses cylindrées",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M030",
+      "name": "Honda, familles Dio / Vision 2T",
+      "status": "H",
+      "architecture": "Mono, principalement 50 ; air ; CVT",
+      "examples": "Dio, Vision 2T, selon marché",
+      "distinction": "Différentes générations ; ne pas généraliser une compatibilité entre AF18, AF27, AF34, etc.",
+      "refs": [
+        "S25"
+      ],
+      "page": 7,
+      "category": "Scooters : autres bases et grosses cylindrées",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M031",
+      "name": "Piaggio / Gilera maxi-scooter 2T",
+      "status": "H",
+      "architecture": "Mono 125 / 180 ; liquide ; CVT",
+      "examples": "Gilera Runner FX / FXR, Italjet Dragster 2T",
+      "distinction": "Famille à distinguer des Runner VXR 4T et Dragster modernes.",
+      "refs": [
+        "S26",
+        "S16"
+      ],
+      "page": 7,
+      "category": "Scooters : autres bases et grosses cylindrées",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M032",
+      "name": "Vespa wideframe historique",
+      "status": "H*",
+      "architecture": "Mono 98 à 150 selon type ; air",
+      "examples": "Premières Vespa et familles anciennes",
+      "distinction": "Nombreuses générations ; identification au préfixe moteur indispensable.",
+      "refs": [
+        "S27"
+      ],
+      "page": 8,
+      "category": "Scooters classiques : familles à boîte manuelle",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M033",
+      "name": "Vespa smallframe",
+      "status": "H",
+      "architecture": "Mono 50 / 90 / 100 / 125 ; air",
+      "examples": "Vespa 50, Primavera, ET3, PK 2T",
+      "distinction": "Plusieurs vilebrequins, admissions et sélections de boîte.",
+      "refs": [
+        "S27",
+        "S16"
+      ],
+      "page": 8,
+      "category": "Scooters classiques : familles à boîte manuelle",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M034",
+      "name": "Vespa largeframe",
+      "status": "H",
+      "architecture": "Mono 125 / 150 / 160 / 180 / 200 ; air",
+      "examples": "Vespa routières anciennes, PX / P et dérivés",
+      "distinction": "Cylindrées et carters regroupés ici ; ce n’est pas un moteur universel.",
+      "refs": [
+        "S27",
+        "S16"
+      ],
+      "page": 8,
+      "category": "Scooters classiques : familles à boîte manuelle",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M035",
+      "name": "Lambretta, familles classiques",
+      "status": "H",
+      "architecture": "Mono, principalement 125 / 150 / 175 / 200 ; air",
+      "examples": "LI, TV, SX, GP / DL",
+      "distinction": "La série, la cylindrée et le fabricant sous licence doivent être conservés.",
+      "refs": [
+        "S28"
+      ],
+      "page": 8,
+      "category": "Scooters classiques : familles à boîte manuelle",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M036",
+      "name": "Rotax Type 122",
+      "status": "H",
+      "architecture": "Mono 125 ; liquide ; carburateur ; 6 rapports",
+      "examples": "Aprilia RS125 2T et applications apparentées",
+      "distinction": "Véritable type moteur, documenté par le manuel Rotax.",
+      "refs": [
+        "S29",
+        "S30"
+      ],
+      "page": 9,
+      "category": "Routières et trails : monocylindres sportifs",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M037",
+      "name": "Rotax Type 123",
+      "status": "H*",
+      "architecture": "Mono 125 ; liquide ; boîte mécanique",
+      "examples": "Aprilia AF1 / premières RS125 selon version",
+      "distinction": "Génération antérieure au 122 ; périmètre exact des applications à confirmer.",
+      "refs": [
+        "S30"
+      ],
+      "page": 9,
+      "category": "Routières et trails : monocylindres sportifs",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M038",
+      "name": "Yamaha DT125 liquide et apparentés",
+      "status": "H*",
+      "architecture": "Mono 125 ; liquide ; carburateur",
+      "examples": "DT125R / RE / X ; dérivés selon marché",
+      "distinction": "Famille de repérage ; ne pas étendre automatiquement aux DT à air.",
+      "refs": [
+        "S31"
+      ],
+      "page": 9,
+      "category": "Routières et trails : monocylindres sportifs",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M039",
+      "name": "Yamaha TZR125 / TDR125",
+      "status": "H*",
+      "architecture": "Mono 125 ; liquide ; carburateur",
+      "examples": "TZR125, TDR125",
+      "distinction": "Variantes et origines moteur selon génération ; ne pas confondre avec les bicylindres 250.",
+      "refs": [
+        "S31"
+      ],
+      "page": 9,
+      "category": "Routières et trails : monocylindres sportifs",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M040",
+      "name": "Honda NS125 / NSR125",
+      "status": "H*",
+      "architecture": "Mono 125 ; liquide ; carburateur",
+      "examples": "NS125, NSR125F / R",
+      "distinction": "Deux générations réunies pour le repérage ; aucun code commun n’est affirmé.",
+      "refs": [
+        "S32"
+      ],
+      "page": 9,
+      "category": "Routières et trails : monocylindres sportifs",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M041",
+      "name": "Honda CRM125 / CRM250",
+      "status": "H",
+      "architecture": "Mono 125 ou 250 ; liquide",
+      "examples": "CRM125, CRM250, CRM250AR",
+      "distinction": "Sous-familles différentes ; AR désigne une évolution de combustion spécifique.",
+      "refs": [
+        "S33"
+      ],
+      "page": 9,
+      "category": "Routières et trails : monocylindres sportifs",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M042",
+      "name": "Cagiva Mito et apparentés",
+      "status": "H",
+      "architecture": "Mono 125 ; liquide ; carburateur",
+      "examples": "Mito, variantes apparentées selon millésime",
+      "distinction": "Boîtes 6 ou 7 rapports suivant génération ; relever référence et numéro du bloc.",
+      "refs": [
+        "S34"
+      ],
+      "page": 9,
+      "category": "Routières et trails : monocylindres sportifs",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M043",
+      "name": "Suzuki RG125 / RG125 Gamma",
+      "status": "H",
+      "architecture": "Mono 125 ; air ou liquide selon génération",
+      "examples": "RG125E, RG125 Gamma, Wolf125",
+      "distinction": "Séparer les anciens blocs à air des sportifs à refroidissement liquide.",
+      "refs": [
+        "S35"
+      ],
+      "page": 9,
+      "category": "Routières et trails : monocylindres sportifs",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M044",
+      "name": "Yamaha RD à air",
+      "status": "H",
+      "architecture": "2 cylindres en ligne ; 250 / 350 / 400",
+      "examples": "RD250, RD350, RD400",
+      "distinction": "Groupe historique ; chaque cylindrée et génération possède ses références.",
+      "refs": [
+        "S31",
+        "S36"
+      ],
+      "page": 10,
+      "category": "Routières : bicylindres Yamaha et Suzuki",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M045",
+      "name": "Yamaha RD / RZ LC",
+      "status": "H",
+      "architecture": "2 cylindres en ligne ; 250 / 350 ; liquide",
+      "examples": "RD250LC, RD350LC / RZ",
+      "distinction": "Distinguer les générations sans valve et YPVS.",
+      "refs": [
+        "S36"
+      ],
+      "page": 10,
+      "category": "Routières : bicylindres Yamaha et Suzuki",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M046",
+      "name": "Yamaha TZR250, twin parallèle",
+      "status": "H",
+      "architecture": "2 cylindres en ligne ; 250 ; liquide",
+      "examples": "Premières TZR250",
+      "distinction": "Famille descriptive ; évolution vers cylindres inversés à distinguer.",
+      "refs": [
+        "S36"
+      ],
+      "page": 10,
+      "category": "Routières : bicylindres Yamaha et Suzuki",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M047",
+      "name": "Yamaha TZR250, V-twin",
+      "status": "H",
+      "architecture": "V2 ; 250 ; liquide",
+      "examples": "TZR250R à partir de 1991",
+      "distinction": "Architecture différente des TZR bicylindres en ligne.",
+      "refs": [
+        "S37"
+      ],
+      "page": 10,
+      "category": "Routières : bicylindres Yamaha et Suzuki",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M048",
+      "name": "Suzuki T / GT bicylindres",
+      "status": "H",
+      "architecture": "2 cylindres en ligne ; air ; 250 à 500 selon type",
+      "examples": "T250, T350, T500 / GT500",
+      "distinction": "Groupe de plusieurs bases ; pas la famille des GT triples.",
+      "refs": [
+        "S38"
+      ],
+      "page": 10,
+      "category": "Routières : bicylindres Yamaha et Suzuki",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M049",
+      "name": "Suzuki RG250E",
+      "status": "H",
+      "architecture": "2 cylindres ; 247 ; air",
+      "examples": "RG250E",
+      "distinction": "Bloc distinct du Gamma à refroidissement liquide.",
+      "refs": [
+        "S39"
+      ],
+      "page": 10,
+      "category": "Routières : bicylindres Yamaha et Suzuki",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M050",
+      "name": "Suzuki RG250 Gamma",
+      "status": "H",
+      "architecture": "2 cylindres ; 247 ; liquide",
+      "examples": "RG250 Gamma",
+      "distinction": "Génération antérieure au V-twin RGV.",
+      "refs": [
+        "S39"
+      ],
+      "page": 10,
+      "category": "Routières : bicylindres Yamaha et Suzuki",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M051",
+      "name": "Suzuki RGV250 V2 à 90°",
+      "status": "H",
+      "architecture": "V2 ; 249 ; liquide",
+      "examples": "RGV250, Wolf250 ; dérivé Aprilia RS250",
+      "distinction": "Pour l’Aprilia, réglages et périphériques spécifiques ; aucune compatibilité totale affirmée.",
+      "refs": [
+        "S39",
+        "S16"
+      ],
+      "page": 10,
+      "category": "Routières : bicylindres Yamaha et Suzuki",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M052",
+      "name": "Suzuki RGV250SP V2 à 70°",
+      "status": "H",
+      "architecture": "V2 ; 249 ; liquide",
+      "examples": "RGV250SP génération 1996",
+      "distinction": "Nouvelle architecture ; à séparer du V2 à 90°.",
+      "refs": [
+        "S39"
+      ],
+      "page": 10,
+      "category": "Routières : bicylindres Yamaha et Suzuki",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M053",
+      "name": "Honda NSR250R",
+      "status": "H",
+      "architecture": "V2 ; 250 ; liquide",
+      "examples": "NSR250R, SE, SP",
+      "distinction": "Plusieurs générations. MC16/18/21/28 sont des repères véhicule, pas quatre codes moteur déduits.",
+      "refs": [
+        "S40"
+      ],
+      "page": 11,
+      "category": "Routières : architectures multicylindres",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M054",
+      "name": "Honda MC09E",
+      "status": "H",
+      "architecture": "V3 à 90° ; 250 ; liquide",
+      "examples": "MVX250F",
+      "distinction": "Code moteur confirmé dans la fiche Honda.",
+      "refs": [
+        "S41"
+      ],
+      "page": 11,
+      "category": "Routières : architectures multicylindres",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M055",
+      "name": "Honda NC19E",
+      "status": "H",
+      "architecture": "V3 à 90° ; 387 ; liquide",
+      "examples": "NS400R",
+      "distinction": "Code moteur confirmé ; famille distincte du MVX250.",
+      "refs": [
+        "S42"
+      ],
+      "page": 11,
+      "category": "Routières : architectures multicylindres",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M056",
+      "name": "Suzuki GT380 / GT550",
+      "status": "H",
+      "architecture": "3 cylindres en ligne ; air",
+      "examples": "GT380, GT550",
+      "distinction": "Deux cylindrées historiques regroupées, non interchangeables par défaut.",
+      "refs": [
+        "S43"
+      ],
+      "page": 11,
+      "category": "Routières : architectures multicylindres",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M057",
+      "name": "Suzuki GT750",
+      "status": "H",
+      "architecture": "3 cylindres en ligne ; liquide ; classe 750",
+      "examples": "GT750",
+      "distinction": "Base différente des GT à air.",
+      "refs": [
+        "S44"
+      ],
+      "page": 11,
+      "category": "Routières : architectures multicylindres",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M058",
+      "name": "Kawasaki H1",
+      "status": "H",
+      "architecture": "3 cylindres en ligne ; 500 ; air",
+      "examples": "500 H1 Mach III",
+      "distinction": "Ne pas assimiler aux petits triples S / KH.",
+      "refs": [
+        "S45"
+      ],
+      "page": 11,
+      "category": "Routières : architectures multicylindres",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M059",
+      "name": "Kawasaki H2 historique",
+      "status": "H",
+      "architecture": "3 cylindres en ligne ; 750 ; air",
+      "examples": "750 H2 Mach IV",
+      "distinction": "Sans lien de famille avec la Ninja H2 quatre-temps moderne.",
+      "refs": [
+        "S45"
+      ],
+      "page": 11,
+      "category": "Routières : architectures multicylindres",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M060",
+      "name": "Yamaha RD500LC / RZV500R",
+      "status": "H",
+      "architecture": "V4 ; 500 ; liquide",
+      "examples": "RD500LC, RZV500R",
+      "distinction": "Famille routière ; distincte des moteurs d’usine YZR500.",
+      "refs": [
+        "S36"
+      ],
+      "page": 11,
+      "category": "Routières : architectures multicylindres",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M061",
+      "name": "Suzuki RG400 / RG500 Gamma",
+      "status": "H",
+      "architecture": "4 cylindres en carré ; liquide",
+      "examples": "RG400 Gamma, RG500 Gamma",
+      "distinction": "Square-four routier ; les moteurs GP restent une autre entrée.",
+      "refs": [
+        "S46"
+      ],
+      "page": 11,
+      "category": "Routières : architectures multicylindres",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M062",
+      "name": "Bimota Vdue",
+      "status": "H",
+      "architecture": "V2 ; 500 ; liquide",
+      "examples": "Bimota 500 Vdue",
+      "distinction": "Versions à injection et évolutions à carburateurs à distinguer.",
+      "refs": [
+        "S47"
+      ],
+      "page": 11,
+      "category": "Routières : architectures multicylindres",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M063",
+      "name": "Plateforme mini-cross 50",
+      "status": "C",
+      "architecture": "Mono 50 ; liquide ; embrayage automatique",
+      "examples": "KTM 50 SX, Husqvarna TC50, GASGAS MC50",
+      "distinction": "Bloc junior distinct des 65 et 85.",
+      "refs": [
+        "S48",
+        "S49",
+        "S50"
+      ],
+      "page": 12,
+      "category": "Tout-terrain actuel : groupe KTM",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M064",
+      "name": "Plateforme mini-cross 65",
+      "status": "C",
+      "architecture": "Mono 65 ; liquide ; boîte mécanique",
+      "examples": "KTM 65 SX, Husqvarna TC65, GASGAS MC65",
+      "distinction": "Famille junior à boîte ; variantes selon génération.",
+      "refs": [
+        "S48",
+        "S49",
+        "S50"
+      ],
+      "page": 12,
+      "category": "Tout-terrain actuel : groupe KTM",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M065",
+      "name": "Plateforme mini-cross 85",
+      "status": "C",
+      "architecture": "Mono 85 ; liquide ; boîte mécanique",
+      "examples": "KTM 85 SX, Husqvarna TC85, GASGAS MC85",
+      "distinction": "Grandes/petites roues ne créent pas à elles seules un nouveau moteur.",
+      "refs": [
+        "S48",
+        "S49",
+        "S50"
+      ],
+      "page": 12,
+      "category": "Tout-terrain actuel : groupe KTM",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M066",
+      "name": "Petites cylindrées enduro TPI",
+      "status": "H*",
+      "architecture": "Mono ; 150 nominal ; liquide ; injection",
+      "examples": "Notamment KTM 150 EXC TPI / XC-W TPI",
+      "distinction": "Génération historique d’injection dans les transferts ; année et notice à confirmer. Sans source précise",
+      "refs": [],
+      "page": 12,
+      "category": "Tout-terrain actuel : groupe KTM",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M067",
+      "name": "Enduro 250 / 300 TPI",
+      "status": "H",
+      "architecture": "Mono 250 / 300 ; liquide ; injection",
+      "examples": "KTM EXC TPI et variantes Husqvarna / GASGAS",
+      "distinction": "Injection dans les transferts ; lancée sur KTM 250/300 au millésime 2018.",
+      "refs": [
+        "S51"
+      ],
+      "page": 12,
+      "category": "Tout-terrain actuel : groupe KTM",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M068",
+      "name": "Petites cylindrées TBI",
+      "status": "C",
+      "architecture": "Mono 125 / 150 selon modèle ; liquide ; injection",
+      "examples": "KTM SX / XC-W, Husqvarna selon gamme",
+      "distinction": "Générations avec injection au corps papillon ; configurations cross/enduro distinctes.",
+      "refs": [
+        "S48",
+        "S52",
+        "S49"
+      ],
+      "page": 12,
+      "category": "Tout-terrain actuel : groupe KTM",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M069",
+      "name": "Grosses cylindrées TBI",
+      "status": "C",
+      "architecture": "Mono 250 / 300 ; liquide ; injection",
+      "examples": "KTM SX / EXC, Husqvarna TC / TE, GASGAS récents",
+      "distinction": "Regroupement technique ; identifier version cross, enduro ou cross-country.",
+      "refs": [
+        "S48",
+        "S52",
+        "S49",
+        "S50"
+      ],
+      "page": 12,
+      "category": "Tout-terrain actuel : groupe KTM",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M070",
+      "name": "Générations KTM à carburateur",
+      "status": "H*",
+      "architecture": "Mono ; 125 à 300 notamment ; liquide",
+      "examples": "SX, EXC, anciennes Husqvarna apparentées",
+      "distinction": "Plusieurs bases et refontes successives ; pas un seul moteur à carburateur.",
+      "refs": [
+        "S48"
+      ],
+      "page": 12,
+      "category": "Tout-terrain actuel : groupe KTM",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M071",
+      "name": "Beta enduro 125 / 200",
+      "status": "C",
+      "architecture": "Mono 125 / 200 ; liquide ; carburateur",
+      "examples": "RR / RR X-Pro / Race selon millésime",
+      "distinction": "Variantes regroupées ; distinguer les périphériques et le graissage.",
+      "refs": [
+        "S53"
+      ],
+      "page": 13,
+      "category": "Tout-terrain actuel : constructeurs européens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M072",
+      "name": "Beta enduro 250 / 300",
+      "status": "C",
+      "architecture": "Mono 250 / 300 ; liquide ; carburateur",
+      "examples": "RR et dérivés",
+      "distinction": "Famille distincte des petites cylindrées ; plusieurs générations.",
+      "refs": [
+        "S53"
+      ],
+      "page": 13,
+      "category": "Tout-terrain actuel : constructeurs européens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M073",
+      "name": "Beta Xtrainer",
+      "status": "C",
+      "architecture": "Mono 200 / 300 selon marché ; liquide",
+      "examples": "Xtrainer",
+      "distinction": "Dérivations enduro à réglages et composants propres ; pas une nouvelle base à chaque finition.",
+      "refs": [
+        "S53"
+      ],
+      "page": 13,
+      "category": "Tout-terrain actuel : constructeurs européens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M074",
+      "name": "Beta RX 2T",
+      "status": "C",
+      "architecture": "Mono ; liquide ; carburateur",
+      "examples": "RX250 / RX300 / RX350 selon millésime",
+      "distinction": "Évolutions cross regroupées ; confirmer la cylindrée sur la fiche de l’année.",
+      "refs": [
+        "S53"
+      ],
+      "page": 13,
+      "category": "Tout-terrain actuel : constructeurs européens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M075",
+      "name": "Sherco SE125",
+      "status": "C",
+      "architecture": "Mono 125 ; liquide ; carburateur",
+      "examples": "125 SE",
+      "distinction": "Bloc 125 distinct de la famille 250/300.",
+      "refs": [
+        "S54"
+      ],
+      "page": 13,
+      "category": "Tout-terrain actuel : constructeurs européens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M076",
+      "name": "Sherco SE250 / SE300",
+      "status": "C",
+      "architecture": "Mono 250 / 300 ; liquide ; carburateur",
+      "examples": "250 SE, 300 SE",
+      "distinction": "Manuel spécifique 250/300 ; boîte 6 rapports.",
+      "refs": [
+        "S55"
+      ],
+      "page": 13,
+      "category": "Tout-terrain actuel : constructeurs européens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M077",
+      "name": "Rieju MR à carburateur",
+      "status": "H",
+      "architecture": "Mono 200 / 250 / 300 ; liquide",
+      "examples": "MR200, MR250, MR300",
+      "distinction": "Génération à distinguer des MR300i à injection.",
+      "refs": [
+        "S56"
+      ],
+      "page": 13,
+      "category": "Tout-terrain actuel : constructeurs européens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M078",
+      "name": "Rieju MR300i",
+      "status": "C",
+      "architecture": "Mono 300 ; liquide ; injection TFI",
+      "examples": "MR300i Racing / Pro selon millésime",
+      "distinction": "Nouvelle génération documentée ; ne pas l’assimiler au précédent bloc MR.",
+      "refs": [
+        "S57"
+      ],
+      "page": 13,
+      "category": "Tout-terrain actuel : constructeurs européens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M079",
+      "name": "Minarelli MM 300 2T FI",
+      "status": "C",
+      "architecture": "Mono 300 ; liquide ; injection",
+      "examples": "Fantic XE300",
+      "distinction": "Véritable désignation de motoriste ; gamme commerciale Minarelli.",
+      "refs": [
+        "S11",
+        "S58"
+      ],
+      "page": 13,
+      "category": "Tout-terrain actuel : constructeurs européens",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M080",
+      "name": "TM junior",
+      "status": "C",
+      "architecture": "Mono 85 / 100 / 112 ; liquide",
+      "examples": "MX, SMX Junior",
+      "distinction": "Sous-familles et kits constructeur selon millésime ; documentation de pièces séparée.",
+      "refs": [
+        "S59"
+      ],
+      "page": 14,
+      "category": "Tout-terrain : TM, Yamaha et juniors japonais",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M081",
+      "name": "TM petites cylindrées",
+      "status": "C",
+      "architecture": "Mono 125 / 144 ; liquide",
+      "examples": "EN, MX, SMR selon version",
+      "distinction": "Versions carburateur et injection FI à séparer dans le catalogue de pièces.",
+      "refs": [
+        "S59"
+      ],
+      "page": 14,
+      "category": "Tout-terrain : TM, Yamaha et juniors japonais",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M082",
+      "name": "TM 250 / 300",
+      "status": "C",
+      "architecture": "Mono 250 / 300 ; liquide",
+      "examples": "EN, MX, SMX / SMR",
+      "distinction": "Différentes versions carb/FI ; une seule appellation commerciale ne suffit pas.",
+      "refs": [
+        "S59"
+      ],
+      "page": 14,
+      "category": "Tout-terrain : TM, Yamaha et juniors japonais",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M083",
+      "name": "Yamaha YZ65 / YZ85",
+      "status": "C",
+      "architecture": "Mono 65 ou 85 ; liquide ; carburateur",
+      "examples": "YZ65, YZ85 / LW",
+      "distinction": "Deux moteurs juniors distincts réunis dans cette entrée de repérage.",
+      "refs": [
+        "S60"
+      ],
+      "page": 14,
+      "category": "Tout-terrain : TM, Yamaha et juniors japonais",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M084",
+      "name": "Yamaha YZ125",
+      "status": "C",
+      "architecture": "Mono 125 ; liquide ; carburateur",
+      "examples": "YZ125, YZ125X ; Fantic XX/XE125 selon année",
+      "distinction": "Générations successives ; les Fantic ne doivent pas être supposées identiques en tous points.",
+      "refs": [
+        "S61",
+        "S62",
+        "S63"
+      ],
+      "page": 14,
+      "category": "Tout-terrain : TM, Yamaha et juniors japonais",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M085",
+      "name": "Yamaha YZ250",
+      "status": "C",
+      "architecture": "Mono 250 ; liquide ; carburateur",
+      "examples": "YZ250, YZ250X ; Fantic XX250 selon année",
+      "distinction": "Versions cross et cross-country à distinguer.",
+      "refs": [
+        "S64",
+        "S65",
+        "S63"
+      ],
+      "page": 14,
+      "category": "Tout-terrain : TM, Yamaha et juniors japonais",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M086",
+      "name": "Kawasaki KX65",
+      "status": "C",
+      "architecture": "Mono 65 ; liquide ; carburateur",
+      "examples": "KX65",
+      "distinction": "Bloc junior distinct des KX85 / 112.",
+      "refs": [
+        "S66"
+      ],
+      "page": 14,
+      "category": "Tout-terrain : TM, Yamaha et juniors japonais",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M087",
+      "name": "Kawasaki KX85 / KX112",
+      "status": "C",
+      "architecture": "Mono 85 / 112 ; liquide ; carburateur",
+      "examples": "KX85, KX112",
+      "distinction": "Variantes juniors ; les cylindrées restent à distinguer.",
+      "refs": [
+        "S67"
+      ],
+      "page": 14,
+      "category": "Tout-terrain : TM, Yamaha et juniors japonais",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M088",
+      "name": "Suzuki RM85",
+      "status": "H",
+      "architecture": "Mono 85 ; liquide ; carburateur",
+      "examples": "RM85 / RM85L",
+      "distinction": "Document constructeur 2023 ; présence actuelle en catalogue non confirmée ici.",
+      "refs": [
+        "S68"
+      ],
+      "page": 14,
+      "category": "Tout-terrain : TM, Yamaha et juniors japonais",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M089",
+      "name": "Kawasaki KX327 / KX327X",
+      "status": "A",
+      "architecture": "Mono 327 ; liquide ; injection",
+      "examples": "KX327 et KX327X millésime 2027",
+      "distinction": "Annonce constructeur de juin 2026 ; disponibilité locale non établie.",
+      "refs": [
+        "S69"
+      ],
+      "page": 14,
+      "category": "Tout-terrain : TM, Yamaha et juniors japonais",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M090",
+      "name": "GASGAS TXT",
+      "status": "C",
+      "architecture": "Mono 125 / 250 / 280 / 300 ; liquide",
+      "examples": "TXT Racing / GP selon gamme",
+      "distinction": "Famille trial ; distincte des moteurs EC et MC.",
+      "refs": [
+        "S70"
+      ],
+      "page": 15,
+      "category": "Trial, initiation et préparation",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf",
+      "photo": {
+        "src": "/assets/engine-details/M090.webp",
+        "label": "Détail du bloc visible sur la photographie de GasGas TXT Pro 250, exemple de la famille TXT ; identifier le code moteur sur votre exemplaire.",
+        "author": "Y Sekiai",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:GASGAS_TXT_PRO_250.JPG"
+      }
+    },
+    {
+      "id": "M091",
+      "name": "Beta trial 2T",
+      "status": "C",
+      "architecture": "Mono 80 à 300 selon génération ; liquide",
+      "examples": "Evo ; Sincro récents selon gamme",
+      "distinction": "Plusieurs bases regroupées ; exclure les versions trial 4T.",
+      "refs": [
+        "S53"
+      ],
+      "page": 15,
+      "category": "Trial, initiation et préparation",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M092",
+      "name": "Sherco / Scorpa trial récents",
+      "status": "C",
+      "architecture": "Mono 125 / 250 / 300 ; liquide ; injection",
+      "examples": "ST / SC récents",
+      "distinction": "Génération injection ; les anciens trial à carburateur sont distincts.",
+      "refs": [
+        "S71",
+        "S54",
+        "S72"
+      ],
+      "page": 15,
+      "category": "Trial, initiation et préparation",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M093",
+      "name": "TRRS trial",
+      "status": "C",
+      "architecture": "Mono 125 / 250 / 280 / 300 selon version ; liquide",
+      "examples": "ONE, X-TRACK",
+      "distinction": "Configurations et démarreur selon version.",
+      "refs": [
+        "S73"
+      ],
+      "page": 15,
+      "category": "Trial, initiation et préparation",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M094",
+      "name": "Vertigo trial",
+      "status": "C",
+      "architecture": "Mono ; liquide ; injection",
+      "examples": "Nitro et autres générations",
+      "distinction": "Famille à injection ; cylindrées et générations à vérifier dans la fiche modèle.",
+      "refs": [
+        "S74"
+      ],
+      "page": 15,
+      "category": "Trial, initiation et préparation",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M095",
+      "name": "Montesa Cota 315R",
+      "status": "H",
+      "architecture": "Mono, classe 250 ; liquide",
+      "examples": "Cota 315R",
+      "distinction": "Moteur Honda-Montesa 2T ; la Cota 4RT est quatre-temps.",
+      "refs": [
+        "S75"
+      ],
+      "page": 15,
+      "category": "Trial, initiation et préparation",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M096",
+      "name": "Polini minimoto",
+      "status": "C",
+      "architecture": "Mono, classe 40 ; air ou liquide",
+      "examples": "Minimotos Polini",
+      "distinction": "Moteurs dédiés aux petites motos ; exclure les moteurs Polini d’aéronefs.",
+      "refs": [
+        "S76"
+      ],
+      "page": 15,
+      "category": "Trial, initiation et préparation",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M097",
+      "name": "Cobra CX50 / CX65",
+      "status": "C",
+      "architecture": "Mono 50 ou 65 ; liquide",
+      "examples": "CX50, CX65",
+      "distinction": "Deux bases junior ; détails de boîte et d’embrayage selon modèle.",
+      "refs": [
+        "S77"
+      ],
+      "page": 15,
+      "category": "Trial, initiation et préparation",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M098",
+      "name": "Malossi C-One / RC-One",
+      "status": "P",
+      "architecture": "Plateformes de préparation scooter 2T",
+      "examples": "Montages Piaggio ou Yamaha-Minarelli dédiés",
+      "distinction": "Carters spécifiques, pas un moteur de série complet unique ; compatibilité à vérifier.",
+      "refs": [
+        "S78",
+        "S21"
+      ],
+      "page": 15,
+      "category": "Trial, initiation et préparation",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M099",
+      "name": "MZ ES / ETS / TS / ETZ",
+      "status": "H",
+      "architecture": "Monocylindres 2T ; principalement air",
+      "examples": "125, 150, 250, 251, 301 selon gamme",
+      "distinction": "Plusieurs familles, cylindres et boîtes ; ETZ n’est pas un code moteur unique.",
+      "refs": [
+        "S79"
+      ],
+      "page": 16,
+      "category": "Motos anciennes : familles européennes",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M100",
+      "name": "MZ / IFA BK350",
+      "status": "H",
+      "architecture": "Bicylindre à plat ; 350 ; air",
+      "examples": "BK350",
+      "distinction": "Architecture distincte des MZ monocylindres.",
+      "refs": [
+        "S79"
+      ],
+      "page": 16,
+      "category": "Motos anciennes : familles européennes",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M101",
+      "name": "Jawa 250 monocylindres",
+      "status": "H",
+      "architecture": "Mono 250 ; air",
+      "examples": "Familles 353, 559 et apparentées",
+      "distinction": "Types de motos utilisés comme repères ; variantes moteurs non détaillées.",
+      "refs": [
+        "S80"
+      ],
+      "page": 16,
+      "category": "Motos anciennes : familles européennes",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M102",
+      "name": "Jawa 350 bicylindres",
+      "status": "H",
+      "architecture": "2 cylindres ; 350 ; air",
+      "examples": "Familles 354, 360, 634, 638 à 640",
+      "distinction": "Plusieurs générations ; la situation commerciale actuelle varie selon véhicule/reconstruction.",
+      "refs": [
+        "S80",
+        "S81"
+      ],
+      "page": 16,
+      "category": "Motos anciennes : familles européennes",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M103",
+      "name": "Bultaco, moteurs tout-terrain et route",
+      "status": "H",
+      "architecture": "Mono 2T ; air",
+      "examples": "Sherpa T, Pursang, Matador, Metralla",
+      "distinction": "Ensemble de familles ; conserver le numéro de modèle Bultaco.",
+      "refs": [
+        "S82"
+      ],
+      "page": 16,
+      "category": "Motos anciennes : familles européennes",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M104",
+      "name": "Montesa, anciennes Cota et apparentées",
+      "status": "H",
+      "architecture": "Mono 2T ; air principalement",
+      "examples": "Anciennes Cota, Cappra, Enduro",
+      "distinction": "Plusieurs familles ; ne pas généraliser à toute la production Montesa.",
+      "refs": [
+        "S75"
+      ],
+      "page": 16,
+      "category": "Motos anciennes : familles européennes",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M105",
+      "name": "Husqvarna suédoises et italiennes 2T",
+      "status": "H*",
+      "architecture": "Mono ; refroidissement selon génération",
+      "examples": "CR / WR et anciennes enduro",
+      "distinction": "Moteurs historiques distincts des plateformes KTM récentes. Sans source précise",
+      "refs": [],
+      "page": 16,
+      "category": "Motos anciennes : familles européennes",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M106",
+      "name": "CZ, OSSA, Maico, SWM, Ancillotti",
+      "status": "H*",
+      "architecture": "Divers monocylindres 2T",
+      "examples": "Route, cross, enduro, trial anciens",
+      "distinction": "Marques à inventorier type par type ; détails non validés dans cette édition. Sans source précise",
+      "refs": [],
+      "page": 16,
+      "category": "Motos anciennes : familles européennes",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M107",
+      "name": "Yamaha TZ250 / TZ350 en ligne",
+      "status": "H",
+      "architecture": "2 cylindres en ligne ; liquide",
+      "examples": "Compétition-client TZ250 / TZ350",
+      "distinction": "Générations historiques à deux cylindres parallèles.",
+      "refs": [
+        "S83",
+        "S84"
+      ],
+      "page": 17,
+      "category": "Compétition de vitesse : moteurs spécifiques",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M108",
+      "name": "Yamaha TZ250 en V",
+      "status": "H",
+      "architecture": "V2 ; 250 ; liquide",
+      "examples": "TZ250 à partir de la génération 1991",
+      "distinction": "Architecture distincte des anciens TZ parallèles.",
+      "refs": [
+        "S37"
+      ],
+      "page": 17,
+      "category": "Compétition de vitesse : moteurs spécifiques",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M109",
+      "name": "Yamaha TZ750",
+      "status": "H",
+      "architecture": "4 cylindres en ligne ; liquide",
+      "examples": "TZ750 de compétition",
+      "distinction": "Première version de classe 700, puis évolutions ; ne pas déduire la cylindrée exacte du nom.",
+      "refs": [
+        "S83"
+      ],
+      "page": 17,
+      "category": "Compétition de vitesse : moteurs spécifiques",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M110",
+      "name": "Yamaha YZR500",
+      "status": "H",
+      "architecture": "4 cylindres ; architectures successives",
+      "examples": "Prototypes GP500",
+      "distinction": "Premiers moteurs en ligne puis autres générations dont V4 ; pas une base unique.",
+      "refs": [
+        "S84"
+      ],
+      "page": 17,
+      "category": "Compétition de vitesse : moteurs spécifiques",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M111",
+      "name": "Honda NS500",
+      "status": "H",
+      "architecture": "V3 ; 500 ; liquide",
+      "examples": "Prototype GP NS500",
+      "distinction": "Distinct du V3 routier NS400R.",
+      "refs": [
+        "S85"
+      ],
+      "page": 17,
+      "category": "Compétition de vitesse : moteurs spécifiques",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M112",
+      "name": "Honda NSR500",
+      "status": "H",
+      "architecture": "V4 ; 500 ; liquide",
+      "examples": "Prototype GP NSR500",
+      "distinction": "Plusieurs générations ; distinct du NS500 et des NSR routières.",
+      "refs": [
+        "S85"
+      ],
+      "page": 17,
+      "category": "Compétition de vitesse : moteurs spécifiques",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M113",
+      "name": "Suzuki RG500 de Grand Prix",
+      "status": "H",
+      "architecture": "4 cylindres en carré ; liquide",
+      "examples": "RG / RGB de compétition",
+      "distinction": "Ne pas confondre avec la RG500 Gamma routière.",
+      "refs": [
+        "S86"
+      ],
+      "page": 17,
+      "category": "Compétition de vitesse : moteurs spécifiques",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    },
+    {
+      "id": "M114",
+      "name": "Kawasaki KR250 / KR350 de GP",
+      "status": "H",
+      "architecture": "2 cylindres en tandem ; liquide",
+      "examples": "Prototypes KR250 / KR350",
+      "distinction": "Cylindres disposés l’un derrière l’autre ; familles de compétition.",
+      "refs": [
+        "S45"
+      ],
+      "page": 17,
+      "category": "Compétition de vitesse : moteurs spécifiques",
+      "sourceDocument": "/docs/repertoire_moteurs_2_temps_deux_roues.pdf"
+    }
+  ]
+}

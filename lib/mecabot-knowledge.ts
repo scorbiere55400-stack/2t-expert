@@ -1,0 +1,13 @@
+/** Notes éditoriales courtes : les documents originaux restent chez leurs éditeurs. */
+export type KnowledgeCard={id:string;title:string;publisher:string;url:string;scope:string;topics:string[];note:string;reviewed:string;grade:'constructeur'|'fabricant'};
+export const knowledgeCards:KnowledgeCard[]=[
+ {id:'sherco-50-2024-triage',title:'Sherco 50 SE/SM 2024 · recherche de panne',publisher:'Sherco',url:'https://www.sherco.com/wp-content/uploads/Owners-manual-50-END-SM-2024.pdf#page=43',scope:'Sherco 50 SE/SM, édition 2024 ; vérifier la variante avant toute valeur ou procédure',topics:['sherco','demarrage','rates','surchauffe','alimentation'],note:'Le manuel distingue notamment démarrage impossible, ratés, surchauffe et perte de puissance. Sa grille oriente les contrôles sans prouver une cause à elle seule.',reviewed:'2026-09-28',grade:'constructeur'},
+ {id:'sherco-50-2024-safety',title:'Sherco 50 SE/SM 2024 · précautions',publisher:'Sherco',url:'https://www.sherco.com/wp-content/uploads/Owners-manual-50-END-SM-2024.pdf#page=29',scope:'Sherco 50 SE/SM, édition 2024',topics:['sherco','surchauffe','refroidissement','carburant'],note:'Le manuel avertit de ne jamais ouvrir le radiateur moteur chaud et de tenir le carburant éloigné des flammes. Procédure exacte à consulter dans le manuel.',reviewed:'2026-09-28',grade:'constructeur'},
+ {id:'ngk-spark-reading',title:'Lecture de la bougie',publisher:'NGK Spark Plugs',url:'https://ngksparkplugs.com/en/resources/read-spark-plug',scope:'Information générale fabricant, non spécifique à un moteur',topics:['bougie','allumage','demarrage','rates','surchauffe'],note:'L’aspect de la bougie peut fournir un indice. Des dépôts noirs ont plusieurs explications possibles ; une lecture isolée ne confirme pas le réglage ni la panne.',reviewed:'2026-09-28',grade:'fabricant'},
+ {id:'dellorto-carburetor-manual',title:'Manuel technique carburateur',publisher:'Dell’Orto',url:'https://www.dellorto.it/wp-content/uploads/2020/12/dellorto_manual.pdf',scope:'Principes généraux des circuits ; identifier le carburateur exact',topics:['carburateur','alimentation','admission','rates','demarrage'],note:'Les circuits du carburateur interviennent différemment selon l’ouverture des gaz. Aucun gicleur ni réglage ne peut être prescrit sans identifier le moteur et le carburateur.',reviewed:'2026-09-28',grade:'fabricant'},
+];
+const normalize=(s:string)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+export function relevantKnowledge(question:string,machine=''):KnowledgeCard[]{
+ const q=normalize(question+' '+machine);
+ return knowledgeCards.filter(card=>card.id.startsWith('sherco')?q.includes('sherco')&&/\b50\b/.test(q):card.topics.some(topic=>q.includes(normalize(topic)))).slice(0,3);
+}

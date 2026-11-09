@@ -1,0 +1,1234 @@
+[
+  {
+    "id": "9aa0b87e-ed5c-5f22-839e-a1d5b44529b5",
+    "ref": "10147",
+    "name": "Embiellage complet",
+    "category": "Embiellage et allumage",
+    "page": 25,
+    "position": 1,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "94ae21f0-7a48-57c2-a39a-81f4b7e3cb34",
+    "ref": "4643",
+    "name": "Rotor evo",
+    "category": "Embiellage et allumage",
+    "page": 25,
+    "position": 2,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "c14fffb0-18d2-5bcb-98b6-0f95fc460125",
+    "ref": "Y123",
+    "name": "Vis th",
+    "category": "Embiellage et allumage",
+    "page": 25,
+    "position": 3,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "cd1abe23-8725-5cca-8403-bd8bccee1e98",
+    "ref": "Y143",
+    "name": "Joint torique",
+    "category": "Embiellage et allumage",
+    "page": 25,
+    "position": 4,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "789cf780-a040-59d7-a0de-53bf8347d375",
+    "ref": "Y140",
+    "name": "Cage aiguille piston",
+    "category": "Embiellage et allumage",
+    "page": 25,
+    "position": 5,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "3dc65ce7-9818-5578-bcd0-a5426a5f8690",
+    "ref": "6561",
+    "name": "Entretoisse vilo",
+    "category": "Embiellage et allumage",
+    "page": 25,
+    "position": 6,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "66d26b3f-9757-54ea-ab6f-c207e5d16f5e",
+    "ref": "Y087",
+    "name": "Vis btr",
+    "category": "Embiellage et allumage",
+    "page": 25,
+    "position": 7,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "f205029e-95b7-56b1-a5bc-1550b23e1d2e",
+    "ref": "Y093",
+    "name": "Ecrou",
+    "category": "Embiellage et allumage",
+    "page": 25,
+    "position": 8,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "51195f5d-5478-5460-931f-83479daf075a",
+    "ref": "10146",
+    "name": "Stator evo",
+    "category": "Embiellage et allumage",
+    "page": 25,
+    "position": 9,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "dc808e64-67f7-5a4a-a115-57d74a052e96",
+    "ref": "Y086",
+    "name": "Clauette pignon uillo",
+    "category": "Embiellage et allumage",
+    "page": 25,
+    "position": 10,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "34de80d3-3bb3-54b6-934d-00ef5878ee43",
+    "ref": "6319",
+    "name": "Disque embrayage garni",
+    "category": "Embrayage",
+    "page": 26,
+    "position": 1,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "4fe914a2-b739-55a3-8782-e2f59d37fc94",
+    "ref": "Y045",
+    "name": "Disque embrayage lisse",
+    "category": "Embrayage",
+    "page": 26,
+    "position": 2,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "1800eb9d-5603-5cea-b39a-7fe23a0f4586",
+    "ref": "Y069",
+    "name": "Noix embrayage",
+    "category": "Embrayage",
+    "page": 26,
+    "position": 3,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "c53ea57f-477b-5dc3-81c6-f2ead646923b",
+    "ref": "Y068",
+    "name": "Cloche embrayage av pign.",
+    "category": "Embrayage",
+    "page": 26,
+    "position": 4,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "65b0b93f-5f16-58ae-94e9-1924f68f30b4",
+    "ref": "Y072",
+    "name": "Ressort embrayage",
+    "category": "Embrayage",
+    "page": 26,
+    "position": 5,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "f3d16fca-857f-5aca-9737-94411fd4fa53",
+    "ref": "Y090",
+    "name": "Ecrou interieur embrayage",
+    "category": "Embrayage",
+    "page": 26,
+    "position": 6,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "af6d4cec-4932-5425-bec7-12d76b2f0541",
+    "ref": "Y111",
+    "name": "Vis th",
+    "category": "Embrayage",
+    "page": 26,
+    "position": 7,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "b3ffa5db-72a0-5b76-b470-e50ee781c985",
+    "ref": "Y109",
+    "name": "Rondelle",
+    "category": "Embrayage",
+    "page": 26,
+    "position": 8,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "d76dcc4e-11be-5edb-b82f-29cfcf69c2de",
+    "ref": "Y096",
+    "name": "Ecrou h7 ch 17",
+    "category": "Embrayage",
+    "page": 26,
+    "position": 9,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "4a5ba6a8-bc7a-5419-a7ce-763f464c2993",
+    "ref": "Y089",
+    "name": "Ecrou",
+    "category": "Embrayage",
+    "page": 26,
+    "position": 10,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "f70633a1-fec3-5065-9eb7-d783a0011769",
+    "ref": "Y046",
+    "name": "Plaque pression embrayage",
+    "category": "Embrayage",
+    "page": 26,
+    "position": 11,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "88f1d4cd-6f13-56e8-bff1-e1a32b140b67",
+    "ref": "9988",
+    "name": "Vis th",
+    "category": "Embrayage",
+    "page": 26,
+    "position": 12,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "e9920104-7a94-5af9-977a-4a2a0d8e5e35",
+    "ref": "Y108",
+    "name": "Rondelle",
+    "category": "Embrayage",
+    "page": 26,
+    "position": 13,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "23543442-716a-5a38-817e-f75eef3f38f9",
+    "ref": "Y209",
+    "name": "Culasse",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 1,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "fd1d18eb-f2ad-5a0a-9ce1-589784d1f304",
+    "ref": "Y148",
+    "name": "Joint de culasse",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 2,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "39fec7ca-0923-58d1-b634-cde95daacbea",
+    "ref": "Y024",
+    "name": "Cylindre d40.3 112 raf liqui. cata.",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 3,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "4b91b2c3-049e-56b5-9750-2ce479394a00",
+    "ref": "6479",
+    "name": "Piston d 40.3",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 4,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "e3dcefce-6470-5cde-bf13-68e55a1ce1dd",
+    "ref": "6480",
+    "name": "Goujon cylindre",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 5,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "8226e33e-cc9b-599e-9b66-c1e3b3dbc83f",
+    "ref": "6371",
+    "name": "Segmentd 40.3",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 6,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "efd712e7-2d2c-587a-8bfb-8ddf1cb1814f",
+    "ref": "6481",
+    "name": "Bougie ngk br9 es",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 7,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "d34b0aba-75d2-5ad9-ad27-d1269533b4b1",
+    "ref": "Y113",
+    "name": "Vis thermostat",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 8,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "7a83f8a0-9cd9-5edc-9924-18017ca64802",
+    "ref": "6372",
+    "name": "Ecrou autoblock",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 9,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "16143968-4900-5496-9d81-ced235927f34",
+    "ref": "Y009",
+    "name": "Clip piston",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 10,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "0480e05b-b8ac-5be9-84da-2f6a90242ce2",
+    "ref": "Y175",
+    "name": "Axe piston",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 11,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "1f209f79-573c-51b2-a37e-f0730246085a",
+    "ref": "Y164",
+    "name": "Joint de cylindre",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 12,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "88d194a6-ea99-5820-92b9-c95e4a9bf68d",
+    "ref": "Y773",
+    "name": "Jeux de joints",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 13,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "79786761-d991-52e0-86b8-29dabb679382",
+    "ref": "Y167",
+    "name": "Thermostat",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 14,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "1ffcc1cd-3026-5d22-ba24-78def6d90629",
+    "ref": "7529",
+    "name": "Sonde temperature eau 50",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 15,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "fdcdc0e0-29da-5c51-8958-fc8fd55e6efa",
+    "ref": "Y150",
+    "name": "Joint de pot",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 16,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "429c5a2b-84fd-5875-a0e7-eac0e8132975",
+    "ref": "Y149",
+    "name": "Torique culasse",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 17,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "17d6cda7-46e6-5354-86d1-f8ba74a3821b",
+    "ref": "8439",
+    "name": "Durite carburateur culasse",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 18,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "19a8549a-a1f5-53e5-9743-a9e338ea9655",
+    "ref": "Y185",
+    "name": "Piston d 40.3 complet",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 19,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "22334c28-7e12-5cc3-82d1-ad1c2f09291f",
+    "ref": "10155",
+    "name": "Collier durite refroidissement",
+    "category": "Haut moteur",
+    "page": 27,
+    "position": 20,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "f2b8737c-b10b-57f8-874a-e5988a8d306c",
+    "ref": "5787",
+    "name": "Pignon deuxieme premiere",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 1,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "db2d9e05-985a-5ead-adba-6fd9bfe3d318",
+    "ref": "5788",
+    "name": "Arbre secondaire",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 2,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "e0fe4b17-65f4-5351-9621-bdfb727023c1",
+    "ref": "5789",
+    "name": "Pignon cinquieme",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 3,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "1d531bac-95ee-5b28-bbc0-ddada3c1c47e",
+    "ref": "5790",
+    "name": "Pignon troisieme",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 4,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "58271e69-aa6e-57ac-bfcb-4e9e0bf02fbf",
+    "ref": "5791",
+    "name": "Pignon quatrieme",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 5,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "93fdbf20-90d1-5557-ac83-0eaf63d5f824",
+    "ref": "5792",
+    "name": "Pignon deuxieme",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 6,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "ea3965cd-080f-53fd-b720-53d0e9db1fc1",
+    "ref": "Y014",
+    "name": "Circlips arbre d20",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 7,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "12eb0276-8362-5141-8a08-965c904f3ebb",
+    "ref": "Y174",
+    "name": "Tige pousse embrayage",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 8,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "2a843f7a-27dd-59e9-9756-ab5ff4e9e8eb",
+    "ref": "5786",
+    "name": "Arbre primaire",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 9,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "1a082598-496d-5dd3-bb68-f8a9f2b7cad0",
+    "ref": "5793",
+    "name": "Pignon cinquieme",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 10,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "0db4d454-f6d7-5959-8294-f5049f72983b",
+    "ref": "5794",
+    "name": "Pignon sixieme",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 11,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "b9846b3d-b31d-5fd2-9161-0c9ddfccd187",
+    "ref": "5795",
+    "name": "Pignon seconde",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 12,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "a1980780-9fcf-50f2-9f3b-0e922d976a91",
+    "ref": "5796",
+    "name": "Pignon troisieme quatrieme",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 13,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "706c7fd3-1d13-59bf-95f8-1670ed2d44fd",
+    "ref": "5797",
+    "name": "Circlips arbre d14",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 14,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "0c67b191-d4c7-5238-8241-f4f93dc69d05",
+    "ref": "5798",
+    "name": "Pignon sixieme",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 15,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "7532f22e-cfaa-5f26-8881-b47a4201b122",
+    "ref": "5799",
+    "name": "Circlips arbre d20",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 16,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "9f76c696-04e8-50c5-b153-f9fcfee3ec4b",
+    "ref": "5803",
+    "name": "Rondelle pleine",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 17,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "19f7a7f1-29b1-5756-9261-985bfcae1e92",
+    "ref": "Y141",
+    "name": "Bille tige embrayage",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 18,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "999d21a9-2cb1-505a-9a51-bb4afcecd619",
+    "ref": "Y166",
+    "name": "Tige embrayage",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 19,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "87c6338b-82d6-598d-87c1-6dbab37d3b4c",
+    "ref": "5800",
+    "name": "Rondelle",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 20,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "7b1d2216-6248-5e0f-9d0f-2d2e6e4ca295",
+    "ref": "5801",
+    "name": "Rondelle",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 21,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "46697dd3-9d9d-5006-ba84-8e3569f67bd4",
+    "ref": "5802",
+    "name": "Rondelle pleine",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 22,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "37dcb78a-7068-5d72-95e0-e5d80b0e15eb",
+    "ref": "Y078",
+    "name": "Rondelle ressort",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 23,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "29f9e7c6-e8b2-5121-8534-51313085a4a9",
+    "ref": "Y105",
+    "name": "Rondelle",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 24,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "0b10c20a-65ce-5964-a58f-ed1c8af8df02",
+    "ref": "Y163",
+    "name": "Jt spi arbre secondaire",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 25,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "e32a89b2-0491-55f3-a88b-8f4f50225622",
+    "ref": "10149",
+    "name": "Boite a viitesse compl e5",
+    "category": "Boîte de vitesses",
+    "page": 28,
+    "position": 26,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "69b84a66-8d04-578b-b063-d9b0b8cf56ae",
+    "ref": "10145",
+    "name": "Carburateur phbn16 e5",
+    "category": "Admission",
+    "page": 29,
+    "position": 1,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "c603edbc-59ea-5537-a379-d8d6f093380d",
+    "ref": "Y211",
+    "name": "Pipe admission plastique",
+    "category": "Admission",
+    "page": 29,
+    "position": 2,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "a1e45c69-e138-519d-abf8-750e0a77f04e",
+    "ref": "Y130",
+    "name": "Vis m6x20",
+    "category": "Admission",
+    "page": 29,
+    "position": 3,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "e5eeb602-fe69-5cf0-8689-e7309b2b9aac",
+    "ref": "Y180",
+    "name": "Boîte à clapet",
+    "category": "Admission",
+    "page": 29,
+    "position": 4,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "c76c1479-7d62-581e-ad3e-a58478b06e66",
+    "ref": "Y131",
+    "name": "Vis btr",
+    "category": "Admission",
+    "page": 29,
+    "position": 5,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "70c7155c-37ca-593e-8526-b92647adfd93",
+    "ref": "Y187",
+    "name": "Arret de cable",
+    "category": "Admission",
+    "page": 29,
+    "position": 6,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "e04b3bd6-22b4-5f35-86c2-723110ed06a1",
+    "ref": "Y081",
+    "name": "Collier norma 30/45",
+    "category": "Admission",
+    "page": 29,
+    "position": 7,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  },
+  {
+    "id": "84ffbe66-942f-5f3a-acfc-1f3d958484e6",
+    "ref": "10238",
+    "name": "Kit joint carburateur phbn 16",
+    "category": "Admission",
+    "page": 29,
+    "position": 8,
+    "vehicleIds": [
+      "sherco-sm50-2024",
+      "sherco-end50-2024"
+    ],
+    "source": "https://www.sherco.com/wp-content/uploads/Spare-parts-book_END_SM_50-RS_2024.pdf",
+    "confidence": "Référence relevée dans le catalogue constructeur",
+    "rights": "facts_only",
+    "checkedAt": "2026-09-22"
+  }
+]

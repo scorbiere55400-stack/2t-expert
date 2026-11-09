@@ -1,0 +1,346 @@
+[
+  {
+    "id": "NGK-01-C01",
+    "title": "Encrassement et température",
+    "text": "Une bougie qui reste trop froide peut accumuler des dépôts de carbone et produire des ratés. NGK situe l’auto-nettoyage autour de 450 °C au nez de l’isolant. Cette température concerne la bougie, pas une consigne de température du liquide de refroidissement. Identifier la cause de l’encrassement avant de modifier la référence.",
+    "topics": [
+      "bougie",
+      "allumage",
+      "combustion"
+    ],
+    "scope": "generic_component",
+    "url": "https://ngksparkplugs.com/en/resources/spark-plug-basics",
+    "publisher": "NGK/Niterra"
+  },
+  {
+    "id": "NGK-01-C02",
+    "title": "Préallumage et cliquetis",
+    "text": "Le préallumage démarre sur un point chaud avant l’étincelle commandée. Le cliquetis relève d’une combustion anormale d’une partie de la charge sous l’effet de la pression. NGK cite notamment un indice thermique trop chaud, une avance excessive, un mélange pauvre et un refroidissement insuffisant parmi les causes de surchauffe. Un seul aspect de bougie ne suffit pas à attribuer la panne.",
+    "topics": [
+      "bougie",
+      "allumage",
+      "combustion"
+    ],
+    "scope": "generic_component",
+    "url": "https://ngksparkplugs.com/en/resources/spark-plug-basics",
+    "publisher": "NGK/Niterra"
+  },
+  {
+    "id": "NGK-02-C01",
+    "title": "Rôle de l’indice thermique",
+    "text": "L’indice thermique décrit la manière dont la bougie évacue sa chaleur. Une bougie chaude conserve davantage de chaleur au nez de l’isolant ; une froide en évacue davantage. Il ne décrit pas l’énergie électrique de l’étincelle.",
+    "topics": [
+      "bougie",
+      "indice thermique"
+    ],
+    "scope": "generic_component",
+    "url": "https://ngksparkplugs.com/en/resources/understanding-spark-plug-heat-range",
+    "publisher": "NGK/Niterra"
+  },
+  {
+    "id": "NGK-02-C02",
+    "title": "Ne pas masquer une panne par une bougie chaude",
+    "text": "NGK recommande de corriger un problème d’alimentation ou de consommation d’huile plutôt que de le masquer par une bougie plus chaude. Ce changement réduit la marge vis-à-vis du préallumage. Partir de la référence préconisée pour le moteur exact ; les montages modifiés demandent une validation spécifique.",
+    "topics": [
+      "bougie",
+      "indice thermique"
+    ],
+    "scope": "generic_component",
+    "url": "https://ngksparkplugs.com/en/resources/understanding-spark-plug-heat-range",
+    "publisher": "NGK/Niterra"
+  },
+  {
+    "id": "NGK-03-C01",
+    "title": "Lecture de bougie : un indice",
+    "text": "Une bougie noire ou humide peut accompagner plusieurs défauts : richesse excessive, indice trop froid, compression insuffisante, retard d’allumage ou écartement inadapté, notamment. La lecture oriente le diagnostic ; elle ne permet pas à elle seule de déclarer un carburateur défectueux.",
+    "topics": [
+      "bougie",
+      "diagnostic",
+      "ratés"
+    ],
+    "scope": "generic_component",
+    "url": "https://ngksparkplugs.com/en/resources/read-spark-plug",
+    "publisher": "NGK/Niterra"
+  },
+  {
+    "id": "NGK-03-C02",
+    "title": "Interprétation contextualisée",
+    "text": "L’état des électrodes, de l’isolant et des dépôts doit être rapproché de la référence montée, de l’usage et des autres contrôles. MécaBot doit conserver plusieurs hypothèses tant qu’un contrôle ne les distingue pas.",
+    "topics": [
+      "bougie",
+      "diagnostic",
+      "ratés"
+    ],
+    "scope": "generic_component",
+    "url": "https://ngksparkplugs.com/en/resources/read-spark-plug",
+    "publisher": "NGK/Niterra"
+  },
+  {
+    "id": "NGK-04-C01",
+    "title": "Serrage et transfert thermique",
+    "text": "Un serrage insuffisant compromet l’appui de la bougie et son transfert de chaleur vers la culasse. Un excès de serrage peut endommager les filetages, la coque et les étanchéités. Le couple dépend notamment du diamètre de filetage, du siège et du matériau de culasse.",
+    "topics": [
+      "bougie",
+      "serrage",
+      "culasse"
+    ],
+    "scope": "generic_component",
+    "url": "https://ngksparkplugs.com/en/resources/spark-plug-installation",
+    "publisher": "NGK/Niterra"
+  },
+  {
+    "id": "NGK-04-C02",
+    "title": "Préparation de la pose",
+    "text": "Intervenir moteur froid, nettoyer le logement et amorcer le vissage à la main. Une saleté peut faire atteindre un couple apparent sans asseoir correctement la bougie. Utiliser la spécification de l’application exacte ; ne pas transformer une table générale en couple universel.",
+    "topics": [
+      "bougie",
+      "serrage",
+      "culasse"
+    ],
+    "scope": "generic_component",
+    "url": "https://ngksparkplugs.com/en/resources/spark-plug-installation",
+    "publisher": "NGK/Niterra"
+  },
+  {
+    "id": "NGK-05-C01",
+    "title": "Filetage NGK : pose à sec",
+    "text": "NGK indique que ses bougies à revêtement trivalent se montent à sec, sans lubrifiant ni pâte anti-grippante. Une lubrification change les conditions de serrage et peut favoriser une détérioration.",
+    "topics": [
+      "bougie",
+      "graisse",
+      "isolant"
+    ],
+    "scope": "generic_component",
+    "url": "https://ngksparkplugs.com/en/resources/5-things-you-should-know-about-spark-plugs",
+    "publisher": "NGK/Niterra"
+  },
+  {
+    "id": "NGK-05-C02",
+    "title": "Trace corona et électrodes fines",
+    "text": "Une trace brune extérieure au-dessus de l’hexagone peut être une trace corona normale, et non une fuite interne. Lors d’un contrôle d’écartement, ne pas faire levier sur une électrode fine ; utiliser un outil adapté et agir sur l’électrode de masse si une correction est prescrite.",
+    "topics": [
+      "bougie",
+      "graisse",
+      "isolant"
+    ],
+    "scope": "generic_component",
+    "url": "https://ngksparkplugs.com/en/resources/5-things-you-should-know-about-spark-plugs",
+    "publisher": "NGK/Niterra"
+  },
+  {
+    "id": "NGK-06-C01",
+    "title": "Écartement et tension nécessaire",
+    "text": "Augmenter l’écartement augmente la tension nécessaire pour amorcer l’étincelle. Si l’allumage ne fournit pas cette tension, des ratés peuvent apparaître. Le réglage doit correspondre au moteur et à ses conditions de fonctionnement ; un écartement plus grand n’est pas automatiquement meilleur.",
+    "topics": [
+      "bougie",
+      "écartement",
+      "allumage"
+    ],
+    "scope": "generic_component",
+    "url": "https://ngksparkplugs.com/en/resources/gapping-and-indexing",
+    "publisher": "NGK/Niterra"
+  },
+  {
+    "id": "NGK-06-C02",
+    "title": "Indexation : gain à démontrer",
+    "text": "L’orientation de la bougie par ajout de rondelles ne garantit pas un gain. NGK souligne la nécessité d’essais et les risques de mauvais maintien ou de retrait excessif de l’extrémité dans la chambre. Ne pas promettre une puissance sans mesure.",
+    "topics": [
+      "bougie",
+      "écartement",
+      "allumage"
+    ],
+    "scope": "generic_component",
+    "url": "https://ngksparkplugs.com/en/resources/gapping-and-indexing",
+    "publisher": "NGK/Niterra"
+  },
+  {
+    "id": "MIK-01-C01",
+    "title": "Circuits de ralenti et principal",
+    "text": "Sur les VM, le circuit de bas régime utilise notamment le gicleur de ralenti et la vis d’air. Le circuit principal et celui de ralenti sont construits séparément, avec des contributions qui changent selon l’ouverture. Localiser le défaut par ouverture et charge avant de choisir la pièce de réglage.",
+    "topics": [
+      "carburateur",
+      "Mikuni VM",
+      "gicleur",
+      "aiguille"
+    ],
+    "scope": "generic_component",
+    "url": "https://shop.mikuni.com/wp-content/uploads/2025/04/VM-SUPER-TUNING-MANUAL.pdf",
+    "publisher": "Mikuni"
+  },
+  {
+    "id": "MIK-01-C02",
+    "title": "Diamètre et réglage de carburation",
+    "text": "Un diamètre plus important peut favoriser le haut régime au détriment du bas régime. Le choix dépend du moteur et de l’usage. Le réglage des gicleurs se vérifie par essais et dépend aussi de l’altitude, de la température et de l’humidité. Les graphiques du manuel sont des références, pas des valeurs imposées à chaque moteur.",
+    "topics": [
+      "carburateur",
+      "Mikuni VM",
+      "gicleur",
+      "aiguille"
+    ],
+    "scope": "generic_component",
+    "url": "https://shop.mikuni.com/wp-content/uploads/2025/04/VM-SUPER-TUNING-MANUAL.pdf",
+    "publisher": "Mikuni"
+  },
+  {
+    "id": "MIK-02-C01",
+    "title": "BN : chambre régulée par membrane",
+    "text": "Le Super BN est un carburateur destiné aux véhicules nautiques. Sa chambre est régulée par membrane plutôt que ventilée comme une cuve à flotteur, afin de limiter les fuites lors d’un retournement. La membrane agit sur le levier de pointeau en réponse à la consommation de carburant.",
+    "topics": [
+      "carburateur",
+      "membrane",
+      "Mikuni BN"
+    ],
+    "scope": "generic_component",
+    "url": "https://shop.mikuni.com/wp-content/uploads/2024/09/SUPER-BN-MANUAL.pdf",
+    "publisher": "Mikuni"
+  },
+  {
+    "id": "MIK-02-C02",
+    "title": "Ne pas importer un réglage VM sur un BN",
+    "text": "Les circuits et la régulation du BN doivent être traités suivant son manuel propre. L’ajusteur haute vitesse participe à l’alimentation à forte ouverture ; la régulation de chambre intervient particulièrement à faible ouverture. Identifier le type exact avant de reprendre des instructions de carburateur à flotteur.",
+    "topics": [
+      "carburateur",
+      "membrane",
+      "Mikuni BN"
+    ],
+    "scope": "generic_component",
+    "url": "https://shop.mikuni.com/wp-content/uploads/2024/09/SUPER-BN-MANUAL.pdf",
+    "publisher": "Mikuni"
+  },
+  {
+    "id": "MIK-03-C01",
+    "title": "Repérage des pièces VM",
+    "text": "La planche distingue notamment boisseau, aiguille, puits d’aiguille, gicleur de ralenti, flotteur, pointeau-siège, vis d’air et gicleur principal. Les colonnes sont propres aux différentes tailles VM.",
+    "topics": [
+      "éclaté",
+      "carburateur",
+      "pièces",
+      "Mikuni VM"
+    ],
+    "scope": "generic_component",
+    "url": "https://shop.mikuni.com/wp-content/uploads/2024/09/Mikuni-VM-Spigot-Mount-26-44mm-Carburetors-Exploded-View.pdf",
+    "publisher": "Mikuni"
+  },
+  {
+    "id": "MIK-03-C02",
+    "title": "Compatibilité des composants",
+    "text": "Une référence de composant doit être lue dans la colonne du carburateur concerné. Le seul diamètre ou la ressemblance d’une pièce ne prouve pas son interchangeabilité ; garder la variante complète et le numéro de pièce.",
+    "topics": [
+      "éclaté",
+      "carburateur",
+      "pièces",
+      "Mikuni VM"
+    ],
+    "scope": "generic_component",
+    "url": "https://shop.mikuni.com/wp-content/uploads/2024/09/Mikuni-VM-Spigot-Mount-26-44mm-Carburetors-Exploded-View.pdf",
+    "publisher": "Mikuni"
+  },
+  {
+    "id": "MIK-04-C01",
+    "title": "Ancien catalogue et application actuelle",
+    "text": "Ce document répertorie des configurations et composants VM. La page de ressources Mikuni le classe comme référence historique. Il sert à identifier une configuration documentée, sans présumer qu’elle représente la fourniture actuelle.",
+    "topics": [
+      "carburateur",
+      "Mikuni VM",
+      "référence"
+    ],
+    "scope": "generic_component",
+    "url": "https://shop.mikuni.com/wp-content/uploads/2024/09/VM-TYPE.pdf",
+    "publisher": "Mikuni"
+  },
+  {
+    "id": "MIK-04-C02",
+    "title": "Traçabilité d’une commande",
+    "text": "Comparer l’identifiant complet du carburateur et la référence de pièce dans le catalogue. Une correspondance historique doit être confirmée avant commande lorsque le montage ou la fourniture ont changé.",
+    "topics": [
+      "carburateur",
+      "Mikuni VM",
+      "référence"
+    ],
+    "scope": "generic_component",
+    "url": "https://shop.mikuni.com/wp-content/uploads/2024/09/VM-TYPE.pdf",
+    "publisher": "Mikuni"
+  },
+  {
+    "id": "MOTUL-01-C01",
+    "title": "Usage de la 710 2T",
+    "text": "La fiche présente la 710 2T comme huile moteur deux temps synthétique à base d’esters, destinée au prémélange ou aux systèmes de lubrification séparée. Ce produit n’est pas une huile de boîte universelle.",
+    "topics": [
+      "huile",
+      "lubrification",
+      "mélange"
+    ],
+    "scope": "generic_component",
+    "url": "https://azupim01.motul.com/media/motulData/DO/base/710_2t_en_fr_motul_16400_20251008.pdf",
+    "publisher": "Motul"
+  },
+  {
+    "id": "MOTUL-01-C02",
+    "title": "Taux de mélange : prescription du moteur",
+    "text": "La plage 2 à 4 % donnée par Motul est explicitement subordonnée aux spécifications constructeur et à l’utilisation. Elle ne justifie pas un taux universel pour tous les deux temps. Identifier le système de lubrification et la prescription du moteur avant conseil.",
+    "topics": [
+      "huile",
+      "lubrification",
+      "mélange"
+    ],
+    "scope": "generic_component",
+    "url": "https://azupim01.motul.com/media/motulData/DO/base/710_2t_en_fr_motul_16400_20251008.pdf",
+    "publisher": "Motul"
+  },
+  {
+    "id": "WISECO-01-C01",
+    "title": "Mesurer les jeux au bon endroit",
+    "text": "Le jeu à la coupe se contrôle avec le segment dans l’alésage. Le jeu piston-cylindre se déduit des diamètres mesurés aux points prescrits. Comparer les résultats au manuel ou aux instructions du piston, plutôt qu’à une cote générale.",
+    "topics": [
+      "piston",
+      "segment",
+      "cylindre",
+      "métrologie",
+      "valve"
+    ],
+    "scope": "generic_component",
+    "url": "https://staging.wiseco.com/powersports/wiseco-power-tech/2-stroke-top-end-rebuild-guide/",
+    "publisher": "Wiseco"
+  },
+  {
+    "id": "WISECO-01-C02",
+    "title": "Assemblage du haut moteur",
+    "text": "Contrôler le revêtement du cylindre et la liberté de mouvement de la valve d’échappement après réfection. Pendant l’emmanchement, maintenir les extrémités de segment sur leurs pions de positionnement. Les couples de culasse et cylindre viennent de l’application exacte.",
+    "topics": [
+      "piston",
+      "segment",
+      "cylindre",
+      "métrologie",
+      "valve"
+    ],
+    "scope": "generic_component",
+    "url": "https://staging.wiseco.com/powersports/wiseco-power-tech/2-stroke-top-end-rebuild-guide/",
+    "publisher": "Wiseco"
+  },
+  {
+    "id": "WISECO-02-C01",
+    "title": "Segments et piston : paire conçue ensemble",
+    "text": "Wiseco indique que ses segments et pistons sont conçus ensemble et ne sont généralement pas interchangeables avec les pièces d’origine. Vérifier la référence de l’ensemble au lieu de déduire une compatibilité du seul diamètre.",
+    "topics": [
+      "segment",
+      "compatibilité",
+      "jeu"
+    ],
+    "scope": "generic_component",
+    "url": "https://staging.wiseco.com/frequently-asked-questions-faq/",
+    "publisher": "Wiseco"
+  },
+  {
+    "id": "WISECO-02-C02",
+    "title": "Jeu à la coupe : consigne propre à l’application",
+    "text": "Le fabricant demande un contrôle du jeu à la coupe à l’assemblage. Ses règles indicatives peuvent demander des adaptations pour forte chaleur, marine ou motoneige. La notice du kit a priorité sur une règle de calcul générique.",
+    "topics": [
+      "segment",
+      "compatibilité",
+      "jeu"
+    ],
+    "scope": "generic_component",
+    "url": "https://staging.wiseco.com/frequently-asked-questions-faq/",
+    "publisher": "Wiseco"
+  }
+]

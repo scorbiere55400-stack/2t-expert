@@ -1,0 +1,95 @@
+MécaBot / 2T Expert — Audit et sécurisation, étape 1
+Date : 11 octobre 2026. Statut : EN COURS, non clôturé.
+
+1. Référence vérifiée
+Site officiel : https://deux-temps-expert-officiel.espace-de-tr-7344.chatgpt.site
+Projet : appgprj_6aaff14bd3a881919331c29c35f07790
+Version 50 : publication confirmée ; commit 21b85f38070bdc81121f1d7991945c5c57e04cd3.
+Version 51 : enregistrée sans déploiement associé au début de cet audit ; commit 382d5093e617768a5b66ecf4674abbc1ee672225.
+Source de travail récupérée directement depuis le dépôt du site, branche main.
+Dépôt GitHub déclaré : scorbiere55400-stack/2t-expert, public, branche main.
+Son dernier commit main : 4f9f5ad8f84b9a71ac000cd7fba6c3b406fc9d00, daté du 26 septembre 2026.
+La source GitHub ne contient pas les routes MécaBot actuelles. Les deux sources ont divergé ; le fichier hosting.json pointe pourtant vers le même projet. Risque de remplacer le site par une ancienne version.
+GitHub main : protection désactivée ; liste de rulesets vide. Les anciens documents de consolidation citent encore 2t-expert-master.
+
+2. Accès et secrets
+Accès du site : custom, deux comptes autorisés, aucun groupe et aucun visiteur externe.
+Tests HTTP avant correction : accueil et trois API refusent les visiteurs anonymes (401).
+Accès de service : accueil 200 ; session sans identité ; administration 403 ; dossiers 401. Il ne permet pas d'usurper un utilisateur.
+Configuration de production : seulement SUPABASE_URL et SUPABASE_PUBLISHABLE_KEY. Ni OPENAI_API_KEY, ni couple MECABOT_INFERENCE_URL/TOKEN configurés.
+Fichier .env.example suivi, autres .env ignorés. Aucune clé OpenAI présente dans l'environnement d'exécution de cet audit.
+Recherche de motifs de clés OpenAI, GitHub, Supabase secrètes et clés privées : aucun résultat dans HEAD et dans 470 blobs texte historiques accessibles, chacun sous 2 Mo. Ce contrôle ne prouve pas l'absence de tout secret et ne couvre pas l'historique GitHub distant.
+
+3. MécaBot réel
+Le mode guidé répond en production (POST /api/diagnostic/chat : 200, mode guidé).
+Code de connexion OpenAI ou GPU présent, mais modèle génératif non activé en production.
+Garde-fous présents : validation des entrées, contrôle d'origine, identité requise pour appel modèle, quotas atomiques par utilisateur (6/minute et 80/jour), délai 18 secondes, repli guidé, sortie sans détails d'erreur privés.
+La bibliothèque contient 106 fiches : 26 fiches éditoriales et 80 fiches de pannes importées, avec 28 sources pour les pannes. Les pannes sont marquées non validées en atelier. La récupération automatique limite les fiches selon leur domaine d'application.
+Retours utilisateurs en attente de revue ; export limité aux exemples validés. Cela ne constitue pas un entraînement autonome.
+Aucune automation attachée au site au début de l'audit.
+
+4. Base de données
+Le code publié utilise Cloudflare D1, binding DB, et non Supabase.
+Base D1 accessible ; 17 tables présentes, notamment diagnostic_cases, diagnostic_feedback, mecabot_examples et mecabot_usage.
+Table mecabot_examples : vide. Aucun exemple relu enregistré au moment du contrôle.
+Table mecabot_usage : vide au contrôle ; schéma id/count/updated_at accessible.
+Supabase historique capclfoklpdrxrumbsql : INACTIVE. La requête de schéma expire. La réponse vide des advisors ne permet pas de conclure que la sécurité de cette base est validée.
+Les données privées D1 sont filtrées par user_id dans les API inspectées. L'isolation des dossiers est testée avec SQLite, pas avec deux sessions réelles en production.
+Aucune restauration de sauvegarde de la base n'a encore été vérifiée.
+Aucun événement d'erreur retourné dans les journaux consultés (fenêtre par défaut 180 min) ; cela ne prouve pas l'absence de toutes les erreurs.
+
+5. Corrections commencées
+A. Dossier d'un autre compte : le SQL bloque déjà l'écriture, mais l'API annonçait saved=true. Ajout de RETURNING id ; l'API renvoie maintenant 404 si l'écriture ne se produit pas. Test d'isolation et de réponse ajouté.
+B. Appels modèle : refus des redirections HTTP avec redirect=error. Les erreurs reviennent au mode guidé. Test ajouté.
+C. Dépendances : audit initial production = 14 alertes (1 critique, 5 élevées, 6 modérées, 2 faibles). Mises à jour ciblées préparées : Next et eslint-config-next 16.3.8, sharp 0.35.5, @babel/core 7.29.6, browserslist 4.28.7, baseline-browser-mapping 2.11.0, fast-uri 3.1.8, source-map-js 1.2.2. Audit production après mise à jour : 0 alerte (0 critique, 0 élevée, 0 modérée, 0 faible). Contrôle final : 40 tests réussis, TypeScript --noEmit réussi, compilation réussie.
+L'alerte critique Next concerne next/og ImageResponse avec données SVG contrôlées par l'attaquant ; aucun usage de cette API trouvé dans les sources inspectées. Un classement critique du paquet ne prouve pas l'exploitation du site.
+Références : https://github.com/advisories/GHSA-vcvr-r3jv-pc5j ; https://github.com/advisories/GHSA-cjq9-62q9-8jv4 ; https://github.com/advisories/GHSA-wq5f-xc86-pv6w.
+
+6. Validation réalisée avant mise à jour des dépendances
+39 tests existants : réussis.
+Après corrections A/B : 40 tests, 40 réussis, 0 échec.
+TypeScript --noEmit : réussi.
+Compilation de référence : réussie.
+Les appels OpenAI et GPU des tests sont simulés ; aucune requête payante ou génération réelle n'a été effectuée.
+
+7. Opérations à suivre dans cet ordre pour clôturer l'étape
+1) Terminer la mise à jour des dépendances ; exiger audit production sans alerte, tests et compilation réussis ; publier les corrections sur ce même site et vérifier le déploiement.
+2) Réconcilier les sources GitHub et Sites sans écraser un historique ni l'ancien travail : comparer, conserver les divergences, puis établir un flux unique documenté. Cette opération reste à faire.
+3) Ajouter une protection de branche et des contrôles obligatoires sur GitHub via les réglages d'administration adaptés. Les outils disponibles dans cet audit ne permettent pas de modifier ces réglages ni la visibilité du dépôt. Décider la visibilité selon le partage voulu, puis vérifier le résultat ; un dépôt public sans secrets n'est pas automatiquement une fuite de données utilisateurs.
+4) Avec un compte utilisateur réel autorisé : ouvrir /admin ; sauvegarder un dossier, recharger, retrouver le dossier et l'exporter. Avec un second compte : prouver qu'il ne voit ni ne modifie le dossier du premier. Le service de test n'a pas d'identité utilisateur, donc ce parcours n'est pas vérifié en production.
+5) Vérifier une sauvegarde complète D1 et restaurer une copie dans un environnement isolé ; établir fréquence, rétention et procédure. Le simple historique des versions du site ne sauvegarde pas les données D1.
+6) Examiner l'autorisation administrateur actuellement fondée sur deux adresses email ; migrer vers des identifiants Site vérifiés quand les deux sessions utilisateur sont disponibles. Les identifiants de partage du compte ne doivent pas être supposés identiques aux identifiants injectés dans le Site.
+7) Traiter Supabase : déterminer si ce service est encore nécessaire, puis réactiver et auditer si nécessaire ou retirer proprement ses références après confirmation de l'absence d'usage. Aucun effacement exécuté.
+8) Définir la conservation des dossiers, retours, exemples et compteurs ; contrôler suppression et purge. Les compteurs historiques ne sont actuellement pas purgés dans le code inspecté.
+9) La connexion et l'entraînement de l'IA viendront ensuite : clé dédiée côté serveur, plafond financier dans le compte API, appel réel et simulation de panne/quota. L'absence de clé n'est pas un défaut de confidentialité, mais bloque la validation du fonctionnement génératif.
+
+Critère de fin : tous les contrôles de sécurité applicables réussis, sauvegarde restaurable vérifiée, flux de source unique établi, parcours privé confirmé, risques résiduels documentés. Aucun statut « entièrement autonome » ne doit être annoncé sur la base de cet audit partiel.
+
+Audit élargi aux outils de développement : 48 alertes restantes (0 critique, 25 élevées, 17 modérées, 6 faibles), toutes rattachées aux dépendances de développement dans le résultat du registre. Paquets concernés : esbuild, ws, vite, undici, js-yaml, brace-expansion, react-server-dom-webpack, fflate, image-size, braces . Certaines alertes de braces n'ont pas de version corrigée annoncée. Il faut qualifier l'exposition réelle des outils de construction et traiter ces dépendances séparément ; le résultat production à zéro ne clôture pas cet audit élargi.
+
+Deuxième passe de sécurisation des outils
+Les 48 alertes observées après la première passe sont réduites à 2 par des mises à jour ciblées : React / React DOM / react-server-dom-webpack 19.2.8, Vite 8.0.16, ws 8.21.0, undici 7.29.1, js-yaml 4.3.2 (branche 4), brace-expansion 1.1.21 et 5.0.12, fflate 0.7.5 pour les anciennes versions, image-size 2.0.3 et esbuild 0.28.1 pour les branches modernes. Les contraintes de sécurité d'installation sont conservées.
+Points résiduels :
+- esbuild 0.18.20 transitif de drizzle-kit / @esbuild-kit : alerte modérée liée au serveur de développement ; aucun serveur de cet outil lancé dans cet audit. La migration de ce chargeur ancien doit être qualifiée séparément pour éviter de casser les opérations de schéma.
+- braces 3.0.3 transitif d'outils de construction : alerte élevée, pas de version corrigée annoncée. Aucun usage direct de motifs glob fournis par les visiteurs trouvé dans app/components/lib. La construction ne doit pas traiter de motifs ou de sources tiers non fiables. L'absence de correctif impose remplacement ou mesure compensatoire qualifiée.
+La classification devDependency ne signifie pas qu'un composant ne participe pas au serveur final : react-server-dom-webpack a donc été corrigé malgré cette classification.
+Références complémentaires : https://github.com/advisories/GHSA-wx67-qw84-cm4g ; https://github.com/advisories/GHSA-vfj7-8cjw-p6xm ; https://github.com/advisories/GHSA-67mh-4wv8-2f99.
+
+Contrôles supplémentaires
+- Les six migrations SQL suivies s'appliquent dans une base SQLite temporaire vide ; elles créent neuf tables et les colonnes attendues pour MécaBot. La base live contient dix-sept tables : il existe donc des tables historiques supplémentaires à inventorier dans une future sauvegarde complète. Ce test ne constitue pas une restauration de D1.
+- Les quotas de requêtes présents dans le code ne sont pas un plafond financier de fournisseur. Avant connexion au modèle, vérifier le budget et les droits de la clé dans le compte API.
+- Les instructions données au modèle et le filtrage de sortie ne prouvent pas la justesse de ses réponses ; prévoir des évaluations de fiabilité et un mécanisme de validation avant toute évolution autonome des connaissances.
+
+Validation finale du code avant publication : 40 tests réussis, zéro échec ; TypeScript et compilation réussis. Audit complet final : deux alertes résiduelles décrites ci-dessus, aucune en dépendances de production. Publication et contrôle HTTP après publication restent à confirmer.
+
+Suite des opérations — 11 octobre 2026
+- Production v52 publiée et contrôle HTTP effectué dans la première intervention.
+- esbuild unifié sur 0.28.1 : génération Drizzle isolée réussie.
+- braces 3.0.3 : patch pnpm versionné, limite de profondeur 128, AST cycliques refusés ; tests de non-régression et attaques réussis. L'audit de registre continue de signaler cette version, sans correctif éditeur publié. Ne pas présenter cela comme zéro alerte du registre.
+- 43 tests réussis ; TypeScript et compilation réussis.
+- Vérification CI ajoutée, actions officielles épinglées sur SHA, permissions de lecture seulement ; son exécution distante devra être vérifiée.
+- Export logique privé des 17 tables : 2 lignes, restitution exacte, integrity_check et foreign_key_check réussis sur SQLite isolé. Schéma exact de production et cohérence transactionnelle non vérifiés. Aucune restauration sur production.
+- Historique GitHub conservé sur archive/github-before-audit-2026-10-11.
+- La connexion GitHub a été refusée (identifiant ou mot de passe incorrect) : protection de main non appliquée.
+- Test de séparation avec deux véritables sessions visiteur toujours à réaliser. Le jeton technique de publication ne permet pas d'incarner ces utilisateurs.
+- L'étape reste ouverte jusqu'à la vérification de ces points.

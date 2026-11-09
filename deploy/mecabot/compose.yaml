@@ -1,0 +1,39 @@
+services:
+  inference:
+    image: vllm/vllm-openai:v0.10.2
+    restart: unless-stopped
+    gpus: all
+    ipc: host
+    volumes:
+      - model-cache:/root/.cache/huggingface
+    environment:
+      VLLM_API_KEY: ${MECABOT_INFERENCE_TOKEN:?Set a long random secret}
+    command:
+      - --model
+      - Qwen/Qwen3-4B
+      - --served-model-name
+      - Qwen/Qwen3-4B
+      - --max-model-len
+      - '4096'
+      - --generation-config
+      - vllm
+    expose:
+      - '8000'
+  tls:
+    image: caddy:2.10
+    restart: unless-stopped
+    depends_on:
+      - inference
+    ports:
+      - '80:80'
+      - '443:443'
+    environment:
+      MECABOT_DOMAIN: ${MECABOT_DOMAIN:?Set the inference domain}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+volumes:
+  model-cache:
+  caddy-data:
+  caddy-config:

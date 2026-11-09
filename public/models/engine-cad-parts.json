@@ -1,0 +1,2573 @@
+{
+  "name": "2T Expert E50",
+  "revision": 1,
+  "origin": "original-parametric-design",
+  "units": "mm",
+  "boreMm": 40,
+  "strokeMm": 39.8,
+  "rodLengthMm": 85,
+  "displacementCc": 50.01415504514951,
+  "validation": "Étude CAO originale — non validée pour fabrication",
+  "parts": [
+    {
+      "id": "crankcase-left",
+      "label": "Demi-carter gauche",
+      "family": "case-left",
+      "material": "cast",
+      "explode": [
+        -0.16,
+        -0.025,
+        0.0
+      ],
+      "note": "Logement de roulement Ø47 mm ; demi-carter usinable.",
+      "boundsMm": [
+        35.00000020000004,
+        100.0,
+        102.5000001
+      ],
+      "volumeMm3": 104493.78436118727,
+      "number": 1,
+      "file": "parts/001-crankcase-left.step"
+    },
+    {
+      "id": "crankcase-right",
+      "label": "Demi-carter droit",
+      "family": "case-left",
+      "material": "cast",
+      "explode": [
+        0.16,
+        -0.025,
+        0.0
+      ],
+      "note": "Logement de roulement Ø47 mm ; demi-carter usinable.",
+      "boundsMm": [
+        35.0000002,
+        100.0,
+        102.5000001
+      ],
+      "volumeMm3": 104493.76928017428,
+      "number": 2,
+      "file": "parts/002-crankcase-right.step"
+    },
+    {
+      "id": "case-gasket",
+      "label": "Joint de plan de carters",
+      "family": "case-left",
+      "material": "gasket",
+      "explode": [
+        -0.04,
+        -0.03,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        0.45000020000002605,
+        96.0,
+        98.5000001
+      ],
+      "volumeMm3": 784.6791680671936,
+      "number": 3,
+      "file": "parts/003-case-gasket.step"
+    },
+    {
+      "id": "case-bolt-1",
+      "label": "Vis de carter M6 n°1",
+      "family": "case-left",
+      "material": "steel",
+      "explode": [
+        -0.195,
+        -0.025,
+        0.0
+      ],
+      "note": "Filetage nominal ; hélice non modélisée.",
+      "boundsMm": [
+        78.0,
+        8.937382167055404,
+        10.32
+      ],
+      "volumeMm3": 2364.9119587737678,
+      "number": 4,
+      "file": "parts/004-case-bolt-1.step"
+    },
+    {
+      "id": "case-bolt-2",
+      "label": "Vis de carter M6 n°2",
+      "family": "case-left",
+      "material": "steel",
+      "explode": [
+        -0.195,
+        -0.025,
+        0.0
+      ],
+      "note": "Filetage nominal ; hélice non modélisée.",
+      "boundsMm": [
+        78.0,
+        8.937382167055407,
+        10.32
+      ],
+      "volumeMm3": 2364.9119587737678,
+      "number": 5,
+      "file": "parts/005-case-bolt-2.step"
+    },
+    {
+      "id": "case-bolt-3",
+      "label": "Vis de carter M6 n°3",
+      "family": "case-left",
+      "material": "steel",
+      "explode": [
+        -0.195,
+        -0.025,
+        0.0
+      ],
+      "note": "Filetage nominal ; hélice non modélisée.",
+      "boundsMm": [
+        78.0,
+        8.937382167055404,
+        10.32
+      ],
+      "volumeMm3": 2364.9119587737678,
+      "number": 6,
+      "file": "parts/006-case-bolt-3.step"
+    },
+    {
+      "id": "case-bolt-4",
+      "label": "Vis de carter M6 n°4",
+      "family": "case-left",
+      "material": "steel",
+      "explode": [
+        -0.195,
+        -0.025,
+        0.0
+      ],
+      "note": "Filetage nominal ; hélice non modélisée.",
+      "boundsMm": [
+        78.0,
+        8.937382167055404,
+        10.32
+      ],
+      "volumeMm3": 2364.9119587737678,
+      "number": 7,
+      "file": "parts/007-case-bolt-4.step"
+    },
+    {
+      "id": "case-bolt-5",
+      "label": "Vis de carter M6 n°5",
+      "family": "case-left",
+      "material": "steel",
+      "explode": [
+        -0.195,
+        -0.025,
+        0.0
+      ],
+      "note": "Filetage nominal ; hélice non modélisée.",
+      "boundsMm": [
+        78.0,
+        8.937382167055404,
+        10.320000000000004
+      ],
+      "volumeMm3": 2364.9119587737678,
+      "number": 8,
+      "file": "parts/008-case-bolt-5.step"
+    },
+    {
+      "id": "case-bolt-6",
+      "label": "Vis de carter M6 n°6",
+      "family": "case-left",
+      "material": "steel",
+      "explode": [
+        -0.195,
+        -0.025,
+        0.0
+      ],
+      "note": "Filetage nominal ; hélice non modélisée.",
+      "boundsMm": [
+        78.0,
+        8.937382167055407,
+        10.320000000000004
+      ],
+      "volumeMm3": 2364.9119587737678,
+      "number": 9,
+      "file": "parts/009-case-bolt-6.step"
+    },
+    {
+      "id": "bearing-left-outer",
+      "label": "Roulement left · bague extérieure",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        -0.12,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        8.0,
+        47.0,
+        47.0
+      ],
+      "volumeMm3": 4322.831491339556,
+      "number": 10,
+      "file": "parts/010-bearing-left-outer.step"
+    },
+    {
+      "id": "bearing-left-inner",
+      "label": "Roulement left · bague intérieure",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        -0.116,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        8.0,
+        31.0,
+        31.0
+      ],
+      "volumeMm3": 3524.8669573277475,
+      "number": 11,
+      "file": "parts/011-bearing-left-inner.step"
+    },
+    {
+      "id": "bearing-left-ball-1",
+      "label": "Roulement left · bille n°1",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        -0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923255,
+      "number": 12,
+      "file": "parts/012-bearing-left-ball-1.step"
+    },
+    {
+      "id": "bearing-left-ball-2",
+      "label": "Roulement left · bille n°2",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        -0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923255,
+      "number": 13,
+      "file": "parts/013-bearing-left-ball-2.step"
+    },
+    {
+      "id": "bearing-left-ball-3",
+      "label": "Roulement left · bille n°3",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        -0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923252,
+      "number": 14,
+      "file": "parts/014-bearing-left-ball-3.step"
+    },
+    {
+      "id": "bearing-left-ball-4",
+      "label": "Roulement left · bille n°4",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        -0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923255,
+      "number": 15,
+      "file": "parts/015-bearing-left-ball-4.step"
+    },
+    {
+      "id": "bearing-left-ball-5",
+      "label": "Roulement left · bille n°5",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        -0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923255,
+      "number": 16,
+      "file": "parts/016-bearing-left-ball-5.step"
+    },
+    {
+      "id": "bearing-left-ball-6",
+      "label": "Roulement left · bille n°6",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        -0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923255,
+      "number": 17,
+      "file": "parts/017-bearing-left-ball-6.step"
+    },
+    {
+      "id": "bearing-left-ball-7",
+      "label": "Roulement left · bille n°7",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        -0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923255,
+      "number": 18,
+      "file": "parts/018-bearing-left-ball-7.step"
+    },
+    {
+      "id": "bearing-left-ball-8",
+      "label": "Roulement left · bille n°8",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        -0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923255,
+      "number": 19,
+      "file": "parts/019-bearing-left-ball-8.step"
+    },
+    {
+      "id": "bearing-left-cage",
+      "label": "Roulement left · cage",
+      "family": "crankshaft",
+      "material": "brass",
+      "explode": [
+        -0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.000000200000002,
+        36.37528591428571,
+        36.37528591428572
+      ],
+      "volumeMm3": 583.1500978851168,
+      "number": 20,
+      "file": "parts/020-bearing-left-cage.step"
+    },
+    {
+      "id": "seal-left",
+      "label": "Joint spi left",
+      "family": "crankshaft",
+      "material": "rubber",
+      "explode": [
+        -0.135,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        4.0,
+        48.0,
+        48.0
+      ],
+      "volumeMm3": 5981.592412434966,
+      "number": 21,
+      "file": "parts/021-seal-left.step"
+    },
+    {
+      "id": "bearing-right-outer",
+      "label": "Roulement right · bague extérieure",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        0.12,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        8.0,
+        47.0,
+        47.0
+      ],
+      "volumeMm3": 4322.831491339556,
+      "number": 22,
+      "file": "parts/022-bearing-right-outer.step"
+    },
+    {
+      "id": "bearing-right-inner",
+      "label": "Roulement right · bague intérieure",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        0.116,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        8.0,
+        31.0,
+        31.0
+      ],
+      "volumeMm3": 3524.8669573277475,
+      "number": 23,
+      "file": "parts/023-bearing-right-inner.step"
+    },
+    {
+      "id": "bearing-right-ball-1",
+      "label": "Roulement right · bille n°1",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923255,
+      "number": 24,
+      "file": "parts/024-bearing-right-ball-1.step"
+    },
+    {
+      "id": "bearing-right-ball-2",
+      "label": "Roulement right · bille n°2",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923255,
+      "number": 25,
+      "file": "parts/025-bearing-right-ball-2.step"
+    },
+    {
+      "id": "bearing-right-ball-3",
+      "label": "Roulement right · bille n°3",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923252,
+      "number": 26,
+      "file": "parts/026-bearing-right-ball-3.step"
+    },
+    {
+      "id": "bearing-right-ball-4",
+      "label": "Roulement right · bille n°4",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923252,
+      "number": 27,
+      "file": "parts/027-bearing-right-ball-4.step"
+    },
+    {
+      "id": "bearing-right-ball-5",
+      "label": "Roulement right · bille n°5",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923255,
+      "number": 28,
+      "file": "parts/028-bearing-right-ball-5.step"
+    },
+    {
+      "id": "bearing-right-ball-6",
+      "label": "Roulement right · bille n°6",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923255,
+      "number": 29,
+      "file": "parts/029-bearing-right-ball-6.step"
+    },
+    {
+      "id": "bearing-right-ball-7",
+      "label": "Roulement right · bille n°7",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923255,
+      "number": 30,
+      "file": "parts/030-bearing-right-ball-7.step"
+    },
+    {
+      "id": "bearing-right-ball-8",
+      "label": "Roulement right · bille n°8",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "volumeMm3": 113.09733552923255,
+      "number": 31,
+      "file": "parts/031-bearing-right-ball-8.step"
+    },
+    {
+      "id": "bearing-right-cage",
+      "label": "Roulement right · cage",
+      "family": "crankshaft",
+      "material": "brass",
+      "explode": [
+        0.118,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        6.000000200000002,
+        36.37528591428571,
+        36.375285914285726
+      ],
+      "volumeMm3": 583.1494935809089,
+      "number": 32,
+      "file": "parts/032-bearing-right-cage.step"
+    },
+    {
+      "id": "seal-right",
+      "label": "Joint spi right",
+      "family": "crankshaft",
+      "material": "rubber",
+      "explode": [
+        0.135,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        4.0,
+        48.0,
+        48.0
+      ],
+      "volumeMm3": 5981.592412434966,
+      "number": 33,
+      "file": "parts/033-seal-right.step"
+    },
+    {
+      "id": "crank-web-left",
+      "label": "Masse de vilebrequin left",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        -0.075,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        12.0,
+        70.0,
+        70.0
+      ],
+      "volumeMm3": 41148.58057671911,
+      "number": 34,
+      "file": "parts/034-crank-web-left.step"
+    },
+    {
+      "id": "crank-shaft-left",
+      "label": "Demi-arbre de vilebrequin left",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        -0.09,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        36.0,
+        20.0,
+        20.0
+      ],
+      "volumeMm3": 11087.555622232441,
+      "number": 35,
+      "file": "parts/035-crank-shaft-left.step"
+    },
+    {
+      "id": "crank-web-right",
+      "label": "Masse de vilebrequin right",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        0.075,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        12.0,
+        70.0,
+        70.0
+      ],
+      "volumeMm3": 41148.58057671911,
+      "number": 36,
+      "file": "parts/036-crank-web-right.step"
+    },
+    {
+      "id": "crank-shaft-right",
+      "label": "Demi-arbre de vilebrequin right",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        0.09,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        36.0,
+        20.0,
+        20.0
+      ],
+      "volumeMm3": 11087.555622232441,
+      "number": 37,
+      "file": "parts/037-crank-shaft-right.step"
+    },
+    {
+      "id": "crank-pin",
+      "label": "Maneton Ø14 mm",
+      "family": "crankshaft",
+      "material": "steel",
+      "explode": [
+        0.0,
+        -0.035,
+        -0.09
+      ],
+      "note": "",
+      "boundsMm": [
+        40.0,
+        14.0,
+        14.000000000000002
+      ],
+      "volumeMm3": 6157.521601035995,
+      "number": 38,
+      "file": "parts/038-crank-pin.step"
+    },
+    {
+      "id": "connecting-rod",
+      "label": "Bielle · entraxe 85 mm",
+      "family": "rod",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.06,
+        -0.05
+      ],
+      "note": "",
+      "boundsMm": [
+        12.0,
+        37.23390553531033,
+        103.23456313335224
+      ],
+      "volumeMm3": 8648.609651562656,
+      "number": 39,
+      "file": "parts/039-connecting-rod.step"
+    },
+    {
+      "id": "big-end-roller-1",
+      "label": "Tête de bielle · aiguille n°1",
+      "family": "rod",
+      "material": "steel",
+      "explode": [
+        0.0,
+        -0.025,
+        -0.08
+      ],
+      "note": "",
+      "boundsMm": [
+        10.0,
+        2.0,
+        2.0
+      ],
+      "volumeMm3": 31.41592653589792,
+      "number": 40,
+      "file": "parts/040-big-end-roller-1.step"
+    },
+    {
+      "id": "big-end-roller-2",
+      "label": "Tête de bielle · aiguille n°2",
+      "family": "rod",
+      "material": "steel",
+      "explode": [
+        0.0,
+        -0.025,
+        -0.08
+      ],
+      "note": "",
+      "boundsMm": [
+        10.0,
+        2.0,
+        2.0
+      ],
+      "volumeMm3": 31.41592653589792,
+      "number": 41,
+      "file": "parts/041-big-end-roller-2.step"
+    },
+    {
+      "id": "big-end-roller-3",
+      "label": "Tête de bielle · aiguille n°3",
+      "family": "rod",
+      "material": "steel",
+      "explode": [
+        0.0,
+        -0.025,
+        -0.08
+      ],
+      "note": "",
+      "boundsMm": [
+        10.0,
+        2.0,
+        2.0
+      ],
+      "volumeMm3": 31.41592653589793,
+      "number": 42,
+      "file": "parts/042-big-end-roller-3.step"
+    },
+    {
+      "id": "big-end-roller-4",
+      "label": "Tête de bielle · aiguille n°4",
+      "family": "rod",
+      "material": "steel",
+      "explode": [
+        0.0,
+        -0.025,
+        -0.08
+      ],
+      "note": "",
+      "boundsMm": [
+        10.0,
+        2.0,
+        2.0
+      ],
+      "volumeMm3": 31.41592653589793,
+      "number": 43,
+      "file": "parts/043-big-end-roller-4.step"
+    },
+    {
+      "id": "big-end-roller-5",
+      "label": "Tête de bielle · aiguille n°5",
+      "family": "rod",
+      "material": "steel",
+      "explode": [
+        0.0,
+        -0.025,
+        -0.08
+      ],
+      "note": "",
+      "boundsMm": [
+        10.0,
+        2.0,
+        2.0
+      ],
+      "volumeMm3": 31.415926535897935,
+      "number": 44,
+      "file": "parts/044-big-end-roller-5.step"
+    },
+    {
+      "id": "big-end-roller-6",
+      "label": "Tête de bielle · aiguille n°6",
+      "family": "rod",
+      "material": "steel",
+      "explode": [
+        0.0,
+        -0.025,
+        -0.08
+      ],
+      "note": "",
+      "boundsMm": [
+        10.0,
+        2.0,
+        2.0
+      ],
+      "volumeMm3": 31.41592653589793,
+      "number": 45,
+      "file": "parts/045-big-end-roller-6.step"
+    },
+    {
+      "id": "big-end-roller-7",
+      "label": "Tête de bielle · aiguille n°7",
+      "family": "rod",
+      "material": "steel",
+      "explode": [
+        0.0,
+        -0.025,
+        -0.08
+      ],
+      "note": "",
+      "boundsMm": [
+        10.0,
+        2.0,
+        2.0
+      ],
+      "volumeMm3": 31.41592653589793,
+      "number": 46,
+      "file": "parts/046-big-end-roller-7.step"
+    },
+    {
+      "id": "big-end-roller-8",
+      "label": "Tête de bielle · aiguille n°8",
+      "family": "rod",
+      "material": "steel",
+      "explode": [
+        0.0,
+        -0.025,
+        -0.08
+      ],
+      "note": "",
+      "boundsMm": [
+        10.0,
+        2.0,
+        2.0
+      ],
+      "volumeMm3": 31.41592653589793,
+      "number": 47,
+      "file": "parts/047-big-end-roller-8.step"
+    },
+    {
+      "id": "big-end-roller-9",
+      "label": "Tête de bielle · aiguille n°9",
+      "family": "rod",
+      "material": "steel",
+      "explode": [
+        0.0,
+        -0.025,
+        -0.08
+      ],
+      "note": "",
+      "boundsMm": [
+        10.0,
+        2.0,
+        2.0
+      ],
+      "volumeMm3": 31.41592653589793,
+      "number": 48,
+      "file": "parts/048-big-end-roller-9.step"
+    },
+    {
+      "id": "big-end-roller-10",
+      "label": "Tête de bielle · aiguille n°10",
+      "family": "rod",
+      "material": "steel",
+      "explode": [
+        0.0,
+        -0.025,
+        -0.08
+      ],
+      "note": "",
+      "boundsMm": [
+        10.0,
+        2.0,
+        2.0
+      ],
+      "volumeMm3": 31.41592653589792,
+      "number": 49,
+      "file": "parts/049-big-end-roller-10.step"
+    },
+    {
+      "id": "big-end-roller-11",
+      "label": "Tête de bielle · aiguille n°11",
+      "family": "rod",
+      "material": "steel",
+      "explode": [
+        0.0,
+        -0.025,
+        -0.08
+      ],
+      "note": "",
+      "boundsMm": [
+        10.0,
+        2.0,
+        2.0
+      ],
+      "volumeMm3": 31.415926535897924,
+      "number": 50,
+      "file": "parts/050-big-end-roller-11.step"
+    },
+    {
+      "id": "big-end-roller-12",
+      "label": "Tête de bielle · aiguille n°12",
+      "family": "rod",
+      "material": "steel",
+      "explode": [
+        0.0,
+        -0.025,
+        -0.08
+      ],
+      "note": "",
+      "boundsMm": [
+        10.0,
+        2.0,
+        2.0
+      ],
+      "volumeMm3": 31.41592653589792,
+      "number": 51,
+      "file": "parts/051-big-end-roller-12.step"
+    },
+    {
+      "id": "small-end-bush",
+      "label": "Bague de pied de bielle",
+      "family": "rod",
+      "material": "brass",
+      "explode": [
+        0.0,
+        0.1,
+        -0.045
+      ],
+      "note": "",
+      "boundsMm": [
+        12.0,
+        10.3,
+        10.300000000000011
+      ],
+      "volumeMm3": 390.6419668291544,
+      "number": 52,
+      "file": "parts/052-small-end-bush.step"
+    },
+    {
+      "id": "piston-body",
+      "label": "Piston Ø39,96 mm · jupe et gorges",
+      "family": "piston",
+      "material": "aluminium",
+      "explode": [
+        0.0,
+        0.19,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        39.96000020000001,
+        39.9600002,
+        47.000000099999994
+      ],
+      "volumeMm3": 17507.41102728227,
+      "number": 53,
+      "file": "parts/053-piston-body.step"
+    },
+    {
+      "id": "piston-ring-1",
+      "label": "Segment de compression n°1",
+      "family": "piston",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.22,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        40.0,
+        39.99374902313221,
+        1.1500000000000057
+      ],
+      "volumeMm3": 139.7503043796329,
+      "number": 54,
+      "file": "parts/054-piston-ring-1.step"
+    },
+    {
+      "id": "piston-ring-2",
+      "label": "Segment de compression n°2",
+      "family": "piston",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.242,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        40.0,
+        39.99374902313221,
+        1.1500000000000057
+      ],
+      "volumeMm3": 139.7503043796329,
+      "number": 55,
+      "file": "parts/055-piston-ring-2.step"
+    },
+    {
+      "id": "wrist-pin",
+      "label": "Axe de piston creux Ø8 mm",
+      "family": "piston",
+      "material": "steel",
+      "explode": [
+        0.115,
+        0.185,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        36.0,
+        8.0,
+        8.0
+      ],
+      "volumeMm3": 1158.1167158193405,
+      "number": 56,
+      "file": "parts/056-wrist-pin.step"
+    },
+    {
+      "id": "pin-clip--1",
+      "label": "Circlip axe gauche",
+      "family": "piston",
+      "material": "steel",
+      "explode": [
+        -0.145,
+        0.185,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        0.6499999999999986,
+        9.4,
+        9.154211490264018
+      ],
+      "volumeMm3": 10.320162681091393,
+      "number": 57,
+      "file": "parts/057-pin-clip--1.step"
+    },
+    {
+      "id": "pin-clip-1",
+      "label": "Circlip axe droit",
+      "family": "piston",
+      "material": "steel",
+      "explode": [
+        0.145,
+        0.185,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        0.6499999999999986,
+        9.4,
+        9.154211490264018
+      ],
+      "volumeMm3": 10.320162681091393,
+      "number": 58,
+      "file": "parts/058-pin-clip-1.step"
+    },
+    {
+      "id": "cylinder-casting",
+      "label": "Cylindre · fonderie et ailettes",
+      "family": "cylinder",
+      "material": "cast",
+      "explode": [
+        0.0,
+        0.29,
+        0.0
+      ],
+      "note": "Canaux de transfert, sortie échappement et passages de goujons ouverts.",
+      "boundsMm": [
+        78.0,
+        73.0,
+        90.1
+      ],
+      "volumeMm3": 153021.47232423752,
+      "number": 59,
+      "file": "parts/059-cylinder-casting.step"
+    },
+    {
+      "id": "cylinder-liner",
+      "label": "Chemise · alésage et lumières",
+      "family": "cylinder",
+      "material": "steel",
+      "explode": [
+        0.095,
+        0.29,
+        0.0
+      ],
+      "note": "Alésage 40,04 mm ; diagramme de distribution non validé au banc.",
+      "boundsMm": [
+        44.9,
+        44.9,
+        89.0
+      ],
+      "volumeMm3": 25818.438504929654,
+      "number": 60,
+      "file": "parts/060-cylinder-liner.step"
+    },
+    {
+      "id": "base-gasket",
+      "label": "Joint d’embase",
+      "family": "cylinder",
+      "material": "gasket",
+      "explode": [
+        0.0,
+        0.23,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        69.0,
+        67.0,
+        0.6000000000000014
+      ],
+      "volumeMm3": 1457.7423804879827,
+      "number": 61,
+      "file": "parts/061-base-gasket.step"
+    },
+    {
+      "id": "exhaust-flange",
+      "label": "Bride de sortie échappement",
+      "family": "exhaust",
+      "material": "cast",
+      "explode": [
+        0.0,
+        0.07,
+        -0.095
+      ],
+      "note": "",
+      "boundsMm": [
+        46.0000002,
+        7.000000200000002,
+        32.00000019999999
+      ],
+      "volumeMm3": 5893.3024737578,
+      "number": 62,
+      "file": "parts/062-exhaust-flange.step"
+    },
+    {
+      "id": "cylinder-head",
+      "label": "Culasse · chambre de combustion",
+      "family": "head",
+      "material": "cast",
+      "explode": [
+        0.0,
+        0.39,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        78.0,
+        73.0,
+        32.0
+      ],
+      "volumeMm3": 103720.3609285527,
+      "number": 63,
+      "file": "parts/063-cylinder-head.step"
+    },
+    {
+      "id": "head-gasket",
+      "label": "Joint de culasse annulaire",
+      "family": "head",
+      "material": "copper",
+      "explode": [
+        0.0,
+        0.35,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        48.0,
+        48.0,
+        0.5
+      ],
+      "volumeMm3": 257.4692259249514,
+      "number": 64,
+      "file": "parts/064-head-gasket.step"
+    },
+    {
+      "id": "cylinder-stud-1",
+      "label": "Goujon cylindre M6 n°1",
+      "family": "cylinder",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "note": "Filetage nominal sans hélice ; longueur de conception.",
+      "boundsMm": [
+        6.0,
+        6.0,
+        146.0
+      ],
+      "volumeMm3": 4128.052746816988,
+      "number": 65,
+      "file": "parts/065-cylinder-stud-1.step"
+    },
+    {
+      "id": "head-nut-1",
+      "label": "Écrou de culasse M6 n°1",
+      "family": "head",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.435,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        10.400000000000006,
+        9.006664199358166,
+        5.0
+      ],
+      "volumeMm3": 209.88823436342773,
+      "number": 66,
+      "file": "parts/066-head-nut-1.step"
+    },
+    {
+      "id": "head-washer-1",
+      "label": "Rondelle de culasse n°1",
+      "family": "head",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.42,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        12.0,
+        12.0,
+        1.0
+      ],
+      "volumeMm3": 82.90663012823464,
+      "number": 67,
+      "file": "parts/067-head-washer-1.step"
+    },
+    {
+      "id": "cylinder-stud-2",
+      "label": "Goujon cylindre M6 n°2",
+      "family": "cylinder",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "note": "Filetage nominal sans hélice ; longueur de conception.",
+      "boundsMm": [
+        6.0,
+        6.0,
+        146.0
+      ],
+      "volumeMm3": 4128.052746816988,
+      "number": 68,
+      "file": "parts/068-cylinder-stud-2.step"
+    },
+    {
+      "id": "head-nut-2",
+      "label": "Écrou de culasse M6 n°2",
+      "family": "head",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.435,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        10.400000000000002,
+        9.006664199358166,
+        5.0
+      ],
+      "volumeMm3": 209.88823436342773,
+      "number": 69,
+      "file": "parts/069-head-nut-2.step"
+    },
+    {
+      "id": "head-washer-2",
+      "label": "Rondelle de culasse n°2",
+      "family": "head",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.42,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        12.0,
+        12.0,
+        1.0
+      ],
+      "volumeMm3": 82.90663012823464,
+      "number": 70,
+      "file": "parts/070-head-washer-2.step"
+    },
+    {
+      "id": "cylinder-stud-3",
+      "label": "Goujon cylindre M6 n°3",
+      "family": "cylinder",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "note": "Filetage nominal sans hélice ; longueur de conception.",
+      "boundsMm": [
+        6.0,
+        6.0,
+        146.0
+      ],
+      "volumeMm3": 4128.052746816988,
+      "number": 71,
+      "file": "parts/071-cylinder-stud-3.step"
+    },
+    {
+      "id": "head-nut-3",
+      "label": "Écrou de culasse M6 n°3",
+      "family": "head",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.435,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        10.400000000000006,
+        9.006664199358166,
+        5.0
+      ],
+      "volumeMm3": 209.88823436342773,
+      "number": 72,
+      "file": "parts/072-head-nut-3.step"
+    },
+    {
+      "id": "head-washer-3",
+      "label": "Rondelle de culasse n°3",
+      "family": "head",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.42,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        12.0,
+        12.0,
+        1.0
+      ],
+      "volumeMm3": 82.90663012823464,
+      "number": 73,
+      "file": "parts/073-head-washer-3.step"
+    },
+    {
+      "id": "cylinder-stud-4",
+      "label": "Goujon cylindre M6 n°4",
+      "family": "cylinder",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "note": "Filetage nominal sans hélice ; longueur de conception.",
+      "boundsMm": [
+        6.0,
+        6.0,
+        146.0
+      ],
+      "volumeMm3": 4128.052746816988,
+      "number": 74,
+      "file": "parts/074-cylinder-stud-4.step"
+    },
+    {
+      "id": "head-nut-4",
+      "label": "Écrou de culasse M6 n°4",
+      "family": "head",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.435,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        10.400000000000002,
+        9.006664199358166,
+        5.0
+      ],
+      "volumeMm3": 209.88823436342773,
+      "number": 75,
+      "file": "parts/075-head-nut-4.step"
+    },
+    {
+      "id": "head-washer-4",
+      "label": "Rondelle de culasse n°4",
+      "family": "head",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.42,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        12.0,
+        12.0,
+        1.0
+      ],
+      "volumeMm3": 82.90663012823464,
+      "number": 76,
+      "file": "parts/076-head-washer-4.step"
+    },
+    {
+      "id": "spark-plug-shell",
+      "label": "Bougie · corps métallique",
+      "family": "ignition",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.49,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        16.0,
+        13.856406460551021,
+        30.0
+      ],
+      "volumeMm3": 2554.721210430487,
+      "number": 77,
+      "file": "parts/077-spark-plug-shell.step"
+    },
+    {
+      "id": "spark-plug-insulator",
+      "label": "Bougie · isolant céramique",
+      "family": "ignition",
+      "material": "ceramic",
+      "explode": [
+        0.0,
+        0.51,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        8.0,
+        8.0,
+        39.0
+      ],
+      "volumeMm3": 1812.1020585171286,
+      "number": 78,
+      "file": "parts/078-spark-plug-insulator.step"
+    },
+    {
+      "id": "spark-plug-electrode",
+      "label": "Bougie · électrode centrale",
+      "family": "ignition",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.54,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        2.0,
+        2.0,
+        44.0
+      ],
+      "volumeMm3": 138.23007675795088,
+      "number": 79,
+      "file": "parts/079-spark-plug-electrode.step"
+    },
+    {
+      "id": "spark-plug-ground",
+      "label": "Bougie · électrode de masse",
+      "family": "ignition",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.49,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        2.0,
+        5.25,
+        7.25
+      ],
+      "volumeMm3": 32.875,
+      "number": 80,
+      "file": "parts/080-spark-plug-ground.step"
+    },
+    {
+      "id": "reed-cage",
+      "label": "Boîte à clapets · cage",
+      "family": "reed",
+      "material": "aluminium",
+      "explode": [
+        0.0,
+        0.01,
+        0.115
+      ],
+      "note": "",
+      "boundsMm": [
+        38.0,
+        25.5,
+        32.0
+      ],
+      "volumeMm3": 8386.778684233863,
+      "number": 81,
+      "file": "parts/081-reed-cage.step"
+    },
+    {
+      "id": "reed-leaf-1",
+      "label": "Lamelle de clapet n°1",
+      "family": "reed",
+      "material": "dark",
+      "explode": [
+        0.0,
+        -0.025,
+        0.125
+      ],
+      "note": "",
+      "boundsMm": [
+        25.0,
+        20.0,
+        0.40000000000000036
+      ],
+      "volumeMm3": 199.9999999999993,
+      "number": 82,
+      "file": "parts/082-reed-leaf-1.step"
+    },
+    {
+      "id": "reed-stop-1",
+      "label": "Butée de clapet n°1",
+      "family": "reed",
+      "material": "steel",
+      "explode": [
+        0.0,
+        -0.035,
+        0.145
+      ],
+      "note": "",
+      "boundsMm": [
+        25.0,
+        19.0,
+        0.8000000000000007
+      ],
+      "volumeMm3": 380.0000000000003,
+      "number": 83,
+      "file": "parts/083-reed-stop-1.step"
+    },
+    {
+      "id": "reed-leaf-2",
+      "label": "Lamelle de clapet n°2",
+      "family": "reed",
+      "material": "dark",
+      "explode": [
+        0.0,
+        0.025,
+        0.125
+      ],
+      "note": "",
+      "boundsMm": [
+        25.0,
+        20.0,
+        0.4000000000000057
+      ],
+      "volumeMm3": 200.00000000000284,
+      "number": 84,
+      "file": "parts/084-reed-leaf-2.step"
+    },
+    {
+      "id": "reed-stop-2",
+      "label": "Butée de clapet n°2",
+      "family": "reed",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.035,
+        0.145
+      ],
+      "note": "",
+      "boundsMm": [
+        25.0,
+        19.0,
+        0.7999999999999972
+      ],
+      "volumeMm3": 379.99999999999864,
+      "number": 85,
+      "file": "parts/085-reed-stop-2.step"
+    },
+    {
+      "id": "intake-boot",
+      "label": "Pipe d’admission souple",
+      "family": "reed",
+      "material": "rubber",
+      "explode": [
+        0.0,
+        0.01,
+        0.17
+      ],
+      "note": "",
+      "boundsMm": [
+        38.0000002,
+        35.500000099999994,
+        34.0000002
+      ],
+      "volumeMm3": 17642.041718955774,
+      "number": 86,
+      "file": "parts/086-intake-boot.step"
+    },
+    {
+      "id": "carb-body",
+      "label": "Carburateur Ø21 · corps et venturi",
+      "family": "carb",
+      "material": "cast",
+      "explode": [
+        0.0,
+        0.01,
+        0.245
+      ],
+      "note": "",
+      "boundsMm": [
+        39.0000002,
+        70.00000019999999,
+        75.0000001
+      ],
+      "volumeMm3": 58938.93838200785,
+      "number": 87,
+      "file": "parts/087-carb-body.step"
+    },
+    {
+      "id": "carb-slide",
+      "label": "Boisseau",
+      "family": "carb",
+      "material": "aluminium",
+      "explode": [
+        0.0,
+        0.095,
+        0.245
+      ],
+      "note": "",
+      "boundsMm": [
+        21.4,
+        21.400000000000006,
+        23.0
+      ],
+      "volumeMm3": 7494.087459139965,
+      "number": 88,
+      "file": "parts/088-carb-slide.step"
+    },
+    {
+      "id": "carb-needle",
+      "label": "Aiguille de dosage",
+      "family": "carb",
+      "material": "brass",
+      "explode": [
+        0.03,
+        0.09,
+        0.245
+      ],
+      "note": "",
+      "boundsMm": [
+        2.0,
+        2.0,
+        29.0
+      ],
+      "volumeMm3": 62.939190820793534,
+      "number": 89,
+      "file": "parts/089-carb-needle.step"
+    },
+    {
+      "id": "carb-bowl",
+      "label": "Cuve de carburateur",
+      "family": "carb",
+      "material": "cast",
+      "explode": [
+        0.0,
+        -0.065,
+        0.245
+      ],
+      "note": "",
+      "boundsMm": [
+        37.0,
+        41.0,
+        23.0
+      ],
+      "volumeMm3": 13568.256585816034,
+      "number": 90,
+      "file": "parts/090-carb-bowl.step"
+    },
+    {
+      "id": "carb-float",
+      "label": "Flotteur double",
+      "family": "carb",
+      "material": "dark",
+      "explode": [
+        0.0,
+        -0.035,
+        0.245
+      ],
+      "note": "",
+      "boundsMm": [
+        36.0,
+        18.0,
+        15.0
+      ],
+      "volumeMm3": 5668.613253023209,
+      "number": 91,
+      "file": "parts/091-carb-float.step"
+    },
+    {
+      "id": "carb-main-jet",
+      "label": "Gicleur principal · passage calibré",
+      "family": "carb",
+      "material": "brass",
+      "explode": [
+        0.025,
+        -0.05,
+        0.245
+      ],
+      "note": "Diamètre indicatif ; richesse et calibration non validées.",
+      "boundsMm": [
+        6.0,
+        6.0,
+        13.0
+      ],
+      "volumeMm3": 360.3620401967937,
+      "number": 92,
+      "file": "parts/092-carb-main-jet.step"
+    },
+    {
+      "id": "carb-return-spring",
+      "label": "Ressort de rappel du boisseau",
+      "family": "carb",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.11,
+        0.245
+      ],
+      "note": "",
+      "boundsMm": [
+        15.100015860137022,
+        15.10001539911093,
+        22.100000200000082
+      ],
+      "volumeMm3": 274.2980297398633,
+      "number": 93,
+      "file": "parts/093-carb-return-spring.step"
+    },
+    {
+      "id": "carb-top-cap",
+      "label": "Couvercle de boisseau",
+      "family": "carb",
+      "material": "aluminium",
+      "explode": [
+        0.0,
+        0.14,
+        0.245
+      ],
+      "note": "",
+      "boundsMm": [
+        30.0,
+        30.0,
+        4.0
+      ],
+      "volumeMm3": 2777.1679057733772,
+      "number": 94,
+      "file": "parts/094-carb-top-cap.step"
+    },
+    {
+      "id": "air-filter-housing",
+      "label": "Boîtier de filtre à air",
+      "family": "reed",
+      "material": "dark",
+      "explode": [
+        0.0,
+        0.01,
+        0.33
+      ],
+      "note": "",
+      "boundsMm": [
+        60.0,
+        43.0,
+        60.0
+      ],
+      "volumeMm3": 36630.970340857,
+      "number": 95,
+      "file": "parts/095-air-filter-housing.step"
+    },
+    {
+      "id": "air-filter-media",
+      "label": "Élément filtrant",
+      "family": "reed",
+      "material": "gasket",
+      "explode": [
+        0.0,
+        0.01,
+        0.365
+      ],
+      "note": "",
+      "boundsMm": [
+        52.0,
+        34.0,
+        52.0
+      ],
+      "volumeMm3": 54154.77416258084,
+      "number": 96,
+      "file": "parts/096-air-filter-media.step"
+    },
+    {
+      "id": "magneto-rotor",
+      "label": "Volant magnétique · rotor",
+      "family": "ignition",
+      "material": "steel",
+      "explode": [
+        -0.245,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        23.0,
+        78.0,
+        78.0
+      ],
+      "volumeMm3": 46548.47569341542,
+      "number": 97,
+      "file": "parts/097-magneto-rotor.step"
+    },
+    {
+      "id": "stator-coil-1",
+      "label": "Bobine de stator n°1",
+      "family": "ignition",
+      "material": "copper",
+      "explode": [
+        -0.17,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        9.0,
+        11.0,
+        16.0
+      ],
+      "volumeMm3": 989.0619298297468,
+      "number": 98,
+      "file": "parts/098-stator-coil-1.step"
+    },
+    {
+      "id": "stator-coil-2",
+      "label": "Bobine de stator n°2",
+      "family": "ignition",
+      "material": "copper",
+      "explode": [
+        -0.17,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        9.0,
+        19.35640646055102,
+        17.526279441628827
+      ],
+      "volumeMm3": 989.061929829747,
+      "number": 99,
+      "file": "parts/099-stator-coil-2.step"
+    },
+    {
+      "id": "stator-coil-3",
+      "label": "Bobine de stator n°3",
+      "family": "ignition",
+      "material": "copper",
+      "explode": [
+        -0.17,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        9.0,
+        19.356406460551018,
+        17.526279441628827
+      ],
+      "volumeMm3": 989.0619298297471,
+      "number": 100,
+      "file": "parts/100-stator-coil-3.step"
+    },
+    {
+      "id": "stator-coil-4",
+      "label": "Bobine de stator n°4",
+      "family": "ignition",
+      "material": "copper",
+      "explode": [
+        -0.17,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        9.0,
+        11.000000000000004,
+        16.0
+      ],
+      "volumeMm3": 989.0619298297468,
+      "number": 101,
+      "file": "parts/101-stator-coil-4.step"
+    },
+    {
+      "id": "stator-coil-5",
+      "label": "Bobine de stator n°5",
+      "family": "ignition",
+      "material": "copper",
+      "explode": [
+        -0.17,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        9.0,
+        19.35640646055102,
+        17.52627944162883
+      ],
+      "volumeMm3": 989.0619298297468,
+      "number": 102,
+      "file": "parts/102-stator-coil-5.step"
+    },
+    {
+      "id": "stator-coil-6",
+      "label": "Bobine de stator n°6",
+      "family": "ignition",
+      "material": "copper",
+      "explode": [
+        -0.17,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        9.0,
+        19.35640646055102,
+        17.52627944162883
+      ],
+      "volumeMm3": 989.061929829747,
+      "number": 103,
+      "file": "parts/103-stator-coil-6.step"
+    },
+    {
+      "id": "magneto-stator",
+      "label": "Stator · noyau et support",
+      "family": "ignition",
+      "material": "dark",
+      "explode": [
+        -0.16,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        7.0,
+        58.0,
+        56.22947341949745
+      ],
+      "volumeMm3": 12147.384632592742,
+      "number": 104,
+      "file": "parts/104-magneto-stator.step"
+    },
+    {
+      "id": "magneto-cover",
+      "label": "Couvercle d’allumage",
+      "family": "ignition",
+      "material": "cast",
+      "explode": [
+        -0.305,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        29.0,
+        86.0,
+        86.0
+      ],
+      "volumeMm3": 37765.08528880292,
+      "number": 105,
+      "file": "parts/105-magneto-cover.step"
+    },
+    {
+      "id": "clutch-hub",
+      "label": "Embrayage centrifuge · moyeu",
+      "family": "clutch",
+      "material": "steel",
+      "explode": [
+        0.17,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        8.0,
+        44.0,
+        44.0
+      ],
+      "volumeMm3": 9600.455821958121,
+      "number": 106,
+      "file": "parts/106-clutch-hub.step"
+    },
+    {
+      "id": "clutch-shoe-1",
+      "label": "Masselotte d’embrayage n°1",
+      "family": "clutch",
+      "material": "steel",
+      "explode": [
+        0.205,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        14.0,
+        13.958374587499193,
+        27.000000000000032
+      ],
+      "volumeMm3": 3926.0174496569516,
+      "number": 107,
+      "file": "parts/107-clutch-shoe-1.step"
+    },
+    {
+      "id": "clutch-lining-1",
+      "label": "Garniture de friction n°1",
+      "family": "clutch",
+      "material": "gasket",
+      "explode": [
+        0.225,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        13.0,
+        4.094225430784952,
+        25.000000000000032
+      ],
+      "volumeMm3": 597.3784417970652,
+      "number": 108,
+      "file": "parts/108-clutch-lining-1.step"
+    },
+    {
+      "id": "clutch-spring-1",
+      "label": "Ressort de rappel d’embrayage n°1",
+      "family": "clutch",
+      "material": "steel",
+      "explode": [
+        0.235,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        5.100013691270632,
+        20.100000200000007,
+        5.100029565558248
+      ],
+      "volumeMm3": 94.5427628030875,
+      "number": 109,
+      "file": "parts/109-clutch-spring-1.step"
+    },
+    {
+      "id": "clutch-shoe-2",
+      "label": "Masselotte d’embrayage n°2",
+      "family": "clutch",
+      "material": "steel",
+      "explode": [
+        0.205,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        14.0,
+        29.007693088396977,
+        23.242798239468097
+      ],
+      "volumeMm3": 3926.0174496569516,
+      "number": 110,
+      "file": "parts/110-clutch-shoe-2.step"
+    },
+    {
+      "id": "clutch-lining-2",
+      "label": "Garniture de friction n°2",
+      "family": "clutch",
+      "material": "gasket",
+      "explode": [
+        0.225,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        13.0,
+        22.61002795936932,
+        14.161717186180478
+      ],
+      "volumeMm3": 597.3784417970654,
+      "number": 111,
+      "file": "parts/111-clutch-lining-2.step"
+    },
+    {
+      "id": "clutch-spring-2",
+      "label": "Ressort de rappel d’embrayage n°2",
+      "family": "clutch",
+      "material": "steel",
+      "explode": [
+        0.235,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        5.100013691270632,
+        13.581111887509934,
+        17.143699399043374
+      ],
+      "volumeMm3": 94.54276280308763,
+      "number": 112,
+      "file": "parts/112-clutch-spring-2.step"
+    },
+    {
+      "id": "clutch-shoe-3",
+      "label": "Masselotte d’embrayage n°3",
+      "family": "clutch",
+      "material": "steel",
+      "explode": [
+        0.205,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        14.0,
+        29.00769308839697,
+        23.24279823946812
+      ],
+      "volumeMm3": 3926.017449656951,
+      "number": 113,
+      "file": "parts/113-clutch-shoe-3.step"
+    },
+    {
+      "id": "clutch-lining-3",
+      "label": "Garniture de friction n°3",
+      "family": "clutch",
+      "material": "gasket",
+      "explode": [
+        0.225,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        13.0,
+        22.610027959369294,
+        14.161717186180503
+      ],
+      "volumeMm3": 597.378441797065,
+      "number": 114,
+      "file": "parts/114-clutch-lining-3.step"
+    },
+    {
+      "id": "clutch-spring-3",
+      "label": "Ressort de rappel d’embrayage n°3",
+      "family": "clutch",
+      "material": "steel",
+      "explode": [
+        0.235,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        5.100013691270632,
+        12.381142457077294,
+        18.785541089063173
+      ],
+      "volumeMm3": 94.54276280308773,
+      "number": 115,
+      "file": "parts/115-clutch-spring-3.step"
+    },
+    {
+      "id": "clutch-bell",
+      "label": "Cloche d’embrayage ventilée",
+      "family": "clutch",
+      "material": "steel",
+      "explode": [
+        0.265,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        24.0,
+        80.0,
+        80.0
+      ],
+      "volumeMm3": 24984.709382881156,
+      "number": 116,
+      "file": "parts/116-clutch-bell.step"
+    },
+    {
+      "id": "output-sprocket",
+      "label": "Pignon de sortie · 12 dents nominales",
+      "family": "gearbox",
+      "material": "steel",
+      "explode": [
+        0.3,
+        0.0,
+        0.0
+      ],
+      "note": "Profil de denture de chaîne à normaliser avant fabrication.",
+      "boundsMm": [
+        5.0,
+        54.0,
+        54.0
+      ],
+      "volumeMm3": 7888.867208022832,
+      "number": 117,
+      "file": "parts/117-output-sprocket.step"
+    },
+    {
+      "id": "drive-cover",
+      "label": "Carter d’embrayage",
+      "family": "clutch",
+      "material": "cast",
+      "explode": [
+        0.345,
+        0.0,
+        0.0
+      ],
+      "note": "",
+      "boundsMm": [
+        41.0,
+        90.0,
+        90.0
+      ],
+      "volumeMm3": 53975.70338132622,
+      "number": 118,
+      "file": "parts/118-drive-cover.step"
+    },
+    {
+      "id": "exhaust-header",
+      "label": "Collecteur · tube creux Ø26",
+      "family": "exhaust",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.02,
+        -0.13
+      ],
+      "note": "",
+      "boundsMm": [
+        26.0,
+        95.0,
+        26.0
+      ],
+      "volumeMm3": 7461.282552275763,
+      "number": 119,
+      "file": "parts/119-exhaust-header.step"
+    },
+    {
+      "id": "exhaust-diffuser",
+      "label": "Pot à détente · cône divergent",
+      "family": "exhaust",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.02,
+        -0.17
+      ],
+      "note": "",
+      "boundsMm": [
+        96.0,
+        190.0,
+        96.0
+      ],
+      "volumeMm3": 35814.156250923465,
+      "number": 120,
+      "file": "parts/120-exhaust-diffuser.step"
+    },
+    {
+      "id": "exhaust-belly",
+      "label": "Pot à détente · ventre",
+      "family": "exhaust",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.02,
+        -0.22
+      ],
+      "note": "",
+      "boundsMm": [
+        96.0,
+        95.0,
+        96.0
+      ],
+      "volumeMm3": 28352.873698647832,
+      "number": 121,
+      "file": "parts/121-exhaust-belly.step"
+    },
+    {
+      "id": "exhaust-convergent",
+      "label": "Pot à détente · contre-cône",
+      "family": "exhaust",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.02,
+        -0.27
+      ],
+      "note": "",
+      "boundsMm": [
+        96.0,
+        140.0,
+        96.0
+      ],
+      "volumeMm3": 24630.086404143978,
+      "number": 122,
+      "file": "parts/122-exhaust-convergent.step"
+    },
+    {
+      "id": "exhaust-stinger",
+      "label": "Tube de fuite",
+      "family": "exhaust",
+      "material": "steel",
+      "explode": [
+        0.0,
+        0.02,
+        -0.31
+      ],
+      "note": "",
+      "boundsMm": [
+        18.0,
+        110.0,
+        18.0
+      ],
+      "volumeMm3": 5874.778262212923,
+      "number": 123,
+      "file": "parts/123-exhaust-stinger.step"
+    },
+    {
+      "id": "silencer-shell",
+      "label": "Silencieux · enveloppe",
+      "family": "exhaust",
+      "material": "aluminium",
+      "explode": [
+        0.07,
+        0.02,
+        -0.355
+      ],
+      "note": "",
+      "boundsMm": [
+        58.0,
+        165.0,
+        58.0
+      ],
+      "volumeMm3": 43931.246269636235,
+      "number": 124,
+      "file": "parts/124-silencer-shell.step"
+    },
+    {
+      "id": "silencer-baffle",
+      "label": "Silencieux · tube perforé",
+      "family": "exhaust",
+      "material": "steel",
+      "explode": [
+        -0.065,
+        0.02,
+        -0.355
+      ],
+      "note": "",
+      "boundsMm": [
+        20.000000200763722,
+        165.00000019999993,
+        20.00000022607709
+      ],
+      "volumeMm3": 9191.873123762172,
+      "number": 125,
+      "file": "parts/125-silencer-baffle.step"
+    },
+    {
+      "id": "silencer-packing",
+      "label": "Silencieux · absorbant annulaire",
+      "family": "exhaust",
+      "material": "gasket",
+      "explode": [
+        0.12,
+        0.02,
+        -0.355
+      ],
+      "note": "",
+      "boundsMm": [
+        54.0,
+        155.0,
+        54.0
+      ],
+      "volumeMm3": 301298.3704333461,
+      "number": 126,
+      "file": "parts/126-silencer-packing.step"
+    },
+    {
+      "id": "silencer-cap-1",
+      "label": "Silencieux · flasque n°1",
+      "family": "exhaust",
+      "material": "aluminium",
+      "explode": [
+        0.0,
+        0.02,
+        -0.32
+      ],
+      "note": "",
+      "boundsMm": [
+        58.0,
+        2.0,
+        58.0
+      ],
+      "volumeMm3": 4655.840312620075,
+      "number": 127,
+      "file": "parts/127-silencer-cap-1.step"
+    },
+    {
+      "id": "silencer-cap-2",
+      "label": "Silencieux · flasque n°2",
+      "family": "exhaust",
+      "material": "aluminium",
+      "explode": [
+        0.0,
+        0.02,
+        -0.39
+      ],
+      "note": "",
+      "boundsMm": [
+        58.0,
+        2.0,
+        58.0
+      ],
+      "volumeMm3": 4655.840312620075,
+      "number": 128,
+      "file": "parts/128-silencer-cap-2.step"
+    }
+  ]
+}

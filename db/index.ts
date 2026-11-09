@@ -11,3 +11,4 @@ export function getDb() {
 
   return drizzle(env.DB, { schema });
 }
+export function getRawDb(){if(!env.DB)throw new Error('D1 indisponible.');return env.DB;}

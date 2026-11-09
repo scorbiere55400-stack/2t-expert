@@ -1,0 +1,132 @@
+[
+  {
+    "partId": "case-left",
+    "label": "Demi-carter gauche",
+    "explode": [
+      -1.15,
+      -0.15,
+      -1.55
+    ],
+    "category": "Carters"
+  },
+  {
+    "partId": "case-right",
+    "label": "Demi-carter droit",
+    "explode": [
+      1.15,
+      -0.15,
+      1.55
+    ],
+    "category": "Carters"
+  },
+  {
+    "partId": "crankshaft",
+    "label": "Vilebrequin",
+    "explode": [
+      0,
+      -0.65,
+      0
+    ],
+    "category": "Embiellage et allumage"
+  },
+  {
+    "partId": "rod",
+    "label": "Bielle",
+    "explode": [
+      0,
+      0.15,
+      0
+    ],
+    "category": "Embiellage et allumage"
+  },
+  {
+    "partId": "piston",
+    "label": "Piston et axe",
+    "explode": [
+      0,
+      0.8,
+      0
+    ],
+    "category": "Haut moteur"
+  },
+  {
+    "partId": "cylinder",
+    "label": "Cylindre",
+    "explode": [
+      0,
+      1.9,
+      0
+    ],
+    "category": "Haut moteur"
+  },
+  {
+    "partId": "head",
+    "label": "Culasse et bougie",
+    "explode": [
+      0,
+      2.7,
+      0
+    ],
+    "category": "Haut moteur"
+  },
+  {
+    "partId": "gearbox",
+    "label": "Boîte de vitesses",
+    "explode": [
+      -1.8,
+      -0.6,
+      0
+    ],
+    "category": "Boîte de vitesses"
+  },
+  {
+    "partId": "clutch",
+    "label": "Embrayage",
+    "explode": [
+      -1.4,
+      0.3,
+      1.8
+    ],
+    "category": "Embrayage"
+  },
+  {
+    "partId": "ignition",
+    "label": "Rotor et stator",
+    "explode": [
+      0.4,
+      0,
+      -1.65
+    ],
+    "category": "Embiellage et allumage"
+  },
+  {
+    "partId": "reed",
+    "label": "Admission et clapets",
+    "explode": [
+      -1.5,
+      1,
+      0
+    ],
+    "category": "Admission"
+  },
+  {
+    "partId": "carb",
+    "label": "Carburateur",
+    "explode": [
+      -2.4,
+      1,
+      0
+    ],
+    "category": "Admission"
+  },
+  {
+    "partId": "exhaust",
+    "label": "Échappement",
+    "explode": [
+      1.1,
+      1,
+      0
+    ],
+    "category": "Échappement"
+  }
+]
